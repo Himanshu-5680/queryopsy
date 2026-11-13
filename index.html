@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Queryopsy - Zero-Server SQL Forensics</title>
+<meta name="description" content="Solve real-world data forensics cases with SQL. SQLite runs inside your browser through Python compiled to WebAssembly - no server, no sign-up, works offline.">
+<meta name="theme-color" content="#F4F0EA">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'unsafe-eval' 'sha256-QO4a2ud0wWpKeRHNaZs3CmS9J5hrTMiM6xhq7ui1ZFE='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preload" href="vendor/fonts/space-grotesk-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="vendor/pyodide/pyodide.asm.wasm" as="fetch" type="application/wasm" crossorigin>
+<link rel="stylesheet" href="src/ui/neobrutal.css">
+<!--THEME--><script>try{var t=localStorage.getItem('queryopsy.theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script><!--/THEME-->
+</head>
+<body>
+<a class="skip btn btn-sm" href="#main">Skip to content</a>
+<div class="bootbar" aria-hidden="true"><i></i></div>
+<header class="topbar">
+  <a class="brand" href="#/" data-action="home" aria-label="Queryopsy home">
+    <img class="brand-mark" src="assets/logo.svg" alt="" width="38" height="38">
+    <span><span class="brand-name">QUERYOPSY</span><span class="brand-tag">Zero-Server SQL Forensics</span></span>
+  </a>
+  <span class="engine-status" id="engine-status" role="status" aria-live="polite"><span>Starting engine...</span></span>
+  <div class="progress-pill" id="progress-pill" aria-label="Findings proven"><span id="progress-count">0/0</span><span class="meter"><i id="progress-meter"></i></span></div>
+  <button class="btn btn-icon btn-sm" id="theme-btn" data-action="theme" aria-label="Switch theme" title="Theme (Alt+T)">
+    <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M10 2a8 8 0 0 0 0 16z" fill="currentColor"/></svg>
+  </button>
+  <button class="btn btn-icon btn-sm" data-action="shortcuts" aria-label="Help and keyboard shortcuts" title="Help (?)">?</button>
+</header>
+
+<main id="main">
+<section id="view-home">
+  <div class="wrap">
+    <div class="card boot-error" id="boot-error" hidden role="alert"><b>The SQL engine could not start.</b> Open this site over http(s) (not file://) in a recent browser. <code></code></div>
+    <div class="hero">
+      <div>
+        <div class="eyebrow">Lead Data Auditor wanted</div>
+        <h1>Data doesn't lie. <mark>Prove it</mark> with SQL.</h1>
+        <p class="lead">Real industry datasets with planted fraud. A real SQLite engine running inside this page through Python compiled to WebAssembly. No server, no sign-up, no tracking - and it keeps working offline.</p>
+        <div class="cta">
+          <button class="btn btn-primary" data-action="start-training">Start orientation</button>
+          <button class="btn" data-action="continue" id="cta-continue" hidden>Continue</button>
+          <a class="btn btn-ghost" href="#cases">Browse cases &darr;</a>
+        </div>
+      </div>
+      <div class="hero-file card" aria-hidden="true">
+        <span class="tab">Case 05 &middot; Payroll Leak</span>
+        <div class="eyebrow">Finding 2 / 4 &middot; One account, two salaries</div>
+<pre><span class="t-kw">SELECT</span> <span class="t-col">bank_account</span>, <span class="t-fn">COUNT</span>(*) <span class="t-kw">AS</span> employees
+<span class="t-kw">FROM</span> <span class="t-tbl">employees</span>
+<span class="t-kw">GROUP BY</span> <span class="t-col">bank_account</span>
+<span class="t-kw">HAVING</span> <span class="t-fn">COUNT</span>(*) &gt; <span class="t-number">1</span>;</pre>
+        <span class="stamp">Proven</span>
+      </div>
+    </div>
+    <!--STATS:START--><div class="stats"><div><b>5</b><span>case files + orientation</span></div><div><b>24</b><span>findings to prove</span></div><div><b>0</b><span>servers or sign-ups</span></div><div><b>100%</b><span>offline &amp; on-device</span></div></div><!--STATS:END-->
+    <div class="section-head" id="cases"><h2>Case files</h2><span class="muted mono">Progress is saved on this device</span></div>
+    <div class="cases"><!--CASES:START--><button class="case-card card" data-action="open-case" data-case="case00_training" data-accent="lime" aria-disabled="true"><span class="no">CASE 00</span><h3>Orientation: First Day at the Desk</h3><span class="row"><span class="chip chip-accent2">Tutorial</span><span class="chip">Tutorial</span><span class="chip chip-warn">Placeholder data</span></span><p>Three warm-up queries. Learn the editor, the schema explorer and how verdicts work.</p><span class="bar"><i></i></span><span class="foot"><span class="count">0/3 findings</span><span class="go">Open case</span></span></button><button class="case-card card" data-action="open-case" data-case="case01_funding" data-accent="orange" aria-disabled="true"><span class="no">CASE 01</span><h3>Funding Forensics</h3><span class="row"><span class="chip chip-accent2">Venture Capital</span><span class="chip">Beginner</span><span class="chip chip-warn">Placeholder data</span></span><p>Reported rounds don&#x27;t add up. Audit the startup funding ledger before the annual report ships.</p><span class="bar"><i></i></span><span class="foot"><span class="count">0/5 findings</span><span class="go">Open case</span></span></button><button class="case-card card" data-action="open-case" data-case="case02_quickcommerce" data-accent="purple" aria-disabled="true"><span class="no">CASE 02</span><h3>Dark Store Delivery Audit</h3><span class="row"><span class="chip chip-accent2">Quick Commerce</span><span class="chip">Intermediate</span><span class="chip chip-warn">Placeholder data</span></span><p>10-minute delivery, 4-minute riders and double payouts. Find out what the ops dashboard hides.</p><span class="bar"><i></i></span><span class="foot"><span class="count">0/4 findings</span><span class="go">Open case</span></span></button><button class="case-card card" data-action="open-case" data-case="case03_catalog" data-accent="cyan" aria-disabled="true"><span class="no">CASE 03</span><h3>Shelf Integrity Audit</h3><span class="row"><span class="chip chip-accent2">Quick Commerce</span><span class="chip">Intermediate</span><span class="chip chip-warn">Placeholder data</span></span><p>Out-of-stock items with stock, discounts that aren&#x27;t. Clean the shelf before customers notice.</p><span class="bar"><i></i></span><span class="foot"><span class="count">0/4 findings</span><span class="go">Open case</span></span></button><button class="case-card card" data-action="open-case" data-case="case04_upi" data-accent="lime" aria-disabled="true"><span class="no">CASE 04</span><h3>UPI Fraud Desk</h3><span class="row"><span class="chip chip-accent2">FinTech / Payments</span><span class="chip">Advanced</span><span class="chip chip-warn">Placeholder data</span></span><p>The fraud model flags thousands of payments. Find where it&#x27;s blind before the RBI audit does.</p><span class="bar"><i></i></span><span class="foot"><span class="count">0/4 findings</span><span class="go">Open case</span></span></button><button class="case-card card" data-action="open-case" data-case="case05_payroll" data-accent="orange" aria-disabled="true"><span class="no">CASE 05</span><h3>Payroll Leak</h3><span class="row"><span class="chip chip-accent2">HR &amp; Payroll</span><span class="chip">Advanced</span><span class="chip chip-warn">Placeholder data</span></span><p>Salaries to people who left, two employees on one bank account. Plug the payroll leak.</p><span class="bar"><i></i></span><span class="foot"><span class="count">0/4 findings</span><span class="go">Open case</span></span></button><!--CASES:END--></div>
+
+    <div class="section-head"><h2>How it works</h2></div>
+    <div class="steps">
+      <div class="card step"><span class="num">1</span><h3>Read the dossier</h3><p class="muted">Each case is a client brief on a real-world dataset: startup funding, quick commerce, UPI payments, payroll.</p></div>
+      <div class="card step"><span class="num">2</span><h3>Query the evidence</h3><p class="muted">Clickable ER diagram, autocomplete for tables and columns, friendly error explanations and progressive hints.</p></div>
+      <div class="card step"><span class="num">3</span><h3>Get an instant verdict</h3><p class="muted">The validator compares fingerprints of your result with the evidence - you see how close you are, never the answer.</p></div>
+    </div>
+
+    <div class="section-head"><h2>Built differently</h2></div>
+    <div style="overflow:auto">
+    <table class="compare">
+      <thead><tr><th>What matters</th><th>Typical SQL mystery games</th><th>Queryopsy</th></tr></thead>
+      <tbody>
+        <tr><td>Data</td><td>Small fictional crime tables</td><td>Real industry datasets (cleaned, sampled) with documented planted anomalies</td></tr>
+        <tr><td>Access</td><td>Sign-up wall, paid tiers, trackers</td><td>Open instantly. No account, no ads, no analytics</td></tr>
+        <tr><td>Offline</td><td>Needs CDNs and a connection</td><td>Everything bundled locally - website (PWA) and Android app work in airplane mode</td></tr>
+        <tr><td>Feedback</td><td>Right / wrong</td><td>Column, row and matching-row diff without revealing the answer</td></tr>
+        <tr><td>Errors</td><td>Raw database messages</td><td>Plain-English explanation with a concrete fix ("did you mean ...?")</td></tr>
+        <tr><td>Schema</td><td>Static picture or text list</td><td>Interactive ER diagram and table explorer - click to insert names</td></tr>
+        <tr><td>Proof</td><td>Badges inside the site</td><td>Downloadable audit certificate (PNG/PDF) generated on your device</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+  <footer class="site"><div class="wrap">
+    <span>Queryopsy &middot; MIT licensed &middot; SQL engine: Python sqlite3 on Pyodide (WebAssembly)</span>
+    <span><a href="https://github.com/Himanshu-5680/queryopsy">Source on GitHub</a> &middot; <a href="https://github.com/Himanshu-5680/queryopsy/blob/main/docs/DATASETS.md">Dataset credits</a></span>
+  </div></footer>
+</section>
+<section id="view-case" hidden></section>
+</main>
+<div id="overlay"></div>
+<div id="toast" class="toast card" hidden></div>
+<script src="vendor/pyodide/pyodide.js" defer></script>
+<script src="src/boot.js" defer></script>
+</body>
+</html>

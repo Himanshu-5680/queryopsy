@@ -1,0 +1,25 @@
+# build output
+build/
+dist/
+release-assets/
+# raw source data (may be large / separately licensed)
+data/raw/*
+!data/raw/README.md
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+test-results/
+# signing material: never commit
+*.keystore
+*.jks
+keystore.properties
+signing/
+# local
+START-HERE.txt
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

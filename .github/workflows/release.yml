@@ -1,0 +1,41 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing tag to (re)attach the web bundle to
+        required: true
+        default: v1.0.0
+
+permissions:
+  contents: write
+
+jobs:
+  web-bundle:
+    runs-on: ubuntu-latest
+    env:
+      TAG: ${{ github.event.inputs.tag || github.ref_name }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.TAG }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install -r requirements-dev.txt
+      - name: Unit tests
+        run: python -m pytest --ignore=tests/e2e
+      - name: Build web bundle
+        run: python tools/build_web.py
+      # The signed APK is attached by publish.ps1 / publish.sh because the keystore never leaves the maintainer's machine.
+      - name: Create the release if needed and attach the web bundle
+        run: |
+          if ! gh release view "$TAG" >/dev/null 2>&1; then
+            gh release create "$TAG" --title "Queryopsy $TAG" --notes-file "docs/release-notes/$TAG.md" --verify-tag \
+              || gh release create "$TAG" --title "Queryopsy $TAG" --generate-notes --verify-tag
+          fi
+          gh release upload "$TAG" dist/queryopsy-web-*.zip --clobber

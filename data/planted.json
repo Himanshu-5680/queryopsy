@@ -1,0 +1,187 @@
+{
+ "case01_funding": [
+  {
+   "table": "funding_rounds",
+   "key": "641",
+   "why": "future-dated copy of round 2 (2020-03-05), after freeze 2020-01-22"
+  },
+  {
+   "table": "funding_rounds",
+   "key": "642",
+   "why": "future-dated copy of round 88 (2021-02-25), after freeze 2020-01-22"
+  },
+  {
+   "table": "funding_rounds",
+   "key": "643",
+   "why": "duplicate filing of round 176 with startup name ' TARAKIRAPAY'"
+  },
+  {
+   "table": "funding_rounds",
+   "key": "644",
+   "why": "duplicate filing of round 266 with startup name 'neeragnigo '"
+  }
+ ],
+ "case02_quickcommerce": [
+  {
+   "table": "orders",
+   "key": "5002401",
+   "why": "impossible delivery: 9.5 km in 3.0 min (> 100 km/h)"
+  },
+  {
+   "table": "orders",
+   "key": "5002402",
+   "why": "impossible delivery: 10.5 km in 4.0 min (> 100 km/h)"
+  },
+  {
+   "table": "orders",
+   "key": "5002403",
+   "why": "impossible delivery: 11.5 km in 5.0 min (> 100 km/h)"
+  },
+  {
+   "table": "orders",
+   "key": "5002404",
+   "why": "impossible delivery: 12.5 km in 6.0 min (> 100 km/h)"
+  },
+  {
+   "table": "rider_payouts",
+   "key": "5000802",
+   "why": "rider payout claimed twice for the same order"
+  },
+  {
+   "table": "rider_payouts",
+   "key": "5001203",
+   "why": "rider payout claimed twice for the same order"
+  },
+  {
+   "table": "rider_payouts",
+   "key": "5001603",
+   "why": "rider payout claimed twice for the same order"
+  }
+ ],
+ "case03_catalog": [
+  {
+   "table": "products",
+   "key": "313",
+   "why": "out_of_stock=1 but available_qty=7"
+  },
+  {
+   "table": "products",
+   "key": "314",
+   "why": "out_of_stock=1 but available_qty=12"
+  },
+  {
+   "table": "products",
+   "key": "315",
+   "why": "out_of_stock=1 but available_qty=17"
+  },
+  {
+   "table": "products",
+   "key": "316",
+   "why": "discount_pct=30 but selling_price=350.55 on mrp 369.0"
+  },
+  {
+   "table": "products",
+   "key": "317",
+   "why": "discount_pct=30 but selling_price=532.95 on mrp 561.0"
+  },
+  {
+   "table": "products",
+   "key": "318",
+   "why": "discount_pct=30 but selling_price=192.85 on mrp 203.0"
+  }
+ ],
+ "case04_upi": [
+  {
+   "table": "transactions",
+   "key": "PLANT00001",
+   "why": "unflagged INR 95000 P2P transfer at 01:10:00"
+  },
+  {
+   "table": "transactions",
+   "key": "PLANT00002",
+   "why": "unflagged INR 107500 P2P transfer at 02:11:01"
+  },
+  {
+   "table": "transactions",
+   "key": "PLANT00003",
+   "why": "unflagged INR 120000 P2P transfer at 03:12:02"
+  },
+  {
+   "table": "transactions",
+   "key": "PLANT00004",
+   "why": "unflagged INR 132500 P2P transfer at 04:13:03"
+  }
+ ],
+ "case05_payroll": [
+  {
+   "table": "employees",
+   "key": "1187",
+   "why": "bank account XXXX60849601 shared with employee 1061"
+  },
+  {
+   "table": "employees",
+   "key": "1234",
+   "why": "bank account XXXX36833399 shared with employee 1121"
+  },
+  {
+   "table": "employees",
+   "key": "1281",
+   "why": "bank account XXXX60230894 shared with employee 1181"
+  },
+  {
+   "table": "payroll",
+   "key": "2270",
+   "why": "salary for 2021-11 paid to employee 1015 who left on 2021-08-17"
+  },
+  {
+   "table": "payroll",
+   "key": "2271",
+   "why": "salary for 2021-12 paid to employee 1015 who left on 2021-08-17"
+  },
+  {
+   "table": "payroll",
+   "key": "2272",
+   "why": "salary for 2021-11 paid to employee 1016 who left on 2021-09-09"
+  },
+  {
+   "table": "payroll",
+   "key": "2273",
+   "why": "salary for 2021-12 paid to employee 1016 who left on 2021-09-09"
+  },
+  {
+   "table": "payroll",
+   "key": "2274",
+   "why": "salary for 2021-11 paid to employee 1021 who left on 2021-07-12"
+  },
+  {
+   "table": "payroll",
+   "key": "2275",
+   "why": "salary for 2021-12 paid to employee 1021 who left on 2021-07-12"
+  },
+  {
+   "table": "payroll",
+   "key": "2276",
+   "why": "salary for 2021-11 paid to employee 1025 who left on 2021-09-17"
+  },
+  {
+   "table": "payroll",
+   "key": "2277",
+   "why": "salary for 2021-12 paid to employee 1025 who left on 2021-09-17"
+  },
+  {
+   "table": "payroll",
+   "key": "760",
+   "why": "net pay inflated 2.4x for one month"
+  },
+  {
+   "table": "payroll",
+   "key": "1139",
+   "why": "net pay inflated 2.4x for one month"
+  },
+  {
+   "table": "payroll",
+   "key": "1519",
+   "why": "net pay inflated 2.4x for one month"
+  }
+ ]
+}

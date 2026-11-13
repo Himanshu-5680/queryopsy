@@ -1,0 +1,14 @@
+bug	D73A4A	Something is not working
+triage	FBCA04	Needs a first look
+enhancement	A855F7	New feature or improvement
+new-case	FF5722	Proposal for a new investigation or level
+dataset	0E8A16	Data sources, pipeline or planted anomalies
+ui-ux	38BDF8	Design, accessibility or interaction
+engine	5319E7	Python engine, validator or SQL runner
+android	3DDC84	Android app
+documentation	0075CA	Docs and README
+ci	CCFF00	Workflows and automation
+dependencies	0366D6	Dependency updates
+good first issue	7057FF	Good for newcomers
+help wanted	008672	Extra attention is welcome
+question	D876E3	Further information is requested

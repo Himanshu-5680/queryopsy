@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.ps1 text eol=crlf
+*.sqlite binary
+*.wasm binary
+*.whl binary
+*.zip binary
+*.png binary
+*.woff2 binary
+*.jar binary

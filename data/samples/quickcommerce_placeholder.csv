@@ -1,0 +1,2401 @@
+Order_ID,Company,City,Customer_Age,Order_Value,Delivery_Time_Min,Distance_Km,Items_Count,Product_Category,Payment_Method,Customer_Rating,Discount_Applied,Delivery_Partner_Rating
+5000001,Zepto,Mumbai,28,202,9,1.6,4,Bakery,Cash on Delivery,2,0,3
+5000002,BigBasket Now,Kolkata,18,343,17,1.7,16,Bakery,Wallet,5,0,5
+5000003,Swiggy Instamart,Jaipur,59,1330,27,1.3,17,Bakery,Wallet,2,1,4
+5000004,Flipkart Minutes,Noida,46,2258,12,2.5,10,Baby Care,Wallet,1,1,1
+5000005,Swiggy Instamart,Gurugram,50,1098,25,7.0,13,Dairy,UPI,3,0,2
+5000006,Blinkit,Gurugram,31,1558,15,4.2,8,Baby Care,UPI,5,0,2
+5000007,Zepto,Hyderabad,22,1199,14,3.0,9,Household,Card,3,1,5
+5000008,BigBasket Now,Mumbai,46,2014,24,1.6,12,Snacks,Cash on Delivery,4,0,2
+5000009,JioMart Express,Gurugram,54,1466,30,4.2,2,Snacks,Card,1,1,5
+5000010,Zepto,Noida,20,505,19,5.4,12,Fruits & Vegetables,UPI,2,1,4
+5000011,Flipkart Minutes,Bengaluru,25,466,23,6.3,9,Dairy,UPI,2,0,2
+5000012,Flipkart Minutes,Noida,60,2261,15,5.5,11,Snacks,Cash on Delivery,4,0,3
+5000013,BigBasket Now,Bengaluru,46,1169,32,7.1,8,Beverages,Card,5,0,5
+5000014,Zepto,Jaipur,26,1816,20,6.7,11,Household,Card,1,1,4
+5000015,Swiggy Instamart,Bengaluru,29,1389,15,2.2,12,Bakery,Card,5,0,3
+5000016,JioMart Express,Jaipur,31,368,22,3.9,18,Snacks,Cash on Delivery,2,0,3
+5000017,Flipkart Minutes,Hyderabad,24,1305,15,6.4,16,Fruits & Vegetables,Cash on Delivery,2,1,5
+5000018,Flipkart Minutes,Gurugram,36,849,26,5.6,13,Bakery,Wallet,1,0,3
+5000019,Flipkart Minutes,Hyderabad,52,1558,19,5.4,17,Snacks,UPI,1,1,5
+5000020,JioMart Express,Noida,56,2229,31,4.9,15,Personal Care,Card,3,0,5
+5000021,BigBasket Now,Bengaluru,34,1274,23,4.4,17,Household,UPI,4,1,3
+5000022,Blinkit,Pune,35,1303,14,6.6,8,Baby Care,Card,3,1,3
+5000023,Flipkart Minutes,Pune,38,882,26,6.2,9,Baby Care,UPI,2,1,2
+5000024,BigBasket Now,Bengaluru,47,1620,28,5.9,13,Bakery,UPI,1,0,2
+5000025,Swiggy Instamart,Chennai,48,993,19,4.8,5,Baby Care,Cash on Delivery,5,0,5
+5000026,Blinkit,Kolkata,55,2098,11,5.3,11,Household,UPI,2,1,4
+5000027,BigBasket Now,Delhi,46,646,31,6.9,13,Fruits & Vegetables,Wallet,3,0,4
+5000028,Zepto,Noida,36,721,4,0.7,5,Snacks,Card,5,1,5
+5000029,Blinkit,Gurugram,38,387,16,1.3,16,Snacks,Cash on Delivery,4,0,1
+5000030,JioMart Express,Bengaluru,48,1908,27,2.0,17,Snacks,Wallet,4,0,2
+5000031,Zepto,Kolkata,52,728,25,5.9,4,Bakery,UPI,4,0,1
+5000032,Zepto,Jaipur,57,1990,19,4.7,6,Household,Card,1,0,1
+5000033,Flipkart Minutes,Delhi,55,1216,12,3.1,3,Household,Cash on Delivery,4,1,2
+5000034,Flipkart Minutes,Kolkata,58,2259,19,2.6,13,Beverages,Card,2,0,2
+5000035,Blinkit,Kolkata,37,1676,20,3.0,6,Personal Care,Wallet,4,1,5
+5000036,BigBasket Now,Gurugram,60,2400,24,3.0,18,Beverages,Card,1,0,4
+5000037,JioMart Express,Delhi,45,242,33,6.3,18,Beverages,UPI,1,1,2
+5000038,JioMart Express,Bengaluru,60,1587,32,2.5,2,Household,Cash on Delivery,3,1,5
+5000039,JioMart Express,Hyderabad,39,1040,37,5.8,7,Personal Care,UPI,1,0,2
+5000040,Flipkart Minutes,Jaipur,32,1472,15,2.9,11,Baby Care,UPI,5,0,2
+5000041,JioMart Express,Bengaluru,54,1402,27,6.0,10,Snacks,Cash on Delivery,5,0,2
+5000042,Blinkit,Noida,18,141,11,2.4,5,Bakery,Wallet,1,1,2
+5000043,Blinkit,Jaipur,44,1312,5,5.4,10,Dairy,Cash on Delivery,3,0,4
+5000044,JioMart Express,Delhi,20,1377,34,5.6,2,Snacks,UPI,2,0,1
+5000045,Zepto,Bengaluru,37,1316,9,0.7,4,Personal Care,Cash on Delivery,1,0,4
+5000046,Zepto,Hyderabad,35,1441,15,2.9,1,Household,Cash on Delivery,1,1,4
+5000047,Blinkit,Hyderabad,56,1679,13,6.9,1,Beverages,Card,3,0,5
+5000048,Blinkit,Hyderabad,53,1341,16,0.6,16,Household,Wallet,5,1,4
+5000049,Swiggy Instamart,Mumbai,20,389,19,5.5,6,Snacks,UPI,3,0,5
+5000050,Blinkit,Chennai,21,1814,16,2.9,11,Personal Care,Card,2,1,5
+5000051,Zepto,Kolkata,29,2334,11,1.4,2,Baby Care,UPI,1,0,2
+5000052,Flipkart Minutes,Kolkata,28,1777,20,3.5,16,Bakery,Card,4,0,1
+5000053,Blinkit,Pune,58,722,21,7.1,16,Baby Care,Card,4,0,2
+5000054,Swiggy Instamart,Bengaluru,53,217,26,6.1,16,Beverages,Card,4,0,4
+5000055,Flipkart Minutes,Noida,55,658,13,4.3,15,Baby Care,Cash on Delivery,4,0,5
+5000056,BigBasket Now,Pune,28,604,21,2.5,16,Fruits & Vegetables,Wallet,4,0,5
+5000057,Swiggy Instamart,Mumbai,41,1588,22,6.6,2,Dairy,UPI,1,1,3
+5000058,Blinkit,Delhi,55,1363,18,6.5,5,Baby Care,Cash on Delivery,4,1,5
+5000059,Blinkit,Kolkata,46,1602,8,2.2,17,Snacks,UPI,2,0,5
+5000060,BigBasket Now,Mumbai,45,2154,21,0.6,1,Dairy,Card,2,1,1
+5000061,Flipkart Minutes,Jaipur,47,580,17,3.4,16,Personal Care,Cash on Delivery,1,0,1
+5000062,Zepto,Gurugram,31,680,10,1.9,4,Personal Care,Card,5,0,5
+5000063,Blinkit,Jaipur,49,2108,4,2.2,9,Personal Care,Cash on Delivery,1,0,3
+5000064,BigBasket Now,Kolkata,50,741,23,0.9,3,Personal Care,Cash on Delivery,5,1,5
+5000065,BigBasket Now,Kolkata,49,1483,20,3.1,18,Fruits & Vegetables,Wallet,3,0,3
+5000066,Blinkit,Gurugram,55,1141,16,7.5,10,Snacks,UPI,2,1,2
+5000067,JioMart Express,Chennai,57,2304,30,2.7,1,Snacks,Wallet,3,1,4
+5000068,BigBasket Now,Gurugram,41,1857,25,4.3,2,Household,Cash on Delivery,2,0,5
+5000069,Swiggy Instamart,Mumbai,50,2180,27,5.6,11,Baby Care,Card,3,1,2
+5000070,Flipkart Minutes,Chennai,54,586,16,4.6,6,Baby Care,Card,4,1,3
+5000071,Zepto,Delhi,40,1598,9,2.9,18,Snacks,Card,2,0,1
+5000072,BigBasket Now,Bengaluru,28,1973,27,3.3,5,Bakery,Cash on Delivery,4,1,3
+5000073,BigBasket Now,Pune,29,808,29,5.6,17,Personal Care,UPI,3,1,5
+5000074,Swiggy Instamart,Mumbai,36,2340,17,2.8,7,Bakery,UPI,5,1,1
+5000075,Blinkit,Pune,24,1832,14,2.8,13,Personal Care,UPI,2,1,4
+5000076,Zepto,Gurugram,21,2363,11,2.9,2,Snacks,UPI,1,0,3
+5000077,Flipkart Minutes,Pune,46,616,17,5.2,15,Snacks,Wallet,1,1,3
+5000078,JioMart Express,Mumbai,29,2212,29,6.5,1,Personal Care,Card,3,1,3
+5000079,Swiggy Instamart,Jaipur,20,275,15,1.3,9,Beverages,Wallet,1,1,4
+5000080,Swiggy Instamart,Hyderabad,21,567,26,5.1,5,Beverages,Wallet,5,1,1
+5000081,JioMart Express,Jaipur,34,1728,21,2.5,15,Snacks,Wallet,2,1,4
+5000082,Blinkit,Jaipur,53,293,14,2.6,16,Bakery,Cash on Delivery,4,0,1
+5000083,Swiggy Instamart,Chennai,23,429,20,1.6,5,Household,Wallet,5,0,1
+5000084,BigBasket Now,Delhi,26,796,24,6.0,15,Household,UPI,3,1,2
+5000085,BigBasket Now,Hyderabad,29,302,29,5.1,4,Fruits & Vegetables,UPI,1,1,1
+5000086,JioMart Express,Kolkata,51,1679,28,6.7,13,Personal Care,Wallet,5,1,1
+5000087,Swiggy Instamart,Mumbai,57,105,18,5.2,11,Household,Wallet,5,1,4
+5000088,BigBasket Now,Pune,57,640,21,2.6,17,Dairy,Wallet,4,1,5
+5000089,JioMart Express,Bengaluru,54,246,33,4.7,5,Personal Care,UPI,2,1,3
+5000090,Blinkit,Gurugram,47,2332,18,7.3,10,Personal Care,UPI,4,1,2
+5000091,Blinkit,Pune,46,1417,17,5.9,13,Baby Care,UPI,5,1,1
+5000092,JioMart Express,Noida,48,460,28,4.6,15,Dairy,Wallet,3,0,2
+5000093,Swiggy Instamart,Gurugram,20,100,16,2.7,16,Personal Care,Card,1,1,1
+5000094,JioMart Express,Gurugram,33,1565,29,1.3,17,Baby Care,Cash on Delivery,5,1,3
+5000095,Swiggy Instamart,Kolkata,29,1867,22,4.5,18,Fruits & Vegetables,Wallet,4,1,4
+5000096,Blinkit,Delhi,20,654,13,0.6,9,Baby Care,Cash on Delivery,3,0,2
+5000097,Flipkart Minutes,Chennai,37,1240,22,6.5,3,Beverages,Card,5,0,5
+5000098,Zepto,Jaipur,38,1204,17,3.6,14,Bakery,Wallet,5,0,1
+5000099,Swiggy Instamart,Kolkata,58,639,22,2.5,13,Fruits & Vegetables,Card,1,1,1
+5000100,Blinkit,Bengaluru,52,1837,19,6.4,16,Household,Card,2,0,4
+5000101,Blinkit,Jaipur,57,1928,17,4.7,4,Household,Cash on Delivery,2,0,4
+5000102,Blinkit,Pune,22,785,20,5.6,10,Bakery,Cash on Delivery,5,1,1
+5000103,Blinkit,Pune,25,1076,10,3.7,13,Snacks,Wallet,4,1,4
+5000104,JioMart Express,Gurugram,42,1410,34,4.5,13,Beverages,Card,4,0,1
+5000105,BigBasket Now,Delhi,37,1996,27,5.0,11,Snacks,Card,3,1,2
+5000106,JioMart Express,Noida,56,678,27,2.8,15,Bakery,Cash on Delivery,3,1,2
+5000107,Flipkart Minutes,Bengaluru,27,915,17,4.8,8,Bakery,Wallet,2,1,5
+5000108,Flipkart Minutes,Delhi,29,2122,17,4.8,18,Baby Care,Cash on Delivery,1,0,4
+5000109,Swiggy Instamart,Mumbai,28,1735,16,5.0,13,Snacks,Cash on Delivery,4,1,1
+5000110,Blinkit,Bengaluru,31,320,19,2.7,3,Beverages,Card,2,1,4
+5000111,Zepto,Chennai,35,120,14,3.7,6,Bakery,Cash on Delivery,4,1,4
+5000112,Blinkit,Delhi,25,154,17,5.5,14,Baby Care,Cash on Delivery,4,1,4
+5000113,Zepto,Delhi,55,1255,20,5.9,8,Dairy,Wallet,3,1,2
+5000114,Swiggy Instamart,Bengaluru,42,169,20,6.1,6,Bakery,Cash on Delivery,1,0,4
+5000115,Blinkit,Gurugram,36,235,10,4.4,11,Baby Care,Cash on Delivery,4,1,3
+5000116,Blinkit,Noida,33,2042,9,3.9,11,Personal Care,Cash on Delivery,4,1,2
+5000117,Swiggy Instamart,Jaipur,51,562,23,7.3,3,Baby Care,UPI,1,1,1
+5000118,Blinkit,Mumbai,57,158,7,4.3,12,Personal Care,UPI,1,1,1
+5000119,BigBasket Now,Hyderabad,53,1252,28,1.8,14,Bakery,UPI,5,1,1
+5000120,BigBasket Now,Gurugram,43,2020,24,7.0,11,Dairy,Card,5,0,3
+5000121,BigBasket Now,Pune,56,825,17,1.3,1,Personal Care,Card,4,1,2
+5000122,Swiggy Instamart,Delhi,56,249,22,4.3,14,Beverages,Cash on Delivery,2,1,5
+5000123,Blinkit,Mumbai,20,812,5,0.8,15,Dairy,Wallet,4,1,3
+5000124,Zepto,Chennai,32,1684,20,7.0,17,Personal Care,Card,1,1,2
+5000125,JioMart Express,Noida,49,1920,32,6.1,14,Beverages,Cash on Delivery,2,0,1
+5000126,Zepto,Delhi,29,2234,16,6.4,5,Household,Card,3,0,1
+5000127,JioMart Express,Delhi,20,980,32,5.7,16,Personal Care,Cash on Delivery,1,0,5
+5000128,Swiggy Instamart,Hyderabad,31,395,21,3.3,9,Personal Care,UPI,4,1,3
+5000129,BigBasket Now,Bengaluru,23,116,22,0.8,2,Household,UPI,4,1,5
+5000130,Flipkart Minutes,Gurugram,46,676,20,4.6,16,Dairy,Cash on Delivery,3,0,3
+5000131,Swiggy Instamart,Pune,35,361,16,1.3,17,Fruits & Vegetables,Wallet,2,0,1
+5000132,BigBasket Now,Delhi,51,714,32,7.5,3,Personal Care,Card,3,0,2
+5000133,Blinkit,Pune,42,774,21,6.1,3,Snacks,Wallet,1,0,2
+5000134,Flipkart Minutes,Bengaluru,50,1521,10,2.5,11,Beverages,Cash on Delivery,2,1,3
+5000135,BigBasket Now,Noida,43,478,25,3.6,1,Household,UPI,4,1,2
+5000136,Blinkit,Hyderabad,18,322,15,1.7,1,Dairy,Cash on Delivery,2,0,5
+5000137,Flipkart Minutes,Delhi,51,248,15,4.3,12,Household,Card,5,0,4
+5000138,JioMart Express,Bengaluru,27,1511,29,2.9,10,Fruits & Vegetables,Cash on Delivery,2,1,2
+5000139,Zepto,Mumbai,26,1255,6,1.0,15,Baby Care,Card,5,0,1
+5000140,Zepto,Jaipur,25,509,21,6.8,11,Personal Care,Card,3,0,2
+5000141,Flipkart Minutes,Pune,55,2291,25,7.0,9,Household,Wallet,3,0,3
+5000142,Swiggy Instamart,Mumbai,56,141,18,7.2,6,Bakery,UPI,3,0,4
+5000143,Blinkit,Mumbai,25,1427,15,5.7,11,Household,UPI,3,1,4
+5000144,Zepto,Mumbai,33,370,20,6.7,8,Snacks,Cash on Delivery,1,1,1
+5000145,Blinkit,Gurugram,44,574,15,7.0,1,Bakery,UPI,4,0,5
+5000146,Swiggy Instamart,Pune,48,1664,30,7.4,13,Fruits & Vegetables,Wallet,3,1,1
+5000147,Zepto,Kolkata,19,2010,17,3.1,15,Baby Care,UPI,4,1,5
+5000148,Zepto,Kolkata,41,109,23,4.1,2,Snacks,Cash on Delivery,5,1,5
+5000149,JioMart Express,Jaipur,41,1217,29,7.1,13,Baby Care,Cash on Delivery,4,0,4
+5000150,Blinkit,Hyderabad,42,308,20,4.8,6,Dairy,Card,2,0,1
+5000151,Swiggy Instamart,Jaipur,52,750,17,2.2,13,Baby Care,Card,1,1,1
+5000152,Swiggy Instamart,Noida,35,2170,18,5.0,7,Snacks,Card,1,1,3
+5000153,JioMart Express,Jaipur,47,1930,36,5.5,6,Baby Care,Wallet,2,0,5
+5000154,Swiggy Instamart,Delhi,54,1448,22,5.2,6,Bakery,UPI,2,1,4
+5000155,Zepto,Gurugram,22,2003,11,5.4,14,Fruits & Vegetables,Card,3,1,2
+5000156,BigBasket Now,Hyderabad,35,1972,17,1.7,16,Fruits & Vegetables,Cash on Delivery,4,0,3
+5000157,BigBasket Now,Jaipur,47,376,27,4.9,4,Dairy,Cash on Delivery,3,0,2
+5000158,JioMart Express,Mumbai,42,857,28,6.5,15,Household,Wallet,1,1,3
+5000159,Zepto,Hyderabad,38,1467,18,1.9,12,Fruits & Vegetables,Card,1,1,4
+5000160,Swiggy Instamart,Gurugram,25,894,16,6.3,1,Household,Cash on Delivery,2,0,5
+5000161,BigBasket Now,Bengaluru,46,1226,22,5.9,4,Snacks,Cash on Delivery,4,0,5
+5000162,JioMart Express,Mumbai,34,531,35,5.7,3,Personal Care,Card,2,0,5
+5000163,JioMart Express,Chennai,59,632,31,6.0,5,Personal Care,Card,2,0,2
+5000164,Swiggy Instamart,Gurugram,38,578,20,1.1,18,Dairy,Wallet,1,1,5
+5000165,Swiggy Instamart,Mumbai,60,1144,36,7.2,3,Household,Cash on Delivery,4,0,5
+5000166,Swiggy Instamart,Delhi,20,960,24,5.4,17,Dairy,Card,4,0,3
+5000167,Flipkart Minutes,Bengaluru,46,680,14,1.0,10,Fruits & Vegetables,Wallet,1,1,3
+5000168,JioMart Express,Noida,53,1390,28,1.3,13,Baby Care,Cash on Delivery,3,1,2
+5000169,Blinkit,Hyderabad,43,1116,21,4.7,2,Household,Card,5,1,1
+5000170,Flipkart Minutes,Bengaluru,35,434,18,1.6,16,Bakery,Wallet,1,0,4
+5000171,Blinkit,Pune,51,441,15,6.8,4,Baby Care,Wallet,1,1,5
+5000172,Swiggy Instamart,Pune,55,2230,14,3.2,15,Household,Wallet,2,1,2
+5000173,BigBasket Now,Hyderabad,35,1043,23,4.9,10,Bakery,Cash on Delivery,2,0,3
+5000174,Zepto,Chennai,29,529,17,5.8,5,Household,UPI,1,1,4
+5000175,BigBasket Now,Bengaluru,57,1727,27,5.7,16,Bakery,Wallet,2,1,5
+5000176,Swiggy Instamart,Pune,48,1563,26,6.2,16,Household,UPI,3,1,4
+5000177,BigBasket Now,Mumbai,39,1238,23,3.0,18,Household,Cash on Delivery,4,0,3
+5000178,BigBasket Now,Bengaluru,26,2227,27,5.9,8,Household,Cash on Delivery,4,0,2
+5000179,Zepto,Bengaluru,19,954,16,1.9,2,Bakery,Card,5,1,5
+5000180,Zepto,Hyderabad,23,1525,10,3.3,4,Personal Care,Card,5,0,4
+5000181,Flipkart Minutes,Noida,26,2137,22,6.3,4,Fruits & Vegetables,UPI,1,0,3
+5000182,Flipkart Minutes,Hyderabad,30,2117,22,3.8,6,Beverages,Card,2,0,3
+5000183,Flipkart Minutes,Hyderabad,21,1224,19,2.1,14,Dairy,Card,3,0,5
+5000184,BigBasket Now,Mumbai,49,1300,18,0.7,2,Household,Cash on Delivery,1,1,4
+5000185,Swiggy Instamart,Hyderabad,21,209,24,4.8,11,Household,Cash on Delivery,5,0,1
+5000186,BigBasket Now,Jaipur,47,1850,19,0.7,14,Bakery,Card,4,0,1
+5000187,Blinkit,Pune,28,282,15,1.2,12,Dairy,Cash on Delivery,5,1,5
+5000188,Blinkit,Jaipur,58,632,21,4.3,17,Household,Cash on Delivery,3,1,2
+5000189,Swiggy Instamart,Jaipur,55,1483,21,5.7,15,Household,Cash on Delivery,1,1,3
+5000190,Blinkit,Kolkata,40,1976,16,3.9,7,Fruits & Vegetables,Cash on Delivery,4,1,4
+5000191,Swiggy Instamart,Bengaluru,55,1024,19,4.0,4,Baby Care,UPI,1,1,3
+5000192,BigBasket Now,Noida,56,2082,26,6.3,10,Dairy,Wallet,3,1,2
+5000193,Swiggy Instamart,Bengaluru,30,2294,30,2.8,9,Beverages,UPI,2,1,5
+5000194,Flipkart Minutes,Noida,58,1295,11,1.9,17,Dairy,Cash on Delivery,3,1,3
+5000195,Zepto,Gurugram,39,322,14,1.8,1,Baby Care,Cash on Delivery,3,1,2
+5000196,Swiggy Instamart,Gurugram,21,2068,20,4.3,3,Snacks,Cash on Delivery,2,0,3
+5000197,Swiggy Instamart,Kolkata,58,749,17,2.0,3,Personal Care,Wallet,2,1,1
+5000198,Blinkit,Hyderabad,46,2055,15,3.7,14,Bakery,Wallet,3,0,1
+5000199,Blinkit,Hyderabad,55,2238,19,7.4,3,Bakery,UPI,3,1,1
+5000200,BigBasket Now,Bengaluru,52,616,34,7.4,1,Beverages,Wallet,2,1,2
+5000201,Flipkart Minutes,Gurugram,37,2211,20,5.9,15,Beverages,Cash on Delivery,2,0,5
+5000202,Blinkit,Pune,55,1868,23,4.2,5,Baby Care,Wallet,5,0,2
+5000203,BigBasket Now,Noida,38,1982,18,1.7,6,Snacks,Wallet,4,0,2
+5000204,BigBasket Now,Pune,20,1889,19,1.3,10,Personal Care,Card,1,1,1
+5000205,Zepto,Jaipur,19,872,12,2.3,8,Bakery,Wallet,5,0,2
+5000206,JioMart Express,Chennai,27,1904,35,1.4,6,Fruits & Vegetables,Wallet,1,0,3
+5000207,JioMart Express,Pune,50,226,34,4.7,1,Fruits & Vegetables,Cash on Delivery,2,0,1
+5000208,Flipkart Minutes,Bengaluru,41,1717,14,2.9,7,Snacks,UPI,1,0,2
+5000209,Swiggy Instamart,Mumbai,34,1697,30,7.1,16,Fruits & Vegetables,Wallet,3,1,5
+5000210,BigBasket Now,Delhi,53,1752,22,3.0,8,Fruits & Vegetables,Wallet,2,1,4
+5000211,Zepto,Bengaluru,23,986,14,6.6,10,Household,Wallet,5,1,3
+5000212,Swiggy Instamart,Pune,52,1793,27,7.3,11,Baby Care,Card,3,1,1
+5000213,Swiggy Instamart,Hyderabad,23,1835,21,3.6,3,Beverages,Wallet,2,0,4
+5000214,Swiggy Instamart,Gurugram,19,1746,20,4.5,8,Baby Care,Card,1,0,5
+5000215,Flipkart Minutes,Bengaluru,51,730,19,6.3,4,Snacks,Wallet,4,1,5
+5000216,Blinkit,Gurugram,47,390,10,1.2,10,Snacks,Wallet,4,0,1
+5000217,Flipkart Minutes,Delhi,42,615,14,3.1,16,Bakery,Card,2,1,4
+5000218,Swiggy Instamart,Chennai,52,2050,22,0.7,8,Fruits & Vegetables,Wallet,3,1,2
+5000219,BigBasket Now,Noida,26,98,24,4.2,4,Beverages,Card,5,1,1
+5000220,Zepto,Bengaluru,24,1733,20,6.8,18,Fruits & Vegetables,Wallet,4,0,5
+5000221,JioMart Express,Kolkata,32,1260,30,2.3,14,Personal Care,Wallet,4,1,5
+5000222,JioMart Express,Mumbai,18,1415,36,6.6,15,Dairy,Card,2,1,1
+5000223,Swiggy Instamart,Jaipur,29,739,18,2.2,8,Dairy,Card,5,1,5
+5000224,Flipkart Minutes,Gurugram,32,1172,17,4.7,5,Baby Care,Wallet,5,1,1
+5000225,Blinkit,Mumbai,44,510,10,0.7,10,Household,Cash on Delivery,2,0,3
+5000226,Zepto,Kolkata,45,95,19,6.7,17,Household,Wallet,4,1,4
+5000227,Zepto,Delhi,40,1726,13,4.2,1,Household,UPI,5,1,3
+5000228,JioMart Express,Pune,28,1297,27,3.4,8,Dairy,Cash on Delivery,3,0,5
+5000229,Zepto,Delhi,28,1298,18,5.7,11,Household,Card,5,0,3
+5000230,Swiggy Instamart,Noida,35,1982,28,5.6,14,Dairy,Wallet,5,1,5
+5000231,Zepto,Pune,38,1393,20,6.2,16,Household,Card,3,0,2
+5000232,Zepto,Mumbai,60,1583,11,2.3,17,Dairy,UPI,5,0,1
+5000233,Zepto,Pune,39,480,13,1.6,6,Dairy,UPI,5,1,3
+5000234,Flipkart Minutes,Hyderabad,58,1688,20,6.3,16,Baby Care,Wallet,5,1,4
+5000235,BigBasket Now,Gurugram,29,461,26,7.5,10,Baby Care,Wallet,3,1,2
+5000236,BigBasket Now,Kolkata,45,1931,24,3.5,17,Household,Cash on Delivery,3,1,2
+5000237,BigBasket Now,Delhi,27,909,36,7.3,8,Baby Care,Wallet,1,0,1
+5000238,BigBasket Now,Kolkata,46,1551,23,5.4,6,Fruits & Vegetables,UPI,3,0,3
+5000239,BigBasket Now,Kolkata,54,939,31,1.7,2,Household,Wallet,3,0,4
+5000240,Zepto,Gurugram,42,1129,15,6.2,16,Fruits & Vegetables,Wallet,5,0,2
+5000241,BigBasket Now,Bengaluru,54,1950,26,5.9,11,Household,UPI,2,1,2
+5000242,Swiggy Instamart,Hyderabad,46,2239,18,1.5,5,Dairy,Card,4,1,4
+5000243,BigBasket Now,Bengaluru,41,99,29,3.9,3,Household,Card,4,0,3
+5000244,Zepto,Noida,18,1931,18,2.1,3,Beverages,Card,1,0,2
+5000245,Zepto,Chennai,20,2372,19,6.7,12,Household,UPI,2,1,2
+5000246,BigBasket Now,Kolkata,37,1678,28,6.7,4,Personal Care,Cash on Delivery,2,1,2
+5000247,Blinkit,Pune,41,326,17,6.7,5,Beverages,Cash on Delivery,3,0,4
+5000248,Blinkit,Kolkata,25,2113,11,4.2,9,Personal Care,UPI,2,0,5
+5000249,BigBasket Now,Delhi,27,1054,27,6.0,11,Snacks,UPI,5,0,2
+5000250,Blinkit,Gurugram,59,563,10,3.9,15,Snacks,UPI,4,1,2
+5000251,Swiggy Instamart,Mumbai,47,1125,16,5.0,5,Snacks,Wallet,2,0,3
+5000252,Zepto,Mumbai,44,612,25,6.2,15,Baby Care,Cash on Delivery,3,1,1
+5000253,Blinkit,Noida,21,91,5,0.8,5,Household,UPI,2,0,5
+5000254,Flipkart Minutes,Bengaluru,55,2015,23,4.9,8,Personal Care,Cash on Delivery,5,0,1
+5000255,Swiggy Instamart,Gurugram,38,523,21,1.5,9,Household,UPI,2,1,4
+5000256,BigBasket Now,Kolkata,18,792,20,1.8,8,Snacks,UPI,5,0,2
+5000257,BigBasket Now,Kolkata,60,851,27,1.1,3,Personal Care,Wallet,4,0,4
+5000258,JioMart Express,Mumbai,50,637,26,2.4,1,Household,Wallet,5,0,2
+5000259,Zepto,Gurugram,49,304,16,4.0,15,Bakery,Cash on Delivery,1,1,1
+5000260,Swiggy Instamart,Delhi,40,1946,22,3.7,12,Fruits & Vegetables,Cash on Delivery,3,1,4
+5000261,Zepto,Gurugram,37,1108,24,7.0,12,Personal Care,Cash on Delivery,3,0,1
+5000262,Swiggy Instamart,Hyderabad,57,892,21,3.5,17,Baby Care,Cash on Delivery,2,0,3
+5000263,Swiggy Instamart,Kolkata,60,2211,21,4.5,9,Household,UPI,2,0,2
+5000264,Zepto,Kolkata,55,550,11,3.5,10,Beverages,Cash on Delivery,3,1,2
+5000265,Flipkart Minutes,Pune,28,1713,9,2.2,2,Fruits & Vegetables,Card,3,1,4
+5000266,BigBasket Now,Kolkata,29,191,20,3.8,6,Household,Wallet,4,1,2
+5000267,Swiggy Instamart,Pune,28,698,26,6.8,4,Dairy,UPI,5,1,1
+5000268,Blinkit,Kolkata,59,2240,12,6.1,18,Household,UPI,4,0,1
+5000269,BigBasket Now,Pune,55,198,20,4.3,9,Snacks,Card,4,0,2
+5000270,Flipkart Minutes,Pune,56,2023,25,5.8,14,Baby Care,Card,4,1,4
+5000271,Zepto,Hyderabad,45,147,14,6.9,6,Personal Care,Cash on Delivery,3,0,5
+5000272,JioMart Express,Hyderabad,23,1911,27,4.0,7,Bakery,Wallet,3,0,2
+5000273,BigBasket Now,Mumbai,43,2273,33,7.4,13,Snacks,Wallet,3,1,3
+5000274,Swiggy Instamart,Chennai,51,1830,22,4.8,16,Personal Care,Cash on Delivery,5,1,5
+5000275,BigBasket Now,Gurugram,38,1747,27,5.3,4,Household,Cash on Delivery,1,1,1
+5000276,JioMart Express,Mumbai,43,1802,31,5.3,14,Snacks,Card,1,1,4
+5000277,Swiggy Instamart,Hyderabad,37,1328,19,6.3,15,Dairy,Card,3,1,4
+5000278,BigBasket Now,Jaipur,39,1990,24,3.4,8,Bakery,UPI,5,0,4
+5000279,Flipkart Minutes,Gurugram,44,1812,19,4.0,7,Dairy,Wallet,4,1,2
+5000280,Zepto,Jaipur,29,1270,11,0.6,5,Dairy,Card,1,0,2
+5000281,Blinkit,Gurugram,31,1043,15,2.0,18,Fruits & Vegetables,Card,1,0,1
+5000282,Blinkit,Chennai,27,1496,29,7.1,6,Personal Care,UPI,5,1,3
+5000283,JioMart Express,Delhi,51,950,16,3.3,16,Personal Care,Cash on Delivery,5,0,3
+5000284,Flipkart Minutes,Noida,50,692,12,1.3,11,Dairy,UPI,2,1,5
+5000285,Blinkit,Hyderabad,58,1070,13,5.4,14,Baby Care,Cash on Delivery,3,0,3
+5000286,Zepto,Mumbai,47,1944,19,7.2,9,Personal Care,UPI,5,1,3
+5000287,Zepto,Chennai,54,2362,4,1.1,1,Personal Care,UPI,2,1,3
+5000288,Blinkit,Delhi,43,1500,14,4.4,10,Snacks,Cash on Delivery,1,0,5
+5000289,BigBasket Now,Delhi,45,1528,25,3.7,5,Personal Care,Wallet,4,0,1
+5000290,Zepto,Gurugram,35,1123,13,2.3,11,Bakery,UPI,5,1,1
+5000291,Flipkart Minutes,Gurugram,21,1667,17,1.8,14,Baby Care,Card,1,1,4
+5000292,Swiggy Instamart,Gurugram,34,1177,15,2.3,7,Snacks,Wallet,1,1,4
+5000293,Blinkit,Noida,45,968,18,7.2,13,Snacks,UPI,4,1,5
+5000294,Flipkart Minutes,Bengaluru,18,1842,21,2.3,14,Household,Cash on Delivery,2,1,5
+5000295,Swiggy Instamart,Bengaluru,49,866,19,4.3,18,Personal Care,Card,1,1,5
+5000296,Swiggy Instamart,Delhi,57,1476,14,2.2,2,Baby Care,Wallet,1,0,3
+5000297,Flipkart Minutes,Hyderabad,20,1342,11,4.0,3,Snacks,Card,4,1,1
+5000298,Zepto,Delhi,50,1620,15,1.0,12,Personal Care,Cash on Delivery,5,1,3
+5000299,Zepto,Bengaluru,58,1328,16,1.4,9,Beverages,UPI,4,0,2
+5000300,Swiggy Instamart,Hyderabad,20,107,18,4.5,8,Bakery,Cash on Delivery,1,0,3
+5000301,Blinkit,Chennai,21,298,14,5.7,18,Fruits & Vegetables,Card,1,0,5
+5000302,BigBasket Now,Gurugram,57,1834,23,1.3,15,Snacks,Cash on Delivery,4,1,5
+5000303,Blinkit,Jaipur,23,1052,8,0.9,17,Fruits & Vegetables,Wallet,1,1,5
+5000304,JioMart Express,Hyderabad,34,2036,28,3.6,1,Fruits & Vegetables,UPI,5,1,1
+5000305,BigBasket Now,Delhi,35,1373,18,0.8,17,Snacks,Card,1,0,5
+5000306,Zepto,Chennai,50,2239,20,2.9,8,Fruits & Vegetables,UPI,3,0,1
+5000307,Zepto,Kolkata,46,565,14,1.8,13,Bakery,UPI,3,0,3
+5000308,Swiggy Instamart,Kolkata,36,1059,25,6.4,14,Snacks,UPI,3,1,4
+5000309,Blinkit,Chennai,45,753,11,4.1,13,Household,Card,1,1,1
+5000310,BigBasket Now,Bengaluru,36,2009,24,3.7,11,Bakery,Card,3,1,1
+5000311,Blinkit,Kolkata,41,664,19,6.2,7,Dairy,Cash on Delivery,2,0,5
+5000312,BigBasket Now,Chennai,42,910,33,5.2,1,Snacks,Card,4,1,1
+5000313,Swiggy Instamart,Pune,19,2349,25,4.9,17,Beverages,UPI,3,1,1
+5000314,Flipkart Minutes,Bengaluru,49,171,16,6.8,13,Dairy,Wallet,3,0,4
+5000315,JioMart Express,Kolkata,52,2048,28,5.8,1,Snacks,UPI,3,0,2
+5000316,Zepto,Delhi,36,273,17,3.0,10,Personal Care,Cash on Delivery,2,0,3
+5000317,JioMart Express,Hyderabad,37,1312,23,2.7,3,Snacks,UPI,1,1,5
+5000318,Flipkart Minutes,Delhi,43,99,13,6.2,15,Household,Wallet,4,1,3
+5000319,Flipkart Minutes,Jaipur,57,96,20,5.3,17,Dairy,UPI,4,1,3
+5000320,Flipkart Minutes,Chennai,28,1671,12,3.6,7,Dairy,Wallet,2,0,5
+5000321,Flipkart Minutes,Gurugram,58,861,14,6.1,6,Household,UPI,3,0,4
+5000322,Swiggy Instamart,Pune,48,2314,12,4.5,7,Fruits & Vegetables,Card,4,0,4
+5000323,Blinkit,Gurugram,48,835,18,3.5,4,Household,Wallet,3,0,1
+5000324,Flipkart Minutes,Mumbai,36,1867,20,2.5,15,Snacks,UPI,5,1,2
+5000325,Blinkit,Pune,44,189,20,5.9,17,Household,Cash on Delivery,4,0,5
+5000326,JioMart Express,Hyderabad,58,1548,25,1.7,13,Dairy,Cash on Delivery,4,1,5
+5000327,Flipkart Minutes,Kolkata,57,1355,11,2.0,5,Snacks,Cash on Delivery,4,1,2
+5000328,Blinkit,Bengaluru,26,2046,19,4.8,14,Fruits & Vegetables,Card,3,0,5
+5000329,Zepto,Mumbai,27,1868,18,6.5,3,Baby Care,Wallet,4,1,2
+5000330,Swiggy Instamart,Delhi,34,631,21,5.8,16,Bakery,Card,4,1,2
+5000331,JioMart Express,Mumbai,20,1667,27,4.4,13,Fruits & Vegetables,Wallet,3,1,5
+5000332,Blinkit,Bengaluru,18,274,13,3.7,5,Snacks,Wallet,4,1,4
+5000333,BigBasket Now,Hyderabad,39,1784,22,6.5,11,Baby Care,UPI,4,1,5
+5000334,BigBasket Now,Delhi,23,694,27,4.9,2,Fruits & Vegetables,Wallet,3,0,5
+5000335,Flipkart Minutes,Hyderabad,42,212,17,4.4,7,Household,UPI,4,1,3
+5000336,Zepto,Pune,47,642,15,2.8,10,Fruits & Vegetables,Cash on Delivery,5,0,1
+5000337,BigBasket Now,Jaipur,31,1578,27,5.1,3,Bakery,UPI,4,0,5
+5000338,Flipkart Minutes,Mumbai,34,810,10,7.2,13,Fruits & Vegetables,Wallet,1,0,1
+5000339,Zepto,Delhi,52,437,12,4.5,10,Fruits & Vegetables,UPI,1,1,2
+5000340,Zepto,Chennai,41,1780,12,5.0,13,Baby Care,Cash on Delivery,4,1,4
+5000341,Flipkart Minutes,Gurugram,56,2204,19,4.5,8,Snacks,Wallet,3,0,1
+5000342,Swiggy Instamart,Mumbai,55,728,24,7.0,3,Household,Card,4,0,4
+5000343,Swiggy Instamart,Gurugram,20,1488,19,6.8,1,Snacks,UPI,4,0,2
+5000344,JioMart Express,Hyderabad,44,853,24,5.4,6,Household,Cash on Delivery,5,1,4
+5000345,Swiggy Instamart,Gurugram,20,2133,9,1.1,9,Dairy,Wallet,4,0,3
+5000346,Blinkit,Kolkata,46,1228,20,5.8,14,Snacks,Wallet,4,0,3
+5000347,BigBasket Now,Kolkata,41,203,36,6.1,6,Snacks,UPI,2,1,4
+5000348,BigBasket Now,Chennai,35,1594,17,2.1,1,Bakery,Wallet,1,1,2
+5000349,Flipkart Minutes,Pune,35,1267,20,4.5,8,Bakery,Card,2,1,4
+5000350,JioMart Express,Kolkata,56,534,19,2.6,18,Dairy,Cash on Delivery,4,0,2
+5000351,Zepto,Bengaluru,31,170,4,3.0,13,Household,UPI,4,1,1
+5000352,Flipkart Minutes,Delhi,41,125,16,2.4,9,Household,Card,3,1,3
+5000353,BigBasket Now,Pune,42,452,28,6.8,15,Personal Care,UPI,5,1,1
+5000354,Swiggy Instamart,Noida,29,644,26,3.1,16,Household,Card,5,0,5
+5000355,Flipkart Minutes,Hyderabad,47,1303,21,6.9,6,Fruits & Vegetables,UPI,5,0,1
+5000356,Zepto,Chennai,29,1618,14,0.9,2,Fruits & Vegetables,Cash on Delivery,1,0,3
+5000357,Zepto,Bengaluru,19,2151,15,5.7,4,Bakery,Cash on Delivery,5,0,1
+5000358,Blinkit,Hyderabad,35,2094,22,7.2,14,Household,Cash on Delivery,5,0,1
+5000359,Zepto,Bengaluru,57,2373,16,3.4,10,Snacks,Wallet,4,1,3
+5000360,BigBasket Now,Kolkata,60,1909,32,7.2,3,Bakery,Card,1,1,1
+5000361,Swiggy Instamart,Delhi,26,1786,17,0.8,8,Beverages,UPI,4,0,2
+5000362,JioMart Express,Gurugram,18,1612,23,1.4,7,Baby Care,Cash on Delivery,5,0,1
+5000363,Blinkit,Noida,21,1169,9,3.9,12,Baby Care,Cash on Delivery,1,0,1
+5000364,JioMart Express,Jaipur,58,653,25,4.6,9,Bakery,Wallet,1,0,3
+5000365,Flipkart Minutes,Delhi,29,1275,14,3.1,18,Household,UPI,3,1,3
+5000366,Flipkart Minutes,Pune,54,213,18,7.2,11,Fruits & Vegetables,UPI,1,1,1
+5000367,Zepto,Pune,60,2351,9,4.0,15,Personal Care,Card,4,1,3
+5000368,BigBasket Now,Jaipur,41,2074,23,4.4,9,Snacks,UPI,2,1,2
+5000369,Swiggy Instamart,Pune,27,600,28,7.4,15,Bakery,UPI,1,0,2
+5000370,BigBasket Now,Jaipur,60,2379,24,3.5,17,Fruits & Vegetables,Wallet,5,0,4
+5000371,Blinkit,Mumbai,56,1922,20,3.4,14,Personal Care,Wallet,1,1,1
+5000372,Zepto,Gurugram,24,1101,19,5.3,13,Snacks,Cash on Delivery,1,1,4
+5000373,JioMart Express,Pune,54,516,33,5.6,1,Snacks,Cash on Delivery,5,0,3
+5000374,JioMart Express,Gurugram,55,739,27,4.0,14,Fruits & Vegetables,Wallet,1,0,3
+5000375,Swiggy Instamart,Pune,51,1629,19,5.9,2,Beverages,Card,4,1,4
+5000376,Flipkart Minutes,Jaipur,59,314,28,6.8,12,Bakery,Card,4,1,3
+5000377,Flipkart Minutes,Pune,20,539,18,6.8,8,Personal Care,Wallet,1,1,3
+5000378,Flipkart Minutes,Kolkata,19,853,18,6.7,13,Personal Care,Wallet,2,1,1
+5000379,JioMart Express,Hyderabad,25,1256,26,0.9,7,Beverages,Cash on Delivery,2,1,2
+5000380,Blinkit,Chennai,44,437,16,6.3,8,Dairy,Cash on Delivery,3,0,4
+5000381,JioMart Express,Hyderabad,23,2276,21,2.3,7,Beverages,UPI,3,0,1
+5000382,BigBasket Now,Jaipur,43,2318,18,2.1,4,Personal Care,UPI,4,1,1
+5000383,BigBasket Now,Noida,36,1952,26,5.2,7,Personal Care,Card,1,0,4
+5000384,Blinkit,Jaipur,27,1622,15,5.8,14,Household,Card,3,0,1
+5000385,Flipkart Minutes,Gurugram,40,314,9,6.5,13,Household,Wallet,2,1,2
+5000386,BigBasket Now,Jaipur,21,696,31,3.3,4,Bakery,UPI,4,1,1
+5000387,BigBasket Now,Noida,29,1071,26,4.1,10,Baby Care,Card,5,1,2
+5000388,BigBasket Now,Hyderabad,48,2387,22,1.0,5,Beverages,Cash on Delivery,3,0,2
+5000389,Flipkart Minutes,Pune,27,2122,12,3.2,13,Baby Care,Wallet,2,0,1
+5000390,BigBasket Now,Hyderabad,19,1167,39,5.6,16,Beverages,UPI,3,0,1
+5000391,JioMart Express,Gurugram,28,2107,31,4.0,17,Snacks,Wallet,5,0,4
+5000392,Flipkart Minutes,Delhi,33,2275,17,4.1,18,Beverages,Wallet,2,1,4
+5000393,Flipkart Minutes,Hyderabad,56,1835,23,2.0,5,Fruits & Vegetables,Card,5,0,2
+5000394,JioMart Express,Mumbai,55,2020,21,0.9,15,Personal Care,UPI,2,0,3
+5000395,BigBasket Now,Delhi,28,1465,26,3.3,2,Dairy,Wallet,4,1,2
+5000396,Blinkit,Bengaluru,46,438,15,5.9,17,Fruits & Vegetables,Cash on Delivery,1,1,5
+5000397,Blinkit,Kolkata,21,823,17,6.9,17,Baby Care,UPI,5,0,5
+5000398,Flipkart Minutes,Bengaluru,55,146,18,3.6,6,Fruits & Vegetables,Cash on Delivery,5,1,5
+5000399,Flipkart Minutes,Kolkata,57,1181,21,6.7,8,Beverages,Card,3,0,2
+5000400,Zepto,Delhi,43,1181,28,5.4,2,Personal Care,Wallet,5,0,5
+5000401,BigBasket Now,Bengaluru,44,1260,21,1.0,2,Beverages,UPI,2,1,5
+5000402,Swiggy Instamart,Pune,21,1408,17,0.8,10,Beverages,Wallet,2,0,4
+5000403,BigBasket Now,Pune,43,2056,26,1.2,10,Bakery,Cash on Delivery,3,0,4
+5000404,Swiggy Instamart,Chennai,23,1496,28,7.5,5,Household,Wallet,1,1,2
+5000405,JioMart Express,Pune,24,1610,25,6.3,14,Baby Care,Card,5,0,2
+5000406,Flipkart Minutes,Bengaluru,29,1446,17,6.9,4,Personal Care,Cash on Delivery,5,1,5
+5000407,BigBasket Now,Hyderabad,22,752,15,1.4,15,Dairy,Wallet,3,1,2
+5000408,Zepto,Mumbai,39,370,21,6.0,7,Beverages,Cash on Delivery,1,1,4
+5000409,BigBasket Now,Hyderabad,34,849,23,6.3,4,Dairy,Cash on Delivery,4,1,3
+5000410,Swiggy Instamart,Jaipur,19,748,18,2.8,2,Dairy,Card,5,1,1
+5000411,Blinkit,Bengaluru,27,2048,14,6.4,15,Household,Cash on Delivery,2,1,4
+5000412,Swiggy Instamart,Noida,60,2024,19,3.7,15,Snacks,UPI,3,0,1
+5000413,BigBasket Now,Jaipur,58,1979,20,5.7,3,Beverages,Wallet,4,1,3
+5000414,Swiggy Instamart,Chennai,32,799,20,0.9,4,Dairy,Cash on Delivery,2,1,1
+5000415,BigBasket Now,Hyderabad,41,312,25,3.6,18,Fruits & Vegetables,Wallet,4,1,5
+5000416,JioMart Express,Bengaluru,38,1007,25,0.6,1,Personal Care,Card,4,0,5
+5000417,Flipkart Minutes,Bengaluru,33,2273,8,2.8,4,Snacks,UPI,1,0,3
+5000418,BigBasket Now,Pune,27,1432,26,2.4,10,Personal Care,UPI,1,0,1
+5000419,BigBasket Now,Jaipur,21,909,28,3.1,10,Fruits & Vegetables,Wallet,1,1,2
+5000420,Flipkart Minutes,Noida,40,1763,15,0.9,12,Fruits & Vegetables,Cash on Delivery,4,0,4
+5000421,Blinkit,Pune,48,1675,12,1.1,5,Fruits & Vegetables,Wallet,3,1,5
+5000422,Blinkit,Hyderabad,46,1866,13,2.0,2,Personal Care,Wallet,1,0,1
+5000423,Zepto,Pune,53,2377,17,2.0,2,Beverages,Card,1,0,2
+5000424,Blinkit,Delhi,36,959,16,4.1,1,Snacks,Wallet,2,1,1
+5000425,Flipkart Minutes,Kolkata,55,974,23,2.2,10,Bakery,Wallet,1,1,4
+5000426,Zepto,Noida,51,1875,16,2.4,7,Baby Care,Cash on Delivery,1,0,4
+5000427,Blinkit,Jaipur,56,2283,6,0.7,16,Snacks,Cash on Delivery,4,0,5
+5000428,BigBasket Now,Delhi,33,1690,29,6.1,6,Snacks,UPI,2,1,4
+5000429,Blinkit,Kolkata,45,2140,9,5.7,3,Household,UPI,4,0,1
+5000430,JioMart Express,Pune,25,983,24,1.4,7,Bakery,Cash on Delivery,2,0,3
+5000431,JioMart Express,Jaipur,25,1261,20,3.0,12,Household,UPI,2,0,4
+5000432,JioMart Express,Hyderabad,29,2238,32,4.9,13,Baby Care,Cash on Delivery,2,1,5
+5000433,BigBasket Now,Pune,52,1210,19,1.7,18,Snacks,UPI,2,1,3
+5000434,Flipkart Minutes,Pune,48,2169,19,6.7,4,Beverages,Card,1,1,4
+5000435,Swiggy Instamart,Gurugram,30,1635,28,6.8,3,Fruits & Vegetables,Cash on Delivery,3,0,3
+5000436,Blinkit,Kolkata,59,984,11,2.7,15,Snacks,Cash on Delivery,4,1,2
+5000437,Zepto,Jaipur,32,1144,13,6.4,4,Household,Card,3,1,3
+5000438,Swiggy Instamart,Noida,50,665,22,4.2,16,Snacks,Cash on Delivery,2,1,5
+5000439,Flipkart Minutes,Hyderabad,51,690,17,1.1,1,Baby Care,UPI,4,1,4
+5000440,JioMart Express,Kolkata,44,1586,31,1.5,5,Household,Card,1,1,5
+5000441,Swiggy Instamart,Mumbai,60,101,23,4.7,12,Bakery,Card,5,0,5
+5000442,Swiggy Instamart,Hyderabad,33,1515,27,6.3,15,Beverages,Card,4,1,1
+5000443,Flipkart Minutes,Kolkata,46,527,10,1.3,12,Household,Wallet,3,0,1
+5000444,Swiggy Instamart,Pune,55,2221,24,3.8,17,Beverages,UPI,4,0,2
+5000445,Swiggy Instamart,Kolkata,19,935,22,3.0,17,Beverages,Card,3,1,5
+5000446,Swiggy Instamart,Delhi,33,897,27,6.3,9,Snacks,Cash on Delivery,1,1,2
+5000447,Zepto,Hyderabad,57,1509,8,2.7,1,Personal Care,Card,3,1,4
+5000448,Zepto,Delhi,30,763,19,2.7,16,Household,UPI,2,1,4
+5000449,Flipkart Minutes,Pune,35,2315,12,7.3,8,Dairy,Wallet,3,1,3
+5000450,Blinkit,Bengaluru,33,1069,8,1.7,18,Fruits & Vegetables,Wallet,1,0,2
+5000451,BigBasket Now,Hyderabad,51,1195,23,6.6,11,Beverages,Wallet,1,0,3
+5000452,Blinkit,Noida,18,1575,10,2.0,8,Beverages,Card,1,1,2
+5000453,JioMart Express,Bengaluru,27,1048,30,1.2,7,Personal Care,Cash on Delivery,4,1,2
+5000454,Zepto,Chennai,46,1427,17,6.1,15,Fruits & Vegetables,Card,5,0,1
+5000455,Swiggy Instamart,Bengaluru,44,1490,22,6.5,16,Beverages,Cash on Delivery,2,0,1
+5000456,JioMart Express,Noida,50,575,25,0.8,6,Beverages,UPI,2,0,5
+5000457,Swiggy Instamart,Noida,27,631,14,2.0,15,Fruits & Vegetables,UPI,2,1,2
+5000458,Swiggy Instamart,Noida,59,480,21,3.7,17,Bakery,UPI,1,0,2
+5000459,Flipkart Minutes,Kolkata,18,923,17,7.0,10,Snacks,Cash on Delivery,3,1,4
+5000460,JioMart Express,Noida,56,573,39,7.1,6,Fruits & Vegetables,Wallet,2,0,2
+5000461,Flipkart Minutes,Chennai,40,2097,16,3.0,16,Personal Care,Wallet,4,1,1
+5000462,Swiggy Instamart,Kolkata,24,824,17,0.9,16,Household,Card,5,0,2
+5000463,Flipkart Minutes,Bengaluru,31,839,11,0.9,2,Snacks,Cash on Delivery,1,1,4
+5000464,Zepto,Pune,38,228,16,5.3,18,Personal Care,UPI,1,0,3
+5000465,Swiggy Instamart,Chennai,60,2053,18,2.4,12,Baby Care,UPI,2,1,3
+5000466,BigBasket Now,Hyderabad,38,1555,27,5.8,16,Personal Care,UPI,3,1,1
+5000467,Swiggy Instamart,Kolkata,26,1719,22,4.7,16,Baby Care,Wallet,1,0,1
+5000468,Swiggy Instamart,Mumbai,59,1742,19,1.0,8,Beverages,Card,1,0,3
+5000469,BigBasket Now,Bengaluru,40,2199,26,3.7,14,Personal Care,UPI,2,0,3
+5000470,Swiggy Instamart,Hyderabad,46,651,30,4.4,8,Household,UPI,3,0,5
+5000471,Swiggy Instamart,Noida,23,2353,16,0.6,3,Beverages,Card,2,0,3
+5000472,JioMart Express,Noida,27,1035,28,5.2,17,Household,UPI,2,0,1
+5000473,Zepto,Chennai,58,499,16,7.4,10,Dairy,Cash on Delivery,3,0,4
+5000474,Flipkart Minutes,Delhi,23,1842,18,2.5,6,Fruits & Vegetables,UPI,3,1,3
+5000475,JioMart Express,Mumbai,37,976,33,6.4,4,Personal Care,Card,1,0,2
+5000476,Swiggy Instamart,Jaipur,46,1301,16,4.5,3,Fruits & Vegetables,UPI,4,0,5
+5000477,Flipkart Minutes,Delhi,24,1650,15,3.6,12,Fruits & Vegetables,Card,3,1,1
+5000478,Blinkit,Noida,20,265,16,3.8,12,Personal Care,Cash on Delivery,1,0,3
+5000479,Flipkart Minutes,Chennai,22,243,11,1.7,10,Baby Care,Card,2,0,4
+5000480,JioMart Express,Hyderabad,29,616,32,2.6,18,Snacks,Card,5,0,2
+5000481,BigBasket Now,Pune,40,996,19,3.6,8,Snacks,Wallet,4,1,3
+5000482,Flipkart Minutes,Mumbai,40,845,11,2.8,15,Snacks,UPI,5,0,3
+5000483,Swiggy Instamart,Chennai,39,2152,12,2.3,14,Baby Care,Card,3,0,3
+5000484,BigBasket Now,Chennai,44,1170,27,3.0,13,Fruits & Vegetables,Wallet,4,1,3
+5000485,JioMart Express,Gurugram,45,996,33,5.2,12,Personal Care,Wallet,5,0,2
+5000486,Zepto,Pune,22,1016,20,6.8,11,Dairy,Card,5,1,5
+5000487,Swiggy Instamart,Noida,48,567,25,2.3,3,Snacks,Card,5,1,4
+5000488,JioMart Express,Pune,56,1534,30,6.3,17,Dairy,Card,4,0,4
+5000489,BigBasket Now,Gurugram,58,657,31,5.1,12,Dairy,Card,2,1,3
+5000490,Blinkit,Bengaluru,40,1712,7,2.6,15,Fruits & Vegetables,Cash on Delivery,3,0,3
+5000491,Swiggy Instamart,Jaipur,52,2395,20,2.6,10,Dairy,Cash on Delivery,4,0,4
+5000492,Blinkit,Gurugram,29,883,19,3.3,15,Household,Card,2,1,3
+5000493,Blinkit,Noida,58,2249,7,1.3,15,Dairy,Cash on Delivery,2,1,3
+5000494,Blinkit,Bengaluru,60,2172,6,2.0,8,Baby Care,Card,3,0,4
+5000495,BigBasket Now,Jaipur,57,395,26,1.1,13,Dairy,UPI,1,0,1
+5000496,JioMart Express,Mumbai,25,1829,37,6.0,15,Bakery,UPI,5,0,4
+5000497,Zepto,Delhi,32,1892,16,6.2,8,Personal Care,Cash on Delivery,2,1,2
+5000498,Swiggy Instamart,Noida,34,2250,24,4.4,1,Bakery,UPI,4,0,4
+5000499,Zepto,Delhi,22,697,11,3.4,15,Fruits & Vegetables,Wallet,2,0,4
+5000500,Swiggy Instamart,Chennai,29,623,22,3.6,10,Beverages,Wallet,2,1,2
+5000501,Swiggy Instamart,Kolkata,29,1848,16,3.2,12,Baby Care,Cash on Delivery,2,0,1
+5000502,Zepto,Gurugram,58,1540,11,5.6,15,Personal Care,UPI,1,1,4
+5000503,JioMart Express,Jaipur,20,1894,32,4.8,1,Baby Care,Card,4,0,3
+5000504,Swiggy Instamart,Jaipur,48,999,15,5.6,13,Bakery,Cash on Delivery,3,1,2
+5000505,Swiggy Instamart,Jaipur,57,350,20,7.3,18,Bakery,UPI,1,0,3
+5000506,BigBasket Now,Chennai,49,701,23,4.7,4,Beverages,Wallet,1,0,2
+5000507,JioMart Express,Delhi,49,1714,37,4.4,13,Personal Care,Card,2,1,2
+5000508,BigBasket Now,Hyderabad,38,967,26,5.3,7,Fruits & Vegetables,Wallet,3,0,2
+5000509,JioMart Express,Hyderabad,47,767,30,4.8,5,Dairy,Card,2,0,4
+5000510,BigBasket Now,Jaipur,21,1228,25,2.2,10,Beverages,Card,2,0,2
+5000511,JioMart Express,Bengaluru,39,186,26,3.7,5,Beverages,Cash on Delivery,2,0,4
+5000512,Blinkit,Bengaluru,39,2216,10,2.8,16,Personal Care,Card,3,1,4
+5000513,Flipkart Minutes,Hyderabad,34,2304,12,2.6,9,Baby Care,UPI,5,1,3
+5000514,JioMart Express,Chennai,53,2081,31,2.3,11,Dairy,Card,4,1,3
+5000515,Zepto,Gurugram,38,1053,12,0.9,15,Personal Care,Card,1,1,3
+5000516,Swiggy Instamart,Bengaluru,30,706,19,4.2,2,Beverages,UPI,3,0,5
+5000517,JioMart Express,Gurugram,30,814,24,2.7,6,Bakery,Wallet,1,0,1
+5000518,BigBasket Now,Gurugram,58,2166,25,6.0,10,Snacks,UPI,4,0,1
+5000519,BigBasket Now,Hyderabad,43,1585,28,5.7,7,Baby Care,Cash on Delivery,5,1,3
+5000520,Zepto,Kolkata,22,1672,19,3.7,6,Personal Care,Cash on Delivery,3,1,1
+5000521,Flipkart Minutes,Mumbai,46,1109,26,3.6,14,Fruits & Vegetables,Cash on Delivery,2,0,4
+5000522,Flipkart Minutes,Kolkata,34,1952,14,3.4,15,Dairy,Cash on Delivery,4,0,3
+5000523,Zepto,Jaipur,60,1824,6,1.9,17,Fruits & Vegetables,Card,2,1,4
+5000524,JioMart Express,Pune,43,1298,33,5.6,4,Beverages,Wallet,5,1,4
+5000525,JioMart Express,Gurugram,19,1414,32,4.1,18,Snacks,UPI,5,1,5
+5000526,Blinkit,Mumbai,53,2186,4,3.0,15,Dairy,Card,2,0,5
+5000527,Zepto,Bengaluru,20,1371,12,3.1,4,Dairy,Cash on Delivery,3,1,1
+5000528,JioMart Express,Hyderabad,59,1722,33,4.5,10,Personal Care,Cash on Delivery,4,1,1
+5000529,Flipkart Minutes,Mumbai,32,1917,17,1.0,9,Fruits & Vegetables,Wallet,4,1,3
+5000530,JioMart Express,Gurugram,58,2018,35,2.9,16,Baby Care,Wallet,3,0,5
+5000531,JioMart Express,Noida,26,188,27,4.7,7,Snacks,Cash on Delivery,5,0,3
+5000532,Zepto,Noida,53,812,6,3.2,13,Personal Care,Wallet,5,1,5
+5000533,BigBasket Now,Gurugram,54,769,19,3.5,5,Baby Care,UPI,1,1,4
+5000534,Swiggy Instamart,Mumbai,46,1517,21,4.6,9,Baby Care,Card,3,0,4
+5000535,JioMart Express,Bengaluru,50,2040,27,1.5,17,Baby Care,UPI,1,0,5
+5000536,BigBasket Now,Bengaluru,60,2312,25,4.0,14,Household,Cash on Delivery,5,1,3
+5000537,BigBasket Now,Bengaluru,46,886,18,5.3,18,Bakery,Wallet,1,1,5
+5000538,Flipkart Minutes,Noida,26,1106,20,3.5,3,Beverages,Wallet,5,1,4
+5000539,Flipkart Minutes,Pune,40,1776,11,1.8,18,Household,Cash on Delivery,3,1,1
+5000540,Swiggy Instamart,Jaipur,40,1177,21,4.4,15,Baby Care,Wallet,2,1,3
+5000541,Flipkart Minutes,Jaipur,42,1934,17,5.3,3,Household,Card,4,0,2
+5000542,Flipkart Minutes,Jaipur,50,2347,18,5.5,16,Household,Wallet,1,0,4
+5000543,Swiggy Instamart,Gurugram,32,1362,17,1.8,15,Beverages,UPI,2,1,2
+5000544,JioMart Express,Jaipur,43,2373,31,4.7,17,Fruits & Vegetables,UPI,3,1,2
+5000545,Zepto,Gurugram,31,133,16,0.8,5,Personal Care,UPI,5,1,4
+5000546,Zepto,Bengaluru,41,502,16,2.8,7,Baby Care,Card,4,1,1
+5000547,Swiggy Instamart,Hyderabad,35,1095,15,2.1,5,Snacks,Card,5,1,5
+5000548,Flipkart Minutes,Chennai,19,555,18,3.9,4,Snacks,Wallet,5,0,4
+5000549,JioMart Express,Gurugram,48,152,30,0.8,8,Snacks,UPI,5,1,2
+5000550,Flipkart Minutes,Mumbai,52,938,16,2.3,6,Snacks,Wallet,5,0,1
+5000551,JioMart Express,Gurugram,45,621,26,6.5,8,Snacks,Card,5,0,2
+5000552,BigBasket Now,Kolkata,33,1241,28,3.0,14,Beverages,Wallet,3,1,5
+5000553,Flipkart Minutes,Delhi,24,1260,17,5.8,12,Snacks,Wallet,4,0,4
+5000554,Swiggy Instamart,Pune,56,1634,25,7.2,3,Baby Care,UPI,5,1,3
+5000555,Zepto,Chennai,60,2292,21,6.5,6,Dairy,Card,2,1,3
+5000556,JioMart Express,Mumbai,18,721,31,2.5,15,Snacks,Wallet,1,1,5
+5000557,Flipkart Minutes,Kolkata,60,1794,15,6.0,16,Dairy,UPI,4,1,5
+5000558,Flipkart Minutes,Kolkata,58,734,19,7.4,14,Household,Wallet,3,1,2
+5000559,Blinkit,Chennai,26,2298,18,2.0,6,Baby Care,Card,5,0,2
+5000560,JioMart Express,Noida,39,2396,34,0.8,6,Fruits & Vegetables,Card,1,0,4
+5000561,Blinkit,Gurugram,35,1236,7,2.2,6,Dairy,Cash on Delivery,5,0,3
+5000562,Zepto,Kolkata,25,1557,17,5.5,16,Fruits & Vegetables,Cash on Delivery,4,0,2
+5000563,Blinkit,Noida,30,2135,19,6.4,11,Fruits & Vegetables,Wallet,2,0,2
+5000564,JioMart Express,Hyderabad,18,2073,28,2.5,1,Dairy,Wallet,2,1,2
+5000565,BigBasket Now,Chennai,36,250,25,7.1,18,Fruits & Vegetables,UPI,5,1,2
+5000566,BigBasket Now,Delhi,23,2337,21,5.7,17,Snacks,Wallet,1,0,3
+5000567,Blinkit,Pune,23,1316,21,6.5,11,Dairy,Wallet,2,1,4
+5000568,Blinkit,Mumbai,36,126,10,2.9,12,Baby Care,Cash on Delivery,2,0,5
+5000569,Flipkart Minutes,Hyderabad,58,1119,21,3.0,3,Bakery,Cash on Delivery,4,0,3
+5000570,Blinkit,Delhi,35,1190,17,4.1,5,Beverages,Cash on Delivery,2,1,3
+5000571,JioMart Express,Gurugram,23,1508,24,6.5,18,Dairy,Wallet,5,1,5
+5000572,JioMart Express,Pune,38,1685,33,4.7,17,Beverages,Cash on Delivery,2,0,5
+5000573,Zepto,Mumbai,28,2004,16,5.8,18,Dairy,Wallet,5,1,1
+5000574,Flipkart Minutes,Jaipur,41,825,24,3.6,14,Bakery,Wallet,5,0,1
+5000575,Zepto,Kolkata,26,831,13,1.8,14,Household,Wallet,4,1,5
+5000576,Swiggy Instamart,Mumbai,25,515,28,5.7,6,Baby Care,Wallet,2,1,3
+5000577,JioMart Express,Hyderabad,54,271,38,6.6,13,Bakery,UPI,3,1,1
+5000578,Flipkart Minutes,Kolkata,41,2385,17,1.0,9,Beverages,Card,4,0,1
+5000579,Blinkit,Pune,42,427,16,3.1,13,Baby Care,UPI,2,1,3
+5000580,Blinkit,Gurugram,24,1681,17,4.1,18,Fruits & Vegetables,Card,2,1,3
+5000581,BigBasket Now,Pune,30,2079,32,6.1,10,Beverages,Cash on Delivery,1,1,4
+5000582,JioMart Express,Pune,24,1610,22,1.2,6,Baby Care,Cash on Delivery,1,1,5
+5000583,Swiggy Instamart,Jaipur,36,680,14,1.7,5,Bakery,Wallet,5,0,2
+5000584,Flipkart Minutes,Kolkata,30,1694,22,4.6,9,Fruits & Vegetables,Cash on Delivery,4,1,5
+5000585,Flipkart Minutes,Pune,59,711,20,5.4,3,Beverages,Cash on Delivery,3,0,4
+5000586,Zepto,Pune,23,347,17,6.7,11,Household,UPI,1,1,2
+5000587,Swiggy Instamart,Hyderabad,27,1026,28,7.0,15,Fruits & Vegetables,Wallet,1,0,5
+5000588,Flipkart Minutes,Pune,39,1044,15,1.8,6,Beverages,Card,1,1,5
+5000589,BigBasket Now,Pune,51,595,20,2.2,18,Personal Care,Cash on Delivery,5,0,5
+5000590,Flipkart Minutes,Gurugram,26,2359,16,4.1,18,Beverages,Cash on Delivery,4,1,5
+5000591,Swiggy Instamart,Delhi,53,2225,26,7.2,8,Baby Care,Card,3,0,2
+5000592,Blinkit,Delhi,37,1818,21,6.9,5,Snacks,Card,2,0,4
+5000593,Flipkart Minutes,Bengaluru,24,245,15,1.7,18,Baby Care,UPI,3,0,4
+5000594,BigBasket Now,Delhi,28,471,21,2.9,11,Fruits & Vegetables,Card,1,0,1
+5000595,Flipkart Minutes,Jaipur,39,540,15,1.0,8,Personal Care,Wallet,5,0,1
+5000596,Swiggy Instamart,Jaipur,52,726,12,1.3,3,Household,Card,2,1,3
+5000597,Swiggy Instamart,Kolkata,24,123,16,3.5,1,Household,Wallet,3,0,1
+5000598,JioMart Express,Noida,30,1093,27,4.4,11,Snacks,UPI,2,1,5
+5000599,JioMart Express,Jaipur,51,2123,32,2.2,15,Bakery,UPI,5,1,3
+5000600,Blinkit,Chennai,49,1878,8,1.3,8,Dairy,UPI,1,1,4
+5000601,Swiggy Instamart,Delhi,35,343,15,3.2,10,Fruits & Vegetables,Card,2,1,2
+5000602,BigBasket Now,Bengaluru,24,747,13,1.5,1,Dairy,Cash on Delivery,1,0,2
+5000603,JioMart Express,Mumbai,39,1904,26,1.3,18,Baby Care,UPI,3,0,5
+5000604,Flipkart Minutes,Delhi,47,1430,22,7.4,15,Baby Care,Cash on Delivery,3,0,5
+5000605,BigBasket Now,Chennai,31,328,25,2.4,3,Personal Care,UPI,1,1,3
+5000606,Zepto,Bengaluru,36,693,18,3.7,16,Dairy,Cash on Delivery,1,1,4
+5000607,BigBasket Now,Pune,41,1391,22,2.8,3,Baby Care,UPI,4,1,2
+5000608,JioMart Express,Jaipur,20,1129,26,1.9,10,Snacks,Cash on Delivery,1,0,3
+5000609,JioMart Express,Hyderabad,39,345,21,1.7,15,Dairy,UPI,4,0,4
+5000610,Swiggy Instamart,Noida,19,554,26,6.7,2,Personal Care,UPI,5,1,3
+5000611,JioMart Express,Bengaluru,30,1799,30,2.1,18,Personal Care,Wallet,5,0,1
+5000612,JioMart Express,Noida,55,614,37,7.0,7,Household,Cash on Delivery,4,1,4
+5000613,JioMart Express,Bengaluru,23,1532,33,6.2,17,Bakery,Cash on Delivery,2,0,3
+5000614,Blinkit,Bengaluru,32,218,15,2.1,15,Snacks,Cash on Delivery,5,0,5
+5000615,Flipkart Minutes,Noida,48,525,13,2.0,13,Beverages,UPI,5,0,4
+5000616,Swiggy Instamart,Chennai,44,2211,15,0.9,12,Baby Care,Cash on Delivery,3,1,1
+5000617,Swiggy Instamart,Delhi,28,110,12,0.9,4,Baby Care,Card,3,1,3
+5000618,Flipkart Minutes,Mumbai,31,1712,11,5.5,16,Fruits & Vegetables,UPI,5,0,1
+5000619,BigBasket Now,Delhi,56,595,18,0.7,18,Baby Care,UPI,2,0,2
+5000620,Swiggy Instamart,Mumbai,35,2017,23,5.0,6,Bakery,Wallet,5,0,5
+5000621,JioMart Express,Chennai,38,1581,33,3.9,5,Bakery,UPI,3,0,4
+5000622,JioMart Express,Pune,21,133,33,1.8,2,Personal Care,Cash on Delivery,5,0,2
+5000623,BigBasket Now,Jaipur,55,199,23,4.7,13,Dairy,Cash on Delivery,2,1,3
+5000624,Swiggy Instamart,Gurugram,24,1005,23,6.7,15,Personal Care,UPI,3,0,2
+5000625,BigBasket Now,Chennai,54,198,21,3.7,7,Dairy,UPI,5,0,5
+5000626,Zepto,Bengaluru,35,2102,21,3.0,5,Personal Care,Wallet,4,1,2
+5000627,Blinkit,Jaipur,34,405,12,3.0,4,Household,Card,5,1,3
+5000628,Zepto,Hyderabad,58,2186,10,1.3,15,Fruits & Vegetables,UPI,1,1,3
+5000629,BigBasket Now,Noida,58,964,18,3.5,6,Beverages,Wallet,2,1,5
+5000630,Swiggy Instamart,Delhi,34,1542,18,1.5,1,Bakery,Card,2,1,3
+5000631,BigBasket Now,Chennai,47,1027,33,6.9,5,Snacks,Wallet,1,0,3
+5000632,BigBasket Now,Hyderabad,26,643,20,0.8,12,Fruits & Vegetables,Cash on Delivery,4,1,3
+5000633,Blinkit,Delhi,36,673,6,1.6,13,Beverages,UPI,3,0,2
+5000634,BigBasket Now,Delhi,50,1516,34,6.1,10,Fruits & Vegetables,Card,5,1,4
+5000635,Swiggy Instamart,Jaipur,38,150,14,2.8,1,Household,Card,5,1,5
+5000636,JioMart Express,Pune,49,1578,25,1.8,8,Bakery,Wallet,5,0,3
+5000637,Swiggy Instamart,Kolkata,51,2028,21,5.0,6,Beverages,Card,4,0,2
+5000638,Swiggy Instamart,Pune,60,421,12,2.2,1,Fruits & Vegetables,UPI,4,0,1
+5000639,BigBasket Now,Mumbai,18,2187,20,4.9,10,Baby Care,Wallet,3,1,3
+5000640,Zepto,Kolkata,37,525,14,5.2,3,Baby Care,Wallet,5,1,5
+5000641,Zepto,Hyderabad,44,628,17,4.8,2,Beverages,Cash on Delivery,3,0,3
+5000642,Flipkart Minutes,Pune,18,1601,19,4.4,12,Snacks,Cash on Delivery,1,1,3
+5000643,JioMart Express,Delhi,28,2212,43,6.6,6,Dairy,Cash on Delivery,4,1,2
+5000644,Zepto,Kolkata,59,245,9,4.7,8,Dairy,Card,1,1,2
+5000645,Flipkart Minutes,Delhi,51,1947,23,7.0,15,Dairy,Card,4,1,1
+5000646,Swiggy Instamart,Bengaluru,48,808,17,2.2,17,Fruits & Vegetables,Cash on Delivery,4,0,5
+5000647,Zepto,Bengaluru,20,2168,20,6.1,17,Dairy,Cash on Delivery,2,0,4
+5000648,Blinkit,Bengaluru,50,945,8,1.0,10,Bakery,Cash on Delivery,1,1,3
+5000649,JioMart Express,Delhi,50,729,31,2.5,12,Fruits & Vegetables,Cash on Delivery,3,1,2
+5000650,Zepto,Jaipur,41,1569,16,3.1,7,Dairy,Wallet,3,0,5
+5000651,Blinkit,Noida,46,2370,21,7.4,13,Bakery,UPI,3,1,2
+5000652,JioMart Express,Gurugram,38,1793,25,1.0,15,Baby Care,Cash on Delivery,5,0,3
+5000653,Swiggy Instamart,Jaipur,19,1898,26,3.3,18,Bakery,Cash on Delivery,2,0,2
+5000654,Zepto,Gurugram,42,2355,11,6.8,5,Snacks,Card,3,0,1
+5000655,Zepto,Noida,35,1113,10,1.4,17,Baby Care,Card,2,0,4
+5000656,Swiggy Instamart,Hyderabad,20,239,22,3.0,10,Bakery,UPI,2,0,1
+5000657,Flipkart Minutes,Chennai,49,402,26,7.1,5,Baby Care,Wallet,4,0,3
+5000658,Blinkit,Bengaluru,34,1562,16,1.4,4,Dairy,UPI,1,1,4
+5000659,Zepto,Hyderabad,58,402,31,7.3,5,Fruits & Vegetables,Cash on Delivery,1,0,5
+5000660,Zepto,Gurugram,56,1214,7,1.1,2,Snacks,Card,1,0,2
+5000661,JioMart Express,Delhi,27,1706,23,2.8,5,Bakery,Card,4,1,4
+5000662,JioMart Express,Delhi,55,2200,25,2.6,18,Beverages,Card,5,0,1
+5000663,Zepto,Pune,26,1343,14,1.4,17,Personal Care,Wallet,2,1,2
+5000664,Zepto,Bengaluru,30,1527,11,2.0,16,Dairy,UPI,2,1,3
+5000665,BigBasket Now,Hyderabad,47,2069,32,5.2,12,Beverages,UPI,2,1,2
+5000666,Blinkit,Jaipur,25,1546,7,0.8,14,Household,Card,3,1,1
+5000667,Flipkart Minutes,Hyderabad,21,179,28,0.9,12,Fruits & Vegetables,UPI,2,1,4
+5000668,Swiggy Instamart,Chennai,57,2310,16,3.5,18,Household,Cash on Delivery,4,1,4
+5000669,Blinkit,Noida,45,897,10,4.6,5,Bakery,Wallet,3,0,5
+5000670,Flipkart Minutes,Kolkata,43,1064,18,6.1,1,Bakery,Wallet,4,1,2
+5000671,BigBasket Now,Delhi,58,580,28,4.0,2,Household,Card,5,0,2
+5000672,Flipkart Minutes,Gurugram,29,1474,18,4.1,4,Beverages,Wallet,3,1,5
+5000673,JioMart Express,Hyderabad,57,2308,35,6.5,8,Fruits & Vegetables,Cash on Delivery,1,0,3
+5000674,Blinkit,Chennai,56,1655,13,5.0,8,Household,UPI,3,0,1
+5000675,JioMart Express,Mumbai,56,2306,31,4.0,2,Bakery,UPI,3,1,2
+5000676,Flipkart Minutes,Kolkata,60,267,11,1.3,16,Baby Care,UPI,1,0,5
+5000677,Blinkit,Noida,29,1469,6,3.3,15,Snacks,Cash on Delivery,2,1,5
+5000678,Blinkit,Hyderabad,30,1170,19,4.7,7,Bakery,Cash on Delivery,1,0,5
+5000679,BigBasket Now,Delhi,22,372,29,4.3,13,Fruits & Vegetables,Card,2,1,2
+5000680,Blinkit,Mumbai,27,1410,26,6.4,3,Fruits & Vegetables,Wallet,5,1,2
+5000681,Swiggy Instamart,Hyderabad,22,1426,19,2.5,15,Bakery,UPI,3,0,3
+5000682,Flipkart Minutes,Noida,21,544,17,2.8,18,Dairy,Card,4,1,4
+5000683,JioMart Express,Hyderabad,41,1440,30,4.5,1,Bakery,Card,5,0,4
+5000684,BigBasket Now,Noida,34,2088,19,3.6,9,Dairy,UPI,1,0,3
+5000685,BigBasket Now,Gurugram,43,2379,16,2.1,10,Snacks,Wallet,4,1,1
+5000686,Flipkart Minutes,Kolkata,57,1626,11,3.7,7,Beverages,Cash on Delivery,3,1,2
+5000687,Swiggy Instamart,Mumbai,30,1329,12,2.2,13,Snacks,Card,1,1,4
+5000688,JioMart Express,Pune,36,1758,36,4.2,6,Household,UPI,5,1,3
+5000689,Zepto,Delhi,19,718,15,1.9,1,Snacks,UPI,3,1,3
+5000690,Flipkart Minutes,Bengaluru,28,766,14,0.8,15,Bakery,UPI,4,1,1
+5000691,Flipkart Minutes,Gurugram,56,2388,15,5.6,2,Household,Cash on Delivery,1,1,4
+5000692,BigBasket Now,Jaipur,59,1424,23,2.9,8,Personal Care,Card,3,0,4
+5000693,BigBasket Now,Noida,20,535,25,3.3,9,Baby Care,UPI,2,0,5
+5000694,Swiggy Instamart,Bengaluru,18,1339,26,6.8,4,Beverages,Card,5,1,5
+5000695,Flipkart Minutes,Gurugram,35,1274,13,1.9,18,Fruits & Vegetables,Cash on Delivery,5,0,3
+5000696,Blinkit,Delhi,29,1840,5,1.0,4,Bakery,Cash on Delivery,1,1,4
+5000697,Swiggy Instamart,Kolkata,42,839,12,2.6,16,Snacks,UPI,2,1,3
+5000698,JioMart Express,Chennai,18,962,35,5.5,14,Fruits & Vegetables,Wallet,3,1,4
+5000699,JioMart Express,Pune,30,147,33,5.8,8,Household,Cash on Delivery,5,0,5
+5000700,BigBasket Now,Hyderabad,55,1003,29,6.1,6,Fruits & Vegetables,UPI,2,1,1
+5000701,BigBasket Now,Delhi,27,1948,25,1.4,5,Snacks,Wallet,4,0,3
+5000702,Flipkart Minutes,Bengaluru,33,2145,18,4.0,18,Beverages,Cash on Delivery,3,0,2
+5000703,JioMart Express,Jaipur,54,2379,30,7.2,16,Fruits & Vegetables,UPI,4,1,4
+5000704,Flipkart Minutes,Hyderabad,29,898,23,6.3,1,Household,UPI,4,1,2
+5000705,JioMart Express,Gurugram,56,2386,26,3.2,3,Dairy,Wallet,3,1,5
+5000706,Zepto,Pune,52,2210,11,1.4,17,Dairy,Cash on Delivery,1,1,3
+5000707,Swiggy Instamart,Gurugram,20,1553,29,5.3,1,Household,Card,1,0,4
+5000708,Blinkit,Chennai,27,2139,15,4.0,17,Beverages,Wallet,5,1,1
+5000709,Swiggy Instamart,Jaipur,19,1517,19,6.2,3,Bakery,Cash on Delivery,3,0,3
+5000710,Flipkart Minutes,Chennai,36,1266,9,1.1,5,Household,Wallet,1,0,5
+5000711,Swiggy Instamart,Hyderabad,58,343,19,1.1,3,Personal Care,UPI,5,1,5
+5000712,Swiggy Instamart,Pune,48,164,23,7.3,3,Dairy,Card,5,1,1
+5000713,Swiggy Instamart,Jaipur,24,1023,15,0.7,3,Bakery,Card,5,0,1
+5000714,Blinkit,Pune,48,780,24,5.1,5,Fruits & Vegetables,Card,5,1,3
+5000715,BigBasket Now,Hyderabad,22,2052,32,4.8,1,Fruits & Vegetables,Cash on Delivery,2,1,1
+5000716,Blinkit,Gurugram,57,201,15,0.9,13,Beverages,Card,5,1,1
+5000717,Flipkart Minutes,Delhi,57,2302,18,4.0,11,Beverages,UPI,3,1,4
+5000718,Zepto,Gurugram,55,2014,13,1.0,6,Baby Care,Card,4,1,5
+5000719,Swiggy Instamart,Gurugram,29,442,19,5.9,1,Personal Care,UPI,4,1,1
+5000720,Flipkart Minutes,Gurugram,51,927,19,6.4,9,Household,Wallet,4,0,3
+5000721,Blinkit,Gurugram,58,143,17,6.1,6,Fruits & Vegetables,Cash on Delivery,1,0,5
+5000722,Swiggy Instamart,Delhi,19,647,28,4.0,17,Household,Card,5,1,4
+5000723,Blinkit,Chennai,58,872,10,4.0,9,Baby Care,Cash on Delivery,1,0,5
+5000724,Flipkart Minutes,Gurugram,53,472,12,2.8,8,Beverages,Wallet,1,0,3
+5000725,Zepto,Hyderabad,43,318,17,1.8,8,Personal Care,Wallet,3,0,2
+5000726,Swiggy Instamart,Chennai,40,1382,13,1.6,17,Baby Care,UPI,1,1,5
+5000727,BigBasket Now,Gurugram,54,986,24,6.4,17,Beverages,Card,4,0,4
+5000728,Flipkart Minutes,Noida,52,1347,17,2.7,18,Bakery,Wallet,2,0,1
+5000729,Zepto,Pune,18,1838,9,1.4,9,Personal Care,Card,1,1,3
+5000730,BigBasket Now,Bengaluru,46,97,27,3.4,2,Snacks,Wallet,1,1,4
+5000731,BigBasket Now,Delhi,52,200,35,6.8,11,Personal Care,Wallet,3,0,2
+5000732,Flipkart Minutes,Gurugram,39,734,23,5.9,5,Fruits & Vegetables,UPI,4,1,5
+5000733,Flipkart Minutes,Delhi,37,991,25,3.8,17,Fruits & Vegetables,Cash on Delivery,1,1,5
+5000734,BigBasket Now,Pune,18,498,29,3.9,11,Bakery,Cash on Delivery,3,1,2
+5000735,Zepto,Gurugram,18,2348,17,4.4,10,Household,Cash on Delivery,1,1,2
+5000736,JioMart Express,Delhi,24,2275,29,3.4,11,Baby Care,Cash on Delivery,2,0,2
+5000737,BigBasket Now,Pune,19,1402,24,3.0,18,Beverages,UPI,3,0,4
+5000738,Zepto,Gurugram,24,402,12,6.1,4,Baby Care,Cash on Delivery,3,0,2
+5000739,Flipkart Minutes,Noida,30,910,12,1.2,6,Baby Care,UPI,3,0,5
+5000740,Swiggy Instamart,Delhi,60,1106,22,7.5,6,Dairy,Card,2,0,1
+5000741,Flipkart Minutes,Hyderabad,57,609,16,4.5,12,Baby Care,Card,1,1,3
+5000742,BigBasket Now,Delhi,51,726,22,6.4,13,Personal Care,Cash on Delivery,2,1,4
+5000743,Blinkit,Pune,52,1878,17,3.3,10,Beverages,Wallet,4,0,3
+5000744,BigBasket Now,Hyderabad,45,1293,22,1.6,13,Snacks,Wallet,4,0,4
+5000745,JioMart Express,Hyderabad,58,2337,36,5.1,7,Bakery,Card,5,1,4
+5000746,BigBasket Now,Delhi,19,2252,19,1.4,1,Beverages,Cash on Delivery,5,1,4
+5000747,BigBasket Now,Mumbai,32,614,34,6.9,7,Dairy,Cash on Delivery,4,0,2
+5000748,BigBasket Now,Pune,18,2254,19,1.4,15,Personal Care,Cash on Delivery,5,1,3
+5000749,Flipkart Minutes,Gurugram,34,2133,17,7.3,6,Dairy,UPI,5,1,2
+5000750,Blinkit,Bengaluru,32,1574,22,2.3,12,Baby Care,Card,2,0,1
+5000751,Flipkart Minutes,Bengaluru,23,2202,13,1.4,16,Bakery,Wallet,4,0,4
+5000752,Blinkit,Chennai,38,2210,21,6.8,17,Baby Care,Card,2,0,3
+5000753,BigBasket Now,Chennai,48,487,27,5.8,17,Fruits & Vegetables,Cash on Delivery,4,1,1
+5000754,BigBasket Now,Gurugram,21,1776,29,6.2,7,Beverages,Wallet,5,1,3
+5000755,JioMart Express,Noida,44,764,35,5.9,13,Household,Cash on Delivery,4,1,5
+5000756,BigBasket Now,Noida,26,881,25,5.4,13,Snacks,UPI,4,1,1
+5000757,Swiggy Instamart,Chennai,43,1672,19,2.0,5,Beverages,UPI,4,1,2
+5000758,Blinkit,Pune,41,954,13,1.0,4,Fruits & Vegetables,UPI,3,1,5
+5000759,Swiggy Instamart,Kolkata,55,2117,26,7.5,7,Fruits & Vegetables,Wallet,4,1,2
+5000760,Zepto,Bengaluru,52,1272,12,5.1,18,Snacks,Cash on Delivery,4,0,4
+5000761,Flipkart Minutes,Hyderabad,30,1477,14,3.0,12,Snacks,Cash on Delivery,2,0,4
+5000762,Swiggy Instamart,Jaipur,58,822,13,4.0,12,Personal Care,UPI,5,0,5
+5000763,Blinkit,Mumbai,43,380,13,0.9,6,Snacks,Wallet,5,1,5
+5000764,BigBasket Now,Gurugram,26,1026,24,6.5,5,Fruits & Vegetables,Card,2,0,2
+5000765,BigBasket Now,Jaipur,40,2212,36,6.9,13,Bakery,Wallet,4,0,5
+5000766,BigBasket Now,Hyderabad,21,1196,25,1.8,12,Snacks,UPI,4,1,5
+5000767,Flipkart Minutes,Mumbai,43,1548,16,2.2,15,Dairy,UPI,4,0,4
+5000768,BigBasket Now,Hyderabad,32,1680,23,3.2,8,Fruits & Vegetables,Card,4,1,3
+5000769,Flipkart Minutes,Jaipur,31,846,23,6.7,18,Household,Cash on Delivery,3,1,3
+5000770,Zepto,Chennai,43,1524,12,0.6,5,Personal Care,Card,5,0,3
+5000771,Swiggy Instamart,Pune,28,427,22,3.9,1,Fruits & Vegetables,Cash on Delivery,5,0,1
+5000772,Blinkit,Chennai,47,108,15,7.0,5,Personal Care,Card,3,1,3
+5000773,JioMart Express,Pune,49,551,32,6.7,14,Fruits & Vegetables,UPI,4,1,5
+5000774,Blinkit,Mumbai,27,2036,10,6.2,15,Bakery,Wallet,5,0,2
+5000775,Swiggy Instamart,Jaipur,21,1094,21,6.6,2,Snacks,Wallet,1,0,3
+5000776,Swiggy Instamart,Noida,22,833,12,1.4,13,Snacks,Wallet,3,0,5
+5000777,Zepto,Mumbai,20,567,12,2.2,13,Personal Care,Wallet,2,0,1
+5000778,Blinkit,Gurugram,27,832,14,5.2,6,Baby Care,Cash on Delivery,5,0,1
+5000779,BigBasket Now,Bengaluru,42,1236,23,3.4,16,Beverages,Card,5,0,1
+5000780,Swiggy Instamart,Noida,29,1955,14,1.6,1,Dairy,Cash on Delivery,5,0,3
+5000781,Zepto,Jaipur,32,1228,19,4.9,6,Fruits & Vegetables,Wallet,4,1,1
+5000782,BigBasket Now,Kolkata,18,1444,21,5.5,14,Dairy,Wallet,4,0,2
+5000783,Zepto,Chennai,34,187,13,2.9,9,Fruits & Vegetables,Wallet,4,0,1
+5000784,Zepto,Kolkata,39,750,6,1.8,2,Snacks,Cash on Delivery,3,0,3
+5000785,Zepto,Noida,22,660,9,2.5,7,Personal Care,Card,1,1,5
+5000786,Swiggy Instamart,Gurugram,19,239,28,6.5,7,Bakery,Card,5,1,2
+5000787,JioMart Express,Jaipur,38,679,33,3.5,5,Dairy,UPI,1,0,2
+5000788,Swiggy Instamart,Chennai,26,2107,22,4.1,15,Bakery,Cash on Delivery,5,0,3
+5000789,Flipkart Minutes,Hyderabad,25,966,20,6.3,15,Personal Care,Wallet,1,0,2
+5000790,Swiggy Instamart,Hyderabad,27,1627,23,5.7,11,Baby Care,Wallet,1,1,3
+5000791,Blinkit,Bengaluru,42,600,15,5.7,1,Personal Care,Wallet,2,0,1
+5000792,Swiggy Instamart,Noida,38,2370,20,4.0,12,Household,UPI,2,1,3
+5000793,JioMart Express,Pune,21,477,31,5.3,13,Personal Care,Card,1,0,5
+5000794,BigBasket Now,Hyderabad,27,2367,24,3.0,11,Beverages,Cash on Delivery,3,1,1
+5000795,BigBasket Now,Hyderabad,34,262,29,3.9,8,Household,UPI,1,1,5
+5000796,Flipkart Minutes,Jaipur,22,530,10,3.8,10,Fruits & Vegetables,Card,4,1,5
+5000797,Flipkart Minutes,Bengaluru,38,941,14,6.9,15,Bakery,UPI,4,1,5
+5000798,Zepto,Kolkata,48,1412,13,1.0,7,Fruits & Vegetables,Wallet,4,1,3
+5000799,Blinkit,Chennai,47,769,7,1.2,12,Beverages,Cash on Delivery,5,1,3
+5000800,BigBasket Now,Kolkata,50,1005,28,6.7,4,Snacks,Card,1,0,5
+5000801,JioMart Express,Chennai,46,2048,37,3.3,6,Fruits & Vegetables,Cash on Delivery,2,0,4
+5000802,Blinkit,Delhi,29,1206,7,1.8,9,Household,Card,4,0,5
+5000803,JioMart Express,Jaipur,26,918,34,2.4,18,Baby Care,Cash on Delivery,4,0,3
+5000804,Zepto,Chennai,18,1622,8,4.2,11,Dairy,UPI,1,0,5
+5000805,Swiggy Instamart,Jaipur,57,1619,21,3.8,18,Household,UPI,4,0,2
+5000806,Zepto,Hyderabad,51,1587,16,2.1,7,Snacks,Cash on Delivery,5,0,4
+5000807,BigBasket Now,Bengaluru,33,1170,32,5.9,5,Personal Care,Wallet,2,0,4
+5000808,Swiggy Instamart,Kolkata,29,1191,21,7.4,4,Beverages,Wallet,4,0,1
+5000809,Blinkit,Mumbai,47,1065,19,7.4,6,Snacks,Cash on Delivery,4,0,4
+5000810,Blinkit,Hyderabad,47,252,21,6.7,15,Fruits & Vegetables,Wallet,2,1,5
+5000811,Blinkit,Bengaluru,45,302,9,4.5,2,Baby Care,UPI,3,1,4
+5000812,BigBasket Now,Chennai,32,1737,25,6.5,1,Baby Care,UPI,4,0,2
+5000813,Blinkit,Noida,50,378,20,3.6,12,Personal Care,UPI,1,0,4
+5000814,Swiggy Instamart,Chennai,27,1607,18,2.5,16,Household,UPI,4,1,4
+5000815,Blinkit,Delhi,46,1508,13,2.4,12,Personal Care,UPI,5,0,2
+5000816,Zepto,Pune,40,1948,12,3.9,18,Bakery,Wallet,5,0,1
+5000817,Zepto,Gurugram,33,2304,15,1.9,5,Personal Care,Wallet,5,1,4
+5000818,Zepto,Kolkata,58,731,19,7.5,11,Dairy,Card,3,1,1
+5000819,Flipkart Minutes,Chennai,55,445,17,3.6,14,Snacks,Wallet,4,0,5
+5000820,Blinkit,Jaipur,60,603,12,1.8,1,Personal Care,Card,2,1,3
+5000821,JioMart Express,Delhi,57,2125,33,6.9,1,Dairy,Wallet,1,1,1
+5000822,Blinkit,Chennai,40,940,18,2.9,10,Household,UPI,2,0,3
+5000823,BigBasket Now,Kolkata,21,1796,23,2.9,11,Fruits & Vegetables,Card,1,1,2
+5000824,Flipkart Minutes,Delhi,41,464,17,7.0,16,Household,Card,1,1,5
+5000825,Swiggy Instamart,Gurugram,22,2318,14,4.6,3,Household,UPI,5,0,5
+5000826,Zepto,Chennai,41,1756,16,7.3,14,Dairy,Card,2,1,1
+5000827,Zepto,Pune,36,765,18,3.0,8,Beverages,Card,5,0,1
+5000828,Blinkit,Mumbai,60,800,16,3.9,3,Baby Care,Wallet,4,1,5
+5000829,Swiggy Instamart,Bengaluru,58,1680,25,6.9,3,Personal Care,UPI,3,0,3
+5000830,Blinkit,Gurugram,44,1846,8,1.0,2,Beverages,Cash on Delivery,2,1,2
+5000831,Swiggy Instamart,Chennai,24,1687,22,6.6,2,Fruits & Vegetables,Cash on Delivery,3,0,3
+5000832,Blinkit,Hyderabad,38,1455,19,7.1,3,Personal Care,Cash on Delivery,3,0,3
+5000833,Blinkit,Kolkata,41,741,14,2.5,6,Beverages,Card,2,1,1
+5000834,JioMart Express,Noida,58,1727,25,3.0,8,Household,Card,5,1,4
+5000835,Blinkit,Hyderabad,25,1246,22,3.7,4,Snacks,UPI,5,1,5
+5000836,Flipkart Minutes,Noida,41,1162,17,3.6,3,Personal Care,Wallet,4,1,4
+5000837,Zepto,Jaipur,20,1881,16,5.1,12,Snacks,UPI,1,1,5
+5000838,Zepto,Noida,22,106,21,6.9,5,Snacks,UPI,2,0,5
+5000839,Blinkit,Hyderabad,22,807,13,3.1,13,Fruits & Vegetables,UPI,5,1,5
+5000840,Zepto,Gurugram,36,1732,9,0.6,16,Fruits & Vegetables,UPI,3,0,1
+5000841,BigBasket Now,Kolkata,21,648,29,6.9,7,Fruits & Vegetables,Wallet,2,0,3
+5000842,BigBasket Now,Hyderabad,58,1181,29,5.3,2,Personal Care,Card,3,1,5
+5000843,Zepto,Pune,23,2386,18,5.5,5,Personal Care,Card,5,0,5
+5000844,BigBasket Now,Jaipur,53,1631,24,2.2,18,Baby Care,Cash on Delivery,4,0,4
+5000845,Flipkart Minutes,Noida,47,154,14,0.7,18,Personal Care,UPI,2,0,2
+5000846,Zepto,Hyderabad,38,384,13,5.1,4,Fruits & Vegetables,UPI,1,1,3
+5000847,Flipkart Minutes,Gurugram,48,1550,18,4.6,14,Bakery,Card,3,1,5
+5000848,Swiggy Instamart,Gurugram,55,240,28,7.3,15,Snacks,Card,5,0,2
+5000849,Swiggy Instamart,Mumbai,21,1520,14,2.4,8,Beverages,Wallet,3,1,3
+5000850,Swiggy Instamart,Hyderabad,38,1886,21,0.8,11,Personal Care,Card,1,1,3
+5000851,Blinkit,Gurugram,41,1134,16,2.5,3,Personal Care,Wallet,2,0,4
+5000852,BigBasket Now,Mumbai,32,2255,19,2.2,2,Beverages,Wallet,4,1,1
+5000853,Zepto,Gurugram,43,2399,19,7.0,13,Snacks,Wallet,1,1,2
+5000854,Swiggy Instamart,Gurugram,49,1132,15,2.6,14,Bakery,Card,4,1,2
+5000855,Flipkart Minutes,Hyderabad,51,1892,17,5.9,1,Dairy,Cash on Delivery,3,0,5
+5000856,Blinkit,Bengaluru,22,603,19,5.5,2,Baby Care,Wallet,3,0,2
+5000857,Swiggy Instamart,Hyderabad,22,908,25,5.7,15,Beverages,UPI,5,1,2
+5000858,Flipkart Minutes,Jaipur,47,90,16,6.8,3,Snacks,Card,3,1,3
+5000859,Zepto,Jaipur,39,1655,13,4.8,13,Personal Care,Wallet,4,0,2
+5000860,Blinkit,Delhi,40,1417,8,1.5,10,Household,Wallet,3,0,5
+5000861,Flipkart Minutes,Chennai,56,1741,24,5.4,2,Bakery,UPI,1,0,1
+5000862,Swiggy Instamart,Noida,19,374,14,1.9,15,Personal Care,Wallet,3,0,3
+5000863,Swiggy Instamart,Gurugram,23,1309,23,6.4,5,Beverages,Cash on Delivery,4,0,5
+5000864,BigBasket Now,Jaipur,46,1553,24,7.5,17,Personal Care,Card,4,0,2
+5000865,Zepto,Noida,22,1444,18,0.9,11,Fruits & Vegetables,Wallet,1,1,2
+5000866,Zepto,Noida,31,2219,11,1.2,13,Snacks,Cash on Delivery,2,1,5
+5000867,Swiggy Instamart,Pune,33,2181,27,6.2,6,Snacks,Cash on Delivery,3,0,1
+5000868,Zepto,Chennai,58,1504,13,2.8,2,Personal Care,Wallet,2,1,3
+5000869,Blinkit,Pune,26,2163,9,1.6,14,Dairy,Wallet,4,0,1
+5000870,Zepto,Noida,45,645,17,6.6,4,Fruits & Vegetables,UPI,2,1,3
+5000871,BigBasket Now,Jaipur,55,1232,20,1.0,7,Fruits & Vegetables,UPI,5,0,5
+5000872,JioMart Express,Pune,27,414,26,4.4,9,Household,Cash on Delivery,2,0,2
+5000873,JioMart Express,Gurugram,40,1574,28,5.3,6,Baby Care,Wallet,2,1,5
+5000874,BigBasket Now,Pune,58,1656,18,2.2,14,Household,Wallet,2,0,4
+5000875,Swiggy Instamart,Kolkata,42,2131,26,5.7,9,Snacks,Cash on Delivery,1,0,3
+5000876,Blinkit,Bengaluru,32,1712,23,6.3,1,Baby Care,Cash on Delivery,3,1,5
+5000877,BigBasket Now,Pune,44,706,24,4.0,17,Household,Wallet,1,0,5
+5000878,JioMart Express,Delhi,44,2020,26,5.0,1,Bakery,Wallet,5,1,3
+5000879,Zepto,Hyderabad,51,2073,18,5.5,10,Beverages,Card,3,1,5
+5000880,Flipkart Minutes,Mumbai,23,1244,14,5.7,10,Dairy,Wallet,5,0,1
+5000881,Flipkart Minutes,Hyderabad,45,949,16,4.7,6,Bakery,Cash on Delivery,1,1,3
+5000882,Swiggy Instamart,Kolkata,39,2274,22,5.3,4,Baby Care,UPI,5,0,2
+5000883,Swiggy Instamart,Pune,25,259,15,4.7,10,Snacks,Wallet,1,0,5
+5000884,Swiggy Instamart,Noida,53,1149,19,3.2,6,Snacks,Card,3,1,3
+5000885,Flipkart Minutes,Hyderabad,32,1418,24,6.1,9,Dairy,Wallet,4,1,4
+5000886,Blinkit,Kolkata,56,1377,16,2.2,10,Personal Care,Card,2,0,5
+5000887,Blinkit,Mumbai,51,510,6,1.6,9,Fruits & Vegetables,Cash on Delivery,2,1,3
+5000888,JioMart Express,Delhi,34,1302,28,2.7,11,Household,Wallet,3,0,1
+5000889,Blinkit,Bengaluru,59,554,14,5.1,15,Snacks,Wallet,1,1,3
+5000890,Zepto,Noida,42,1675,18,6.0,3,Snacks,UPI,5,1,4
+5000891,Zepto,Jaipur,26,1610,9,1.9,1,Bakery,Cash on Delivery,4,0,5
+5000892,Flipkart Minutes,Pune,45,2036,17,2.0,5,Bakery,Cash on Delivery,1,0,4
+5000893,Flipkart Minutes,Kolkata,36,221,17,0.8,14,Dairy,UPI,5,1,4
+5000894,Flipkart Minutes,Jaipur,30,1911,13,1.0,14,Personal Care,UPI,2,0,1
+5000895,JioMart Express,Gurugram,35,580,24,6.3,4,Personal Care,Card,2,1,2
+5000896,Blinkit,Kolkata,54,1812,16,1.8,14,Fruits & Vegetables,Wallet,3,0,1
+5000897,Zepto,Mumbai,51,192,14,5.3,12,Bakery,Wallet,1,1,3
+5000898,Swiggy Instamart,Delhi,32,1253,25,6.1,10,Personal Care,Wallet,2,0,1
+5000899,Blinkit,Delhi,45,2073,13,5.1,1,Snacks,Cash on Delivery,4,0,1
+5000900,Zepto,Hyderabad,59,1043,18,6.0,12,Household,UPI,5,1,1
+5000901,Swiggy Instamart,Mumbai,34,1187,20,7.5,14,Dairy,UPI,3,0,4
+5000902,BigBasket Now,Gurugram,32,1060,30,3.9,13,Household,Wallet,5,1,1
+5000903,BigBasket Now,Chennai,27,1236,23,5.4,17,Beverages,Cash on Delivery,3,0,3
+5000904,Zepto,Hyderabad,52,1748,15,3.1,9,Fruits & Vegetables,Cash on Delivery,2,0,3
+5000905,JioMart Express,Kolkata,49,1805,26,1.4,10,Bakery,Wallet,1,1,4
+5000906,Zepto,Noida,19,1649,12,4.7,7,Snacks,Wallet,4,1,5
+5000907,JioMart Express,Jaipur,20,488,24,4.7,5,Baby Care,UPI,3,0,4
+5000908,Swiggy Instamart,Chennai,56,1543,25,1.7,18,Snacks,Wallet,1,0,4
+5000909,BigBasket Now,Noida,26,495,24,3.4,7,Household,UPI,5,0,3
+5000910,Zepto,Gurugram,55,1863,14,5.9,17,Personal Care,Wallet,3,1,5
+5000911,Swiggy Instamart,Gurugram,59,2330,22,7.4,3,Household,Card,2,1,1
+5000912,Blinkit,Hyderabad,36,1681,19,6.8,16,Personal Care,Wallet,3,1,3
+5000913,Blinkit,Kolkata,53,983,21,6.0,3,Bakery,Card,4,0,5
+5000914,Zepto,Kolkata,59,2019,11,2.4,5,Personal Care,Cash on Delivery,3,1,2
+5000915,BigBasket Now,Kolkata,26,1225,20,1.2,7,Baby Care,UPI,3,0,5
+5000916,Swiggy Instamart,Noida,46,519,20,4.5,1,Beverages,Cash on Delivery,2,1,3
+5000917,JioMart Express,Chennai,50,890,25,4.0,18,Baby Care,UPI,4,1,4
+5000918,Zepto,Chennai,51,530,17,2.6,7,Dairy,Card,2,1,1
+5000919,Swiggy Instamart,Noida,54,819,25,6.0,15,Baby Care,Wallet,1,1,1
+5000920,Flipkart Minutes,Noida,49,977,19,4.5,3,Snacks,Card,2,1,4
+5000921,JioMart Express,Pune,22,2226,28,6.4,9,Baby Care,UPI,2,0,2
+5000922,Zepto,Jaipur,53,445,14,3.1,2,Dairy,Cash on Delivery,3,1,5
+5000923,Flipkart Minutes,Noida,50,1774,22,4.7,6,Snacks,Card,1,0,4
+5000924,Flipkart Minutes,Bengaluru,50,2175,21,3.0,9,Fruits & Vegetables,Wallet,3,0,2
+5000925,Swiggy Instamart,Bengaluru,45,1453,11,4.7,13,Household,UPI,4,0,5
+5000926,JioMart Express,Chennai,53,302,25,3.9,12,Bakery,UPI,4,0,2
+5000927,Blinkit,Gurugram,54,1310,18,5.1,4,Household,Wallet,3,0,5
+5000928,Swiggy Instamart,Chennai,26,505,19,4.8,4,Snacks,Wallet,5,0,3
+5000929,Flipkart Minutes,Kolkata,26,1117,23,5.7,8,Bakery,UPI,4,0,1
+5000930,Blinkit,Noida,57,1122,18,4.3,15,Household,Wallet,5,0,1
+5000931,Zepto,Pune,33,2204,12,1.5,2,Dairy,Card,3,1,3
+5000932,Swiggy Instamart,Bengaluru,29,812,20,2.7,4,Personal Care,Card,3,1,3
+5000933,BigBasket Now,Noida,48,443,28,2.9,9,Dairy,Card,5,1,5
+5000934,Zepto,Jaipur,18,1522,14,3.5,7,Baby Care,UPI,5,1,4
+5000935,JioMart Express,Noida,45,631,35,6.2,5,Bakery,Wallet,4,0,2
+5000936,Swiggy Instamart,Hyderabad,22,2284,16,0.8,18,Fruits & Vegetables,UPI,4,1,2
+5000937,Zepto,Hyderabad,39,1478,10,3.4,10,Household,Cash on Delivery,3,0,2
+5000938,JioMart Express,Noida,19,1688,31,6.0,2,Household,Wallet,3,1,5
+5000939,Blinkit,Kolkata,56,103,17,5.2,13,Beverages,Card,3,1,3
+5000940,Swiggy Instamart,Mumbai,37,2311,26,5.1,16,Snacks,Card,2,1,2
+5000941,BigBasket Now,Gurugram,20,1707,26,2.1,17,Fruits & Vegetables,UPI,1,1,4
+5000942,Flipkart Minutes,Bengaluru,36,1055,9,0.7,3,Snacks,UPI,2,1,2
+5000943,Flipkart Minutes,Kolkata,18,1201,18,1.7,1,Beverages,Cash on Delivery,5,1,1
+5000944,Blinkit,Pune,42,2056,15,3.3,5,Personal Care,Wallet,2,0,5
+5000945,Flipkart Minutes,Jaipur,60,1202,19,4.5,1,Household,Wallet,2,0,2
+5000946,Swiggy Instamart,Bengaluru,23,2036,19,3.7,3,Baby Care,Cash on Delivery,1,1,1
+5000947,Zepto,Chennai,18,725,23,6.6,11,Household,Card,3,0,2
+5000948,BigBasket Now,Delhi,47,847,27,2.6,9,Snacks,Card,4,1,2
+5000949,Blinkit,Kolkata,33,307,10,5.8,7,Personal Care,Wallet,5,0,5
+5000950,Flipkart Minutes,Chennai,18,2362,18,3.7,7,Beverages,Cash on Delivery,3,0,3
+5000951,BigBasket Now,Pune,40,2157,31,5.8,16,Snacks,Card,4,1,2
+5000952,JioMart Express,Noida,57,469,27,1.4,2,Dairy,Wallet,4,0,1
+5000953,Zepto,Jaipur,18,1008,15,6.6,4,Baby Care,UPI,1,1,3
+5000954,Flipkart Minutes,Noida,24,1167,24,6.6,14,Beverages,Cash on Delivery,5,0,1
+5000955,Blinkit,Bengaluru,54,428,14,3.8,4,Personal Care,Wallet,5,1,5
+5000956,Flipkart Minutes,Jaipur,30,2274,21,5.9,16,Fruits & Vegetables,Card,4,1,3
+5000957,Swiggy Instamart,Kolkata,20,796,23,3.6,15,Beverages,UPI,3,0,1
+5000958,Blinkit,Jaipur,33,1973,15,2.1,6,Fruits & Vegetables,Cash on Delivery,2,0,1
+5000959,JioMart Express,Gurugram,36,1159,27,2.2,15,Personal Care,UPI,1,0,4
+5000960,Flipkart Minutes,Jaipur,29,1094,23,4.5,16,Baby Care,UPI,5,0,2
+5000961,JioMart Express,Delhi,42,1753,31,4.5,13,Baby Care,UPI,2,0,1
+5000962,Zepto,Chennai,47,2266,10,2.1,16,Dairy,Wallet,4,1,5
+5000963,BigBasket Now,Kolkata,42,2061,23,2.5,15,Snacks,Card,3,1,2
+5000964,Zepto,Jaipur,24,1695,18,7.2,2,Snacks,Wallet,5,0,3
+5000965,Flipkart Minutes,Chennai,45,2197,10,1.1,12,Fruits & Vegetables,Cash on Delivery,3,0,2
+5000966,BigBasket Now,Kolkata,44,749,25,6.9,8,Bakery,UPI,4,0,2
+5000967,Blinkit,Bengaluru,29,860,11,5.5,12,Baby Care,Card,3,1,1
+5000968,Swiggy Instamart,Bengaluru,37,1450,17,5.0,4,Snacks,Wallet,2,1,1
+5000969,Swiggy Instamart,Hyderabad,50,1623,20,3.9,11,Beverages,Wallet,4,1,4
+5000970,Blinkit,Noida,46,1906,15,4.3,6,Household,Cash on Delivery,2,0,2
+5000971,Zepto,Jaipur,58,875,10,1.3,10,Fruits & Vegetables,Wallet,5,0,5
+5000972,Blinkit,Jaipur,37,2351,11,1.3,13,Beverages,Wallet,2,0,5
+5000973,Swiggy Instamart,Bengaluru,35,915,15,2.9,3,Bakery,UPI,5,0,1
+5000974,Blinkit,Bengaluru,35,576,7,1.0,16,Household,Cash on Delivery,1,0,3
+5000975,BigBasket Now,Kolkata,26,909,21,3.6,7,Household,UPI,3,0,4
+5000976,BigBasket Now,Bengaluru,22,1132,29,3.8,10,Dairy,UPI,2,0,5
+5000977,Flipkart Minutes,Kolkata,46,974,22,7.3,6,Snacks,UPI,2,1,1
+5000978,BigBasket Now,Chennai,37,1358,15,1.1,18,Fruits & Vegetables,Card,1,0,4
+5000979,Flipkart Minutes,Delhi,60,1494,16,1.1,16,Bakery,UPI,4,1,5
+5000980,Zepto,Gurugram,49,1914,7,1.0,5,Snacks,Wallet,1,1,2
+5000981,Blinkit,Chennai,51,652,15,3.9,17,Dairy,UPI,1,0,3
+5000982,Swiggy Instamart,Noida,40,1935,20,2.8,18,Personal Care,Wallet,4,0,2
+5000983,BigBasket Now,Gurugram,46,1582,28,4.4,12,Household,Card,4,1,2
+5000984,JioMart Express,Gurugram,55,2178,26,1.0,11,Baby Care,UPI,3,0,4
+5000985,Blinkit,Chennai,29,2022,15,1.2,7,Personal Care,Cash on Delivery,1,0,4
+5000986,Flipkart Minutes,Mumbai,57,1389,12,1.3,8,Bakery,Card,1,0,2
+5000987,Flipkart Minutes,Pune,52,253,19,2.5,16,Baby Care,Card,4,0,5
+5000988,Blinkit,Mumbai,33,129,9,1.1,12,Bakery,Card,4,0,3
+5000989,JioMart Express,Kolkata,41,1862,32,6.2,5,Personal Care,Card,4,1,2
+5000990,BigBasket Now,Kolkata,50,320,23,6.0,18,Baby Care,UPI,1,0,5
+5000991,Flipkart Minutes,Chennai,37,310,19,6.8,14,Baby Care,Cash on Delivery,3,0,4
+5000992,Flipkart Minutes,Bengaluru,23,735,14,7.2,18,Household,UPI,4,1,4
+5000993,BigBasket Now,Noida,39,1084,25,2.5,14,Personal Care,Cash on Delivery,4,1,1
+5000994,Zepto,Chennai,37,778,13,1.1,6,Dairy,Card,1,1,1
+5000995,BigBasket Now,Mumbai,49,103,21,2.7,3,Personal Care,UPI,1,1,1
+5000996,Blinkit,Jaipur,20,687,11,6.2,6,Bakery,Card,2,1,1
+5000997,Swiggy Instamart,Bengaluru,22,1702,20,5.1,18,Bakery,Card,2,1,5
+5000998,JioMart Express,Jaipur,39,1516,26,4.1,2,Dairy,Card,3,1,4
+5000999,JioMart Express,Delhi,22,1811,25,0.6,4,Baby Care,Cash on Delivery,5,1,5
+5001000,Flipkart Minutes,Noida,31,2167,25,7.1,8,Fruits & Vegetables,Cash on Delivery,5,1,4
+5001001,JioMart Express,Mumbai,49,656,30,3.2,14,Dairy,Cash on Delivery,1,1,4
+5001002,JioMart Express,Bengaluru,20,1983,28,1.9,12,Household,Wallet,2,1,2
+5001003,Zepto,Delhi,19,1283,16,6.8,6,Beverages,Card,5,0,4
+5001004,JioMart Express,Jaipur,55,1368,23,2.5,9,Bakery,Card,1,1,1
+5001005,Flipkart Minutes,Delhi,18,588,20,2.0,2,Household,Card,1,1,3
+5001006,JioMart Express,Jaipur,25,340,29,0.7,6,Baby Care,Cash on Delivery,4,1,2
+5001007,Swiggy Instamart,Gurugram,54,1608,14,3.0,9,Dairy,Cash on Delivery,3,0,3
+5001008,BigBasket Now,Pune,50,120,23,5.0,5,Dairy,Card,3,0,4
+5001009,Zepto,Hyderabad,47,679,18,3.2,13,Household,Wallet,2,1,4
+5001010,Flipkart Minutes,Delhi,22,1706,16,1.9,18,Baby Care,Cash on Delivery,3,0,4
+5001011,Blinkit,Noida,46,640,5,2.1,6,Personal Care,Wallet,5,0,3
+5001012,Flipkart Minutes,Delhi,57,1677,16,0.8,12,Personal Care,Wallet,5,0,1
+5001013,BigBasket Now,Gurugram,56,1098,22,5.8,18,Bakery,UPI,1,0,4
+5001014,Swiggy Instamart,Jaipur,47,892,17,2.0,7,Bakery,UPI,1,1,3
+5001015,Flipkart Minutes,Noida,28,218,14,5.3,18,Dairy,Wallet,5,0,2
+5001016,Swiggy Instamart,Hyderabad,48,1756,14,6.1,14,Fruits & Vegetables,UPI,1,1,4
+5001017,Zepto,Jaipur,20,988,9,1.8,8,Personal Care,Card,3,0,3
+5001018,JioMart Express,Chennai,40,1867,26,4.3,8,Baby Care,Cash on Delivery,2,0,2
+5001019,BigBasket Now,Jaipur,58,443,36,6.2,13,Household,UPI,4,0,3
+5001020,Flipkart Minutes,Jaipur,27,144,19,4.7,11,Fruits & Vegetables,UPI,3,1,1
+5001021,BigBasket Now,Chennai,27,176,23,7.3,6,Household,UPI,2,0,4
+5001022,Swiggy Instamart,Jaipur,39,748,21,3.6,17,Baby Care,Card,1,0,4
+5001023,BigBasket Now,Mumbai,41,1419,17,2.2,3,Dairy,Wallet,2,1,3
+5001024,Flipkart Minutes,Pune,55,671,12,2.2,6,Baby Care,Wallet,3,1,5
+5001025,Zepto,Bengaluru,25,1954,19,5.2,17,Fruits & Vegetables,Wallet,5,1,5
+5001026,BigBasket Now,Jaipur,19,1241,21,3.7,5,Personal Care,Cash on Delivery,5,0,3
+5001027,BigBasket Now,Chennai,51,1694,21,3.3,7,Bakery,UPI,1,1,2
+5001028,BigBasket Now,Mumbai,57,2020,30,4.9,8,Snacks,UPI,2,1,5
+5001029,Blinkit,Mumbai,31,1918,11,2.5,10,Bakery,Card,4,0,5
+5001030,Zepto,Noida,53,900,13,4.2,13,Personal Care,Cash on Delivery,1,0,4
+5001031,Blinkit,Pune,27,1421,7,0.9,1,Bakery,Wallet,3,1,4
+5001032,Flipkart Minutes,Chennai,49,468,15,4.7,8,Beverages,Cash on Delivery,5,1,5
+5001033,Zepto,Gurugram,22,490,8,3.9,15,Beverages,Cash on Delivery,4,1,3
+5001034,JioMart Express,Gurugram,28,630,32,0.6,3,Bakery,Wallet,2,1,3
+5001035,Blinkit,Delhi,57,1717,14,0.8,13,Household,Cash on Delivery,4,1,1
+5001036,BigBasket Now,Kolkata,38,1908,26,4.3,9,Personal Care,Cash on Delivery,2,0,1
+5001037,Zepto,Hyderabad,32,2157,20,4.0,9,Dairy,Wallet,5,0,1
+5001038,Flipkart Minutes,Kolkata,44,850,17,5.6,15,Personal Care,Wallet,2,0,1
+5001039,Swiggy Instamart,Kolkata,50,867,13,0.8,10,Bakery,Cash on Delivery,3,1,5
+5001040,Swiggy Instamart,Delhi,48,2168,23,4.6,12,Personal Care,Card,4,1,1
+5001041,Zepto,Delhi,47,2054,15,6.4,7,Snacks,Cash on Delivery,2,1,4
+5001042,BigBasket Now,Bengaluru,47,2130,29,2.5,16,Household,Card,5,1,1
+5001043,JioMart Express,Delhi,18,1607,41,5.1,12,Snacks,Card,3,1,4
+5001044,Zepto,Jaipur,37,231,9,1.9,12,Bakery,Card,1,1,3
+5001045,Zepto,Hyderabad,22,2295,17,5.0,13,Baby Care,UPI,5,1,1
+5001046,JioMart Express,Hyderabad,27,944,29,3.3,3,Beverages,Cash on Delivery,1,0,5
+5001047,Zepto,Mumbai,44,1126,11,4.4,6,Baby Care,Wallet,2,0,3
+5001048,Blinkit,Delhi,18,1511,13,1.8,1,Personal Care,Cash on Delivery,5,0,5
+5001049,Swiggy Instamart,Kolkata,23,1547,27,7.2,9,Personal Care,Cash on Delivery,1,1,2
+5001050,JioMart Express,Bengaluru,41,1495,29,1.4,18,Baby Care,Card,4,1,3
+5001051,JioMart Express,Bengaluru,39,469,23,0.9,6,Dairy,Card,1,1,3
+5001052,JioMart Express,Hyderabad,26,1264,24,3.3,2,Household,Card,3,0,3
+5001053,Swiggy Instamart,Noida,45,1035,17,3.9,3,Fruits & Vegetables,Wallet,2,1,1
+5001054,Flipkart Minutes,Gurugram,41,1266,26,6.8,4,Fruits & Vegetables,Cash on Delivery,1,0,5
+5001055,Swiggy Instamart,Chennai,58,1061,21,7.3,6,Fruits & Vegetables,Card,3,0,4
+5001056,JioMart Express,Pune,29,2050,32,2.6,16,Personal Care,Cash on Delivery,2,0,4
+5001057,Flipkart Minutes,Delhi,55,834,9,1.2,7,Fruits & Vegetables,UPI,1,0,4
+5001058,Flipkart Minutes,Gurugram,19,1248,20,3.5,8,Household,UPI,5,1,2
+5001059,JioMart Express,Delhi,39,340,34,4.8,17,Dairy,Card,1,0,5
+5001060,Blinkit,Bengaluru,47,91,7,1.1,10,Baby Care,Wallet,5,1,1
+5001061,JioMart Express,Pune,58,656,36,2.3,6,Fruits & Vegetables,Card,5,1,3
+5001062,Swiggy Instamart,Jaipur,32,1758,21,2.7,3,Baby Care,Wallet,5,0,3
+5001063,Blinkit,Gurugram,37,925,17,5.3,17,Snacks,Wallet,4,0,4
+5001064,Blinkit,Chennai,35,2283,13,4.1,13,Fruits & Vegetables,Wallet,4,1,2
+5001065,JioMart Express,Mumbai,46,756,29,1.8,12,Snacks,Wallet,4,0,5
+5001066,Swiggy Instamart,Kolkata,44,1634,17,2.0,4,Bakery,Cash on Delivery,2,0,4
+5001067,JioMart Express,Kolkata,43,2164,34,5.0,16,Fruits & Vegetables,Cash on Delivery,5,1,3
+5001068,JioMart Express,Pune,56,892,29,3.4,10,Fruits & Vegetables,Wallet,3,0,2
+5001069,JioMart Express,Noida,43,1031,29,2.1,9,Dairy,Wallet,5,1,2
+5001070,JioMart Express,Hyderabad,36,1677,31,5.7,16,Fruits & Vegetables,Cash on Delivery,3,1,2
+5001071,Swiggy Instamart,Bengaluru,19,755,17,6.0,13,Household,Cash on Delivery,4,0,1
+5001072,JioMart Express,Hyderabad,56,2375,21,2.4,4,Beverages,Card,1,1,2
+5001073,Blinkit,Mumbai,50,963,19,7.4,15,Household,Card,5,0,2
+5001074,Flipkart Minutes,Kolkata,19,257,15,6.1,8,Snacks,UPI,2,1,1
+5001075,JioMart Express,Mumbai,28,355,26,0.8,9,Dairy,UPI,2,0,4
+5001076,Swiggy Instamart,Bengaluru,34,92,16,2.8,9,Beverages,Card,2,0,4
+5001077,Blinkit,Gurugram,58,1387,19,6.0,6,Personal Care,Card,5,0,1
+5001078,Flipkart Minutes,Mumbai,52,2387,17,4.4,8,Beverages,Card,4,1,2
+5001079,Flipkart Minutes,Kolkata,55,280,23,7.2,18,Household,Card,5,0,2
+5001080,Blinkit,Chennai,45,977,17,7.0,6,Personal Care,Cash on Delivery,1,0,4
+5001081,Swiggy Instamart,Bengaluru,44,1427,23,7.4,8,Dairy,Wallet,1,1,2
+5001082,JioMart Express,Delhi,25,1935,34,4.2,14,Bakery,Wallet,4,1,2
+5001083,Blinkit,Delhi,57,976,18,4.4,1,Fruits & Vegetables,Card,1,1,2
+5001084,Swiggy Instamart,Kolkata,23,414,19,2.1,6,Baby Care,Wallet,4,1,5
+5001085,JioMart Express,Chennai,47,1923,26,3.3,13,Household,Card,5,0,4
+5001086,BigBasket Now,Hyderabad,31,799,24,1.7,13,Baby Care,Cash on Delivery,4,0,3
+5001087,BigBasket Now,Hyderabad,38,963,33,5.5,14,Bakery,Wallet,1,0,1
+5001088,Zepto,Hyderabad,47,2127,24,5.3,12,Snacks,Wallet,2,0,5
+5001089,Zepto,Pune,38,1860,7,1.8,12,Snacks,Cash on Delivery,2,0,5
+5001090,Zepto,Jaipur,35,699,15,2.6,15,Household,Wallet,1,0,2
+5001091,BigBasket Now,Delhi,52,958,28,6.5,1,Snacks,Wallet,1,0,3
+5001092,Swiggy Instamart,Noida,25,314,14,1.2,5,Dairy,Card,4,1,5
+5001093,BigBasket Now,Mumbai,36,497,17,0.8,13,Dairy,Cash on Delivery,1,0,3
+5001094,Zepto,Chennai,33,1705,13,6.9,8,Household,UPI,3,0,5
+5001095,JioMart Express,Hyderabad,31,1616,31,5.0,14,Dairy,Card,5,0,3
+5001096,JioMart Express,Gurugram,32,1438,35,2.0,18,Personal Care,Wallet,1,0,5
+5001097,Swiggy Instamart,Pune,59,1831,17,3.2,15,Bakery,Cash on Delivery,1,0,4
+5001098,Flipkart Minutes,Bengaluru,39,1588,18,4.9,11,Baby Care,UPI,1,0,1
+5001099,BigBasket Now,Pune,33,980,29,4.7,17,Snacks,Cash on Delivery,5,1,3
+5001100,Zepto,Pune,24,250,17,7.4,8,Household,Cash on Delivery,2,0,2
+5001101,Blinkit,Noida,25,2355,8,0.8,10,Household,Wallet,2,0,4
+5001102,JioMart Express,Delhi,35,605,23,3.4,5,Fruits & Vegetables,Wallet,2,0,5
+5001103,Zepto,Bengaluru,23,1698,8,2.9,18,Snacks,Wallet,2,0,1
+5001104,JioMart Express,Hyderabad,23,2283,35,3.9,7,Beverages,Cash on Delivery,4,1,4
+5001105,BigBasket Now,Hyderabad,27,2192,28,6.0,12,Dairy,UPI,4,1,2
+5001106,Zepto,Hyderabad,24,500,13,2.2,18,Snacks,UPI,4,0,1
+5001107,Swiggy Instamart,Bengaluru,53,1306,16,4.1,12,Household,Cash on Delivery,4,1,3
+5001108,Swiggy Instamart,Noida,33,1133,15,2.7,12,Fruits & Vegetables,Wallet,3,1,1
+5001109,JioMart Express,Delhi,20,1192,21,1.2,17,Baby Care,Cash on Delivery,2,1,2
+5001110,Flipkart Minutes,Jaipur,36,129,26,6.7,17,Personal Care,Wallet,1,1,3
+5001111,JioMart Express,Gurugram,44,1362,34,3.4,15,Personal Care,Wallet,4,1,4
+5001112,JioMart Express,Mumbai,55,717,31,7.0,3,Bakery,Card,3,0,3
+5001113,Blinkit,Pune,44,1751,20,7.3,18,Bakery,Card,5,1,5
+5001114,JioMart Express,Noida,26,1386,27,2.6,9,Baby Care,Card,2,0,2
+5001115,Zepto,Noida,19,340,6,1.8,3,Dairy,Wallet,3,1,2
+5001116,JioMart Express,Delhi,47,725,20,4.5,13,Dairy,Wallet,1,1,4
+5001117,Flipkart Minutes,Hyderabad,52,2338,8,0.8,1,Household,Wallet,4,0,3
+5001118,JioMart Express,Delhi,48,1159,26,3.7,2,Baby Care,Cash on Delivery,3,0,2
+5001119,Blinkit,Pune,58,1445,7,0.6,10,Snacks,UPI,4,1,5
+5001120,Flipkart Minutes,Kolkata,36,2126,20,6.0,2,Beverages,UPI,1,0,3
+5001121,Blinkit,Chennai,19,1724,6,0.7,7,Dairy,Card,5,0,2
+5001122,Flipkart Minutes,Mumbai,59,2073,10,6.4,9,Snacks,UPI,3,0,5
+5001123,Swiggy Instamart,Gurugram,46,1652,24,6.3,9,Snacks,UPI,4,1,2
+5001124,BigBasket Now,Bengaluru,25,1648,20,1.8,18,Beverages,Wallet,1,1,2
+5001125,Flipkart Minutes,Noida,40,162,20,5.0,5,Dairy,UPI,3,1,3
+5001126,Blinkit,Pune,22,2101,12,4.2,1,Baby Care,Card,4,0,4
+5001127,Zepto,Mumbai,56,2216,16,3.8,18,Household,UPI,3,1,1
+5001128,JioMart Express,Gurugram,41,602,32,7.0,6,Bakery,Wallet,2,1,3
+5001129,BigBasket Now,Pune,41,551,25,2.8,16,Beverages,Cash on Delivery,4,0,2
+5001130,Blinkit,Pune,40,1018,15,5.3,12,Beverages,Wallet,5,1,4
+5001131,Blinkit,Pune,55,566,23,4.3,8,Beverages,Cash on Delivery,1,0,5
+5001132,Zepto,Noida,31,862,13,3.2,17,Beverages,Wallet,2,1,1
+5001133,Swiggy Instamart,Hyderabad,34,1795,24,4.4,4,Household,Wallet,1,1,1
+5001134,Blinkit,Noida,53,318,11,2.1,14,Fruits & Vegetables,Cash on Delivery,5,1,4
+5001135,Zepto,Jaipur,21,1953,14,4.7,11,Fruits & Vegetables,Card,1,0,4
+5001136,Swiggy Instamart,Bengaluru,23,1927,21,4.0,3,Household,Cash on Delivery,4,0,3
+5001137,Flipkart Minutes,Gurugram,33,837,14,0.8,11,Bakery,Card,1,1,3
+5001138,Blinkit,Chennai,43,2334,21,5.0,13,Bakery,Wallet,3,1,4
+5001139,Blinkit,Pune,42,2157,18,4.2,2,Bakery,Cash on Delivery,5,1,5
+5001140,Blinkit,Kolkata,30,593,17,3.5,17,Personal Care,Wallet,5,1,2
+5001141,BigBasket Now,Mumbai,35,2103,28,4.4,3,Dairy,Card,5,1,4
+5001142,Zepto,Kolkata,53,2279,22,6.1,5,Beverages,Card,2,1,2
+5001143,JioMart Express,Kolkata,19,1121,29,2.6,18,Fruits & Vegetables,UPI,3,1,1
+5001144,Blinkit,Hyderabad,21,801,14,5.9,2,Snacks,UPI,2,1,4
+5001145,Blinkit,Delhi,27,2172,20,3.3,4,Bakery,Cash on Delivery,2,0,5
+5001146,JioMart Express,Delhi,18,2277,29,2.5,3,Household,Card,5,1,2
+5001147,Flipkart Minutes,Delhi,60,371,18,6.1,18,Beverages,UPI,3,1,4
+5001148,Zepto,Mumbai,44,521,19,3.8,8,Bakery,UPI,3,0,5
+5001149,JioMart Express,Mumbai,31,487,24,0.9,8,Beverages,Wallet,4,1,3
+5001150,Flipkart Minutes,Kolkata,48,2136,21,6.6,17,Snacks,Card,2,0,4
+5001151,JioMart Express,Bengaluru,59,1471,22,1.6,10,Fruits & Vegetables,UPI,3,0,3
+5001152,Swiggy Instamart,Bengaluru,27,2008,13,3.1,7,Baby Care,Cash on Delivery,5,0,3
+5001153,Swiggy Instamart,Chennai,48,1520,17,0.7,1,Personal Care,Card,3,0,1
+5001154,JioMart Express,Noida,31,1899,30,2.8,6,Baby Care,UPI,4,1,3
+5001155,Zepto,Bengaluru,32,177,22,6.5,17,Snacks,Wallet,1,0,3
+5001156,BigBasket Now,Hyderabad,50,111,29,7.3,1,Baby Care,Wallet,1,1,3
+5001157,BigBasket Now,Noida,54,351,13,1.6,5,Household,Wallet,4,1,4
+5001158,Swiggy Instamart,Hyderabad,29,103,22,4.6,6,Snacks,UPI,3,1,1
+5001159,Swiggy Instamart,Mumbai,21,218,19,5.5,15,Fruits & Vegetables,Wallet,4,1,3
+5001160,BigBasket Now,Bengaluru,22,100,31,3.1,7,Bakery,Card,2,0,4
+5001161,BigBasket Now,Gurugram,46,508,22,1.8,8,Personal Care,Wallet,3,1,4
+5001162,Zepto,Noida,58,2227,14,3.0,12,Fruits & Vegetables,Card,1,0,3
+5001163,Zepto,Delhi,56,2244,8,2.4,8,Fruits & Vegetables,Wallet,4,1,2
+5001164,Blinkit,Chennai,54,1974,23,6.9,2,Baby Care,Cash on Delivery,1,1,4
+5001165,Swiggy Instamart,Jaipur,51,1951,21,2.9,4,Personal Care,UPI,5,0,3
+5001166,JioMart Express,Gurugram,31,1342,31,5.9,16,Baby Care,Wallet,4,0,2
+5001167,Swiggy Instamart,Delhi,47,2323,20,4.1,15,Personal Care,Wallet,5,0,5
+5001168,Swiggy Instamart,Bengaluru,47,927,13,6.1,18,Baby Care,Card,4,0,4
+5001169,Flipkart Minutes,Bengaluru,24,231,20,6.0,14,Dairy,Card,4,0,2
+5001170,JioMart Express,Chennai,51,1101,32,5.3,15,Beverages,UPI,3,1,4
+5001171,Swiggy Instamart,Kolkata,26,1298,24,6.3,10,Dairy,Cash on Delivery,4,1,5
+5001172,Swiggy Instamart,Pune,19,2201,24,1.9,11,Household,Card,2,1,4
+5001173,Blinkit,Pune,36,397,20,5.9,17,Snacks,UPI,1,1,1
+5001174,Zepto,Mumbai,55,2155,9,2.5,9,Dairy,Card,5,1,2
+5001175,JioMart Express,Kolkata,43,701,31,6.2,13,Bakery,Wallet,2,1,4
+5001176,BigBasket Now,Mumbai,21,1402,25,1.7,10,Dairy,Cash on Delivery,4,0,4
+5001177,Zepto,Delhi,26,381,12,3.4,15,Personal Care,UPI,5,0,4
+5001178,Zepto,Delhi,51,1978,13,7.4,15,Bakery,UPI,1,1,3
+5001179,Flipkart Minutes,Mumbai,24,1260,15,0.8,18,Snacks,Cash on Delivery,3,0,3
+5001180,JioMart Express,Chennai,36,1447,30,3.7,3,Personal Care,UPI,1,0,1
+5001181,Flipkart Minutes,Mumbai,25,1745,21,6.0,12,Beverages,Wallet,3,0,1
+5001182,JioMart Express,Gurugram,26,226,27,1.9,8,Personal Care,Cash on Delivery,2,0,4
+5001183,BigBasket Now,Jaipur,35,1387,26,6.8,3,Fruits & Vegetables,Cash on Delivery,2,0,3
+5001184,JioMart Express,Bengaluru,38,903,31,2.5,5,Household,Wallet,1,1,1
+5001185,Swiggy Instamart,Gurugram,25,2250,11,2.1,6,Household,UPI,3,0,1
+5001186,Flipkart Minutes,Chennai,19,2150,12,4.8,17,Dairy,Wallet,5,1,1
+5001187,Zepto,Chennai,52,2245,18,6.2,8,Dairy,UPI,3,1,2
+5001188,Swiggy Instamart,Delhi,35,1614,17,1.3,15,Snacks,UPI,3,0,2
+5001189,Swiggy Instamart,Noida,58,2354,21,4.8,15,Bakery,UPI,5,1,3
+5001190,Swiggy Instamart,Delhi,41,768,28,5.4,13,Fruits & Vegetables,Cash on Delivery,3,1,2
+5001191,BigBasket Now,Mumbai,42,2000,27,3.2,13,Personal Care,UPI,3,1,2
+5001192,Zepto,Bengaluru,51,1057,18,7.1,12,Dairy,Cash on Delivery,4,1,1
+5001193,Zepto,Jaipur,30,355,14,1.8,12,Dairy,Cash on Delivery,5,1,5
+5001194,JioMart Express,Chennai,38,299,17,2.4,14,Fruits & Vegetables,UPI,3,1,5
+5001195,Blinkit,Noida,34,2134,13,0.9,1,Snacks,Cash on Delivery,4,0,1
+5001196,Flipkart Minutes,Jaipur,50,1390,11,1.4,14,Beverages,Cash on Delivery,4,1,3
+5001197,Blinkit,Noida,28,1362,12,2.9,8,Bakery,UPI,3,0,1
+5001198,Swiggy Instamart,Chennai,20,1551,19,0.7,1,Snacks,Card,3,0,1
+5001199,Flipkart Minutes,Hyderabad,50,1129,12,3.7,12,Household,Cash on Delivery,3,0,2
+5001200,JioMart Express,Chennai,54,908,32,5.3,17,Dairy,UPI,2,1,1
+5001201,Flipkart Minutes,Mumbai,25,974,10,2.1,15,Beverages,Cash on Delivery,4,0,5
+5001202,Blinkit,Delhi,57,866,10,3.6,8,Personal Care,Wallet,1,1,1
+5001203,Blinkit,Noida,44,1223,13,4.2,2,Beverages,Card,2,1,4
+5001204,Blinkit,Hyderabad,41,1208,9,2.1,5,Bakery,UPI,1,0,5
+5001205,BigBasket Now,Delhi,56,1743,26,2.1,5,Fruits & Vegetables,UPI,5,0,3
+5001206,Flipkart Minutes,Mumbai,51,1539,22,4.3,6,Dairy,Wallet,2,1,1
+5001207,Blinkit,Jaipur,19,2258,20,5.9,3,Fruits & Vegetables,Cash on Delivery,3,1,5
+5001208,Zepto,Mumbai,46,1914,15,1.2,4,Snacks,Cash on Delivery,1,1,2
+5001209,Blinkit,Gurugram,42,2224,9,4.2,3,Snacks,Card,3,1,4
+5001210,Swiggy Instamart,Noida,42,775,13,1.4,1,Fruits & Vegetables,Wallet,5,1,2
+5001211,Blinkit,Kolkata,41,2301,24,7.3,14,Fruits & Vegetables,Wallet,1,1,1
+5001212,Flipkart Minutes,Delhi,55,2217,15,2.0,11,Personal Care,Cash on Delivery,4,1,1
+5001213,Flipkart Minutes,Jaipur,24,280,29,5.1,3,Dairy,Card,3,0,4
+5001214,Swiggy Instamart,Mumbai,27,2212,16,1.6,13,Household,UPI,2,0,4
+5001215,Swiggy Instamart,Noida,32,303,18,1.8,6,Baby Care,Card,5,1,2
+5001216,BigBasket Now,Jaipur,37,1975,28,4.1,7,Bakery,Card,3,1,4
+5001217,Blinkit,Mumbai,30,138,10,1.6,16,Fruits & Vegetables,Card,4,0,2
+5001218,Flipkart Minutes,Hyderabad,26,1402,20,5.6,16,Beverages,UPI,4,1,5
+5001219,BigBasket Now,Jaipur,40,556,24,1.1,16,Household,UPI,2,0,4
+5001220,Swiggy Instamart,Delhi,27,1619,16,3.3,17,Personal Care,Wallet,5,1,1
+5001221,Blinkit,Kolkata,52,954,14,3.1,6,Household,Wallet,3,0,4
+5001222,Flipkart Minutes,Noida,35,739,13,3.3,11,Household,UPI,2,0,3
+5001223,BigBasket Now,Bengaluru,23,1648,28,6.3,6,Household,UPI,2,0,3
+5001224,JioMart Express,Gurugram,35,1860,31,4.3,7,Dairy,Card,3,0,1
+5001225,Zepto,Jaipur,53,1932,8,3.9,11,Baby Care,UPI,5,1,1
+5001226,BigBasket Now,Pune,54,998,20,1.1,15,Baby Care,Card,1,0,3
+5001227,Blinkit,Chennai,46,1533,8,4.2,7,Snacks,Wallet,2,1,4
+5001228,JioMart Express,Bengaluru,53,168,30,2.5,4,Dairy,Card,5,0,4
+5001229,Zepto,Gurugram,50,1572,20,6.4,9,Baby Care,Wallet,3,0,2
+5001230,JioMart Express,Jaipur,46,560,32,1.8,10,Personal Care,UPI,5,1,2
+5001231,Blinkit,Noida,36,1231,16,4.3,10,Snacks,Wallet,2,0,3
+5001232,BigBasket Now,Delhi,19,815,25,6.8,6,Dairy,UPI,2,0,3
+5001233,BigBasket Now,Kolkata,46,2010,19,3.4,14,Personal Care,UPI,2,0,5
+5001234,BigBasket Now,Jaipur,52,2290,26,6.9,4,Dairy,Cash on Delivery,3,1,5
+5001235,Blinkit,Mumbai,50,1478,22,4.6,10,Beverages,Wallet,3,0,4
+5001236,Zepto,Kolkata,56,2262,15,5.1,18,Household,Wallet,5,1,3
+5001237,Blinkit,Bengaluru,24,1010,7,2.7,11,Dairy,Card,2,0,2
+5001238,JioMart Express,Gurugram,18,1536,26,2.7,15,Fruits & Vegetables,Card,2,1,3
+5001239,BigBasket Now,Pune,40,677,25,1.7,15,Beverages,Card,5,0,3
+5001240,Swiggy Instamart,Gurugram,42,1834,20,1.6,15,Personal Care,Card,4,0,3
+5001241,Zepto,Kolkata,44,91,13,5.2,16,Baby Care,Wallet,1,0,1
+5001242,Swiggy Instamart,Pune,37,1857,18,5.5,15,Beverages,Card,5,1,2
+5001243,Swiggy Instamart,Kolkata,33,1677,14,0.7,11,Fruits & Vegetables,Wallet,4,1,2
+5001244,Flipkart Minutes,Kolkata,54,1318,17,5.2,7,Fruits & Vegetables,Cash on Delivery,4,1,1
+5001245,Flipkart Minutes,Bengaluru,36,1969,20,2.3,14,Snacks,Cash on Delivery,1,0,3
+5001246,BigBasket Now,Hyderabad,19,2187,23,0.7,16,Household,Wallet,5,0,2
+5001247,Zepto,Kolkata,56,2198,11,2.6,17,Beverages,Card,2,0,1
+5001248,Blinkit,Hyderabad,37,1059,15,5.7,6,Beverages,Cash on Delivery,2,1,3
+5001249,Flipkart Minutes,Noida,29,745,21,6.8,12,Fruits & Vegetables,Cash on Delivery,2,0,3
+5001250,Swiggy Instamart,Kolkata,57,2345,16,6.6,9,Fruits & Vegetables,Wallet,3,1,4
+5001251,Swiggy Instamart,Jaipur,18,795,21,7.1,16,Beverages,UPI,5,1,3
+5001252,Swiggy Instamart,Hyderabad,42,1176,22,6.0,7,Snacks,Cash on Delivery,5,1,1
+5001253,Blinkit,Mumbai,37,276,18,6.5,3,Snacks,Wallet,5,1,1
+5001254,JioMart Express,Gurugram,38,2174,33,3.3,13,Personal Care,Cash on Delivery,4,1,4
+5001255,Zepto,Noida,60,654,17,4.2,12,Baby Care,Cash on Delivery,4,0,4
+5001256,Swiggy Instamart,Kolkata,55,453,17,3.6,11,Bakery,Card,2,1,4
+5001257,Swiggy Instamart,Bengaluru,19,983,14,2.2,6,Baby Care,Card,1,0,1
+5001258,Blinkit,Gurugram,28,172,14,5.5,3,Snacks,Wallet,5,1,5
+5001259,Flipkart Minutes,Gurugram,50,895,19,7.0,16,Personal Care,Cash on Delivery,4,1,1
+5001260,BigBasket Now,Delhi,47,109,23,4.9,12,Baby Care,Card,1,1,2
+5001261,Flipkart Minutes,Pune,31,1299,7,1.1,5,Household,Cash on Delivery,3,0,5
+5001262,Flipkart Minutes,Delhi,41,620,21,7.5,7,Fruits & Vegetables,UPI,2,1,1
+5001263,Zepto,Pune,46,2372,7,1.4,7,Household,UPI,4,0,1
+5001264,Swiggy Instamart,Kolkata,42,1746,17,1.1,2,Baby Care,Card,3,1,5
+5001265,Zepto,Mumbai,58,2309,14,5.3,9,Dairy,UPI,3,0,1
+5001266,Swiggy Instamart,Bengaluru,36,823,23,7.2,16,Snacks,Wallet,1,0,5
+5001267,JioMart Express,Kolkata,28,2302,29,3.1,4,Bakery,Card,4,0,1
+5001268,Zepto,Jaipur,60,633,18,7.2,2,Personal Care,Card,3,0,4
+5001269,Blinkit,Gurugram,25,782,10,5.0,9,Dairy,Card,4,0,4
+5001270,Flipkart Minutes,Jaipur,35,972,13,2.4,17,Dairy,Cash on Delivery,4,0,5
+5001271,BigBasket Now,Kolkata,45,2324,29,5.2,7,Beverages,Wallet,5,0,4
+5001272,Flipkart Minutes,Mumbai,24,1390,15,2.3,18,Snacks,UPI,5,0,5
+5001273,JioMart Express,Bengaluru,49,627,30,5.3,13,Bakery,Wallet,5,1,4
+5001274,Swiggy Instamart,Mumbai,36,1765,20,2.6,5,Fruits & Vegetables,Cash on Delivery,4,0,1
+5001275,Zepto,Noida,18,2318,11,2.2,4,Household,Wallet,1,1,5
+5001276,Blinkit,Delhi,24,1847,14,3.3,1,Snacks,Wallet,1,0,3
+5001277,Zepto,Gurugram,27,857,16,3.4,3,Fruits & Vegetables,Wallet,3,1,2
+5001278,BigBasket Now,Delhi,33,2364,32,2.6,16,Bakery,Card,2,1,2
+5001279,BigBasket Now,Gurugram,23,1534,27,3.7,3,Bakery,UPI,2,1,4
+5001280,Swiggy Instamart,Noida,35,2109,11,2.4,11,Fruits & Vegetables,Wallet,2,0,5
+5001281,Zepto,Chennai,24,1907,16,4.1,5,Personal Care,Card,4,0,2
+5001282,JioMart Express,Pune,19,982,29,2.4,4,Household,Cash on Delivery,2,1,4
+5001283,Blinkit,Chennai,27,1314,16,3.9,17,Fruits & Vegetables,Card,5,0,4
+5001284,Blinkit,Pune,30,1519,17,5.0,7,Household,Cash on Delivery,1,0,3
+5001285,Blinkit,Mumbai,47,975,11,3.5,7,Beverages,Cash on Delivery,5,0,2
+5001286,JioMart Express,Hyderabad,49,1252,29,3.8,4,Personal Care,Wallet,4,0,3
+5001287,Zepto,Pune,28,1198,13,2.4,9,Snacks,Cash on Delivery,3,0,3
+5001288,Zepto,Jaipur,59,1495,17,2.5,8,Snacks,UPI,4,1,1
+5001289,Zepto,Noida,47,1430,14,1.5,11,Household,Card,4,0,1
+5001290,JioMart Express,Delhi,57,900,24,2.2,8,Beverages,UPI,4,0,4
+5001291,Blinkit,Delhi,43,1421,26,7.3,7,Dairy,Card,1,0,3
+5001292,Flipkart Minutes,Hyderabad,19,1948,16,2.9,11,Dairy,UPI,4,1,1
+5001293,Swiggy Instamart,Noida,27,1989,25,7.2,8,Personal Care,UPI,2,1,5
+5001294,Zepto,Pune,36,741,13,3.2,3,Snacks,UPI,2,1,2
+5001295,BigBasket Now,Mumbai,29,1622,16,3.1,8,Household,Card,1,1,5
+5001296,BigBasket Now,Chennai,32,1104,19,3.6,16,Baby Care,Wallet,5,0,4
+5001297,Flipkart Minutes,Mumbai,45,2329,8,2.0,6,Bakery,Wallet,2,0,2
+5001298,JioMart Express,Gurugram,55,1088,27,3.9,12,Personal Care,Wallet,5,0,2
+5001299,JioMart Express,Mumbai,18,1281,32,5.0,18,Personal Care,Cash on Delivery,5,1,5
+5001300,Flipkart Minutes,Chennai,18,221,14,3.6,17,Beverages,Card,4,1,3
+5001301,Swiggy Instamart,Bengaluru,23,1201,20,3.9,6,Baby Care,Cash on Delivery,5,1,3
+5001302,Swiggy Instamart,Mumbai,43,734,17,4.3,7,Snacks,Wallet,4,0,2
+5001303,Zepto,Pune,34,1032,11,4.2,1,Baby Care,Cash on Delivery,5,0,4
+5001304,Zepto,Mumbai,47,2254,24,5.1,2,Snacks,Card,4,0,5
+5001305,JioMart Express,Hyderabad,41,1604,35,3.3,14,Dairy,UPI,3,1,1
+5001306,BigBasket Now,Mumbai,49,1749,25,4.0,14,Dairy,Cash on Delivery,4,1,4
+5001307,Swiggy Instamart,Mumbai,19,492,12,4.7,6,Fruits & Vegetables,Wallet,3,0,5
+5001308,Zepto,Mumbai,43,2141,18,7.1,2,Baby Care,Cash on Delivery,5,1,5
+5001309,JioMart Express,Hyderabad,57,2059,24,4.2,12,Snacks,Card,3,0,4
+5001310,Flipkart Minutes,Noida,58,257,14,5.4,12,Snacks,UPI,1,0,1
+5001311,BigBasket Now,Noida,28,1095,25,2.8,15,Personal Care,Cash on Delivery,5,0,5
+5001312,Swiggy Instamart,Mumbai,29,1910,19,2.7,13,Bakery,Cash on Delivery,2,1,4
+5001313,Zepto,Mumbai,55,2027,18,5.4,6,Bakery,Cash on Delivery,5,1,3
+5001314,Swiggy Instamart,Noida,51,225,19,0.9,1,Snacks,Cash on Delivery,3,0,2
+5001315,BigBasket Now,Mumbai,41,327,34,5.1,11,Household,Wallet,3,0,3
+5001316,Zepto,Kolkata,18,1681,12,0.9,7,Baby Care,Wallet,3,1,5
+5001317,BigBasket Now,Delhi,51,1726,28,5.2,10,Fruits & Vegetables,UPI,2,0,4
+5001318,Zepto,Pune,43,2000,18,6.1,1,Snacks,Cash on Delivery,5,0,2
+5001319,Blinkit,Kolkata,57,1522,18,6.7,18,Household,Wallet,1,0,2
+5001320,Blinkit,Hyderabad,24,1445,15,4.8,11,Baby Care,Card,5,0,4
+5001321,Blinkit,Hyderabad,37,331,22,3.6,11,Bakery,UPI,1,0,3
+5001322,BigBasket Now,Gurugram,45,1610,22,1.8,18,Personal Care,UPI,5,1,5
+5001323,Blinkit,Delhi,26,2082,15,6.7,2,Baby Care,Cash on Delivery,2,0,5
+5001324,JioMart Express,Chennai,33,1880,33,2.7,17,Bakery,Card,3,1,3
+5001325,Flipkart Minutes,Pune,52,1128,10,3.5,7,Baby Care,Card,2,1,3
+5001326,Flipkart Minutes,Bengaluru,43,948,23,6.6,18,Fruits & Vegetables,Wallet,2,0,4
+5001327,Blinkit,Hyderabad,42,1613,8,3.2,5,Baby Care,UPI,1,1,4
+5001328,Blinkit,Bengaluru,28,402,13,2.9,16,Household,Card,2,1,4
+5001329,JioMart Express,Kolkata,35,2150,21,5.6,17,Fruits & Vegetables,Card,5,1,1
+5001330,Swiggy Instamart,Delhi,33,165,24,2.3,9,Dairy,UPI,1,1,4
+5001331,BigBasket Now,Delhi,38,1979,30,1.6,1,Beverages,Wallet,4,1,2
+5001332,Swiggy Instamart,Pune,42,660,15,3.7,9,Bakery,Cash on Delivery,2,1,1
+5001333,Blinkit,Gurugram,35,261,9,2.0,14,Bakery,UPI,1,1,5
+5001334,Swiggy Instamart,Hyderabad,46,1025,11,5.2,3,Baby Care,UPI,2,1,4
+5001335,Flipkart Minutes,Jaipur,38,300,17,4.3,16,Fruits & Vegetables,UPI,1,1,2
+5001336,JioMart Express,Hyderabad,47,135,24,3.7,11,Household,Card,1,0,1
+5001337,Blinkit,Kolkata,55,940,14,3.0,10,Snacks,Wallet,4,1,1
+5001338,JioMart Express,Gurugram,45,213,18,1.2,13,Household,UPI,4,1,3
+5001339,Flipkart Minutes,Pune,55,1494,19,7.0,17,Bakery,Card,5,0,2
+5001340,BigBasket Now,Mumbai,60,1728,30,6.9,3,Beverages,Cash on Delivery,1,0,5
+5001341,BigBasket Now,Kolkata,57,451,23,1.8,14,Personal Care,UPI,2,0,5
+5001342,JioMart Express,Bengaluru,40,261,34,7.3,10,Baby Care,Cash on Delivery,1,0,2
+5001343,Swiggy Instamart,Gurugram,37,1742,20,6.6,13,Dairy,Card,5,0,5
+5001344,BigBasket Now,Hyderabad,39,1842,23,4.4,13,Beverages,Card,1,0,1
+5001345,Blinkit,Delhi,27,2303,18,6.6,14,Beverages,Wallet,1,0,2
+5001346,Swiggy Instamart,Delhi,27,1101,21,4.9,16,Fruits & Vegetables,Cash on Delivery,1,1,2
+5001347,Zepto,Chennai,34,2386,23,5.1,5,Dairy,Cash on Delivery,4,0,4
+5001348,BigBasket Now,Kolkata,56,1683,23,3.2,17,Fruits & Vegetables,Cash on Delivery,4,1,1
+5001349,BigBasket Now,Chennai,37,2240,27,2.4,11,Bakery,Wallet,1,0,2
+5001350,Swiggy Instamart,Gurugram,52,2012,21,4.6,16,Beverages,Wallet,5,1,3
+5001351,JioMart Express,Chennai,47,1646,33,6.2,8,Beverages,UPI,1,0,2
+5001352,Swiggy Instamart,Kolkata,25,2047,22,4.9,12,Personal Care,Wallet,4,0,3
+5001353,Swiggy Instamart,Chennai,55,665,19,3.8,13,Bakery,Card,4,1,4
+5001354,JioMart Express,Jaipur,21,1954,36,7.3,1,Fruits & Vegetables,Card,3,1,2
+5001355,BigBasket Now,Chennai,33,1087,26,3.7,14,Baby Care,Wallet,2,1,1
+5001356,Flipkart Minutes,Gurugram,21,2305,19,5.7,16,Beverages,Wallet,2,0,5
+5001357,Zepto,Delhi,33,393,16,7.0,4,Beverages,UPI,2,0,4
+5001358,Swiggy Instamart,Noida,44,1711,23,7.0,5,Beverages,UPI,2,0,3
+5001359,Zepto,Kolkata,39,1641,17,1.1,13,Personal Care,Cash on Delivery,1,1,5
+5001360,Blinkit,Delhi,42,995,20,5.0,3,Personal Care,Card,1,1,1
+5001361,Blinkit,Pune,29,1865,14,3.7,10,Snacks,Cash on Delivery,2,1,1
+5001362,Blinkit,Chennai,59,1409,13,2.9,10,Fruits & Vegetables,Cash on Delivery,5,0,5
+5001363,Blinkit,Bengaluru,43,436,13,0.9,11,Fruits & Vegetables,Cash on Delivery,5,1,5
+5001364,Flipkart Minutes,Noida,25,257,14,6.4,8,Dairy,Cash on Delivery,2,1,1
+5001365,Swiggy Instamart,Bengaluru,30,1667,24,7.5,7,Household,Cash on Delivery,2,1,4
+5001366,Flipkart Minutes,Bengaluru,21,2291,14,6.2,2,Beverages,Wallet,3,1,2
+5001367,JioMart Express,Kolkata,37,929,34,5.8,9,Bakery,Cash on Delivery,4,1,1
+5001368,BigBasket Now,Kolkata,35,2308,27,2.2,9,Baby Care,UPI,5,1,5
+5001369,Flipkart Minutes,Chennai,48,1554,24,4.8,7,Beverages,Card,1,1,2
+5001370,JioMart Express,Mumbai,50,1033,30,2.2,15,Dairy,UPI,2,1,3
+5001371,Zepto,Pune,36,1172,12,1.8,10,Bakery,Wallet,5,1,1
+5001372,Swiggy Instamart,Gurugram,41,327,16,5.7,8,Baby Care,Cash on Delivery,2,0,1
+5001373,Blinkit,Mumbai,46,1540,7,7.2,2,Bakery,Card,2,0,5
+5001374,Zepto,Chennai,18,450,19,3.9,13,Baby Care,Cash on Delivery,3,1,2
+5001375,Blinkit,Hyderabad,27,2181,14,5.0,11,Baby Care,Wallet,4,0,4
+5001376,Zepto,Bengaluru,54,2275,25,6.0,18,Baby Care,Card,3,1,3
+5001377,JioMart Express,Bengaluru,50,1421,27,3.0,6,Bakery,Wallet,1,1,3
+5001378,BigBasket Now,Chennai,21,626,22,5.0,16,Baby Care,Cash on Delivery,4,0,5
+5001379,BigBasket Now,Delhi,32,160,21,2.1,5,Household,Card,2,1,1
+5001380,Flipkart Minutes,Hyderabad,48,302,20,4.4,3,Beverages,Card,3,0,2
+5001381,Blinkit,Chennai,36,1625,16,5.1,16,Personal Care,Wallet,4,0,4
+5001382,BigBasket Now,Delhi,39,1196,26,0.8,16,Beverages,Card,5,0,2
+5001383,Swiggy Instamart,Mumbai,20,349,21,2.6,3,Household,UPI,3,1,5
+5001384,JioMart Express,Delhi,53,258,31,3.1,11,Beverages,Card,5,0,1
+5001385,Flipkart Minutes,Chennai,22,339,16,3.5,15,Baby Care,Wallet,1,0,2
+5001386,Zepto,Bengaluru,26,1211,20,6.7,4,Personal Care,Card,4,1,4
+5001387,Blinkit,Noida,27,1267,17,2.4,6,Personal Care,UPI,1,1,3
+5001388,Blinkit,Chennai,30,118,19,3.7,18,Baby Care,Cash on Delivery,1,0,5
+5001389,JioMart Express,Bengaluru,53,1144,32,6.2,11,Dairy,Cash on Delivery,1,0,3
+5001390,BigBasket Now,Noida,51,999,24,6.5,3,Baby Care,Wallet,4,0,4
+5001391,Zepto,Delhi,18,551,17,2.5,13,Dairy,Cash on Delivery,1,1,1
+5001392,BigBasket Now,Chennai,42,915,22,2.5,1,Baby Care,Wallet,4,1,1
+5001393,Blinkit,Noida,39,1651,11,3.1,16,Fruits & Vegetables,Wallet,4,0,4
+5001394,Zepto,Chennai,59,346,20,6.3,14,Snacks,Wallet,2,1,5
+5001395,Blinkit,Noida,19,774,26,6.5,14,Personal Care,Cash on Delivery,1,0,3
+5001396,Flipkart Minutes,Kolkata,30,99,16,6.0,3,Baby Care,Card,3,1,2
+5001397,Swiggy Instamart,Jaipur,30,301,22,2.3,12,Fruits & Vegetables,UPI,1,1,5
+5001398,Zepto,Jaipur,56,1676,11,3.9,10,Snacks,Cash on Delivery,3,0,3
+5001399,Swiggy Instamart,Bengaluru,54,2066,18,5.0,12,Fruits & Vegetables,Cash on Delivery,1,0,2
+5001400,JioMart Express,Delhi,45,1471,27,2.9,7,Baby Care,Card,1,0,2
+5001401,BigBasket Now,Hyderabad,25,213,21,2.2,7,Bakery,Cash on Delivery,5,0,3
+5001402,Flipkart Minutes,Kolkata,56,2059,18,0.6,11,Fruits & Vegetables,UPI,4,0,1
+5001403,BigBasket Now,Delhi,36,1139,18,0.9,13,Household,Wallet,3,1,5
+5001404,JioMart Express,Delhi,20,757,35,6.4,3,Dairy,Wallet,5,0,5
+5001405,BigBasket Now,Pune,39,1276,28,5.1,15,Household,Card,3,1,1
+5001406,Zepto,Mumbai,51,645,18,6.0,14,Beverages,Wallet,2,0,3
+5001407,Swiggy Instamart,Delhi,30,2380,20,7.2,16,Bakery,UPI,5,0,1
+5001408,JioMart Express,Jaipur,22,2349,26,1.1,11,Dairy,Cash on Delivery,3,0,2
+5001409,Blinkit,Mumbai,57,589,17,4.1,3,Baby Care,UPI,1,1,5
+5001410,JioMart Express,Gurugram,18,1226,31,2.7,15,Personal Care,Card,2,1,2
+5001411,Blinkit,Bengaluru,19,1749,17,4.1,6,Fruits & Vegetables,UPI,3,0,2
+5001412,Blinkit,Chennai,54,1850,9,1.3,18,Personal Care,Wallet,5,0,5
+5001413,Flipkart Minutes,Noida,30,2291,17,4.2,10,Household,UPI,3,1,5
+5001414,Blinkit,Pune,46,2369,8,1.4,18,Fruits & Vegetables,Wallet,4,1,5
+5001415,BigBasket Now,Mumbai,36,1496,23,3.8,16,Dairy,Cash on Delivery,5,0,2
+5001416,Zepto,Pune,53,1792,9,3.8,15,Household,Wallet,2,1,2
+5001417,Blinkit,Jaipur,20,1832,16,4.9,13,Snacks,Cash on Delivery,4,1,4
+5001418,Blinkit,Delhi,37,531,20,4.7,10,Household,UPI,5,1,1
+5001419,Flipkart Minutes,Chennai,56,613,18,1.4,18,Baby Care,Cash on Delivery,1,1,3
+5001420,JioMart Express,Bengaluru,59,1281,32,7.2,1,Fruits & Vegetables,UPI,1,0,2
+5001421,Zepto,Noida,24,750,9,1.5,1,Dairy,Card,5,1,2
+5001422,Flipkart Minutes,Hyderabad,27,2364,16,2.9,15,Beverages,Wallet,4,0,4
+5001423,Blinkit,Chennai,34,1259,11,2.0,6,Bakery,UPI,5,1,2
+5001424,JioMart Express,Delhi,44,719,34,6.0,8,Snacks,Card,3,0,5
+5001425,Swiggy Instamart,Delhi,18,271,29,6.8,11,Snacks,Wallet,3,0,4
+5001426,BigBasket Now,Chennai,51,597,26,2.3,16,Personal Care,Cash on Delivery,2,1,3
+5001427,Zepto,Delhi,50,2334,15,5.5,10,Household,Wallet,4,1,5
+5001428,Blinkit,Noida,40,2050,11,7.5,7,Household,Cash on Delivery,3,1,3
+5001429,BigBasket Now,Pune,22,94,32,3.9,15,Snacks,Wallet,3,0,4
+5001430,JioMart Express,Hyderabad,34,1268,25,2.3,7,Beverages,UPI,2,1,5
+5001431,Zepto,Mumbai,19,1827,22,4.8,3,Baby Care,Wallet,4,1,5
+5001432,BigBasket Now,Delhi,23,1305,26,3.6,18,Beverages,Card,5,1,5
+5001433,BigBasket Now,Noida,36,1430,25,6.2,11,Snacks,UPI,2,0,4
+5001434,Swiggy Instamart,Gurugram,33,893,24,2.6,4,Dairy,Card,1,0,5
+5001435,BigBasket Now,Kolkata,42,1328,29,3.4,2,Beverages,Wallet,1,1,2
+5001436,Zepto,Mumbai,36,2048,16,1.6,16,Personal Care,Wallet,4,0,5
+5001437,JioMart Express,Bengaluru,24,1582,32,4.1,5,Household,Card,1,1,3
+5001438,Swiggy Instamart,Mumbai,54,858,24,3.7,1,Fruits & Vegetables,Cash on Delivery,5,0,1
+5001439,JioMart Express,Mumbai,31,1488,25,0.9,7,Baby Care,UPI,5,1,5
+5001440,JioMart Express,Noida,26,445,27,1.6,8,Dairy,Cash on Delivery,4,0,3
+5001441,Blinkit,Pune,21,454,21,3.6,7,Personal Care,UPI,3,1,3
+5001442,Zepto,Bengaluru,41,1187,12,7.2,14,Fruits & Vegetables,Card,5,1,4
+5001443,JioMart Express,Noida,28,425,21,1.9,11,Baby Care,UPI,1,0,1
+5001444,Blinkit,Bengaluru,19,2305,20,5.5,7,Dairy,UPI,1,0,2
+5001445,BigBasket Now,Kolkata,44,1612,27,3.0,10,Fruits & Vegetables,Cash on Delivery,4,0,4
+5001446,Blinkit,Pune,23,299,24,5.3,13,Snacks,UPI,3,0,4
+5001447,Zepto,Jaipur,42,511,21,6.8,4,Personal Care,UPI,3,1,3
+5001448,Zepto,Pune,26,1298,15,3.7,6,Bakery,Card,5,1,4
+5001449,BigBasket Now,Noida,25,326,23,6.3,10,Personal Care,Cash on Delivery,1,0,4
+5001450,Zepto,Bengaluru,60,1274,16,2.1,8,Snacks,UPI,3,0,5
+5001451,BigBasket Now,Noida,46,1256,23,3.9,15,Personal Care,Card,2,1,2
+5001452,Flipkart Minutes,Bengaluru,55,1225,18,2.3,12,Beverages,Card,1,1,4
+5001453,BigBasket Now,Gurugram,50,459,24,5.6,9,Dairy,Wallet,3,0,1
+5001454,Zepto,Jaipur,25,1522,13,3.4,9,Bakery,Wallet,4,1,5
+5001455,Flipkart Minutes,Delhi,49,192,13,7.1,4,Household,UPI,4,0,5
+5001456,Flipkart Minutes,Gurugram,52,813,12,1.7,2,Household,Wallet,1,0,1
+5001457,Zepto,Bengaluru,41,763,15,5.5,4,Dairy,Card,4,0,3
+5001458,Zepto,Delhi,47,422,23,3.4,17,Beverages,Card,5,1,1
+5001459,Swiggy Instamart,Noida,45,943,15,1.1,13,Snacks,Card,4,0,4
+5001460,BigBasket Now,Jaipur,42,233,29,5.7,1,Personal Care,Wallet,3,1,5
+5001461,BigBasket Now,Mumbai,48,946,20,1.5,12,Dairy,Cash on Delivery,5,1,2
+5001462,BigBasket Now,Hyderabad,34,1062,26,3.3,17,Beverages,Wallet,1,1,2
+5001463,Zepto,Delhi,53,2250,16,1.7,7,Bakery,Card,1,1,2
+5001464,Swiggy Instamart,Mumbai,27,2287,17,2.4,5,Beverages,Card,3,0,2
+5001465,JioMart Express,Chennai,21,2127,25,3.1,18,Personal Care,Wallet,3,0,2
+5001466,BigBasket Now,Kolkata,29,859,26,5.2,2,Personal Care,Card,4,0,4
+5001467,BigBasket Now,Noida,41,1158,32,1.7,15,Fruits & Vegetables,Card,2,0,1
+5001468,Blinkit,Jaipur,35,376,5,0.9,7,Bakery,Wallet,5,1,5
+5001469,Flipkart Minutes,Hyderabad,41,2378,16,5.1,4,Household,Wallet,1,0,3
+5001470,Swiggy Instamart,Delhi,53,2372,27,1.8,6,Bakery,Cash on Delivery,1,0,1
+5001471,Flipkart Minutes,Delhi,46,520,12,2.2,4,Fruits & Vegetables,Wallet,5,1,2
+5001472,Swiggy Instamart,Hyderabad,37,815,24,6.3,13,Baby Care,Card,4,0,4
+5001473,Zepto,Bengaluru,45,810,14,3.3,18,Household,UPI,4,0,5
+5001474,JioMart Express,Gurugram,27,627,31,6.7,16,Beverages,Wallet,2,0,2
+5001475,Flipkart Minutes,Delhi,19,112,20,3.7,11,Dairy,UPI,3,1,5
+5001476,JioMart Express,Hyderabad,40,1895,32,6.8,10,Bakery,Cash on Delivery,5,0,5
+5001477,BigBasket Now,Jaipur,28,680,24,1.2,1,Fruits & Vegetables,UPI,3,1,3
+5001478,JioMart Express,Chennai,52,685,31,7.3,2,Dairy,UPI,2,0,2
+5001479,JioMart Express,Noida,43,2045,29,6.9,9,Personal Care,UPI,1,1,3
+5001480,Blinkit,Pune,37,1232,10,6.6,5,Fruits & Vegetables,Wallet,2,1,5
+5001481,Blinkit,Pune,28,1648,17,4.4,3,Dairy,Cash on Delivery,3,0,5
+5001482,JioMart Express,Bengaluru,55,2260,30,0.9,14,Fruits & Vegetables,Wallet,5,0,1
+5001483,BigBasket Now,Jaipur,40,463,27,7.1,17,Baby Care,Card,3,1,4
+5001484,Flipkart Minutes,Gurugram,41,1274,8,0.9,10,Baby Care,Cash on Delivery,1,1,3
+5001485,Zepto,Kolkata,43,486,5,4.0,18,Dairy,Cash on Delivery,3,1,2
+5001486,JioMart Express,Mumbai,27,567,32,4.3,3,Fruits & Vegetables,Cash on Delivery,2,1,2
+5001487,Swiggy Instamart,Pune,37,1047,27,5.6,7,Baby Care,UPI,1,1,5
+5001488,Zepto,Delhi,36,2160,19,5.9,10,Bakery,UPI,1,1,3
+5001489,Blinkit,Mumbai,56,240,14,7.3,7,Beverages,UPI,5,0,2
+5001490,BigBasket Now,Mumbai,48,768,17,3.8,13,Fruits & Vegetables,Cash on Delivery,3,0,1
+5001491,Swiggy Instamart,Noida,29,1814,23,6.1,4,Bakery,Wallet,4,1,2
+5001492,Zepto,Gurugram,25,2019,13,4.2,7,Fruits & Vegetables,Wallet,5,1,5
+5001493,Zepto,Chennai,35,2336,18,6.9,7,Fruits & Vegetables,Cash on Delivery,3,0,1
+5001494,Blinkit,Gurugram,59,2311,10,3.8,14,Bakery,UPI,1,0,4
+5001495,Swiggy Instamart,Delhi,23,1143,21,6.2,17,Bakery,Wallet,4,1,3
+5001496,BigBasket Now,Hyderabad,29,1717,21,2.4,17,Baby Care,Wallet,4,1,1
+5001497,Blinkit,Kolkata,41,369,12,5.6,10,Fruits & Vegetables,Card,2,0,1
+5001498,JioMart Express,Chennai,19,1611,34,4.5,14,Beverages,Card,2,0,1
+5001499,Zepto,Chennai,26,746,18,5.6,6,Household,Card,2,0,3
+5001500,JioMart Express,Delhi,42,1818,27,5.2,9,Personal Care,Wallet,2,1,3
+5001501,BigBasket Now,Kolkata,35,713,22,3.7,5,Baby Care,UPI,3,0,4
+5001502,Zepto,Chennai,56,1554,13,7.3,13,Baby Care,UPI,4,1,4
+5001503,Flipkart Minutes,Bengaluru,29,921,12,3.7,15,Personal Care,Card,1,1,2
+5001504,Blinkit,Mumbai,18,1038,11,2.9,3,Snacks,Cash on Delivery,1,1,5
+5001505,Zepto,Delhi,43,1044,24,5.1,6,Baby Care,Cash on Delivery,2,1,2
+5001506,BigBasket Now,Jaipur,19,1070,24,4.7,1,Household,UPI,1,1,4
+5001507,Blinkit,Gurugram,40,284,17,5.3,15,Fruits & Vegetables,Card,2,0,3
+5001508,BigBasket Now,Gurugram,29,2202,28,1.7,6,Baby Care,UPI,3,1,1
+5001509,Zepto,Pune,18,192,13,2.2,17,Fruits & Vegetables,Cash on Delivery,2,1,5
+5001510,BigBasket Now,Mumbai,26,2197,29,4.8,5,Personal Care,UPI,5,1,4
+5001511,Flipkart Minutes,Kolkata,50,782,16,6.9,6,Bakery,Cash on Delivery,1,1,1
+5001512,Zepto,Chennai,46,1068,10,1.2,12,Snacks,UPI,2,1,1
+5001513,Flipkart Minutes,Hyderabad,29,1568,14,3.6,15,Beverages,Wallet,3,1,1
+5001514,BigBasket Now,Delhi,32,2054,21,0.7,10,Snacks,UPI,2,1,4
+5001515,BigBasket Now,Pune,47,1454,33,5.1,1,Dairy,Wallet,4,1,2
+5001516,JioMart Express,Bengaluru,44,1852,29,6.5,2,Beverages,Wallet,1,1,3
+5001517,Zepto,Jaipur,35,1507,18,4.5,13,Baby Care,Wallet,5,0,3
+5001518,Swiggy Instamart,Delhi,50,989,19,2.1,2,Household,Wallet,5,0,3
+5001519,Flipkart Minutes,Mumbai,42,1116,19,4.2,3,Fruits & Vegetables,UPI,2,0,2
+5001520,BigBasket Now,Delhi,59,456,18,1.5,17,Fruits & Vegetables,UPI,2,0,1
+5001521,Swiggy Instamart,Noida,29,1976,25,4.8,7,Personal Care,UPI,3,1,4
+5001522,BigBasket Now,Delhi,25,2390,21,3.4,6,Dairy,UPI,1,1,5
+5001523,Swiggy Instamart,Noida,39,1539,24,4.0,2,Beverages,Wallet,1,1,4
+5001524,Flipkart Minutes,Pune,49,150,16,7.5,9,Baby Care,Wallet,3,0,5
+5001525,Swiggy Instamart,Delhi,18,447,23,0.9,13,Household,Wallet,4,1,4
+5001526,JioMart Express,Kolkata,20,1458,27,4.3,8,Household,Wallet,2,0,1
+5001527,Swiggy Instamart,Chennai,27,195,11,4.4,8,Dairy,Cash on Delivery,5,1,5
+5001528,BigBasket Now,Hyderabad,25,1979,28,6.9,16,Baby Care,Cash on Delivery,4,0,1
+5001529,Swiggy Instamart,Jaipur,49,1650,32,5.0,15,Dairy,Wallet,2,1,3
+5001530,Swiggy Instamart,Bengaluru,54,269,21,4.1,3,Personal Care,Cash on Delivery,4,0,5
+5001531,Flipkart Minutes,Delhi,46,225,9,3.5,13,Snacks,Cash on Delivery,2,1,5
+5001532,Blinkit,Pune,51,2212,10,0.9,15,Beverages,Card,3,1,5
+5001533,Zepto,Chennai,31,1194,18,2.2,4,Fruits & Vegetables,Card,4,1,1
+5001534,Zepto,Kolkata,57,1676,12,2.1,5,Dairy,Cash on Delivery,1,1,5
+5001535,JioMart Express,Mumbai,58,2192,36,3.4,10,Beverages,Cash on Delivery,5,0,2
+5001536,Flipkart Minutes,Kolkata,43,137,8,2.2,16,Household,Cash on Delivery,1,0,4
+5001537,Flipkart Minutes,Noida,32,1875,16,5.0,11,Beverages,Cash on Delivery,4,1,3
+5001538,Swiggy Instamart,Pune,39,2316,12,1.0,16,Snacks,Wallet,5,1,5
+5001539,Zepto,Bengaluru,60,292,19,5.9,16,Personal Care,Card,5,0,5
+5001540,Zepto,Bengaluru,33,2223,17,3.5,4,Household,UPI,3,0,3
+5001541,JioMart Express,Gurugram,28,173,29,5.1,4,Snacks,Wallet,3,0,4
+5001542,Swiggy Instamart,Gurugram,51,2011,8,2.6,18,Baby Care,Cash on Delivery,4,1,1
+5001543,Blinkit,Gurugram,59,1352,6,5.2,8,Beverages,Cash on Delivery,2,0,2
+5001544,Blinkit,Gurugram,36,1005,17,3.2,17,Fruits & Vegetables,Card,1,1,1
+5001545,Swiggy Instamart,Kolkata,51,1220,22,6.1,14,Beverages,Cash on Delivery,3,1,1
+5001546,Blinkit,Jaipur,21,363,14,2.5,16,Dairy,Card,5,1,3
+5001547,Zepto,Mumbai,39,1168,20,5.1,8,Snacks,Wallet,1,1,1
+5001548,Zepto,Noida,43,223,15,4.1,2,Bakery,Wallet,5,1,3
+5001549,Swiggy Instamart,Hyderabad,49,732,21,6.4,8,Dairy,Card,1,1,4
+5001550,Zepto,Noida,39,116,19,4.6,12,Personal Care,Cash on Delivery,1,0,4
+5001551,Blinkit,Pune,43,232,13,1.4,1,Baby Care,Wallet,4,0,3
+5001552,Flipkart Minutes,Kolkata,27,700,16,1.8,14,Dairy,UPI,2,0,3
+5001553,JioMart Express,Mumbai,53,189,29,1.7,2,Personal Care,Cash on Delivery,4,0,3
+5001554,JioMart Express,Hyderabad,24,2317,21,2.9,7,Household,Wallet,3,0,3
+5001555,JioMart Express,Bengaluru,28,585,40,7.1,10,Fruits & Vegetables,Card,4,1,4
+5001556,Blinkit,Kolkata,58,1282,23,4.9,15,Bakery,Card,4,1,5
+5001557,Blinkit,Bengaluru,25,329,24,7.3,6,Personal Care,Wallet,2,1,3
+5001558,JioMart Express,Noida,55,644,30,3.5,7,Dairy,Cash on Delivery,4,1,5
+5001559,Swiggy Instamart,Noida,47,741,21,7.4,12,Fruits & Vegetables,Card,3,0,3
+5001560,Zepto,Delhi,45,1915,19,0.9,6,Dairy,Card,4,1,1
+5001561,BigBasket Now,Mumbai,55,1666,28,2.8,1,Baby Care,Cash on Delivery,1,1,4
+5001562,Flipkart Minutes,Bengaluru,48,1258,16,7.1,14,Bakery,Card,1,0,1
+5001563,Blinkit,Kolkata,42,2084,4,0.8,8,Fruits & Vegetables,Card,4,1,5
+5001564,Flipkart Minutes,Jaipur,34,1009,4,0.7,6,Baby Care,UPI,1,1,5
+5001565,Zepto,Gurugram,55,262,17,0.8,15,Baby Care,Wallet,3,0,5
+5001566,Blinkit,Noida,31,993,17,5.8,8,Dairy,Wallet,4,0,1
+5001567,Flipkart Minutes,Mumbai,32,1547,10,1.3,14,Household,Cash on Delivery,4,1,2
+5001568,Flipkart Minutes,Pune,46,1516,19,2.6,8,Beverages,UPI,4,0,3
+5001569,BigBasket Now,Jaipur,20,733,23,2.7,8,Bakery,Wallet,5,1,1
+5001570,BigBasket Now,Mumbai,60,1328,30,6.5,7,Personal Care,Wallet,1,0,3
+5001571,Swiggy Instamart,Gurugram,58,988,28,6.3,5,Dairy,Card,4,0,3
+5001572,BigBasket Now,Gurugram,25,769,23,1.5,4,Snacks,Wallet,4,0,4
+5001573,Blinkit,Kolkata,34,1563,12,4.2,9,Beverages,UPI,3,0,5
+5001574,Flipkart Minutes,Mumbai,54,1299,23,5.5,2,Beverages,Wallet,2,0,5
+5001575,Swiggy Instamart,Jaipur,58,400,22,3.0,12,Beverages,Card,5,1,1
+5001576,JioMart Express,Noida,57,1971,36,5.3,9,Bakery,Wallet,5,1,2
+5001577,Flipkart Minutes,Kolkata,42,1597,17,4.7,4,Baby Care,Cash on Delivery,1,0,1
+5001578,JioMart Express,Jaipur,55,111,38,7.2,8,Beverages,Cash on Delivery,5,1,2
+5001579,Blinkit,Kolkata,33,636,14,0.8,17,Bakery,Cash on Delivery,4,1,5
+5001580,JioMart Express,Delhi,52,1107,33,7.4,2,Snacks,Card,2,0,4
+5001581,Swiggy Instamart,Kolkata,35,1834,13,5.0,16,Personal Care,Wallet,2,1,4
+5001582,Flipkart Minutes,Jaipur,34,478,23,4.4,8,Bakery,Card,3,0,4
+5001583,Swiggy Instamart,Jaipur,51,1386,14,1.3,3,Household,Wallet,5,0,3
+5001584,Blinkit,Noida,38,1492,17,4.3,16,Household,Wallet,2,0,3
+5001585,Flipkart Minutes,Noida,42,574,19,5.6,12,Personal Care,Wallet,3,0,4
+5001586,Swiggy Instamart,Mumbai,54,597,31,5.9,6,Household,Cash on Delivery,1,0,3
+5001587,JioMart Express,Jaipur,39,1229,23,1.4,16,Beverages,Cash on Delivery,3,1,1
+5001588,Blinkit,Mumbai,46,1809,16,3.2,6,Beverages,Card,2,1,5
+5001589,Blinkit,Kolkata,45,2161,19,3.1,17,Dairy,Wallet,5,1,3
+5001590,Swiggy Instamart,Mumbai,35,1540,29,5.1,16,Dairy,Wallet,2,0,1
+5001591,Swiggy Instamart,Chennai,48,336,14,0.8,8,Beverages,UPI,5,0,5
+5001592,Swiggy Instamart,Hyderabad,49,687,20,4.8,10,Household,Wallet,1,0,3
+5001593,Flipkart Minutes,Bengaluru,33,780,11,0.8,4,Fruits & Vegetables,Wallet,3,0,3
+5001594,Flipkart Minutes,Delhi,53,1875,19,6.1,16,Dairy,Wallet,5,1,2
+5001595,Blinkit,Pune,28,230,20,4.9,7,Personal Care,UPI,4,0,4
+5001596,Zepto,Kolkata,46,950,22,3.0,5,Bakery,Cash on Delivery,5,1,3
+5001597,Flipkart Minutes,Gurugram,57,108,17,5.3,10,Beverages,Card,2,1,4
+5001598,JioMart Express,Gurugram,44,1982,34,2.0,6,Bakery,Cash on Delivery,1,1,5
+5001599,Swiggy Instamart,Pune,57,1004,23,4.6,14,Dairy,Wallet,2,1,1
+5001600,Zepto,Mumbai,50,611,14,1.4,15,Household,Cash on Delivery,3,1,4
+5001601,Zepto,Chennai,37,2352,20,2.5,2,Fruits & Vegetables,Card,5,0,2
+5001602,Zepto,Hyderabad,30,778,15,6.7,15,Bakery,Card,3,1,2
+5001603,BigBasket Now,Bengaluru,54,2163,24,1.6,1,Dairy,Cash on Delivery,1,0,3
+5001604,Flipkart Minutes,Pune,20,2367,16,2.8,4,Beverages,Card,2,1,4
+5001605,Swiggy Instamart,Jaipur,43,498,21,4.3,10,Fruits & Vegetables,Wallet,5,0,2
+5001606,Zepto,Gurugram,56,1242,18,3.9,10,Snacks,Card,1,1,5
+5001607,Blinkit,Hyderabad,25,1693,18,6.4,9,Fruits & Vegetables,Wallet,4,0,2
+5001608,Blinkit,Hyderabad,30,176,14,3.7,18,Fruits & Vegetables,UPI,1,1,1
+5001609,BigBasket Now,Chennai,36,2145,21,1.9,6,Baby Care,Wallet,5,0,3
+5001610,JioMart Express,Hyderabad,20,2153,36,6.1,8,Fruits & Vegetables,UPI,1,0,2
+5001611,Swiggy Instamart,Noida,44,274,23,6.0,14,Household,Card,5,0,2
+5001612,Zepto,Delhi,22,2098,8,3.8,16,Baby Care,Cash on Delivery,4,0,1
+5001613,JioMart Express,Hyderabad,21,2026,26,3.7,11,Snacks,Card,2,0,1
+5001614,JioMart Express,Pune,45,1618,31,2.0,12,Dairy,Cash on Delivery,1,0,2
+5001615,JioMart Express,Hyderabad,31,341,27,2.5,10,Dairy,Card,2,0,2
+5001616,BigBasket Now,Gurugram,21,797,25,5.4,2,Bakery,Card,4,1,3
+5001617,Blinkit,Mumbai,56,2150,22,7.3,11,Fruits & Vegetables,UPI,3,0,5
+5001618,Flipkart Minutes,Pune,59,1024,15,4.0,4,Baby Care,UPI,3,1,2
+5001619,BigBasket Now,Gurugram,47,2359,23,1.1,1,Fruits & Vegetables,Card,2,1,5
+5001620,BigBasket Now,Delhi,44,2252,23,3.9,14,Bakery,Cash on Delivery,3,1,4
+5001621,JioMart Express,Chennai,23,384,28,5.3,16,Bakery,Cash on Delivery,1,1,5
+5001622,Blinkit,Hyderabad,35,2116,17,6.4,15,Baby Care,Wallet,4,1,4
+5001623,Flipkart Minutes,Delhi,53,1989,18,6.1,2,Baby Care,Card,2,0,5
+5001624,Swiggy Instamart,Hyderabad,22,351,21,3.0,1,Bakery,Cash on Delivery,1,0,4
+5001625,Zepto,Mumbai,48,875,9,1.9,10,Beverages,Wallet,4,1,4
+5001626,Swiggy Instamart,Jaipur,52,1071,16,3.1,17,Personal Care,Cash on Delivery,2,0,4
+5001627,JioMart Express,Kolkata,29,398,31,2.0,1,Bakery,Cash on Delivery,5,0,1
+5001628,JioMart Express,Gurugram,21,1774,31,5.9,18,Dairy,Wallet,4,1,2
+5001629,Flipkart Minutes,Noida,25,732,14,2.9,3,Household,Card,4,1,2
+5001630,JioMart Express,Chennai,39,1418,17,1.8,15,Baby Care,Wallet,4,0,4
+5001631,Blinkit,Jaipur,21,661,26,7.3,15,Personal Care,UPI,5,0,3
+5001632,Blinkit,Pune,27,243,13,4.6,8,Snacks,Wallet,5,1,2
+5001633,Zepto,Pune,55,1698,10,1.6,13,Baby Care,Card,1,0,2
+5001634,Swiggy Instamart,Mumbai,53,1440,15,2.7,11,Baby Care,Cash on Delivery,4,1,5
+5001635,Flipkart Minutes,Delhi,55,1238,10,1.1,16,Beverages,UPI,4,0,2
+5001636,Swiggy Instamart,Pune,58,307,13,1.6,1,Baby Care,Cash on Delivery,4,0,3
+5001637,JioMart Express,Gurugram,60,1162,26,4.8,14,Dairy,Cash on Delivery,1,1,2
+5001638,JioMart Express,Hyderabad,44,576,27,2.5,15,Personal Care,UPI,5,1,4
+5001639,Swiggy Instamart,Pune,60,1506,21,5.7,7,Beverages,Wallet,4,0,2
+5001640,JioMart Express,Jaipur,19,757,38,5.8,5,Fruits & Vegetables,UPI,3,1,1
+5001641,Zepto,Kolkata,21,1528,21,2.4,3,Beverages,Card,5,1,3
+5001642,Swiggy Instamart,Chennai,28,559,25,7.4,13,Personal Care,Cash on Delivery,3,1,3
+5001643,BigBasket Now,Hyderabad,22,154,29,4.3,16,Household,UPI,5,0,5
+5001644,Blinkit,Kolkata,23,100,21,3.4,18,Beverages,Card,5,0,5
+5001645,Blinkit,Hyderabad,50,510,16,6.4,11,Bakery,Wallet,1,1,5
+5001646,Blinkit,Delhi,30,1764,11,1.0,7,Dairy,Cash on Delivery,4,1,2
+5001647,Flipkart Minutes,Bengaluru,21,1433,15,3.6,7,Bakery,Wallet,3,1,4
+5001648,Swiggy Instamart,Pune,30,131,26,6.8,13,Fruits & Vegetables,Cash on Delivery,4,1,1
+5001649,Flipkart Minutes,Delhi,38,1342,22,6.0,11,Beverages,UPI,2,0,3
+5001650,BigBasket Now,Bengaluru,41,1861,28,4.5,17,Baby Care,UPI,5,1,3
+5001651,Flipkart Minutes,Kolkata,44,983,10,4.2,8,Beverages,Wallet,4,0,1
+5001652,Flipkart Minutes,Noida,41,1517,11,1.1,16,Bakery,UPI,5,1,4
+5001653,Blinkit,Gurugram,43,1526,16,6.7,16,Dairy,Cash on Delivery,3,1,5
+5001654,Swiggy Instamart,Pune,56,275,17,4.3,1,Personal Care,Wallet,4,0,3
+5001655,JioMart Express,Delhi,27,854,37,6.0,11,Dairy,UPI,5,0,2
+5001656,Swiggy Instamart,Hyderabad,52,1720,21,4.7,10,Fruits & Vegetables,UPI,4,0,3
+5001657,Swiggy Instamart,Hyderabad,54,584,19,1.8,7,Dairy,Card,5,1,3
+5001658,Blinkit,Jaipur,52,1706,13,4.3,13,Personal Care,Card,3,0,1
+5001659,Zepto,Noida,53,522,12,6.5,8,Beverages,UPI,2,0,5
+5001660,Flipkart Minutes,Jaipur,53,895,19,6.8,16,Baby Care,UPI,1,0,4
+5001661,Blinkit,Jaipur,21,1692,21,7.0,8,Beverages,Wallet,4,1,2
+5001662,Zepto,Chennai,28,156,11,2.8,10,Bakery,UPI,5,1,5
+5001663,Flipkart Minutes,Hyderabad,31,1711,30,6.8,17,Beverages,UPI,2,1,1
+5001664,Flipkart Minutes,Hyderabad,57,844,16,4.4,12,Dairy,UPI,2,0,3
+5001665,Zepto,Gurugram,29,518,8,6.1,10,Beverages,Card,1,1,3
+5001666,BigBasket Now,Bengaluru,56,1830,30,4.6,9,Dairy,Cash on Delivery,5,0,1
+5001667,JioMart Express,Jaipur,42,1694,26,0.8,9,Beverages,UPI,2,1,5
+5001668,Flipkart Minutes,Delhi,50,730,21,4.7,3,Household,UPI,5,1,1
+5001669,Zepto,Hyderabad,37,2119,23,4.1,2,Household,UPI,2,1,4
+5001670,Zepto,Hyderabad,55,2297,21,7.1,8,Bakery,UPI,2,0,5
+5001671,Zepto,Pune,48,1591,27,6.6,18,Dairy,Wallet,5,1,1
+5001672,Flipkart Minutes,Mumbai,37,1441,14,2.3,2,Personal Care,Card,2,0,5
+5001673,BigBasket Now,Jaipur,23,2144,23,0.9,7,Snacks,Cash on Delivery,5,0,5
+5001674,Zepto,Pune,27,1043,10,1.3,1,Fruits & Vegetables,Card,3,0,2
+5001675,Flipkart Minutes,Chennai,23,1297,12,0.7,18,Bakery,Card,4,0,4
+5001676,Swiggy Instamart,Chennai,25,1440,19,4.7,2,Beverages,Cash on Delivery,4,1,4
+5001677,BigBasket Now,Jaipur,32,419,28,3.0,14,Personal Care,Cash on Delivery,4,0,1
+5001678,JioMart Express,Kolkata,22,396,26,5.6,3,Household,Wallet,4,0,3
+5001679,Blinkit,Hyderabad,40,1305,17,4.6,12,Household,Card,1,1,3
+5001680,Swiggy Instamart,Hyderabad,18,450,27,7.0,14,Personal Care,UPI,4,0,3
+5001681,JioMart Express,Mumbai,22,1286,29,3.0,5,Personal Care,Cash on Delivery,5,0,1
+5001682,JioMart Express,Chennai,28,685,29,0.7,10,Beverages,Wallet,2,0,3
+5001683,Blinkit,Hyderabad,53,1734,16,3.9,16,Baby Care,Wallet,1,0,2
+5001684,BigBasket Now,Hyderabad,26,660,28,4.8,2,Baby Care,Cash on Delivery,2,0,3
+5001685,BigBasket Now,Hyderabad,44,579,22,2.9,13,Household,Wallet,2,1,2
+5001686,JioMart Express,Delhi,42,2217,32,5.0,2,Fruits & Vegetables,Card,4,0,1
+5001687,BigBasket Now,Hyderabad,54,698,22,1.7,4,Household,Card,4,0,5
+5001688,JioMart Express,Hyderabad,38,778,33,3.5,4,Dairy,Card,4,0,3
+5001689,Zepto,Gurugram,24,1547,17,6.3,10,Baby Care,Card,5,1,4
+5001690,Zepto,Noida,49,152,12,3.4,10,Bakery,Cash on Delivery,4,1,5
+5001691,JioMart Express,Bengaluru,37,874,28,2.1,6,Household,Wallet,2,0,1
+5001692,BigBasket Now,Bengaluru,51,1481,24,1.7,4,Dairy,Card,2,0,3
+5001693,Flipkart Minutes,Chennai,38,1013,16,3.3,10,Baby Care,UPI,1,1,5
+5001694,Zepto,Kolkata,52,2167,22,7.1,16,Baby Care,Card,5,0,5
+5001695,Swiggy Instamart,Bengaluru,47,1067,12,0.7,5,Baby Care,UPI,5,0,4
+5001696,BigBasket Now,Hyderabad,39,407,22,2.5,14,Fruits & Vegetables,Wallet,3,1,1
+5001697,Swiggy Instamart,Pune,52,239,20,4.9,16,Bakery,Cash on Delivery,1,0,3
+5001698,Blinkit,Pune,23,1949,10,3.1,14,Fruits & Vegetables,Cash on Delivery,5,1,5
+5001699,Zepto,Kolkata,58,1998,11,3.1,11,Bakery,UPI,3,1,4
+5001700,BigBasket Now,Jaipur,55,2117,35,6.1,9,Personal Care,Card,5,1,3
+5001701,BigBasket Now,Jaipur,27,537,23,1.7,2,Beverages,Cash on Delivery,5,0,5
+5001702,Flipkart Minutes,Hyderabad,27,1576,14,1.4,18,Bakery,Cash on Delivery,5,0,1
+5001703,JioMart Express,Noida,43,605,32,1.2,16,Bakery,Cash on Delivery,4,0,5
+5001704,Zepto,Gurugram,59,1678,6,3.8,9,Dairy,Card,4,0,3
+5001705,Flipkart Minutes,Gurugram,50,1069,20,3.6,8,Baby Care,Wallet,5,0,1
+5001706,BigBasket Now,Pune,48,685,33,6.9,8,Snacks,UPI,2,0,2
+5001707,Swiggy Instamart,Hyderabad,55,245,18,0.9,1,Baby Care,Cash on Delivery,3,0,1
+5001708,Swiggy Instamart,Noida,39,2198,23,6.4,9,Baby Care,Cash on Delivery,2,1,2
+5001709,JioMart Express,Mumbai,44,840,32,2.4,9,Personal Care,UPI,4,1,5
+5001710,BigBasket Now,Kolkata,51,231,18,4.6,16,Baby Care,Cash on Delivery,2,1,1
+5001711,Swiggy Instamart,Delhi,34,1581,19,2.8,1,Bakery,Card,5,1,4
+5001712,BigBasket Now,Gurugram,30,2181,27,7.0,9,Dairy,UPI,2,1,1
+5001713,BigBasket Now,Noida,42,989,31,7.4,16,Dairy,Wallet,5,1,2
+5001714,Flipkart Minutes,Bengaluru,44,1369,17,3.0,18,Bakery,Card,4,0,3
+5001715,BigBasket Now,Hyderabad,58,1460,22,2.0,4,Personal Care,Wallet,1,1,1
+5001716,JioMart Express,Gurugram,51,1270,32,5.7,12,Baby Care,Cash on Delivery,1,1,5
+5001717,Swiggy Instamart,Chennai,42,1643,16,2.1,4,Snacks,Card,2,0,2
+5001718,JioMart Express,Noida,23,322,29,3.4,6,Baby Care,UPI,2,1,2
+5001719,Swiggy Instamart,Pune,41,1508,21,3.3,18,Fruits & Vegetables,Cash on Delivery,5,0,3
+5001720,Blinkit,Noida,31,1177,10,3.8,13,Baby Care,Cash on Delivery,1,0,5
+5001721,Swiggy Instamart,Chennai,53,1269,19,3.6,4,Baby Care,Cash on Delivery,1,1,1
+5001722,Blinkit,Pune,38,1747,10,2.4,13,Household,Cash on Delivery,2,1,1
+5001723,BigBasket Now,Jaipur,47,2333,22,2.3,13,Dairy,Wallet,5,1,5
+5001724,Zepto,Noida,36,705,19,5.0,8,Fruits & Vegetables,UPI,3,0,4
+5001725,Flipkart Minutes,Chennai,23,2138,17,4.5,16,Baby Care,Card,3,0,4
+5001726,Swiggy Instamart,Jaipur,41,1082,21,3.8,9,Personal Care,Wallet,4,0,1
+5001727,Swiggy Instamart,Noida,31,2239,18,1.6,10,Personal Care,Cash on Delivery,3,1,4
+5001728,Blinkit,Jaipur,53,1786,12,1.4,13,Dairy,UPI,1,0,3
+5001729,Blinkit,Noida,35,124,19,3.7,4,Fruits & Vegetables,Cash on Delivery,5,1,5
+5001730,Flipkart Minutes,Delhi,26,1242,17,4.2,15,Household,UPI,3,1,5
+5001731,Swiggy Instamart,Hyderabad,23,681,17,2.7,16,Household,Wallet,2,0,5
+5001732,Zepto,Gurugram,23,290,16,5.7,5,Bakery,Card,3,1,3
+5001733,Swiggy Instamart,Hyderabad,46,2105,15,4.5,18,Dairy,Cash on Delivery,4,0,3
+5001734,Blinkit,Chennai,38,2331,20,6.9,10,Snacks,Wallet,1,0,3
+5001735,Zepto,Jaipur,60,1445,20,5.9,4,Personal Care,Cash on Delivery,4,0,4
+5001736,Swiggy Instamart,Mumbai,42,1352,17,1.7,3,Personal Care,UPI,3,1,5
+5001737,Swiggy Instamart,Gurugram,35,2075,12,0.7,17,Personal Care,Wallet,4,0,5
+5001738,Swiggy Instamart,Hyderabad,36,991,10,1.4,7,Personal Care,Card,3,0,1
+5001739,JioMart Express,Hyderabad,26,1760,28,2.3,14,Household,UPI,1,0,5
+5001740,BigBasket Now,Delhi,49,2385,26,1.3,5,Beverages,Cash on Delivery,2,1,4
+5001741,JioMart Express,Pune,43,279,26,2.4,14,Baby Care,Cash on Delivery,1,1,5
+5001742,Swiggy Instamart,Noida,30,1979,28,4.7,2,Dairy,Cash on Delivery,4,1,2
+5001743,Flipkart Minutes,Mumbai,34,1886,24,3.1,8,Fruits & Vegetables,UPI,4,0,4
+5001744,Blinkit,Hyderabad,57,1223,17,5.9,13,Snacks,Cash on Delivery,5,1,2
+5001745,Flipkart Minutes,Noida,39,883,17,2.7,9,Fruits & Vegetables,UPI,1,0,2
+5001746,JioMart Express,Noida,39,757,38,5.3,13,Bakery,UPI,4,1,4
+5001747,JioMart Express,Gurugram,49,1676,27,1.9,14,Baby Care,Cash on Delivery,2,1,1
+5001748,Zepto,Kolkata,24,1748,17,5.8,5,Bakery,Wallet,2,1,5
+5001749,BigBasket Now,Mumbai,38,1786,31,4.6,17,Fruits & Vegetables,Wallet,2,1,2
+5001750,Zepto,Kolkata,35,1629,20,5.2,6,Dairy,Card,1,0,4
+5001751,Flipkart Minutes,Mumbai,27,1867,11,1.5,3,Baby Care,UPI,3,1,2
+5001752,Swiggy Instamart,Pune,50,1692,20,4.5,9,Snacks,Wallet,4,0,2
+5001753,JioMart Express,Noida,36,2244,29,4.0,10,Snacks,Wallet,1,0,1
+5001754,Flipkart Minutes,Pune,32,1457,19,7.0,4,Personal Care,Card,5,1,3
+5001755,Zepto,Bengaluru,19,956,15,3.9,13,Bakery,Wallet,5,0,1
+5001756,Flipkart Minutes,Pune,35,133,20,7.4,17,Fruits & Vegetables,Cash on Delivery,2,0,1
+5001757,Flipkart Minutes,Gurugram,32,545,12,1.8,2,Dairy,Wallet,5,1,4
+5001758,Flipkart Minutes,Kolkata,58,830,12,2.8,10,Baby Care,UPI,5,1,3
+5001759,Blinkit,Delhi,57,2104,9,0.7,10,Household,Card,5,0,5
+5001760,Zepto,Chennai,27,1784,7,1.1,1,Bakery,Wallet,3,1,5
+5001761,Swiggy Instamart,Bengaluru,38,1036,22,6.5,1,Fruits & Vegetables,Card,4,0,5
+5001762,JioMart Express,Delhi,35,833,32,4.8,16,Beverages,Card,1,0,5
+5001763,JioMart Express,Kolkata,26,1782,27,3.8,11,Household,Wallet,5,1,3
+5001764,Blinkit,Pune,49,322,17,2.1,16,Beverages,UPI,2,0,4
+5001765,Blinkit,Gurugram,42,1404,17,4.7,8,Snacks,Cash on Delivery,1,0,3
+5001766,Blinkit,Chennai,18,617,18,6.2,7,Dairy,Card,5,1,5
+5001767,Flipkart Minutes,Kolkata,18,290,19,3.9,13,Household,Cash on Delivery,3,0,3
+5001768,Blinkit,Bengaluru,50,2240,16,7.3,16,Personal Care,Cash on Delivery,1,0,3
+5001769,Flipkart Minutes,Bengaluru,46,218,20,6.3,1,Baby Care,Card,2,1,5
+5001770,JioMart Express,Mumbai,28,260,27,1.4,3,Snacks,Wallet,1,0,3
+5001771,Zepto,Noida,37,1294,21,6.3,11,Bakery,Card,3,1,1
+5001772,BigBasket Now,Mumbai,44,1748,20,3.4,18,Household,Wallet,5,1,4
+5001773,BigBasket Now,Delhi,25,1362,28,5.6,14,Fruits & Vegetables,Card,1,0,2
+5001774,Blinkit,Noida,40,1578,17,6.6,8,Dairy,Wallet,2,0,1
+5001775,Zepto,Noida,39,2303,12,2.5,18,Bakery,Wallet,5,0,3
+5001776,Blinkit,Delhi,49,779,11,2.3,15,Beverages,UPI,3,1,3
+5001777,Zepto,Kolkata,54,635,16,3.0,14,Baby Care,UPI,2,1,4
+5001778,Blinkit,Delhi,45,1068,21,4.6,15,Bakery,Card,4,1,1
+5001779,Zepto,Mumbai,60,1715,8,1.8,16,Baby Care,UPI,4,0,2
+5001780,Blinkit,Jaipur,44,348,15,5.1,11,Dairy,Wallet,4,0,3
+5001781,JioMart Express,Pune,26,1433,38,4.6,6,Snacks,Card,2,0,1
+5001782,BigBasket Now,Mumbai,56,1898,20,1.9,15,Dairy,Wallet,2,1,3
+5001783,Flipkart Minutes,Delhi,20,1801,17,2.7,17,Household,Card,4,0,2
+5001784,BigBasket Now,Kolkata,19,1215,26,4.4,14,Fruits & Vegetables,Wallet,3,0,3
+5001785,Flipkart Minutes,Pune,44,2260,13,1.8,5,Snacks,Wallet,1,0,3
+5001786,JioMart Express,Bengaluru,44,607,27,1.1,16,Dairy,Cash on Delivery,2,0,3
+5001787,Blinkit,Delhi,27,1395,13,1.1,17,Household,Cash on Delivery,1,0,5
+5001788,Blinkit,Kolkata,59,1087,12,2.9,17,Dairy,Card,3,1,2
+5001789,Swiggy Instamart,Kolkata,29,1301,16,6.2,9,Household,Card,2,0,2
+5001790,JioMart Express,Chennai,58,1074,28,6.1,16,Baby Care,UPI,3,0,3
+5001791,Swiggy Instamart,Chennai,19,428,22,3.0,15,Fruits & Vegetables,Cash on Delivery,2,1,3
+5001792,Blinkit,Noida,50,148,24,7.2,5,Fruits & Vegetables,UPI,1,0,3
+5001793,BigBasket Now,Pune,49,771,21,2.8,13,Household,Card,3,1,4
+5001794,Flipkart Minutes,Jaipur,38,598,14,2.3,10,Dairy,Wallet,4,0,4
+5001795,Swiggy Instamart,Gurugram,28,2250,13,2.7,10,Dairy,UPI,4,0,5
+5001796,Blinkit,Gurugram,32,618,4,0.9,15,Bakery,Wallet,3,1,3
+5001797,BigBasket Now,Pune,50,554,16,4.3,9,Baby Care,Card,5,0,2
+5001798,Blinkit,Chennai,54,2220,6,1.7,13,Bakery,UPI,2,1,5
+5001799,JioMart Express,Hyderabad,56,2010,29,5.4,2,Household,Cash on Delivery,1,1,5
+5001800,JioMart Express,Mumbai,56,1729,30,3.3,6,Personal Care,Card,1,0,3
+5001801,BigBasket Now,Gurugram,49,568,26,3.6,4,Household,Wallet,3,1,4
+5001802,Zepto,Hyderabad,34,1291,17,2.2,1,Personal Care,Card,3,1,2
+5001803,JioMart Express,Bengaluru,39,1761,33,1.9,16,Dairy,UPI,4,0,5
+5001804,BigBasket Now,Hyderabad,36,1347,22,4.4,16,Household,Card,2,0,2
+5001805,Swiggy Instamart,Noida,37,2006,22,6.0,11,Fruits & Vegetables,Card,4,1,4
+5001806,Swiggy Instamart,Mumbai,35,1430,12,2.5,3,Beverages,UPI,1,0,2
+5001807,Swiggy Instamart,Noida,51,2128,31,5.9,11,Bakery,UPI,4,0,4
+5001808,Blinkit,Noida,55,1077,15,7.2,17,Dairy,UPI,1,0,3
+5001809,Blinkit,Hyderabad,55,1222,13,2.8,7,Baby Care,Card,1,0,3
+5001810,Blinkit,Chennai,46,808,20,2.8,10,Household,Cash on Delivery,2,1,1
+5001811,Zepto,Mumbai,37,1351,16,4.4,1,Household,Wallet,1,0,5
+5001812,Flipkart Minutes,Jaipur,20,1464,17,4.4,8,Snacks,UPI,5,0,2
+5001813,BigBasket Now,Pune,53,2219,27,6.4,10,Household,Card,5,0,3
+5001814,Zepto,Jaipur,55,938,4,1.0,16,Personal Care,Card,1,0,4
+5001815,JioMart Express,Jaipur,32,854,24,1.3,5,Snacks,UPI,3,0,5
+5001816,JioMart Express,Pune,18,775,27,1.3,12,Personal Care,UPI,2,0,1
+5001817,Swiggy Instamart,Kolkata,46,814,20,2.9,2,Fruits & Vegetables,UPI,5,1,5
+5001818,JioMart Express,Chennai,39,1054,36,6.7,16,Snacks,Cash on Delivery,1,0,2
+5001819,Swiggy Instamart,Hyderabad,24,872,26,6.6,16,Fruits & Vegetables,UPI,4,0,4
+5001820,Flipkart Minutes,Mumbai,48,259,17,1.6,1,Fruits & Vegetables,Card,4,0,4
+5001821,Flipkart Minutes,Hyderabad,40,724,13,3.9,5,Baby Care,Cash on Delivery,2,0,2
+5001822,JioMart Express,Jaipur,53,516,26,3.4,10,Snacks,Wallet,2,1,4
+5001823,Swiggy Instamart,Chennai,38,348,17,1.8,2,Baby Care,Card,1,1,2
+5001824,Swiggy Instamart,Hyderabad,32,932,25,7.2,15,Baby Care,Wallet,5,0,2
+5001825,Swiggy Instamart,Chennai,43,1249,20,6.2,1,Snacks,Wallet,2,0,1
+5001826,JioMart Express,Delhi,37,1691,26,2.6,4,Personal Care,Cash on Delivery,2,0,3
+5001827,Swiggy Instamart,Delhi,26,1545,20,4.8,11,Personal Care,Cash on Delivery,4,1,2
+5001828,Zepto,Jaipur,44,1159,22,5.9,10,Bakery,Cash on Delivery,4,0,4
+5001829,JioMart Express,Mumbai,25,1812,33,4.2,3,Snacks,Wallet,4,0,1
+5001830,Flipkart Minutes,Kolkata,38,1828,22,5.6,17,Fruits & Vegetables,Card,2,1,4
+5001831,JioMart Express,Hyderabad,19,602,27,4.3,2,Personal Care,Wallet,3,0,2
+5001832,Zepto,Chennai,37,1408,8,3.0,17,Beverages,Card,1,0,2
+5001833,Swiggy Instamart,Pune,22,1211,19,2.8,16,Snacks,UPI,3,0,3
+5001834,Blinkit,Gurugram,56,1021,14,1.4,7,Beverages,UPI,2,0,1
+5001835,BigBasket Now,Mumbai,27,1539,34,7.3,5,Baby Care,Card,3,0,4
+5001836,Blinkit,Kolkata,36,1520,23,4.4,11,Beverages,Cash on Delivery,5,1,1
+5001837,BigBasket Now,Gurugram,54,388,18,1.8,14,Household,UPI,2,0,5
+5001838,JioMart Express,Hyderabad,24,1307,33,5.1,8,Beverages,UPI,4,1,4
+5001839,Blinkit,Pune,59,2257,12,3.6,6,Beverages,Cash on Delivery,3,0,3
+5001840,Blinkit,Gurugram,27,1357,14,5.1,5,Fruits & Vegetables,UPI,3,0,3
+5001841,Swiggy Instamart,Hyderabad,41,1320,25,6.3,11,Dairy,Card,2,1,3
+5001842,Blinkit,Chennai,45,755,12,1.5,6,Personal Care,Cash on Delivery,1,1,4
+5001843,Flipkart Minutes,Gurugram,57,1898,11,2.3,15,Personal Care,Cash on Delivery,2,0,1
+5001844,BigBasket Now,Bengaluru,60,1794,27,5.1,11,Fruits & Vegetables,Cash on Delivery,2,0,1
+5001845,Flipkart Minutes,Pune,41,1570,23,4.4,5,Fruits & Vegetables,UPI,2,0,2
+5001846,Flipkart Minutes,Chennai,47,1476,19,4.4,13,Fruits & Vegetables,Cash on Delivery,1,0,1
+5001847,Swiggy Instamart,Jaipur,41,607,13,1.6,2,Dairy,Card,2,0,3
+5001848,Flipkart Minutes,Chennai,24,2113,12,3.0,12,Fruits & Vegetables,UPI,2,1,3
+5001849,Blinkit,Hyderabad,42,969,6,2.2,6,Personal Care,UPI,2,1,1
+5001850,Swiggy Instamart,Bengaluru,33,2129,18,1.8,11,Snacks,UPI,4,0,4
+5001851,Flipkart Minutes,Pune,26,486,18,4.9,7,Personal Care,Cash on Delivery,1,0,3
+5001852,Zepto,Chennai,26,2071,10,1.5,2,Personal Care,Wallet,1,0,2
+5001853,Zepto,Kolkata,24,632,8,1.3,5,Household,Wallet,2,0,2
+5001854,Zepto,Bengaluru,57,684,19,7.1,8,Household,Cash on Delivery,4,0,3
+5001855,Flipkart Minutes,Chennai,46,1037,19,1.0,18,Snacks,Card,1,1,5
+5001856,BigBasket Now,Kolkata,48,1946,22,2.2,6,Snacks,Wallet,2,1,2
+5001857,BigBasket Now,Jaipur,31,1316,28,2.9,9,Baby Care,Card,2,0,1
+5001858,BigBasket Now,Noida,19,972,25,1.7,4,Household,Wallet,5,1,2
+5001859,JioMart Express,Jaipur,36,400,27,2.1,12,Household,Card,4,1,2
+5001860,Blinkit,Jaipur,18,2240,12,4.1,4,Baby Care,Card,5,0,5
+5001861,Swiggy Instamart,Chennai,20,1840,24,5.6,14,Household,Card,3,1,4
+5001862,JioMart Express,Mumbai,33,532,31,6.0,16,Personal Care,Wallet,5,0,5
+5001863,Blinkit,Gurugram,23,2227,16,1.9,2,Dairy,Wallet,4,0,1
+5001864,Swiggy Instamart,Bengaluru,27,632,28,4.9,2,Personal Care,Cash on Delivery,1,0,4
+5001865,Blinkit,Noida,18,741,18,4.9,7,Bakery,UPI,2,1,3
+5001866,JioMart Express,Hyderabad,43,929,27,6.6,6,Snacks,Cash on Delivery,1,0,3
+5001867,BigBasket Now,Pune,37,1200,26,6.0,8,Dairy,Cash on Delivery,4,1,5
+5001868,BigBasket Now,Mumbai,43,1536,30,2.3,18,Fruits & Vegetables,Card,3,1,5
+5001869,JioMart Express,Pune,51,2134,32,7.4,11,Beverages,Wallet,4,0,4
+5001870,Flipkart Minutes,Mumbai,42,1114,14,2.1,15,Fruits & Vegetables,Cash on Delivery,5,0,3
+5001871,JioMart Express,Kolkata,60,697,38,5.2,16,Snacks,Card,4,0,5
+5001872,Zepto,Delhi,48,2024,18,6.6,4,Snacks,Wallet,3,0,2
+5001873,BigBasket Now,Kolkata,23,2061,25,4.6,17,Snacks,UPI,5,1,1
+5001874,JioMart Express,Chennai,36,1832,34,3.3,7,Household,UPI,2,0,4
+5001875,Flipkart Minutes,Jaipur,48,1453,15,4.2,11,Baby Care,Wallet,1,0,4
+5001876,Zepto,Mumbai,33,386,16,3.0,3,Household,UPI,5,0,1
+5001877,Zepto,Bengaluru,19,1692,9,1.1,18,Fruits & Vegetables,Cash on Delivery,5,0,1
+5001878,BigBasket Now,Pune,35,2122,21,4.9,13,Bakery,Card,3,1,5
+5001879,Swiggy Instamart,Noida,50,311,24,5.5,12,Personal Care,Wallet,1,0,5
+5001880,Flipkart Minutes,Pune,53,637,20,4.9,6,Household,Cash on Delivery,2,0,1
+5001881,JioMart Express,Chennai,57,318,28,2.3,13,Household,Card,4,1,2
+5001882,BigBasket Now,Delhi,24,554,26,2.0,15,Personal Care,UPI,5,1,4
+5001883,Swiggy Instamart,Bengaluru,48,1640,17,1.8,6,Beverages,Cash on Delivery,1,1,5
+5001884,Zepto,Bengaluru,44,1119,11,3.9,10,Bakery,Cash on Delivery,5,1,2
+5001885,Blinkit,Chennai,25,2247,16,4.1,13,Beverages,Cash on Delivery,3,1,3
+5001886,Zepto,Kolkata,38,1251,14,0.9,12,Household,Cash on Delivery,4,0,5
+5001887,Zepto,Delhi,40,206,22,7.1,17,Snacks,Card,4,0,2
+5001888,Zepto,Kolkata,37,297,21,5.5,12,Personal Care,UPI,3,0,1
+5001889,Flipkart Minutes,Hyderabad,31,1120,11,2.4,15,Dairy,Cash on Delivery,1,0,2
+5001890,Blinkit,Chennai,43,184,8,2.9,17,Fruits & Vegetables,UPI,3,0,4
+5001891,JioMart Express,Pune,56,1965,27,4.4,9,Beverages,Cash on Delivery,4,1,1
+5001892,Flipkart Minutes,Noida,42,958,18,3.7,12,Fruits & Vegetables,Cash on Delivery,5,0,1
+5001893,Flipkart Minutes,Chennai,45,855,12,3.4,6,Beverages,UPI,4,1,5
+5001894,BigBasket Now,Delhi,52,2275,24,1.3,4,Snacks,Cash on Delivery,2,0,4
+5001895,Flipkart Minutes,Chennai,54,1431,15,3.6,11,Fruits & Vegetables,UPI,4,0,3
+5001896,JioMart Express,Delhi,59,887,23,1.2,17,Household,Cash on Delivery,2,1,2
+5001897,Blinkit,Delhi,33,519,18,6.5,9,Fruits & Vegetables,UPI,4,0,3
+5001898,Zepto,Bengaluru,36,2182,18,4.6,13,Baby Care,Wallet,1,0,2
+5001899,Zepto,Chennai,30,384,23,7.5,15,Personal Care,UPI,3,1,3
+5001900,Zepto,Hyderabad,56,1116,23,1.2,13,Baby Care,Card,3,0,2
+5001901,Swiggy Instamart,Kolkata,51,501,13,2.6,15,Beverages,Wallet,5,0,5
+5001902,JioMart Express,Kolkata,26,1402,25,0.8,15,Personal Care,Cash on Delivery,3,1,3
+5001903,Flipkart Minutes,Mumbai,27,632,16,5.4,2,Bakery,UPI,3,1,2
+5001904,Blinkit,Kolkata,51,2115,29,5.6,13,Fruits & Vegetables,Wallet,3,0,5
+5001905,BigBasket Now,Bengaluru,44,2206,21,1.2,12,Personal Care,UPI,2,1,2
+5001906,BigBasket Now,Noida,26,1295,26,4.1,2,Beverages,Card,3,1,5
+5001907,Swiggy Instamart,Bengaluru,43,1707,14,5.6,13,Fruits & Vegetables,UPI,1,0,1
+5001908,Swiggy Instamart,Jaipur,18,1949,24,4.5,5,Household,Cash on Delivery,4,1,4
+5001909,Swiggy Instamart,Kolkata,57,2225,18,2.5,6,Bakery,Wallet,4,0,2
+5001910,Zepto,Gurugram,24,262,9,3.4,15,Baby Care,UPI,1,1,3
+5001911,JioMart Express,Delhi,28,812,29,7.2,10,Dairy,Cash on Delivery,1,1,4
+5001912,Blinkit,Pune,47,875,14,0.8,14,Snacks,Card,4,0,2
+5001913,Flipkart Minutes,Mumbai,49,1914,12,6.0,4,Beverages,Card,1,1,4
+5001914,Blinkit,Kolkata,23,502,16,4.1,13,Dairy,Wallet,2,0,3
+5001915,Blinkit,Chennai,27,1884,16,2.5,16,Snacks,Wallet,4,1,1
+5001916,Zepto,Delhi,45,2328,12,4.9,15,Fruits & Vegetables,Cash on Delivery,5,0,2
+5001917,Zepto,Mumbai,54,1076,16,4.0,15,Bakery,UPI,2,1,1
+5001918,Flipkart Minutes,Chennai,30,727,17,7.0,13,Baby Care,Card,5,1,5
+5001919,BigBasket Now,Delhi,19,1642,27,6.6,3,Dairy,UPI,5,1,5
+5001920,Swiggy Instamart,Bengaluru,60,1376,27,1.3,17,Beverages,Card,1,0,5
+5001921,JioMart Express,Bengaluru,23,1201,28,5.8,17,Snacks,UPI,3,0,2
+5001922,Blinkit,Pune,37,1522,16,2.5,18,Bakery,Wallet,3,1,5
+5001923,Flipkart Minutes,Pune,42,752,15,2.5,13,Dairy,Wallet,1,1,5
+5001924,Blinkit,Gurugram,23,1416,28,5.1,9,Beverages,Cash on Delivery,2,0,2
+5001925,BigBasket Now,Delhi,23,2193,32,4.9,12,Baby Care,Wallet,4,1,5
+5001926,Swiggy Instamart,Bengaluru,18,796,12,0.6,4,Household,UPI,3,1,3
+5001927,Zepto,Mumbai,40,1915,16,3.8,3,Household,UPI,1,0,5
+5001928,Flipkart Minutes,Hyderabad,53,1758,21,4.9,10,Dairy,Cash on Delivery,5,0,1
+5001929,Flipkart Minutes,Kolkata,20,2051,14,4.0,6,Household,Cash on Delivery,2,0,1
+5001930,Swiggy Instamart,Gurugram,24,293,25,6.2,1,Fruits & Vegetables,Wallet,3,1,5
+5001931,BigBasket Now,Delhi,51,825,34,7.0,14,Dairy,UPI,3,1,4
+5001932,Flipkart Minutes,Mumbai,45,2066,16,1.0,3,Snacks,Cash on Delivery,5,1,4
+5001933,BigBasket Now,Delhi,24,954,22,6.7,12,Baby Care,Card,1,0,5
+5001934,Swiggy Instamart,Jaipur,55,1041,20,6.6,7,Snacks,UPI,2,1,4
+5001935,Blinkit,Gurugram,42,1007,11,5.0,16,Dairy,Card,4,0,2
+5001936,JioMart Express,Mumbai,53,2386,35,4.9,16,Dairy,Wallet,4,0,2
+5001937,JioMart Express,Bengaluru,27,2187,40,5.7,12,Snacks,UPI,4,0,3
+5001938,JioMart Express,Kolkata,59,544,29,4.4,3,Personal Care,Cash on Delivery,1,1,4
+5001939,JioMart Express,Noida,57,1933,44,5.9,8,Bakery,Card,2,1,3
+5001940,Swiggy Instamart,Mumbai,59,938,15,1.7,1,Bakery,Cash on Delivery,1,0,3
+5001941,Zepto,Gurugram,46,602,22,7.1,16,Baby Care,Cash on Delivery,1,1,1
+5001942,Zepto,Kolkata,52,1001,9,4.4,3,Beverages,Cash on Delivery,4,0,1
+5001943,JioMart Express,Gurugram,55,2222,34,5.2,7,Bakery,Card,2,0,4
+5001944,Zepto,Jaipur,59,629,14,1.2,3,Bakery,Cash on Delivery,4,1,5
+5001945,Blinkit,Hyderabad,22,497,11,5.8,7,Household,UPI,1,0,3
+5001946,Zepto,Kolkata,56,1713,21,7.3,10,Dairy,Cash on Delivery,5,1,3
+5001947,JioMart Express,Gurugram,27,701,34,5.9,7,Baby Care,Cash on Delivery,5,0,3
+5001948,Flipkart Minutes,Bengaluru,37,168,17,2.1,18,Dairy,Cash on Delivery,1,0,5
+5001949,Blinkit,Jaipur,25,1085,7,0.9,10,Fruits & Vegetables,UPI,1,0,2
+5001950,Swiggy Instamart,Mumbai,59,250,18,1.6,14,Snacks,Wallet,3,0,5
+5001951,Zepto,Noida,58,1881,26,7.0,14,Fruits & Vegetables,Cash on Delivery,5,0,1
+5001952,Flipkart Minutes,Noida,32,501,21,4.1,7,Fruits & Vegetables,Cash on Delivery,2,1,3
+5001953,Swiggy Instamart,Pune,38,1080,18,2.2,18,Personal Care,Card,3,0,4
+5001954,BigBasket Now,Pune,60,1900,18,1.2,14,Baby Care,Cash on Delivery,2,0,2
+5001955,Zepto,Hyderabad,33,1326,14,5.5,5,Beverages,Wallet,3,0,5
+5001956,JioMart Express,Jaipur,38,230,26,3.4,1,Bakery,Card,1,1,1
+5001957,Flipkart Minutes,Mumbai,51,2034,12,0.7,12,Personal Care,Cash on Delivery,5,0,4
+5001958,Flipkart Minutes,Jaipur,34,1246,17,1.9,18,Baby Care,Wallet,5,0,5
+5001959,Zepto,Chennai,59,1299,17,2.5,9,Beverages,UPI,4,0,4
+5001960,Zepto,Jaipur,26,741,17,5.0,5,Baby Care,Card,5,0,3
+5001961,Flipkart Minutes,Delhi,23,2363,11,0.6,9,Snacks,Card,5,0,3
+5001962,JioMart Express,Gurugram,30,911,35,6.4,11,Baby Care,Card,5,0,1
+5001963,BigBasket Now,Mumbai,24,2044,23,2.6,16,Beverages,Cash on Delivery,4,0,1
+5001964,Flipkart Minutes,Hyderabad,25,249,14,3.7,9,Fruits & Vegetables,Wallet,1,0,5
+5001965,Swiggy Instamart,Hyderabad,21,2223,17,5.6,13,Personal Care,Card,2,1,2
+5001966,Zepto,Jaipur,19,300,18,7.4,18,Beverages,Cash on Delivery,3,1,4
+5001967,BigBasket Now,Chennai,28,390,33,5.5,14,Beverages,UPI,3,0,2
+5001968,Flipkart Minutes,Delhi,24,402,21,6.3,1,Fruits & Vegetables,UPI,2,1,1
+5001969,Flipkart Minutes,Kolkata,20,175,17,5.3,1,Personal Care,Cash on Delivery,3,0,2
+5001970,BigBasket Now,Hyderabad,55,1529,31,6.6,17,Household,Cash on Delivery,1,1,2
+5001971,JioMart Express,Noida,27,1019,26,2.9,18,Snacks,Cash on Delivery,4,0,4
+5001972,Zepto,Chennai,24,1104,19,7.0,18,Baby Care,Card,1,0,4
+5001973,BigBasket Now,Noida,55,1739,26,4.7,17,Personal Care,Wallet,1,0,4
+5001974,Blinkit,Bengaluru,19,766,19,1.1,5,Baby Care,Card,2,1,1
+5001975,Swiggy Instamart,Pune,56,1832,21,3.5,11,Bakery,Wallet,3,1,5
+5001976,Swiggy Instamart,Mumbai,46,223,17,0.9,2,Personal Care,Cash on Delivery,5,0,3
+5001977,Blinkit,Mumbai,27,1386,18,6.9,16,Baby Care,Wallet,2,1,3
+5001978,Zepto,Jaipur,59,1065,22,6.3,16,Household,Cash on Delivery,2,1,2
+5001979,Blinkit,Gurugram,19,1185,20,2.7,15,Dairy,UPI,5,1,5
+5001980,JioMart Express,Pune,47,2113,30,0.6,6,Personal Care,UPI,4,1,2
+5001981,Swiggy Instamart,Bengaluru,19,2279,13,1.7,16,Snacks,Card,4,1,2
+5001982,Swiggy Instamart,Gurugram,26,1147,24,4.6,7,Snacks,UPI,5,1,5
+5001983,Flipkart Minutes,Gurugram,53,1837,12,5.6,4,Bakery,Card,5,0,1
+5001984,BigBasket Now,Pune,52,1254,29,6.4,2,Beverages,Wallet,3,0,1
+5001985,Blinkit,Hyderabad,19,125,14,1.1,1,Personal Care,Cash on Delivery,5,0,3
+5001986,JioMart Express,Pune,45,807,30,4.1,16,Personal Care,Card,2,0,1
+5001987,Flipkart Minutes,Mumbai,29,2043,18,7.0,7,Snacks,Cash on Delivery,4,1,4
+5001988,Flipkart Minutes,Delhi,41,934,23,4.8,9,Snacks,Cash on Delivery,4,0,2
+5001989,Blinkit,Hyderabad,31,904,12,3.6,13,Personal Care,Wallet,1,0,2
+5001990,Flipkart Minutes,Kolkata,54,379,14,2.3,2,Household,Card,4,0,1
+5001991,Blinkit,Kolkata,44,1740,5,4.0,2,Bakery,Card,3,1,4
+5001992,BigBasket Now,Chennai,27,1568,25,1.9,15,Household,Cash on Delivery,2,1,4
+5001993,BigBasket Now,Kolkata,51,1392,24,5.3,1,Fruits & Vegetables,Cash on Delivery,2,1,5
+5001994,Zepto,Mumbai,31,2075,6,0.7,2,Baby Care,Wallet,2,1,4
+5001995,Flipkart Minutes,Delhi,25,904,13,3.6,16,Snacks,Card,4,1,1
+5001996,Blinkit,Delhi,26,1377,16,4.3,13,Dairy,Card,1,0,4
+5001997,JioMart Express,Gurugram,24,2006,24,4.8,7,Baby Care,UPI,2,0,3
+5001998,Blinkit,Jaipur,32,1794,14,4.1,6,Dairy,Cash on Delivery,2,0,4
+5001999,JioMart Express,Pune,49,427,33,5.1,7,Fruits & Vegetables,Cash on Delivery,3,0,2
+5002000,BigBasket Now,Gurugram,31,839,24,3.9,6,Personal Care,Cash on Delivery,4,0,4
+5002001,BigBasket Now,Hyderabad,57,773,23,5.2,10,Beverages,Wallet,5,0,3
+5002002,Swiggy Instamart,Gurugram,50,929,17,3.8,5,Household,Wallet,1,0,2
+5002003,Flipkart Minutes,Hyderabad,36,1338,10,1.1,2,Dairy,Card,3,0,2
+5002004,Swiggy Instamart,Noida,52,734,19,0.6,13,Snacks,Cash on Delivery,3,0,4
+5002005,Zepto,Bengaluru,30,1187,16,0.8,3,Bakery,Cash on Delivery,1,0,3
+5002006,BigBasket Now,Pune,24,1349,22,5.1,4,Personal Care,Cash on Delivery,2,1,5
+5002007,Swiggy Instamart,Mumbai,48,1287,21,7.0,13,Beverages,Cash on Delivery,3,1,3
+5002008,Blinkit,Kolkata,46,761,5,1.4,17,Dairy,Cash on Delivery,4,0,3
+5002009,Flipkart Minutes,Gurugram,30,1662,12,2.6,12,Bakery,Card,1,0,1
+5002010,JioMart Express,Jaipur,39,273,36,5.9,4,Dairy,Cash on Delivery,3,1,2
+5002011,BigBasket Now,Pune,49,1925,23,5.9,11,Dairy,Cash on Delivery,3,1,1
+5002012,JioMart Express,Bengaluru,26,904,25,5.0,11,Snacks,Wallet,3,1,2
+5002013,BigBasket Now,Pune,38,406,29,6.6,13,Personal Care,Cash on Delivery,2,1,3
+5002014,JioMart Express,Bengaluru,53,888,26,6.4,15,Household,Wallet,4,1,1
+5002015,BigBasket Now,Bengaluru,32,299,33,7.2,4,Snacks,Card,2,0,2
+5002016,Flipkart Minutes,Mumbai,35,1633,18,0.9,7,Baby Care,UPI,5,0,4
+5002017,JioMart Express,Chennai,26,971,25,4.1,18,Baby Care,Card,2,1,4
+5002018,JioMart Express,Gurugram,36,141,23,0.9,13,Snacks,Cash on Delivery,5,1,3
+5002019,Flipkart Minutes,Pune,48,1878,18,4.7,18,Household,UPI,5,1,5
+5002020,BigBasket Now,Mumbai,20,1212,31,5.0,2,Fruits & Vegetables,Wallet,5,1,5
+5002021,BigBasket Now,Mumbai,50,662,23,2.8,8,Dairy,Cash on Delivery,5,0,2
+5002022,Zepto,Chennai,22,756,11,4.6,15,Household,Wallet,3,1,5
+5002023,Flipkart Minutes,Hyderabad,46,1027,17,5.4,12,Bakery,Cash on Delivery,2,0,5
+5002024,Zepto,Noida,42,1194,17,3.7,7,Bakery,UPI,3,1,3
+5002025,Flipkart Minutes,Jaipur,29,1048,15,4.1,11,Personal Care,Cash on Delivery,1,1,4
+5002026,BigBasket Now,Chennai,29,753,16,2.0,10,Bakery,UPI,5,1,1
+5002027,Flipkart Minutes,Jaipur,30,90,11,0.9,15,Personal Care,Wallet,5,1,5
+5002028,Flipkart Minutes,Hyderabad,57,2253,17,2.2,18,Snacks,Cash on Delivery,3,0,1
+5002029,Zepto,Pune,32,1301,10,3.9,9,Bakery,Card,3,1,5
+5002030,Swiggy Instamart,Hyderabad,48,1961,17,4.3,6,Bakery,Wallet,5,1,2
+5002031,Swiggy Instamart,Noida,40,1790,17,5.0,18,Fruits & Vegetables,Card,3,0,1
+5002032,JioMart Express,Mumbai,31,1168,32,7.4,17,Snacks,UPI,1,1,1
+5002033,Swiggy Instamart,Gurugram,33,1789,20,5.4,2,Snacks,UPI,3,1,5
+5002034,Zepto,Jaipur,39,1591,16,2.7,15,Baby Care,Card,4,0,4
+5002035,Flipkart Minutes,Pune,60,629,13,4.1,10,Baby Care,Cash on Delivery,1,1,4
+5002036,Flipkart Minutes,Noida,20,629,22,4.5,17,Personal Care,Wallet,1,1,5
+5002037,Swiggy Instamart,Delhi,45,1732,28,5.7,18,Dairy,Wallet,1,0,2
+5002038,JioMart Express,Jaipur,19,370,36,4.4,3,Baby Care,Wallet,1,0,5
+5002039,Flipkart Minutes,Delhi,48,2210,23,7.0,14,Beverages,Card,2,1,2
+5002040,JioMart Express,Mumbai,26,536,39,4.5,8,Dairy,Card,1,0,1
+5002041,Flipkart Minutes,Noida,38,662,10,2.9,2,Household,Card,4,1,1
+5002042,Swiggy Instamart,Delhi,23,1476,17,1.6,5,Fruits & Vegetables,Wallet,3,0,2
+5002043,JioMart Express,Hyderabad,43,208,28,4.4,3,Snacks,UPI,2,0,1
+5002044,JioMart Express,Mumbai,20,844,30,4.4,18,Snacks,Card,1,1,5
+5002045,Blinkit,Jaipur,40,1170,14,7.1,4,Beverages,Cash on Delivery,4,0,3
+5002046,JioMart Express,Kolkata,50,2381,26,2.2,12,Beverages,UPI,1,1,1
+5002047,Blinkit,Noida,20,91,20,5.7,18,Fruits & Vegetables,Card,4,1,1
+5002048,Zepto,Delhi,36,1804,4,1.5,5,Household,Card,3,1,2
+5002049,Swiggy Instamart,Noida,60,2124,14,0.8,3,Dairy,UPI,3,1,3
+5002050,Swiggy Instamart,Bengaluru,36,1911,12,3.4,3,Personal Care,Cash on Delivery,2,0,2
+5002051,Flipkart Minutes,Mumbai,52,1917,16,6.5,14,Personal Care,Wallet,3,0,1
+5002052,Blinkit,Hyderabad,37,1449,17,5.5,18,Beverages,Card,4,1,4
+5002053,Swiggy Instamart,Kolkata,50,315,25,5.5,4,Household,Cash on Delivery,5,0,3
+5002054,JioMart Express,Delhi,41,1286,34,6.5,14,Household,UPI,4,0,4
+5002055,Swiggy Instamart,Bengaluru,19,1684,12,1.5,9,Snacks,Cash on Delivery,2,1,5
+5002056,Swiggy Instamart,Hyderabad,30,1496,21,1.2,13,Snacks,Cash on Delivery,5,1,5
+5002057,Flipkart Minutes,Gurugram,45,1773,12,0.7,11,Personal Care,Card,5,0,4
+5002058,JioMart Express,Bengaluru,33,2205,28,3.3,14,Dairy,Wallet,1,0,5
+5002059,Flipkart Minutes,Hyderabad,49,302,24,7.2,7,Dairy,Wallet,2,1,3
+5002060,Flipkart Minutes,Jaipur,46,1994,20,2.0,11,Snacks,Wallet,1,1,3
+5002061,Zepto,Jaipur,46,2112,16,1.3,2,Snacks,Card,3,1,2
+5002062,BigBasket Now,Kolkata,22,1373,28,1.5,10,Bakery,Cash on Delivery,2,0,5
+5002063,Blinkit,Chennai,52,2096,10,2.2,3,Fruits & Vegetables,UPI,4,0,2
+5002064,JioMart Express,Delhi,50,1934,33,6.7,18,Household,Wallet,5,0,1
+5002065,JioMart Express,Gurugram,20,2203,31,5.5,8,Baby Care,Card,3,1,5
+5002066,Blinkit,Gurugram,50,766,4,0.9,2,Beverages,Cash on Delivery,2,1,2
+5002067,Zepto,Delhi,20,516,14,7.3,9,Fruits & Vegetables,Cash on Delivery,5,1,1
+5002068,Flipkart Minutes,Pune,31,970,12,1.0,9,Bakery,Card,2,1,1
+5002069,Blinkit,Kolkata,23,2174,17,5.5,4,Personal Care,Card,4,1,4
+5002070,BigBasket Now,Noida,54,107,22,3.0,2,Baby Care,UPI,1,0,4
+5002071,Zepto,Jaipur,23,1241,19,4.3,4,Bakery,UPI,1,0,5
+5002072,JioMart Express,Hyderabad,56,2236,32,4.7,6,Beverages,Cash on Delivery,3,1,3
+5002073,Blinkit,Chennai,47,1942,12,5.1,1,Fruits & Vegetables,Card,3,0,3
+5002074,Zepto,Hyderabad,49,2164,15,2.4,9,Baby Care,Cash on Delivery,1,1,3
+5002075,JioMart Express,Kolkata,44,1897,36,4.8,17,Beverages,UPI,2,0,4
+5002076,JioMart Express,Hyderabad,35,1415,31,5.1,10,Baby Care,Cash on Delivery,5,0,2
+5002077,Flipkart Minutes,Kolkata,60,1482,19,5.8,13,Baby Care,Cash on Delivery,3,1,5
+5002078,BigBasket Now,Chennai,38,213,24,2.1,6,Baby Care,Cash on Delivery,3,0,1
+5002079,Flipkart Minutes,Bengaluru,53,1159,18,3.4,4,Snacks,Cash on Delivery,1,1,3
+5002080,Flipkart Minutes,Gurugram,27,582,24,2.3,7,Dairy,UPI,1,1,4
+5002081,BigBasket Now,Hyderabad,56,518,23,3.9,9,Beverages,Wallet,4,1,2
+5002082,JioMart Express,Delhi,37,986,23,4.7,2,Beverages,Cash on Delivery,2,0,1
+5002083,Flipkart Minutes,Noida,30,1068,16,1.8,18,Baby Care,UPI,1,0,3
+5002084,Swiggy Instamart,Mumbai,27,260,29,7.2,5,Household,UPI,3,1,2
+5002085,Blinkit,Pune,33,2170,12,6.1,16,Snacks,UPI,3,0,4
+5002086,Blinkit,Jaipur,51,1586,15,4.5,1,Beverages,Card,5,1,2
+5002087,BigBasket Now,Jaipur,24,348,32,3.5,18,Bakery,UPI,2,1,3
+5002088,Flipkart Minutes,Hyderabad,32,2125,21,4.6,18,Baby Care,Cash on Delivery,1,0,1
+5002089,JioMart Express,Hyderabad,32,2165,27,5.4,5,Fruits & Vegetables,Wallet,1,0,2
+5002090,Swiggy Instamart,Pune,45,2286,22,5.8,13,Beverages,UPI,2,0,5
+5002091,JioMart Express,Chennai,34,2013,25,1.4,18,Household,Cash on Delivery,4,0,2
+5002092,Swiggy Instamart,Bengaluru,46,1798,19,4.6,9,Bakery,Card,1,0,5
+5002093,Blinkit,Pune,20,2089,12,2.2,18,Beverages,Wallet,3,0,3
+5002094,JioMart Express,Mumbai,22,2047,29,2.6,13,Bakery,Wallet,1,1,2
+5002095,Zepto,Bengaluru,23,1361,4,4.1,10,Snacks,Cash on Delivery,5,1,4
+5002096,BigBasket Now,Chennai,21,312,25,1.8,2,Snacks,Cash on Delivery,5,1,1
+5002097,JioMart Express,Jaipur,47,1894,23,4.6,1,Household,Cash on Delivery,3,1,1
+5002098,JioMart Express,Mumbai,57,1626,32,5.7,16,Beverages,Wallet,1,1,2
+5002099,Zepto,Chennai,54,1625,12,3.3,5,Dairy,UPI,2,1,3
+5002100,Zepto,Bengaluru,44,571,9,3.8,6,Bakery,Cash on Delivery,2,0,3
+5002101,JioMart Express,Noida,27,420,27,2.7,16,Personal Care,Cash on Delivery,5,0,4
+5002102,Zepto,Kolkata,36,658,11,1.5,8,Household,Wallet,5,0,4
+5002103,Blinkit,Bengaluru,43,2180,19,6.5,5,Personal Care,UPI,1,1,2
+5002104,Blinkit,Gurugram,56,785,15,6.0,11,Household,Wallet,2,1,2
+5002105,JioMart Express,Chennai,22,147,30,3.9,17,Dairy,Wallet,1,0,5
+5002106,BigBasket Now,Bengaluru,43,781,28,7.4,13,Personal Care,UPI,4,1,1
+5002107,Swiggy Instamart,Jaipur,24,1366,16,0.7,14,Dairy,Wallet,5,1,1
+5002108,BigBasket Now,Gurugram,58,773,22,6.0,3,Baby Care,Wallet,4,1,3
+5002109,Blinkit,Noida,34,1123,8,6.0,2,Household,Wallet,1,0,3
+5002110,Blinkit,Hyderabad,37,521,8,0.8,8,Baby Care,Cash on Delivery,3,1,4
+5002111,Blinkit,Kolkata,23,154,19,5.6,7,Snacks,Cash on Delivery,4,1,2
+5002112,Blinkit,Kolkata,44,367,9,2.2,2,Snacks,Card,5,1,4
+5002113,JioMart Express,Delhi,24,1805,30,3.0,14,Beverages,Card,3,0,5
+5002114,JioMart Express,Hyderabad,56,952,32,7.3,13,Fruits & Vegetables,UPI,1,1,2
+5002115,BigBasket Now,Noida,43,1388,28,5.5,1,Bakery,Card,2,1,2
+5002116,Zepto,Jaipur,27,1036,20,5.3,1,Household,Cash on Delivery,2,0,4
+5002117,JioMart Express,Bengaluru,40,1423,28,4.9,1,Baby Care,Card,5,0,2
+5002118,Zepto,Gurugram,43,226,15,3.3,8,Beverages,Card,2,0,4
+5002119,Flipkart Minutes,Delhi,34,2195,13,3.3,14,Dairy,UPI,4,0,3
+5002120,Zepto,Delhi,37,2055,9,2.1,2,Bakery,UPI,3,1,2
+5002121,Swiggy Instamart,Delhi,47,2043,24,2.7,6,Fruits & Vegetables,Wallet,3,1,1
+5002122,JioMart Express,Mumbai,47,2158,31,5.2,9,Baby Care,Cash on Delivery,5,1,1
+5002123,Zepto,Jaipur,26,1745,14,4.4,12,Fruits & Vegetables,Card,3,1,3
+5002124,Flipkart Minutes,Kolkata,31,2024,16,3.8,6,Bakery,Wallet,2,1,5
+5002125,Blinkit,Kolkata,56,544,13,0.7,2,Fruits & Vegetables,Wallet,3,0,2
+5002126,BigBasket Now,Noida,48,2253,23,5.9,13,Personal Care,Card,4,0,3
+5002127,BigBasket Now,Pune,39,2344,34,5.5,4,Fruits & Vegetables,Wallet,2,1,3
+5002128,BigBasket Now,Jaipur,50,2178,31,6.5,7,Bakery,Cash on Delivery,1,1,3
+5002129,Zepto,Kolkata,23,184,22,6.0,16,Baby Care,Cash on Delivery,1,1,4
+5002130,Zepto,Jaipur,54,1004,20,5.6,12,Household,Wallet,5,1,4
+5002131,Zepto,Bengaluru,29,1874,9,4.0,18,Snacks,UPI,2,0,2
+5002132,Blinkit,Chennai,60,634,15,5.1,15,Bakery,Cash on Delivery,5,0,1
+5002133,JioMart Express,Noida,54,2037,29,3.9,10,Bakery,Wallet,1,0,5
+5002134,BigBasket Now,Mumbai,56,1204,26,4.6,1,Bakery,Wallet,2,0,1
+5002135,Blinkit,Bengaluru,35,1678,9,1.5,14,Dairy,Cash on Delivery,2,1,3
+5002136,BigBasket Now,Kolkata,49,1436,26,2.9,10,Household,Card,1,0,1
+5002137,Swiggy Instamart,Noida,27,1373,16,5.9,6,Household,Wallet,1,0,4
+5002138,Zepto,Delhi,36,2011,17,6.6,6,Dairy,Card,2,1,1
+5002139,Flipkart Minutes,Pune,22,155,22,7.4,2,Personal Care,Cash on Delivery,1,1,4
+5002140,Blinkit,Delhi,19,1201,14,2.9,7,Baby Care,UPI,3,1,5
+5002141,Flipkart Minutes,Chennai,21,1000,28,7.5,16,Fruits & Vegetables,UPI,4,0,5
+5002142,Blinkit,Chennai,35,954,9,2.0,18,Household,Card,4,0,1
+5002143,Swiggy Instamart,Pune,28,1792,28,7.0,15,Beverages,UPI,1,0,3
+5002144,BigBasket Now,Chennai,40,1066,21,1.1,13,Household,Cash on Delivery,3,0,3
+5002145,Zepto,Mumbai,56,1578,12,4.2,2,Personal Care,UPI,1,0,1
+5002146,JioMart Express,Mumbai,52,889,31,4.5,8,Dairy,Wallet,1,0,4
+5002147,Blinkit,Gurugram,55,2040,14,4.1,7,Personal Care,Wallet,4,0,4
+5002148,Swiggy Instamart,Pune,25,502,18,3.1,3,Personal Care,UPI,2,0,1
+5002149,Blinkit,Hyderabad,53,2015,14,3.9,5,Household,UPI,4,1,2
+5002150,Swiggy Instamart,Bengaluru,43,303,17,1.6,5,Fruits & Vegetables,UPI,1,1,5
+5002151,Zepto,Kolkata,54,973,10,2.3,13,Personal Care,UPI,1,1,2
+5002152,Flipkart Minutes,Pune,23,1468,16,4.2,4,Baby Care,Card,1,0,2
+5002153,BigBasket Now,Mumbai,20,939,33,1.7,10,Bakery,Wallet,1,1,5
+5002154,Flipkart Minutes,Delhi,26,1839,21,5.4,9,Bakery,UPI,5,0,3
+5002155,JioMart Express,Bengaluru,51,1701,31,4.5,8,Snacks,UPI,4,1,3
+5002156,JioMart Express,Chennai,24,1291,25,0.8,1,Household,UPI,4,1,3
+5002157,JioMart Express,Delhi,52,1859,28,4.9,6,Personal Care,Card,5,1,1
+5002158,Zepto,Hyderabad,19,1308,17,4.3,10,Personal Care,Card,3,0,3
+5002159,JioMart Express,Noida,31,1346,31,2.8,4,Personal Care,Wallet,3,0,1
+5002160,Zepto,Gurugram,51,1785,17,6.9,13,Fruits & Vegetables,Cash on Delivery,4,1,5
+5002161,Flipkart Minutes,Hyderabad,22,446,23,4.7,14,Beverages,Cash on Delivery,3,1,3
+5002162,Blinkit,Chennai,60,1603,21,6.3,12,Household,Cash on Delivery,3,1,4
+5002163,BigBasket Now,Mumbai,46,2281,26,6.3,1,Baby Care,Cash on Delivery,5,0,3
+5002164,Zepto,Gurugram,27,2027,24,6.6,18,Baby Care,Cash on Delivery,5,0,2
+5002165,Flipkart Minutes,Gurugram,47,790,21,6.4,4,Beverages,Wallet,4,1,3
+5002166,Zepto,Bengaluru,60,2328,14,4.3,9,Snacks,Wallet,4,1,5
+5002167,Flipkart Minutes,Delhi,32,2074,22,3.7,5,Baby Care,Cash on Delivery,2,1,1
+5002168,Zepto,Noida,43,1975,14,5.3,15,Household,Card,4,0,2
+5002169,Swiggy Instamart,Gurugram,44,2049,22,3.7,18,Beverages,Wallet,2,1,2
+5002170,Blinkit,Noida,55,118,16,3.7,12,Bakery,Wallet,2,0,1
+5002171,Blinkit,Jaipur,29,2117,13,2.2,11,Bakery,Card,3,1,4
+5002172,BigBasket Now,Bengaluru,56,557,28,6.7,6,Bakery,UPI,2,0,1
+5002173,Swiggy Instamart,Kolkata,37,1625,24,5.2,3,Fruits & Vegetables,Card,1,0,1
+5002174,Swiggy Instamart,Gurugram,29,2032,18,0.9,13,Household,Card,4,0,5
+5002175,Zepto,Gurugram,27,1993,23,4.7,2,Household,Cash on Delivery,1,0,4
+5002176,Zepto,Pune,42,1640,7,6.8,13,Beverages,Card,3,0,1
+5002177,Swiggy Instamart,Mumbai,49,1268,23,6.5,18,Personal Care,Wallet,5,1,4
+5002178,JioMart Express,Chennai,51,2041,34,4.0,17,Snacks,Card,2,1,1
+5002179,Zepto,Kolkata,28,1570,13,5.3,13,Snacks,Card,1,1,5
+5002180,Swiggy Instamart,Delhi,52,577,23,3.1,17,Household,UPI,3,1,2
+5002181,Flipkart Minutes,Pune,24,1450,14,2.1,14,Personal Care,UPI,2,1,3
+5002182,Blinkit,Delhi,56,2096,13,5.4,15,Household,Wallet,2,1,3
+5002183,Blinkit,Noida,49,566,10,3.1,2,Beverages,Card,2,1,2
+5002184,Flipkart Minutes,Jaipur,45,2111,20,4.2,10,Baby Care,Cash on Delivery,4,1,3
+5002185,Flipkart Minutes,Kolkata,47,2100,15,1.0,4,Beverages,UPI,1,0,3
+5002186,Zepto,Jaipur,29,547,14,5.8,9,Snacks,UPI,1,0,5
+5002187,Swiggy Instamart,Hyderabad,31,2220,30,4.0,2,Dairy,Wallet,2,0,5
+5002188,Flipkart Minutes,Mumbai,21,185,15,6.6,7,Fruits & Vegetables,UPI,3,0,1
+5002189,BigBasket Now,Hyderabad,31,1249,19,3.1,18,Personal Care,Wallet,4,1,4
+5002190,Flipkart Minutes,Mumbai,22,1353,23,6.9,9,Bakery,UPI,2,0,3
+5002191,Swiggy Instamart,Hyderabad,26,1401,17,1.8,11,Bakery,Card,2,0,2
+5002192,Blinkit,Gurugram,28,1057,15,1.2,5,Dairy,UPI,4,0,5
+5002193,JioMart Express,Chennai,49,1258,30,5.6,13,Dairy,Cash on Delivery,2,0,3
+5002194,Zepto,Mumbai,42,2068,18,0.7,9,Household,Cash on Delivery,4,0,5
+5002195,Blinkit,Mumbai,48,973,13,5.9,2,Personal Care,Wallet,1,0,1
+5002196,Swiggy Instamart,Bengaluru,56,1794,19,4.3,18,Household,UPI,1,0,2
+5002197,Zepto,Noida,43,1050,14,7.0,3,Snacks,UPI,1,0,2
+5002198,Flipkart Minutes,Pune,59,130,13,0.9,16,Baby Care,Wallet,4,0,2
+5002199,Flipkart Minutes,Pune,37,1920,15,5.6,14,Snacks,Cash on Delivery,5,1,4
+5002200,Blinkit,Gurugram,25,1592,16,4.6,2,Beverages,Wallet,1,0,5
+5002201,Swiggy Instamart,Mumbai,28,2001,18,2.8,16,Bakery,UPI,1,0,4
+5002202,Zepto,Noida,24,1373,19,3.3,6,Fruits & Vegetables,UPI,1,0,3
+5002203,Swiggy Instamart,Delhi,59,1131,21,5.7,16,Bakery,Cash on Delivery,1,1,3
+5002204,Blinkit,Bengaluru,48,1297,18,2.0,14,Bakery,Card,2,0,3
+5002205,BigBasket Now,Jaipur,54,1350,20,0.7,8,Household,Cash on Delivery,2,1,5
+5002206,BigBasket Now,Hyderabad,23,1131,26,4.7,11,Dairy,Card,2,0,1
+5002207,JioMart Express,Bengaluru,30,1513,21,2.2,2,Beverages,Cash on Delivery,5,0,4
+5002208,Zepto,Pune,35,220,22,6.7,11,Snacks,Card,3,1,5
+5002209,BigBasket Now,Noida,37,2087,29,6.1,18,Beverages,Card,3,0,2
+5002210,Swiggy Instamart,Delhi,50,784,18,6.9,3,Beverages,Cash on Delivery,4,0,1
+5002211,BigBasket Now,Kolkata,51,1851,22,1.1,1,Bakery,Cash on Delivery,5,0,1
+5002212,BigBasket Now,Gurugram,58,545,23,5.6,3,Bakery,Card,2,1,2
+5002213,BigBasket Now,Kolkata,18,2062,19,2.2,13,Dairy,UPI,5,0,2
+5002214,Blinkit,Delhi,31,2008,14,3.5,1,Bakery,Wallet,4,1,4
+5002215,Flipkart Minutes,Pune,56,725,20,3.7,11,Household,Card,1,1,4
+5002216,JioMart Express,Hyderabad,44,962,27,7.1,6,Dairy,UPI,4,0,2
+5002217,JioMart Express,Jaipur,41,228,33,3.7,17,Personal Care,Wallet,4,0,1
+5002218,Zepto,Kolkata,44,1658,9,1.7,10,Bakery,UPI,2,1,5
+5002219,Blinkit,Jaipur,41,1407,14,5.4,3,Beverages,Cash on Delivery,1,1,3
+5002220,Flipkart Minutes,Noida,44,1132,12,5.8,7,Baby Care,Card,1,0,4
+5002221,Zepto,Delhi,18,1573,9,5.3,10,Dairy,Cash on Delivery,3,1,5
+5002222,Blinkit,Mumbai,19,1812,11,1.8,7,Dairy,UPI,2,0,1
+5002223,Swiggy Instamart,Chennai,56,2222,21,2.0,17,Baby Care,Card,4,1,5
+5002224,Swiggy Instamart,Pune,31,1809,23,5.1,2,Household,Card,1,0,3
+5002225,Blinkit,Mumbai,43,390,19,7.3,6,Bakery,Wallet,4,1,1
+5002226,Flipkart Minutes,Chennai,35,2286,11,2.2,9,Personal Care,Cash on Delivery,2,0,2
+5002227,Blinkit,Gurugram,35,2119,14,3.3,12,Fruits & Vegetables,Card,1,0,1
+5002228,BigBasket Now,Chennai,56,1246,22,4.4,15,Bakery,UPI,1,0,1
+5002229,BigBasket Now,Jaipur,21,734,25,7.5,6,Household,Cash on Delivery,4,1,4
+5002230,Swiggy Instamart,Hyderabad,24,446,21,1.9,13,Baby Care,Wallet,1,0,4
+5002231,Zepto,Mumbai,39,837,11,3.1,18,Bakery,Card,2,0,2
+5002232,Swiggy Instamart,Jaipur,37,427,13,1.8,18,Baby Care,Wallet,3,0,2
+5002233,Zepto,Chennai,44,1182,15,5.2,9,Household,Cash on Delivery,4,0,3
+5002234,Zepto,Mumbai,43,2371,20,5.5,9,Dairy,UPI,5,1,4
+5002235,Blinkit,Bengaluru,39,1848,19,1.6,13,Baby Care,Card,1,1,3
+5002236,BigBasket Now,Bengaluru,28,2355,25,4.1,18,Household,Card,5,0,3
+5002237,Zepto,Gurugram,22,903,22,7.3,14,Personal Care,Wallet,5,1,5
+5002238,JioMart Express,Pune,40,1604,23,1.7,15,Dairy,Cash on Delivery,5,0,2
+5002239,JioMart Express,Pune,27,1502,23,5.1,16,Bakery,Card,2,0,2
+5002240,Flipkart Minutes,Gurugram,31,962,11,0.6,14,Beverages,Cash on Delivery,2,1,2
+5002241,Zepto,Mumbai,20,1847,10,5.4,18,Snacks,Wallet,5,1,4
+5002242,Flipkart Minutes,Kolkata,52,1270,14,6.5,8,Snacks,Wallet,1,1,3
+5002243,Flipkart Minutes,Delhi,33,1441,11,6.6,10,Personal Care,UPI,3,1,2
+5002244,Blinkit,Delhi,45,1621,20,4.6,11,Beverages,UPI,2,0,3
+5002245,JioMart Express,Bengaluru,37,1986,28,3.7,3,Personal Care,Cash on Delivery,1,0,4
+5002246,JioMart Express,Jaipur,30,708,37,0.8,2,Beverages,Wallet,5,1,3
+5002247,BigBasket Now,Chennai,56,1741,19,2.1,14,Household,Wallet,1,1,2
+5002248,Blinkit,Noida,51,1459,19,4.0,5,Baby Care,UPI,4,0,1
+5002249,Blinkit,Kolkata,38,1890,15,4.1,11,Personal Care,UPI,2,1,1
+5002250,BigBasket Now,Bengaluru,31,752,15,0.8,6,Personal Care,UPI,3,1,2
+5002251,Blinkit,Chennai,45,1848,24,4.4,13,Personal Care,Card,3,1,3
+5002252,Flipkart Minutes,Chennai,48,1206,17,2.9,5,Baby Care,Wallet,4,1,4
+5002253,Blinkit,Gurugram,38,1562,16,1.7,3,Beverages,UPI,1,0,2
+5002254,BigBasket Now,Hyderabad,43,1852,23,1.9,11,Snacks,Wallet,2,1,3
+5002255,Blinkit,Mumbai,31,296,15,6.5,5,Dairy,UPI,2,0,2
+5002256,Blinkit,Hyderabad,49,1769,17,5.4,3,Beverages,Cash on Delivery,1,0,3
+5002257,JioMart Express,Bengaluru,42,1197,39,4.4,14,Personal Care,Wallet,3,1,2
+5002258,BigBasket Now,Pune,46,1546,26,1.5,15,Personal Care,Card,5,0,1
+5002259,JioMart Express,Noida,27,1921,30,4.1,4,Dairy,Wallet,5,1,2
+5002260,Zepto,Bengaluru,49,1257,9,2.6,4,Dairy,Card,4,0,3
+5002261,BigBasket Now,Jaipur,55,678,26,2.4,1,Fruits & Vegetables,Cash on Delivery,2,0,2
+5002262,Flipkart Minutes,Pune,26,935,11,2.8,2,Dairy,UPI,3,1,1
+5002263,BigBasket Now,Chennai,58,1952,22,2.3,8,Beverages,UPI,1,1,2
+5002264,Zepto,Bengaluru,35,2100,10,1.6,12,Bakery,UPI,5,1,4
+5002265,Swiggy Instamart,Delhi,33,1662,24,4.9,2,Dairy,Card,2,0,5
+5002266,Blinkit,Gurugram,24,593,17,3.5,2,Fruits & Vegetables,Wallet,5,0,3
+5002267,JioMart Express,Noida,22,1142,27,3.0,13,Bakery,Wallet,1,1,1
+5002268,Flipkart Minutes,Hyderabad,25,354,24,1.5,12,Fruits & Vegetables,Card,5,0,4
+5002269,BigBasket Now,Gurugram,40,589,28,3.1,5,Dairy,Cash on Delivery,5,0,5
+5002270,JioMart Express,Pune,42,2058,35,6.2,17,Baby Care,Wallet,3,1,5
+5002271,JioMart Express,Bengaluru,37,1242,31,5.0,9,Household,UPI,4,1,3
+5002272,Blinkit,Chennai,52,815,16,7.2,4,Personal Care,Wallet,5,0,5
+5002273,Swiggy Instamart,Gurugram,53,1409,24,2.5,10,Baby Care,UPI,5,1,2
+5002274,Swiggy Instamart,Noida,34,949,18,7.3,1,Household,UPI,4,0,4
+5002275,Swiggy Instamart,Mumbai,52,1031,29,7.2,14,Fruits & Vegetables,Card,1,1,5
+5002276,BigBasket Now,Delhi,58,2083,22,4.0,12,Personal Care,Card,3,0,4
+5002277,Zepto,Pune,22,2089,14,4.1,7,Beverages,Card,1,1,3
+5002278,JioMart Express,Hyderabad,29,1516,29,3.7,10,Dairy,UPI,5,1,4
+5002279,Swiggy Instamart,Noida,19,1811,20,6.6,10,Fruits & Vegetables,UPI,4,1,5
+5002280,Blinkit,Gurugram,48,663,18,5.3,11,Fruits & Vegetables,Wallet,4,1,2
+5002281,JioMart Express,Hyderabad,20,1035,25,2.3,15,Snacks,UPI,4,1,4
+5002282,BigBasket Now,Mumbai,46,796,21,5.7,11,Household,Cash on Delivery,5,0,5
+5002283,JioMart Express,Mumbai,40,1647,24,1.9,14,Dairy,UPI,5,1,1
+5002284,BigBasket Now,Hyderabad,22,757,22,0.6,4,Baby Care,Cash on Delivery,1,0,1
+5002285,JioMart Express,Hyderabad,59,1701,27,1.9,7,Snacks,Card,4,1,3
+5002286,Zepto,Kolkata,54,850,16,2.1,6,Beverages,Card,1,1,5
+5002287,Zepto,Gurugram,29,1357,8,1.3,12,Snacks,Card,5,0,4
+5002288,Zepto,Bengaluru,37,1267,20,7.1,14,Personal Care,Wallet,1,0,2
+5002289,JioMart Express,Chennai,41,2182,32,6.0,3,Snacks,Cash on Delivery,5,0,4
+5002290,BigBasket Now,Chennai,42,494,31,5.2,18,Dairy,UPI,3,1,4
+5002291,BigBasket Now,Noida,40,258,29,3.7,13,Dairy,Cash on Delivery,5,1,1
+5002292,BigBasket Now,Pune,49,1425,16,1.3,5,Bakery,Card,5,1,1
+5002293,JioMart Express,Kolkata,55,1325,21,2.0,4,Household,Cash on Delivery,3,0,5
+5002294,JioMart Express,Delhi,35,1530,32,2.0,14,Snacks,Wallet,3,0,2
+5002295,Blinkit,Kolkata,40,2316,23,6.3,14,Beverages,Cash on Delivery,2,1,5
+5002296,Flipkart Minutes,Jaipur,29,2077,17,5.3,4,Household,Wallet,3,1,4
+5002297,Blinkit,Kolkata,40,1471,18,5.4,17,Personal Care,Wallet,1,0,5
+5002298,Blinkit,Mumbai,32,1562,10,1.1,8,Bakery,Wallet,4,0,5
+5002299,JioMart Express,Chennai,37,717,32,6.5,2,Bakery,Cash on Delivery,1,1,1
+5002300,Flipkart Minutes,Delhi,60,215,19,7.4,4,Personal Care,Cash on Delivery,3,0,4
+5002301,Zepto,Hyderabad,31,938,19,7.1,2,Beverages,UPI,1,0,5
+5002302,JioMart Express,Hyderabad,48,1654,20,0.7,11,Beverages,Cash on Delivery,4,0,1
+5002303,JioMart Express,Mumbai,31,1231,25,1.2,3,Household,Wallet,1,1,4
+5002304,BigBasket Now,Hyderabad,58,1104,17,3.8,15,Dairy,Wallet,2,1,3
+5002305,Zepto,Jaipur,59,1224,10,1.1,10,Beverages,Card,4,1,2
+5002306,Swiggy Instamart,Gurugram,22,1713,21,6.8,10,Bakery,Cash on Delivery,2,0,3
+5002307,Zepto,Pune,58,1833,12,1.8,5,Beverages,Card,3,1,4
+5002308,JioMart Express,Kolkata,58,1155,32,2.0,12,Beverages,Cash on Delivery,1,0,1
+5002309,Flipkart Minutes,Mumbai,30,573,25,6.3,11,Snacks,Cash on Delivery,5,1,4
+5002310,Flipkart Minutes,Pune,29,1338,12,4.4,10,Fruits & Vegetables,Cash on Delivery,3,0,4
+5002311,Blinkit,Delhi,39,2077,16,6.5,15,Fruits & Vegetables,Card,4,1,1
+5002312,Zepto,Hyderabad,57,661,16,6.3,6,Household,Cash on Delivery,1,0,2
+5002313,Swiggy Instamart,Hyderabad,44,1488,25,7.2,7,Household,Wallet,2,0,3
+5002314,Swiggy Instamart,Kolkata,24,1516,26,5.9,8,Snacks,Card,1,1,2
+5002315,Blinkit,Delhi,41,1591,15,1.1,7,Fruits & Vegetables,Cash on Delivery,1,1,1
+5002316,Blinkit,Hyderabad,18,920,16,3.9,14,Fruits & Vegetables,Wallet,3,0,4
+5002317,Flipkart Minutes,Delhi,39,2033,15,4.5,1,Beverages,UPI,2,1,2
+5002318,JioMart Express,Jaipur,42,1985,28,2.6,6,Personal Care,Card,2,1,5
+5002319,Zepto,Noida,20,1577,11,0.8,17,Bakery,Wallet,4,1,1
+5002320,Swiggy Instamart,Delhi,24,785,19,5.7,12,Household,Wallet,5,0,2
+5002321,BigBasket Now,Kolkata,54,1252,29,2.2,9,Personal Care,Cash on Delivery,1,1,4
+5002322,BigBasket Now,Jaipur,52,632,28,3.6,4,Personal Care,Cash on Delivery,1,0,2
+5002323,BigBasket Now,Gurugram,20,930,26,2.5,6,Dairy,Wallet,5,0,5
+5002324,Flipkart Minutes,Kolkata,48,1273,18,3.9,13,Personal Care,UPI,5,1,2
+5002325,JioMart Express,Delhi,51,1724,23,2.1,4,Personal Care,Card,5,0,4
+5002326,Blinkit,Chennai,31,2156,18,1.9,17,Household,Card,5,1,1
+5002327,Blinkit,Mumbai,36,499,14,3.6,14,Baby Care,Cash on Delivery,3,0,3
+5002328,Swiggy Instamart,Noida,24,1891,21,6.4,6,Beverages,Card,5,0,4
+5002329,JioMart Express,Kolkata,55,334,30,3.7,15,Baby Care,UPI,3,0,1
+5002330,Blinkit,Delhi,50,1497,12,4.7,6,Household,UPI,2,0,4
+5002331,Blinkit,Delhi,50,1792,17,4.2,2,Fruits & Vegetables,Cash on Delivery,4,1,5
+5002332,BigBasket Now,Pune,22,1974,19,7.1,4,Snacks,UPI,4,0,2
+5002333,Zepto,Mumbai,51,716,7,4.5,4,Bakery,Card,4,0,3
+5002334,Swiggy Instamart,Delhi,39,362,24,3.1,5,Bakery,UPI,3,1,5
+5002335,Zepto,Noida,27,677,10,2.6,11,Baby Care,UPI,1,1,4
+5002336,Zepto,Mumbai,35,1024,15,2.9,9,Fruits & Vegetables,Cash on Delivery,2,1,1
+5002337,BigBasket Now,Gurugram,47,1541,27,0.9,4,Dairy,UPI,2,1,3
+5002338,Zepto,Pune,60,392,15,4.4,5,Snacks,Cash on Delivery,5,1,5
+5002339,Blinkit,Hyderabad,40,353,21,4.8,10,Bakery,UPI,3,0,1
+5002340,Flipkart Minutes,Bengaluru,49,485,14,5.7,1,Bakery,Card,2,1,2
+5002341,Swiggy Instamart,Gurugram,18,1965,17,4.1,17,Beverages,Card,5,0,5
+5002342,BigBasket Now,Kolkata,38,1518,19,2.0,14,Beverages,Cash on Delivery,1,0,5
+5002343,Flipkart Minutes,Kolkata,45,394,16,3.3,3,Household,Wallet,3,0,1
+5002344,BigBasket Now,Noida,37,398,28,2.7,2,Snacks,UPI,3,1,3
+5002345,Blinkit,Pune,40,671,21,2.1,13,Dairy,Wallet,5,1,3
+5002346,JioMart Express,Mumbai,48,385,29,4.4,6,Dairy,UPI,1,1,1
+5002347,Flipkart Minutes,Chennai,25,947,11,2.0,2,Dairy,Wallet,5,1,5
+5002348,JioMart Express,Kolkata,22,693,30,5.6,6,Bakery,UPI,5,1,4
+5002349,BigBasket Now,Chennai,59,745,17,1.8,3,Household,UPI,1,0,2
+5002350,JioMart Express,Bengaluru,42,638,24,3.7,8,Bakery,Card,2,1,3
+5002351,Flipkart Minutes,Noida,24,91,22,6.3,18,Personal Care,Card,2,1,2
+5002352,JioMart Express,Gurugram,39,1747,39,2.5,3,Beverages,Wallet,3,1,5
+5002353,BigBasket Now,Gurugram,42,1391,22,5.9,5,Personal Care,Card,1,1,4
+5002354,BigBasket Now,Delhi,26,1763,25,6.4,12,Bakery,UPI,1,0,2
+5002355,Zepto,Bengaluru,47,912,14,2.2,11,Beverages,UPI,2,0,2
+5002356,BigBasket Now,Kolkata,41,1768,21,1.3,11,Household,Wallet,1,1,3
+5002357,Swiggy Instamart,Mumbai,58,2396,22,7.1,2,Baby Care,UPI,4,0,2
+5002358,BigBasket Now,Hyderabad,48,2324,29,3.0,1,Household,UPI,3,0,4
+5002359,Blinkit,Pune,51,676,23,6.6,6,Baby Care,Wallet,2,0,1
+5002360,Swiggy Instamart,Jaipur,54,281,30,6.1,14,Snacks,Card,4,1,5
+5002361,Swiggy Instamart,Jaipur,47,1883,26,4.1,8,Household,Card,5,0,2
+5002362,Zepto,Chennai,24,591,14,2.9,11,Personal Care,Card,1,0,5
+5002363,Flipkart Minutes,Mumbai,28,2100,5,1.4,1,Baby Care,Cash on Delivery,4,1,1
+5002364,Flipkart Minutes,Jaipur,54,1146,14,1.8,14,Household,Wallet,1,1,1
+5002365,Zepto,Gurugram,54,2255,16,7.4,10,Snacks,UPI,1,0,5
+5002366,Flipkart Minutes,Jaipur,51,876,14,5.6,12,Dairy,Wallet,1,0,5
+5002367,Swiggy Instamart,Gurugram,31,553,21,3.9,13,Household,Wallet,5,1,2
+5002368,Blinkit,Pune,18,118,13,3.2,10,Personal Care,Wallet,4,1,2
+5002369,Swiggy Instamart,Chennai,58,2320,17,1.0,11,Bakery,Cash on Delivery,1,0,1
+5002370,Zepto,Chennai,24,2082,16,4.0,10,Dairy,Card,1,0,3
+5002371,JioMart Express,Pune,51,1834,25,2.4,2,Personal Care,Card,4,1,5
+5002372,Zepto,Chennai,24,296,10,2.1,11,Bakery,Card,3,1,4
+5002373,Flipkart Minutes,Gurugram,27,1499,25,6.7,17,Bakery,UPI,4,1,5
+5002374,BigBasket Now,Noida,56,1803,22,1.9,12,Household,Wallet,2,0,5
+5002375,BigBasket Now,Gurugram,45,2399,22,4.3,12,Personal Care,Wallet,3,0,5
+5002376,BigBasket Now,Hyderabad,41,934,26,4.0,4,Dairy,Wallet,2,0,1
+5002377,JioMart Express,Pune,54,1364,33,4.9,13,Household,UPI,2,1,4
+5002378,BigBasket Now,Chennai,53,1242,24,4.7,5,Personal Care,UPI,1,1,2
+5002379,BigBasket Now,Jaipur,53,137,30,5.9,7,Fruits & Vegetables,Card,1,0,1
+5002380,Flipkart Minutes,Mumbai,42,1976,16,3.3,6,Snacks,Card,3,1,4
+5002381,Blinkit,Noida,58,563,12,3.0,5,Dairy,Wallet,1,1,5
+5002382,Flipkart Minutes,Pune,56,678,19,0.9,2,Snacks,Card,1,0,4
+5002383,Flipkart Minutes,Bengaluru,43,1796,17,6.4,6,Fruits & Vegetables,UPI,5,0,3
+5002384,Blinkit,Delhi,53,2354,9,3.4,13,Household,Card,2,1,2
+5002385,Flipkart Minutes,Mumbai,35,970,24,6.9,7,Snacks,UPI,1,1,3
+5002386,JioMart Express,Pune,35,780,36,4.5,3,Beverages,Card,2,0,2
+5002387,Swiggy Instamart,Jaipur,41,1256,27,2.5,14,Household,Wallet,3,0,4
+5002388,Zepto,Pune,31,1512,12,5.4,5,Snacks,UPI,2,1,5
+5002389,Zepto,Pune,47,1065,9,2.6,18,Baby Care,Cash on Delivery,3,0,3
+5002390,Swiggy Instamart,Chennai,22,1924,15,1.4,10,Snacks,Wallet,1,1,3
+5002391,Swiggy Instamart,Jaipur,59,652,13,2.7,15,Dairy,UPI,5,1,4
+5002392,BigBasket Now,Kolkata,22,587,17,1.3,9,Household,Cash on Delivery,3,1,4
+5002393,JioMart Express,Bengaluru,19,1580,26,3.4,2,Baby Care,UPI,4,1,1
+5002394,BigBasket Now,Mumbai,31,1019,31,3.7,2,Baby Care,Wallet,5,0,2
+5002395,BigBasket Now,Hyderabad,37,127,17,3.1,17,Household,Card,5,1,2
+5002396,Zepto,Pune,42,1639,6,2.6,8,Personal Care,Cash on Delivery,3,1,2
+5002397,Flipkart Minutes,Noida,39,513,21,1.7,17,Beverages,Cash on Delivery,5,0,5
+5002398,JioMart Express,Kolkata,49,1610,32,6.1,6,Baby Care,UPI,2,0,3
+5002399,Flipkart Minutes,Bengaluru,24,2218,17,3.5,18,Beverages,UPI,3,0,5
+5002400,Flipkart Minutes,Gurugram,20,594,16,4.5,8,Dairy,Wallet,1,0,3

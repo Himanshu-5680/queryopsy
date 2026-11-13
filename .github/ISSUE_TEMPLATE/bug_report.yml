@@ -1,0 +1,36 @@
+name: Bug report
+description: Something does not work as expected
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for reporting! Please do not paste full level solutions here."
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Where did it happen?
+      options: ["Website (desktop)", "Website (mobile)", "Android app", "Local build / tests"]
+    validations:
+      required: true
+  - type: input
+    id: case
+    attributes:
+      label: Case and level
+      placeholder: "e.g. Funding Forensics, level 3"
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Steps to reproduce, what you expected and what you saw.
+    validations:
+      required: true
+  - type: textarea
+    id: env
+    attributes:
+      label: Browser / device / version
+      placeholder: "Chrome 131 on Windows 11, Queryopsy v1.0.0"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console output or screenshot
+      render: text

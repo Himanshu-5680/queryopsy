@@ -1,0 +1,313 @@
+Category,name,mrp,discountPercent,availableQuantity,discountedSellingPrice,weightInGms,outOfStock,quantity
+Fruits & Vegetables,Urban Basket Onion,49500,10,10,44600,1000,FALSE,1
+Fruits & Vegetables,Urban Basket Onion,49200,20,6,39400,500,FALSE,1
+Fruits & Vegetables,Desi Farm Onion,26600,15,1,22600,250,FALSE,1
+Fruits & Vegetables,Desi Farm Onion,22800,25,0,17100,100,TRUE,1
+Fruits & Vegetables,Kisan Fresh Onion,30800,25,0,23100,1000,TRUE,1
+Fruits & Vegetables,Kisan Fresh Onion,30800,25,0,22800,1000,TRUE,1
+Fruits & Vegetables,Kisan Fresh Onion,37100,25,8,27800,500,FALSE,1
+Fruits & Vegetables,Shuddh Onion,27500,0,8,27500,1000,FALSE,1
+Fruits & Vegetables,Shuddh Onion,11300,12,0,9900,250,TRUE,1
+Fruits & Vegetables,Urban Basket Tomato Hybrid,31300,5,0,29700,200,TRUE,1
+Fruits & Vegetables,Urban Basket Tomato Hybrid,34900,5,0,33200,500,TRUE,1
+Fruits & Vegetables,NatureNest Tomato Hybrid,24000,0,3,24000,1000,FALSE,1
+Fruits & Vegetables,NatureNest Tomato Hybrid,25400,5,3,24100,100,FALSE,1
+Fruits & Vegetables,Shuddh Tomato Hybrid,56000,25,0,42000,500,TRUE,1
+Fruits & Vegetables,Shuddh Tomato Hybrid,28500,8,0,26200,200,TRUE,1
+Fruits & Vegetables,Kisan Fresh Tomato Hybrid,41300,5,10,39200,100,FALSE,1
+Fruits & Vegetables,Kisan Fresh Tomato Hybrid,3000,10,3,2700,500,FALSE,1
+Fruits & Vegetables,Shuddh Potato,11800,20,5,9400,200,FALSE,1
+Fruits & Vegetables,Shuddh Potato,15900,10,2,14300,100,FALSE,1
+Fruits & Vegetables,Saffron Valley Potato,33200,10,5,29900,200,FALSE,1
+Fruits & Vegetables,Saffron Valley Potato,42000,10,5,37800,250,FALSE,1
+Fruits & Vegetables,Saffron Valley Potato,42000,10,5,38300,250,FALSE,1
+Fruits & Vegetables,Desi Farm Potato,58400,5,0,55500,200,TRUE,1
+Fruits & Vegetables,Desi Farm Potato,47200,15,3,40100,1000,FALSE,1
+Fruits & Vegetables,Kisan Fresh Potato,13600,25,2,10200,250,FALSE,1
+Fruits & Vegetables,Kisan Fresh Potato,24300,25,3,18200,500,FALSE,1
+Fruits & Vegetables,NatureNest Banana Robusta,14700,15,1,12500,100,FALSE,1
+Fruits & Vegetables,NatureNest Banana Robusta,45600,8,0,42000,1000,TRUE,1
+Fruits & Vegetables,Kisan Fresh Banana Robusta,20100,20,1,16100,250,FALSE,1
+Fruits & Vegetables,Kisan Fresh Banana Robusta,5600,15,2,4800,1000,FALSE,1
+Fruits & Vegetables,Kisan Fresh Banana Robusta,5600,15,2,4500,1000,FALSE,1
+Fruits & Vegetables,Urban Basket Banana Robusta,40100,0,2,40100,200,FALSE,1
+Fruits & Vegetables,Urban Basket Banana Robusta,36800,5,8,35000,1000,FALSE,1
+Fruits & Vegetables,Ghar Ka Banana Robusta,6300,8,5,5800,100,FALSE,1
+Fruits & Vegetables,Ghar Ka Banana Robusta,29400,25,6,22000,250,FALSE,1
+Fruits & Vegetables,Ghar Ka Banana Robusta,29400,25,6,21700,250,FALSE,1
+Fruits & Vegetables,Kisan Fresh Coriander Leaves,10300,8,6,9500,200,FALSE,1
+Fruits & Vegetables,Kisan Fresh Coriander Leaves,3500,25,8,2600,250,FALSE,1
+Fruits & Vegetables,Shuddh Coriander Leaves,55400,5,10,52600,500,FALSE,1
+Fruits & Vegetables,Shuddh Coriander Leaves,59400,0,1,59400,1000,FALSE,1
+Fruits & Vegetables,NatureNest Coriander Leaves,27200,20,0,21800,200,TRUE,1
+Fruits & Vegetables,NatureNest Coriander Leaves,47900,8,0,44100,100,TRUE,1
+Fruits & Vegetables,Saffron Valley Coriander Leaves,2900,5,1,2800,200,FALSE,1
+Fruits & Vegetables,Saffron Valley Coriander Leaves,18200,8,8,16700,500,FALSE,1
+Fruits & Vegetables,Shuddh Green Chilli,35000,5,6,33200,100,FALSE,1
+Fruits & Vegetables,Shuddh Green Chilli,36900,5,10,35100,250,FALSE,1
+Fruits & Vegetables,Desi Farm Green Chilli,2600,15,3,2200,500,FALSE,1
+Fruits & Vegetables,Desi Farm Green Chilli,29700,5,0,28200,1000,TRUE,1
+Fruits & Vegetables,Ghar Ka Green Chilli,37900,12,0,33400,200,TRUE,1
+Fruits & Vegetables,Ghar Ka Green Chilli,48800,15,8,41500,1000,FALSE,1
+Fruits & Vegetables,NatureNest Green Chilli,42600,10,6,38300,250,FALSE,1
+Fruits & Vegetables,NatureNest Green Chilli,28200,0,5,28200,100,FALSE,1
+Fruits & Vegetables,NatureNest Green Chilli,28200,0,5,27900,100,FALSE,1
+"Dairy, Bread & Batter",Ghar Ka Toned Milk,46600,8,6,42900,500,FALSE,1
+"Dairy, Bread & Batter",Ghar Ka Toned Milk,15700,5,0,14900,200,TRUE,1
+"Dairy, Bread & Batter",NatureNest Toned Milk,2600,10,1,2300,250,FALSE,1
+"Dairy, Bread & Batter",NatureNest Toned Milk,52000,0,0,52000,200,TRUE,1
+"Dairy, Bread & Batter",Saffron Valley Toned Milk,2500,8,6,2300,250,FALSE,1
+"Dairy, Bread & Batter",Saffron Valley Toned Milk,12300,8,6,11300,500,FALSE,1
+"Dairy, Bread & Batter",Desi Farm Toned Milk,38500,12,5,33900,250,FALSE,1
+"Dairy, Bread & Batter",Desi Farm Toned Milk,45300,0,1,45300,500,FALSE,1
+"Dairy, Bread & Batter",Urban Basket Paneer,35300,5,5,33500,500,FALSE,1
+"Dairy, Bread & Batter",Urban Basket Paneer,8300,20,1,6600,250,FALSE,1
+"Dairy, Bread & Batter",Ghar Ka Paneer,11800,5,5,11200,250,FALSE,1
+"Dairy, Bread & Batter",Ghar Ka Paneer,11800,5,5,11700,250,FALSE,1
+"Dairy, Bread & Batter",Ghar Ka Paneer,17500,0,10,17500,100,FALSE,1
+"Dairy, Bread & Batter",Desi Farm Paneer,28500,0,0,28500,100,TRUE,1
+"Dairy, Bread & Batter",Desi Farm Paneer,23000,8,10,21200,500,FALSE,1
+"Dairy, Bread & Batter",Saffron Valley Paneer,32800,15,0,27900,100,TRUE,1
+"Dairy, Bread & Batter",Saffron Valley Paneer,6000,25,2,4500,200,FALSE,1
+"Dairy, Bread & Batter",Urban Basket Curd Cup,33300,0,0,33300,100,TRUE,1
+"Dairy, Bread & Batter",Urban Basket Curd Cup,59700,20,5,47800,500,FALSE,1
+"Dairy, Bread & Batter",Ghar Ka Curd Cup,40700,15,8,34600,200,FALSE,1
+"Dairy, Bread & Batter",Ghar Ka Curd Cup,39000,15,8,33200,250,FALSE,1
+"Dairy, Bread & Batter",Kisan Fresh Curd Cup,52100,12,3,45800,1000,FALSE,1
+"Dairy, Bread & Batter",Kisan Fresh Curd Cup,16000,10,5,14400,250,FALSE,1
+"Dairy, Bread & Batter",Saffron Valley Curd Cup,38000,10,5,34200,1000,FALSE,1
+"Dairy, Bread & Batter",Saffron Valley Curd Cup,3400,12,0,3000,250,TRUE,1
+"Dairy, Bread & Batter",Ghar Ka Brown Bread,48400,10,10,43600,250,FALSE,1
+"Dairy, Bread & Batter",Ghar Ka Brown Bread,48400,10,10,43800,250,FALSE,1
+"Dairy, Bread & Batter",Ghar Ka Brown Bread,20300,8,0,18700,100,TRUE,1
+"Dairy, Bread & Batter",Saffron Valley Brown Bread,30500,12,5,26800,100,FALSE,1
+"Dairy, Bread & Batter",Saffron Valley Brown Bread,30600,10,2,27500,1000,FALSE,1
+"Dairy, Bread & Batter",Desi Farm Brown Bread,12000,0,2,12000,250,FALSE,1
+"Dairy, Bread & Batter",Desi Farm Brown Bread,54500,10,1,49000,100,FALSE,1
+"Dairy, Bread & Batter",Urban Basket Brown Bread,47300,20,8,37800,250,FALSE,1
+"Dairy, Bread & Batter",Urban Basket Brown Bread,23300,25,6,17500,1000,FALSE,1
+"Dairy, Bread & Batter",NatureNest Idli Dosa Batter,46100,8,1,42400,500,FALSE,1
+"Dairy, Bread & Batter",NatureNest Idli Dosa Batter,46500,20,0,37200,200,TRUE,1
+"Dairy, Bread & Batter",Desi Farm Idli Dosa Batter,13300,25,10,10000,250,FALSE,1
+"Dairy, Bread & Batter",Desi Farm Idli Dosa Batter,27300,15,5,23200,500,FALSE,1
+"Dairy, Bread & Batter",Ghar Ka Idli Dosa Batter,8300,20,3,6600,200,FALSE,1
+"Dairy, Bread & Batter",Ghar Ka Idli Dosa Batter,47400,0,2,47400,500,FALSE,1
+"Dairy, Bread & Batter",Saffron Valley Idli Dosa Batter,5700,10,6,5100,250,FALSE,1
+"Dairy, Bread & Batter",Saffron Valley Idli Dosa Batter,29300,0,1,29300,100,FALSE,1
+"Dairy, Bread & Batter",NatureNest Salted Butter,41400,10,0,37300,100,TRUE,1
+"Dairy, Bread & Batter",NatureNest Salted Butter,22100,10,3,19900,1000,FALSE,1
+"Dairy, Bread & Batter",Desi Farm Salted Butter,53200,20,3,42600,1000,FALSE,1
+"Dairy, Bread & Batter",Desi Farm Salted Butter,22300,10,10,20100,200,FALSE,1
+"Dairy, Bread & Batter",Desi Farm Salted Butter,22300,10,10,20600,200,FALSE,1
+"Dairy, Bread & Batter",Shuddh Salted Butter,26600,5,1,25300,200,FALSE,1
+"Dairy, Bread & Batter",Shuddh Salted Butter,51800,5,3,49200,100,FALSE,1
+"Dairy, Bread & Batter",Saffron Valley Salted Butter,4000,12,3,3500,500,FALSE,1
+"Dairy, Bread & Batter",Saffron Valley Salted Butter,6400,0,8,6400,200,FALSE,1
+Packaged Food,Kisan Fresh Basmati Rice,46100,0,0,46100,200,TRUE,1
+Packaged Food,Kisan Fresh Basmati Rice,12300,5,0,11700,500,TRUE,1
+Packaged Food,Ghar Ka Basmati Rice,15100,5,1,14300,500,FALSE,1
+Packaged Food,Ghar Ka Basmati Rice,15400,8,5,14200,250,FALSE,1
+Packaged Food,Saffron Valley Basmati Rice,21300,8,1,19600,200,FALSE,1
+Packaged Food,Saffron Valley Basmati Rice,46000,25,10,34500,100,FALSE,1
+Packaged Food,Urban Basket Basmati Rice,30700,20,10,24600,100,FALSE,1
+Packaged Food,Urban Basket Basmati Rice,52200,5,0,49600,250,TRUE,1
+Packaged Food,NatureNest Atta Whole Wheat,45700,12,0,40200,250,TRUE,1
+Packaged Food,NatureNest Atta Whole Wheat,45700,12,0,40400,250,TRUE,1
+Packaged Food,NatureNest Atta Whole Wheat,47100,25,3,35300,100,FALSE,1
+Packaged Food,NatureNest Atta Whole Wheat,47100,25,3,35800,100,FALSE,1
+Packaged Food,Saffron Valley Atta Whole Wheat,6200,25,2,4600,500,FALSE,1
+Packaged Food,Saffron Valley Atta Whole Wheat,43800,25,0,32800,100,TRUE,1
+Packaged Food,Urban Basket Atta Whole Wheat,46000,0,10,46000,100,FALSE,1
+Packaged Food,Urban Basket Atta Whole Wheat,51600,0,1,51600,1000,FALSE,1
+Packaged Food,Ghar Ka Atta Whole Wheat,38500,8,8,35400,100,FALSE,1
+Packaged Food,Ghar Ka Atta Whole Wheat,56800,12,0,50000,200,TRUE,1
+Packaged Food,NatureNest Toor Dal,17800,12,3,15700,500,FALSE,1
+Packaged Food,NatureNest Toor Dal,17800,12,3,15900,500,FALSE,1
+Packaged Food,NatureNest Toor Dal,53500,20,2,42800,1000,FALSE,1
+Packaged Food,Urban Basket Toor Dal,51400,5,6,48800,200,FALSE,1
+Packaged Food,Urban Basket Toor Dal,40500,25,1,30400,250,FALSE,1
+Packaged Food,Shuddh Toor Dal,18700,12,0,16500,500,TRUE,1
+Packaged Food,Shuddh Toor Dal,31300,8,3,28800,100,FALSE,1
+Packaged Food,Saffron Valley Toor Dal,45500,8,3,41900,100,FALSE,1
+Packaged Food,Saffron Valley Toor Dal,31100,8,0,28600,500,TRUE,1
+Packaged Food,Shuddh Poha Thick,45700,10,6,41100,250,FALSE,1
+Packaged Food,Shuddh Poha Thick,56500,10,2,50800,200,FALSE,1
+Packaged Food,Desi Farm Poha Thick,27400,0,3,27400,500,FALSE,1
+Packaged Food,Desi Farm Poha Thick,59800,25,2,44800,250,FALSE,1
+Packaged Food,Ghar Ka Poha Thick,56100,5,6,53300,200,FALSE,1
+Packaged Food,Ghar Ka Poha Thick,45200,5,8,42900,500,FALSE,1
+Packaged Food,Urban Basket Poha Thick,6700,15,10,5700,200,FALSE,1
+Packaged Food,Urban Basket Poha Thick,6700,15,10,5400,200,FALSE,1
+Packaged Food,Urban Basket Poha Thick,17900,12,6,15800,250,FALSE,1
+Packaged Food,NatureNest Instant Noodles,46100,8,0,42400,100,TRUE,1
+Packaged Food,NatureNest Instant Noodles,17900,0,10,17900,200,FALSE,1
+Packaged Food,Ghar Ka Instant Noodles,55500,5,5,52700,200,FALSE,1
+Packaged Food,Ghar Ka Instant Noodles,32000,12,0,28200,500,TRUE,1
+Packaged Food,Kisan Fresh Instant Noodles,9200,0,0,9200,1000,TRUE,1
+Packaged Food,Kisan Fresh Instant Noodles,20400,0,10,20400,100,FALSE,1
+Packaged Food,Urban Basket Instant Noodles,45400,12,6,40000,1000,FALSE,1
+Packaged Food,Urban Basket Instant Noodles,14300,0,2,14300,500,FALSE,1
+Packaged Food,Desi Farm Peanut Butter,50600,0,1,50600,500,FALSE,1
+Packaged Food,Desi Farm Peanut Butter,59500,12,8,52400,250,FALSE,1
+Packaged Food,NatureNest Peanut Butter,39700,10,3,35700,200,FALSE,1
+Packaged Food,NatureNest Peanut Butter,54400,12,10,47900,250,FALSE,1
+Packaged Food,Shuddh Peanut Butter,7200,0,3,7200,1000,FALSE,1
+Packaged Food,Shuddh Peanut Butter,59100,20,5,47300,100,FALSE,1
+Packaged Food,Saffron Valley Peanut Butter,29800,20,5,23800,100,FALSE,1
+Packaged Food,Saffron Valley Peanut Butter,20200,10,3,18200,200,FALSE,1
+Packaged Food,Saffron Valley Peanut Butter,20200,10,3,18400,200,FALSE,1
+Beverages,Ghar Ka Masala Chai,51200,0,1,51200,200,FALSE,1
+Beverages,Ghar Ka Masala Chai,13600,8,5,12500,250,FALSE,1
+Beverages,Urban Basket Masala Chai,60000,20,6,48000,500,FALSE,1
+Beverages,Urban Basket Masala Chai,20400,10,1,18400,100,FALSE,1
+Beverages,Desi Farm Masala Chai,2600,8,1,2400,250,FALSE,1
+Beverages,Desi Farm Masala Chai,57700,10,0,51900,500,TRUE,1
+Beverages,Saffron Valley Masala Chai,43500,5,0,41300,500,TRUE,1
+Beverages,Saffron Valley Masala Chai,24000,25,3,18000,200,FALSE,1
+Beverages,Kisan Fresh Filter Coffee,49700,15,1,42200,200,FALSE,1
+Beverages,Kisan Fresh Filter Coffee,35900,25,10,26900,100,FALSE,1
+Beverages,Desi Farm Filter Coffee,44800,10,8,40300,500,FALSE,1
+Beverages,Desi Farm Filter Coffee,15000,0,0,15000,250,TRUE,1
+Beverages,Urban Basket Filter Coffee,50400,15,3,42800,1000,FALSE,1
+Beverages,Urban Basket Filter Coffee,44000,5,10,41800,100,FALSE,1
+Beverages,Saffron Valley Filter Coffee,14500,25,1,10900,500,FALSE,1
+Beverages,Saffron Valley Filter Coffee,54500,25,1,40900,100,FALSE,1
+Beverages,Shuddh Coconut Water,59100,25,0,44300,500,TRUE,1
+Beverages,Shuddh Coconut Water,28100,0,0,28100,250,TRUE,1
+Beverages,Urban Basket Coconut Water,30600,12,8,26900,200,FALSE,1
+Beverages,Urban Basket Coconut Water,46700,10,1,42000,250,FALSE,1
+Beverages,Urban Basket Coconut Water,46700,10,1,41700,250,FALSE,1
+Beverages,NatureNest Coconut Water,2000,10,1,1800,100,FALSE,1
+Beverages,NatureNest Coconut Water,56800,25,5,42600,500,FALSE,1
+Beverages,Desi Farm Coconut Water,38900,0,0,38900,200,TRUE,1
+Beverages,Desi Farm Coconut Water,42600,0,0,42600,100,TRUE,1
+Beverages,Ghar Ka Mango Drink,59000,8,10,54300,100,FALSE,1
+Beverages,Ghar Ka Mango Drink,22000,5,1,20900,200,FALSE,1
+Beverages,Saffron Valley Mango Drink,9800,10,5,8800,500,FALSE,1
+Beverages,Saffron Valley Mango Drink,33400,8,10,30700,100,FALSE,1
+Beverages,Kisan Fresh Mango Drink,51000,20,0,40800,250,TRUE,1
+Beverages,Kisan Fresh Mango Drink,56900,10,5,51200,1000,FALSE,1
+Beverages,Desi Farm Mango Drink,12800,20,8,10200,250,FALSE,1
+Beverages,Desi Farm Mango Drink,40000,0,2,40000,200,FALSE,1
+Beverages,NatureNest Lemon Soda,18800,25,10,14100,250,FALSE,1
+Beverages,NatureNest Lemon Soda,49600,15,5,42200,100,FALSE,1
+Beverages,Ghar Ka Lemon Soda,28000,8,3,25800,500,FALSE,1
+Beverages,Ghar Ka Lemon Soda,57700,5,5,54800,100,FALSE,1
+Beverages,Kisan Fresh Lemon Soda,16500,15,2,14000,1000,FALSE,1
+Beverages,Kisan Fresh Lemon Soda,17400,5,6,16500,500,FALSE,1
+Beverages,Saffron Valley Lemon Soda,49800,10,3,44800,100,FALSE,1
+Beverages,Saffron Valley Lemon Soda,30700,5,3,29200,250,FALSE,1
+Beverages,Ghar Ka Green Tea,24500,10,3,22000,500,FALSE,1
+Beverages,Ghar Ka Green Tea,37600,15,0,32000,100,TRUE,1
+Beverages,Desi Farm Green Tea,6700,25,1,5000,100,FALSE,1
+Beverages,Desi Farm Green Tea,40900,5,10,38900,1000,FALSE,1
+Beverages,Shuddh Green Tea,9900,20,6,7900,1000,FALSE,1
+Beverages,Shuddh Green Tea,18500,0,2,18500,500,FALSE,1
+Beverages,Urban Basket Green Tea,20000,15,1,17000,200,FALSE,1
+Beverages,Urban Basket Green Tea,2600,0,6,2600,1000,FALSE,1
+Personal Care,Saffron Valley Neem Face Wash,46700,20,8,37400,100,FALSE,1
+Personal Care,Saffron Valley Neem Face Wash,49800,0,0,49800,250,TRUE,1
+Personal Care,Kisan Fresh Neem Face Wash,26200,5,3,24900,200,FALSE,1
+Personal Care,Kisan Fresh Neem Face Wash,49500,20,3,39600,250,FALSE,1
+Personal Care,Urban Basket Neem Face Wash,3100,12,5,2700,100,FALSE,1
+Personal Care,Urban Basket Neem Face Wash,38500,20,8,30800,250,FALSE,1
+Personal Care,Shuddh Neem Face Wash,6900,25,2,5200,500,FALSE,1
+Personal Care,Shuddh Neem Face Wash,58700,12,2,51700,200,FALSE,1
+Personal Care,Urban Basket Herbal Shampoo,6600,10,5,5900,500,FALSE,1
+Personal Care,Urban Basket Herbal Shampoo,53000,8,8,48800,200,FALSE,1
+Personal Care,Ghar Ka Herbal Shampoo,34000,10,5,30600,500,FALSE,1
+Personal Care,Ghar Ka Herbal Shampoo,35600,25,6,26700,100,FALSE,1
+Personal Care,Shuddh Herbal Shampoo,7500,25,0,5600,250,TRUE,1
+Personal Care,Shuddh Herbal Shampoo,22600,0,3,22600,500,FALSE,1
+Personal Care,Saffron Valley Herbal Shampoo,25500,12,1,22400,200,FALSE,1
+Personal Care,Saffron Valley Herbal Shampoo,18800,0,0,18800,1000,TRUE,1
+Personal Care,Ghar Ka Coconut Hair Oil,53200,15,6,45200,200,FALSE,1
+Personal Care,Ghar Ka Coconut Hair Oil,27900,20,10,22300,1000,FALSE,1
+Personal Care,Saffron Valley Coconut Hair Oil,47900,10,6,43100,200,FALSE,1
+Personal Care,Saffron Valley Coconut Hair Oil,47900,10,6,43600,200,FALSE,1
+Personal Care,Saffron Valley Coconut Hair Oil,20300,0,1,20300,100,FALSE,1
+Personal Care,Kisan Fresh Coconut Hair Oil,51800,8,0,47700,500,TRUE,1
+Personal Care,Kisan Fresh Coconut Hair Oil,18000,20,1,14400,250,FALSE,1
+Personal Care,NatureNest Coconut Hair Oil,17700,0,3,17700,500,FALSE,1
+Personal Care,NatureNest Coconut Hair Oil,41500,10,8,37400,100,FALSE,1
+Personal Care,NatureNest Coconut Hair Oil,41500,10,8,37600,100,FALSE,1
+Personal Care,Ghar Ka Toothpaste Clove,41600,15,5,35400,1000,FALSE,1
+Personal Care,Ghar Ka Toothpaste Clove,30100,12,10,26500,500,FALSE,1
+Personal Care,Shuddh Toothpaste Clove,50300,5,8,47800,100,FALSE,1
+Personal Care,Shuddh Toothpaste Clove,23300,20,0,18600,250,TRUE,1
+Personal Care,Desi Farm Toothpaste Clove,8200,25,0,6200,200,TRUE,1
+Personal Care,Desi Farm Toothpaste Clove,57300,12,5,50400,250,FALSE,1
+Personal Care,Desi Farm Toothpaste Clove,57300,12,5,50100,250,FALSE,1
+Personal Care,NatureNest Toothpaste Clove,29100,15,0,24700,1000,TRUE,1
+Personal Care,NatureNest Toothpaste Clove,29100,15,0,24900,1000,TRUE,1
+Personal Care,NatureNest Toothpaste Clove,53000,20,2,42400,500,FALSE,1
+Personal Care,Urban Basket Bathing Bar,32200,0,0,32200,200,TRUE,1
+Personal Care,Urban Basket Bathing Bar,7100,10,5,6400,500,FALSE,1
+Personal Care,Saffron Valley Bathing Bar,59100,25,0,44300,500,TRUE,1
+Personal Care,Saffron Valley Bathing Bar,31700,15,2,26900,100,FALSE,1
+Personal Care,Desi Farm Bathing Bar,31000,5,3,29400,500,FALSE,1
+Personal Care,Desi Farm Bathing Bar,27500,12,2,24200,250,FALSE,1
+Personal Care,Ghar Ka Bathing Bar,27100,8,10,24900,500,FALSE,1
+Personal Care,Ghar Ka Bathing Bar,22400,8,8,20600,250,FALSE,1
+Personal Care,NatureNest Sunscreen SPF 50,57000,10,2,51300,200,FALSE,1
+Personal Care,NatureNest Sunscreen SPF 50,28400,8,3,26100,100,FALSE,1
+Personal Care,Saffron Valley Sunscreen SPF 50,50700,10,6,45600,250,FALSE,1
+Personal Care,Saffron Valley Sunscreen SPF 50,21100,12,5,18600,500,FALSE,1
+Personal Care,Shuddh Sunscreen SPF 50,39800,20,5,31800,500,FALSE,1
+Personal Care,Shuddh Sunscreen SPF 50,26100,5,10,24800,1000,FALSE,1
+Personal Care,Desi Farm Sunscreen SPF 50,53100,12,0,46700,250,TRUE,1
+Personal Care,Desi Farm Sunscreen SPF 50,15800,5,5,15000,100,FALSE,1
+Personal Care,Desi Farm Sunscreen SPF 50,15800,5,5,14700,100,FALSE,1
+Cleaning Essentials,Shuddh Dishwash Gel,59300,5,0,56300,100,TRUE,1
+Cleaning Essentials,Shuddh Dishwash Gel,14000,8,2,12900,200,FALSE,1
+Cleaning Essentials,Kisan Fresh Dishwash Gel,10500,0,1,10500,100,FALSE,1
+Cleaning Essentials,Kisan Fresh Dishwash Gel,10400,12,0,9200,200,TRUE,1
+Cleaning Essentials,Saffron Valley Dishwash Gel,35400,20,3,28300,1000,FALSE,1
+Cleaning Essentials,Saffron Valley Dishwash Gel,35400,20,3,28500,1000,FALSE,1
+Cleaning Essentials,Saffron Valley Dishwash Gel,6300,25,0,4700,100,TRUE,1
+Cleaning Essentials,Ghar Ka Dishwash Gel,59700,0,0,59700,500,TRUE,1
+Cleaning Essentials,Ghar Ka Dishwash Gel,34100,25,8,25600,100,FALSE,1
+Cleaning Essentials,Ghar Ka Dishwash Gel,34100,25,8,25300,100,FALSE,1
+Cleaning Essentials,Ghar Ka Floor Cleaner,58200,15,8,49500,250,FALSE,1
+Cleaning Essentials,Ghar Ka Floor Cleaner,30500,12,3,26800,100,FALSE,1
+Cleaning Essentials,Desi Farm Floor Cleaner,35900,12,2,31600,200,FALSE,1
+Cleaning Essentials,Desi Farm Floor Cleaner,51000,12,0,44900,100,TRUE,1
+Cleaning Essentials,Saffron Valley Floor Cleaner,37100,0,8,37100,100,FALSE,1
+Cleaning Essentials,Saffron Valley Floor Cleaner,30700,10,5,27600,200,FALSE,1
+Cleaning Essentials,NatureNest Floor Cleaner,26900,8,1,24700,100,FALSE,1
+Cleaning Essentials,NatureNest Floor Cleaner,14500,15,0,12300,500,TRUE,1
+Cleaning Essentials,Urban Basket Detergent Powder,40900,20,1,32700,1000,FALSE,1
+Cleaning Essentials,Urban Basket Detergent Powder,16700,20,5,13400,250,FALSE,1
+Cleaning Essentials,Saffron Valley Detergent Powder,27000,12,5,23800,500,FALSE,1
+Cleaning Essentials,Saffron Valley Detergent Powder,37700,0,6,37700,100,FALSE,1
+Cleaning Essentials,Shuddh Detergent Powder,56300,10,3,50700,500,FALSE,1
+Cleaning Essentials,Shuddh Detergent Powder,27100,10,1,24400,250,FALSE,1
+Cleaning Essentials,Kisan Fresh Detergent Powder,22600,15,1,19200,500,FALSE,1
+Cleaning Essentials,Kisan Fresh Detergent Powder,43500,25,3,32600,1000,FALSE,1
+Cleaning Essentials,Kisan Fresh Detergent Powder,43500,25,3,32300,1000,FALSE,1
+Cleaning Essentials,Ghar Ka Toilet Cleaner,23100,0,10,23100,100,FALSE,1
+Cleaning Essentials,Ghar Ka Toilet Cleaner,2300,0,6,2300,200,FALSE,1
+Cleaning Essentials,NatureNest Toilet Cleaner,11200,10,6,10100,200,FALSE,1
+Cleaning Essentials,NatureNest Toilet Cleaner,12200,25,6,9200,1000,FALSE,1
+Cleaning Essentials,NatureNest Toilet Cleaner,12200,25,6,8900,1000,FALSE,1
+Cleaning Essentials,Kisan Fresh Toilet Cleaner,36100,15,5,30700,200,FALSE,1
+Cleaning Essentials,Kisan Fresh Toilet Cleaner,10300,0,6,10300,250,FALSE,1
+Cleaning Essentials,Desi Farm Toilet Cleaner,33400,15,0,28400,100,TRUE,1
+Cleaning Essentials,Desi Farm Toilet Cleaner,24100,20,2,19300,1000,FALSE,1
+Cleaning Essentials,Urban Basket Garbage Bags,8500,10,0,7600,100,TRUE,1
+Cleaning Essentials,Urban Basket Garbage Bags,26400,0,0,26400,1000,TRUE,1
+Cleaning Essentials,Shuddh Garbage Bags,3800,8,5,3500,100,FALSE,1
+Cleaning Essentials,Shuddh Garbage Bags,3800,8,5,3700,100,FALSE,1
+Cleaning Essentials,Shuddh Garbage Bags,45600,12,0,40100,200,TRUE,1
+Cleaning Essentials,Saffron Valley Garbage Bags,7000,12,1,6200,1000,FALSE,1
+Cleaning Essentials,Saffron Valley Garbage Bags,20200,10,3,18200,500,FALSE,1
+Cleaning Essentials,NatureNest Garbage Bags,8100,25,5,6100,1000,FALSE,1
+Cleaning Essentials,NatureNest Garbage Bags,53500,25,10,40100,200,FALSE,1
+Cleaning Essentials,Kisan Fresh Scrub Pad,3900,0,3,3900,200,FALSE,1
+Cleaning Essentials,Kisan Fresh Scrub Pad,35400,5,2,33600,100,FALSE,1
+Cleaning Essentials,NatureNest Scrub Pad,56000,0,8,56000,250,FALSE,1
+Cleaning Essentials,NatureNest Scrub Pad,19400,12,5,17100,200,FALSE,1
+Cleaning Essentials,Saffron Valley Scrub Pad,26200,25,0,19600,250,TRUE,1
+Cleaning Essentials,Saffron Valley Scrub Pad,6500,10,5,5800,200,FALSE,1
+Cleaning Essentials,Ghar Ka Scrub Pad,48900,5,0,46500,1000,TRUE,1
+Cleaning Essentials,Ghar Ka Scrub Pad,8200,0,0,8200,500,TRUE,1

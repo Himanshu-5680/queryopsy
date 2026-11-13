@@ -1,0 +1,41 @@
+name: New case proposal
+description: Pitch a new investigation or level
+labels: ["new-case"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Working title
+      placeholder: "e.g. Airline Overbooking Audit"
+    validations:
+      required: true
+  - type: input
+    id: industry
+    attributes:
+      label: Industry
+  - type: textarea
+    id: story
+    attributes:
+      label: Story and client brief
+      description: Original writing only, no copied stories or branding.
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: Dataset
+      description: Link and licence. It must allow redistribution of a processed copy (CC0, CC-BY, ODbL, MIT...).
+    validations:
+      required: true
+  - type: textarea
+    id: levels
+    attributes:
+      label: Level ideas
+      description: The anomalies to find and the SQL skills each level teaches.
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Checklist
+      options:
+        - label: The content is original and the data licence allows redistribution.
+          required: true

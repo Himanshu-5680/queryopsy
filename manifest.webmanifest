@@ -1,0 +1,15 @@
+{
+  "name": "Queryopsy - Zero-Server SQL Forensics",
+  "short_name": "Queryopsy",
+  "description": "Solve real-world data forensics cases with SQL, fully offline.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F4F0EA",
+  "theme_color": "#FF5722",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/logo.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

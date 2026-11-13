@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and stuck on a level
+    url: https://github.com/Himanshu-5680/queryopsy/discussions
+    about: Ask in Discussions (use spoiler tags for solutions).
+  - name: Security vulnerability
+    url: https://github.com/Himanshu-5680/queryopsy/security/advisories/new
+    about: Report privately, please do not open a public issue.
