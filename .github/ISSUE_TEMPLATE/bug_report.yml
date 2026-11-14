@@ -28,7 +28,7 @@ body:
     id: env
     attributes:
       label: Browser / device / version
-      placeholder: "Chrome 131 on Windows 11, Queryopsy v1.0.0"
+      placeholder: "Chrome 131 on Windows 11, Queryopsy v1.1.0"
   - type: textarea
     id: logs
     attributes:

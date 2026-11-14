@@ -1,7 +1,7 @@
 """Download the pinned third-party runtime into vendor/ (run once; output is committed).
 
   * Pyodide core (CPython 3.13 compiled to WebAssembly) + its sqlite3 module wheel
-  * Space Grotesk + JetBrains Mono fonts (SIL OFL 1.1)
+  * JetBrains Mono, Courier Prime (SIL OFL 1.1) and Special Elite (Apache-2.0) fonts
 
 Nothing is ever loaded from a CDN at runtime; the browser and the Android app
 use only these local copies.     Usage:  python tools/vendor.py
@@ -14,7 +14,8 @@ PYODIDE = "0.29.5"
 CORE_URL = f"https://github.com/pyodide/pyodide/releases/download/{PYODIDE}/pyodide-core-{PYODIDE}.tar.bz2"
 FULL_URL = f"https://cdn.jsdelivr.net/pyodide/v{PYODIDE}/full/"
 CORE_FILES = ("pyodide.js", "pyodide.asm.js", "pyodide.asm.wasm", "python_stdlib.zip", "pyodide-lock.json")
-FONTS = {"space-grotesk": ("5.3.0", (400, 500, 700)), "jetbrains-mono": ("5.3.0", (400, 700))}
+FONTS = {"jetbrains-mono": ("5.3.0", (400, 700)),
+         "courier-prime": ("5.3.0", (400, 700)), "special-elite": ("5.3.0", (400,))}
 
 
 def get(url: str) -> bytes:
@@ -48,18 +49,22 @@ def fonts() -> None:
             for w in weights:
                 src = f"package/files/{fam}-latin-{w}-normal.woff2"
                 (VENDOR / "fonts" / f"{fam}-{w}.woff2").write_bytes(tar.extractfile(src).read())
-            (VENDOR / "fonts" / f"{fam}-OFL.txt").write_bytes(tar.extractfile("package/LICENSE").read())
+            lic = "OFL" if str(meta.get("license", "")).upper().startswith("OFL") else "LICENSE"
+            (VENDOR / "fonts" / f"{fam}-{lic}.txt").write_bytes(tar.extractfile("package/LICENSE").read())
 
 
 def main() -> None:
-    pyodide()
+    import sys
+    if "--fonts" not in sys.argv:      # --fonts: refresh only the fonts
+        pyodide()
     fonts()
     (VENDOR / "README.md").write_text(
         "# Vendored runtime (do not edit by hand)\n\n"
         "| Path | What | Licence |\n|---|---|---|\n"
         f"| pyodide/ | Pyodide {PYODIDE} core: CPython 3.13 compiled to WebAssembly, plus its `sqlite3` stdlib module wheel | MPL-2.0 (pyodide/LICENSE); CPython is PSF-licensed; SQLite is public domain |\n"
-        "| fonts/space-grotesk-*.woff2 | Space Grotesk (latin subset) via @fontsource | SIL OFL 1.1 (fonts/space-grotesk-OFL.txt) |\n"
-        "| fonts/jetbrains-mono-*.woff2 | JetBrains Mono (latin subset) via @fontsource | SIL OFL 1.1 (fonts/jetbrains-mono-OFL.txt) |\n\n"
+        "| fonts/jetbrains-mono-*.woff2 | JetBrains Mono (latin subset) via @fontsource | SIL OFL 1.1 (fonts/jetbrains-mono-OFL.txt) |\n"
+        "| fonts/courier-prime-*.woff2 | Courier Prime typewriter face (latin subset) via @fontsource | SIL OFL 1.1 (fonts/courier-prime-OFL.txt) |\n"
+        "| fonts/special-elite-400.woff2 | Special Elite typewriter display face (latin subset) via @fontsource | Apache-2.0 (fonts/special-elite-LICENSE.txt) |\n\n"
         "Regenerate with `python tools/vendor.py`.\n", encoding="utf-8")
     print("vendored Pyodide", PYODIDE, "+ fonts")
 

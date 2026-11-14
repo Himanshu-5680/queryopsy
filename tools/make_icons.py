@@ -15,13 +15,13 @@ LOGO = (ROOT / "assets" / "logo.svg").read_text()
 
 def page_html(size: int, kind: str) -> str:
     if kind == "legacy":      # full icon on paper background
-        body = f'<div style="width:{size}px;height:{size}px;background:#F4F0EA;display:grid;place-items:center">' \
+        body = f'<div style="width:{size}px;height:{size}px;background:#D9CBAE;display:grid;place-items:center">' \
                f'<div style="width:{size * .78}px;height:{size * .78}px">{LOGO}</div></div>'
     elif kind == "fg":        # adaptive foreground: logo in the 66% safe zone, transparent
         body = f'<div style="width:{size}px;height:{size}px;display:grid;place-items:center">' \
                f'<div style="width:{size * .58}px;height:{size * .58}px">{LOGO}</div></div>'
     else:                     # adaptive background
-        body = f'<div style="width:{size}px;height:{size}px;background:#F4F0EA"></div>'
+        body = f'<div style="width:{size}px;height:{size}px;background:#D9CBAE"></div>'
     return f"<html><body style='margin:0;background:transparent'>{body}<style>svg{{width:100%;height:100%}}</style></body></html>"
 
 

@@ -9,7 +9,9 @@ import base64
 import hashlib
 import time
 
-INK, PAPER, ORANGE, PURPLE, GREEN = "#0B0B0B", "#F4F0EA", "#FF5722", "#A855F7", "#16A34A"
+INK, PAPER, RED, NAVY, GREEN, MUTED = "#1E1A15", "#FBF6E9", "#B3261E", "#1F3A5F", "#2E6B34", "#6B6156"
+TYPE, DISPLAY, CODE = "'Courier Prime', 'Courier New', monospace", "'Special Elite', 'Courier Prime', monospace", "'JetBrains Mono', monospace"
+FONTS = ("700 28px 'Courier Prime'", "400 28px 'Courier Prime'", "400 40px 'Special Elite'")
 
 
 def summary(app) -> dict:
@@ -26,78 +28,188 @@ def summary(app) -> dict:
             "closed": sum(1 for c in cases if c["done"] == c["total"]), "id": cert_id, "date": time.strftime("%d %b %Y")}
 
 
-def _box(ctx, x, y, w, h, fill, shadow=10, line=6):
-    ctx.fillStyle = INK
-    ctx.fillRect(x + shadow, y + shadow, w, h)
-    ctx.fillStyle = fill
-    ctx.fillRect(x, y, w, h)
-    ctx.lineWidth = line
-    ctx.strokeStyle = INK
-    ctx.strokeRect(x, y, w, h)
+def _stamp(ctx, x, y, text, color, size=46, angle=-0.14, pad=26):
+    ctx.save()
+    ctx.translate(x, y)
+    ctx.rotate(angle)
+    ctx.font = f"400 {size}px {DISPLAY}"
+    w = ctx.measureText(text).width + pad * 2
+    h = size + pad
+    ctx.globalAlpha = 0.85
+    ctx.strokeStyle = color
+    ctx.lineWidth = 6
+    ctx.strokeRect(-w / 2, -h / 2, w, h)
+    ctx.lineWidth = 2
+    ctx.strokeRect(-w / 2 + 9, -h / 2 + 9, w - 18, h - 18)
+    ctx.fillStyle = color
+    ctx.textAlign = "center"
+    ctx.textBaseline = "middle"
+    ctx.fillText(text, 0, 3)
+    ctx.restore()
+
+
+def _clip(ctx, x, y):
+    ctx.save()
+    ctx.strokeStyle = "#8E9296"
+    ctx.lineWidth = 6
+    for (w, h, dx, dy) in ((34, 110, 0, 0), (20, 76, 7, 14)):
+        r = w / 2
+        ctx.beginPath()
+        ctx.moveTo(x + dx, y + dy + r)
+        ctx.arc(x + dx + r, y + dy + r, r, 3.14159, 0)
+        ctx.lineTo(x + dx + w, y + dy + h - r)
+        ctx.arc(x + dx + r, y + dy + h - r, r, 0, 3.14159)
+        ctx.closePath()
+        ctx.stroke()
+    ctx.restore()
 
 
 def draw(app, canvas) -> dict:
+    """Official forensic audit report (1600 x 1130 canvas)."""
     s = summary(app)
     ctx = canvas.getContext("2d")
     W, H = canvas.width, canvas.height
-    ctx.fillStyle = PAPER
+    ctx.textBaseline = "alphabetic"
+    ctx.textAlign = "left"
+    ctx.fillStyle = "#D9CBAE"                                   # desk
     ctx.fillRect(0, 0, W, H)
-    ctx.fillStyle = "#E4DDD1"                       # dotted paper texture
-    for yy in range(30, H, 34):
-        for xx in range(30, W, 34):
-            ctx.fillRect(xx, yy, 3, 3)
-    _box(ctx, 50, 50, W - 110, H - 110, "#FFFFFF", 14, 8)
-    _box(ctx, 50, 50, W - 110, 150, ORANGE, 0, 8)
+    ctx.fillStyle = "rgba(0,0,0,0.18)"                          # paper shadow
+    ctx.fillRect(58, 62, W - 104, H - 104)
+    ctx.fillStyle = PAPER
+    ctx.fillRect(46, 46, W - 104, H - 104)
+    ctx.strokeStyle = "rgba(31,58,95,0.08)"                     # faint ruled paper
+    ctx.lineWidth = 1
+    for yy in range(300, H - 80, 38):
+        ctx.beginPath()
+        ctx.moveTo(90, yy)
+        ctx.lineTo(W - 100, yy)
+        ctx.stroke()
+    ctx.strokeStyle = NAVY
+    ctx.lineWidth = 4
+    ctx.strokeRect(70, 70, W - 152, H - 152)
+    ctx.lineWidth = 1.5
+    ctx.strokeRect(80, 80, W - 172, H - 172)
+    _clip(ctx, 150, 20)
+    # letterhead
     ctx.fillStyle = INK
-    ctx.font = "700 30px 'JetBrains Mono', monospace"
-    ctx.fillText("QUERYOPSY // ZERO-SERVER SQL FORENSICS", 100, 115)
-    ctx.font = "700 62px 'Space Grotesk', sans-serif"
-    ctx.fillText("Certificate of SQL Audit", 100, 175)
-    ctx.font = "500 30px 'Space Grotesk', sans-serif"
-    ctx.fillText("This certifies that", 100, 285)
-    ctx.font = "700 84px 'Space Grotesk', sans-serif"
-    name = s["name"] if len(s["name"]) <= 26 else s["name"][:25] + "."
-    ctx.fillText(name, 100, 380)
-    ctx.fillStyle = PURPLE
-    ctx.fillRect(100, 400, min(ctx.measureText(name).width, W - 300), 10)
+    ctx.font = f"400 50px {DISPLAY}"
+    ctx.fillText("BUREAU OF DATA FORENSICS", 230, 160)
+    ctx.font = f"700 22px {TYPE}"
+    ctx.fillStyle = MUTED
+    ctx.fillText("QUERYOPSY  //  OFFICIAL FORENSIC AUDIT REPORT", 232, 198)
+    ctx.textAlign = "right"
     ctx.fillStyle = INK
-    ctx.font = "500 30px 'Space Grotesk', sans-serif"
-    ctx.fillText(f"proved {s['proven']} of {s['total']} forensic findings with SQL and closed {s['closed']} case file(s).", 100, 470)
-    y = 540
-    ctx.font = "700 24px 'JetBrains Mono', monospace"
+    ctx.font = f"700 22px {TYPE}"
+    ctx.fillText(f"REPORT NO. QX-{s['id']}", W - 130, 150)
+    ctx.fillText(f"DATE  {s['date'].upper()}", W - 130, 182)
+    ctx.textAlign = "left"
+    ctx.fillStyle = RED
+    ctx.fillRect(120, 224, W - 240, 4)
+    ctx.fillRect(120, 232, W - 240, 1.5)
+    _stamp(ctx, W - 300, 300, "CONFIDENTIAL", RED, 34, 0.1, 18)
+    # certification
+    ctx.fillStyle = INK
+    ctx.font = f"400 30px {TYPE}"
+    ctx.fillText("This report certifies that the investigator", 130, 300)
+    name = s["name"] if len(s["name"]) <= 28 else s["name"][:27] + "."
+    ctx.font = f"400 74px {DISPLAY}"
+    ctx.fillText(name, 130, 392)
+    ctx.fillStyle = RED
+    ctx.fillRect(130, 408, min(ctx.measureText(name).width + 20, W - 560), 4)
+    ctx.fillStyle = INK
+    ctx.font = f"400 28px {TYPE}"
+    ctx.fillText(f"proved {s['proven']} of {s['total']} forensic findings with SQL and closed {s['closed']} case file(s).", 130, 462)
+    ctx.fillStyle = MUTED
+    ctx.font = f"400 22px {TYPE}"
+    ctx.fillText("Evidence examined on-device. Source records: ", 130, 500)
+    ctx.fillStyle = INK
+    ctx.fillRect(130 + ctx.measureText("Evidence examined on-device. Source records: ").width, 482, 220, 24)
+    # case register table
+    x0, y0, widths = 130, 560, (150, 560, 180, 190)
+    heads = ("FILE NO.", "CASE", "EXHIBITS", "STATUS")
+    ctx.fillStyle = NAVY
+    ctx.fillRect(x0, y0 - 34, sum(widths), 46)
+    ctx.fillStyle = "#FFFFFF"
+    ctx.font = f"700 22px {TYPE}"
+    xx = x0
+    for h_, w_ in zip(heads, widths):
+        ctx.fillText(h_, xx + 14, y0 - 4)
+        xx += w_
+    y = y0 + 12
+    ctx.font = f"700 22px {TYPE}"
     for c in s["cases"]:
         done = c["done"] == c["total"]
-        ctx.fillStyle = GREEN if done else ("#B45309" if c["done"] else "#8A847C")
-        ctx.fillText("[x]" if done else ("[~]" if c["done"] else "[ ]"), 100, y)
+        status, col = ("CLOSED", GREEN) if done else (("OPEN", "#9A5B0F") if c["done"] else ("NOT OPENED", MUTED))
+        ctx.strokeStyle = "rgba(30,26,21,0.25)"
+        ctx.lineWidth = 1.5
+        ctx.beginPath()
+        ctx.moveTo(x0, y + 44)
+        ctx.lineTo(x0 + sum(widths), y + 44)
+        ctx.stroke()
         ctx.fillStyle = INK
-        ctx.fillText(f"Case {c['no']:02d}  {c['title']}", 170, y)
-        ctx.fillText(f"{c['done']}/{c['total']}", 960, y)
-        y += 46
-    _box(ctx, 1110, 520, 380, 300, PAPER, 8, 5)
+        ctx.fillText(f"QX/{c['no']:02d}", x0 + 14, y + 30)
+        title = c["title"] if len(c["title"]) <= 34 else c["title"][:33] + "."
+        ctx.font = f"400 22px {TYPE}"
+        ctx.fillText(title, x0 + widths[0] + 14, y + 30)
+        ctx.font = f"700 22px {TYPE}"
+        ctx.fillText(f"{c['done']} / {c['total']}", x0 + widths[0] + widths[1] + 14, y + 30)
+        ctx.fillStyle = col
+        ctx.fillText(status, x0 + widths[0] + widths[1] + widths[2] + 14, y + 30)
+        y += 44
+    # audit record card (evidence tag style)
+    bx, by, bw, bh = 1230, 520, 270, 300
+    ctx.fillStyle = "#F1D98A"
+    ctx.beginPath()
+    ctx.moveTo(bx + 30, by)
+    ctx.lineTo(bx + bw, by)
+    ctx.lineTo(bx + bw, by + bh)
+    ctx.lineTo(bx, by + bh)
+    ctx.lineTo(bx, by + 30)
+    ctx.closePath()
+    ctx.fill()
+    ctx.strokeStyle = INK
+    ctx.lineWidth = 2.5
+    ctx.stroke()
+    ctx.beginPath()
+    ctx.arc(bx + 34, by + 34, 9, 0, 6.2832)
+    ctx.fillStyle = PAPER
+    ctx.fill()
+    ctx.stroke()
     ctx.fillStyle = INK
-    ctx.font = "700 22px 'JetBrains Mono', monospace"
-    ctx.fillText("AUDIT RECORD", 1140, 565)
-    ctx.font = "500 22px 'JetBrains Mono', monospace"
-    for i, line in enumerate((f"Findings  {s['proven']}/{s['total']}", f"Hints     {s['hints']}", f"Date      {s['date']}",
-                              f"Engine    SQLite/WASM", f"ID        {s['id']}")):
-        ctx.fillText(line, 1140, 610 + i * 40)
-    ctx.save()
-    ctx.translate(1300, 900)
-    ctx.rotate(-0.14)
-    ctx.strokeStyle = GREEN if s["closed"] else "#8A847C"
-    ctx.lineWidth = 8
-    ctx.strokeRect(-190, -50, 380, 100)
-    ctx.fillStyle = GREEN if s["closed"] else "#8A847C"
-    ctx.font = "700 46px 'JetBrains Mono', monospace"
-    ctx.textAlign = "center"
-    ctx.fillText("VERIFIED" if s["closed"] else "IN PROGRESS", 0, 16)
-    ctx.restore()
-    ctx.textAlign = "left"
-    ctx.fillStyle = "#5B5650"
-    ctx.font = "500 20px 'JetBrains Mono', monospace"
-    ctx.fillText("Verified on-device by the Queryopsy validation engine.", 100, H - 110)
-    ctx.fillText(f"Certificate ID {s['id']} - recompute from the same progress to verify.", 100, H - 80)
+    ctx.font = f"700 20px {TYPE}"
+    ctx.fillText("AUDIT RECORD", bx + 58, by + 42)
+    ctx.font = f"700 18px {TYPE}"
+    for i, line in enumerate((f"Findings {s['proven']}/{s['total']}", f"Closed   {s['closed']} case(s)", f"Hints    {s['hints']}",
+                              "Engine   SQLite", f"ID {s['id']}")):
+        ctx.fillText(line, bx + 22, by + 96 + i * 40)
+    # signature + verdict stamp
+    ctx.strokeStyle = INK
+    ctx.lineWidth = 2
+    ctx.beginPath()
+    ctx.moveTo(130, H - 170)
+    ctx.lineTo(560, H - 170)
+    ctx.stroke()
+    ctx.font = f"400 34px {DISPLAY}"
+    ctx.fillStyle = NAVY
+    ctx.fillText(name[:22], 140, H - 182)
+    ctx.fillStyle = MUTED
+    ctx.font = f"700 18px {TYPE}"
+    ctx.fillText("LEAD INVESTIGATOR", 130, H - 144)
+    ctx.fillText(f"Verified on-device by the Queryopsy validation engine. Recompute ID {s['id']} from the same progress to verify.", 130, H - 112)
+    complete = s["proven"] == s["total"] and s["total"] > 0
+    _stamp(ctx, 1240, H - 200, "CASE CLOSED" if complete else ("VERIFIED" if s["closed"] else "IN PROGRESS"),
+           GREEN if s["closed"] else MUTED, 54, -0.16, 26)
     return s
+
+
+def when_fonts_ready(callback) -> None:
+    """Canvas only uses web fonts that are loaded: load them, then redraw."""
+    try:
+        from js import Promise, document
+        from pyodide.ffi import create_once_callable, to_js
+        Promise.all(to_js([document.fonts.load(f) for f in FONTS])).then(create_once_callable(lambda *_: callback()))
+    except Exception:  # noqa: BLE001 - fonts are a nicety; the first draw already happened
+        pass
 
 
 def pdf_from_jpeg(jpeg: bytes, px_w: int, px_h: int) -> bytes:

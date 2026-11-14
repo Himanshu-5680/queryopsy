@@ -15,6 +15,14 @@ from .dom import closest, esc, later, nn, on, qs, toast
 from .editor import Editor
 from .store import Store
 
+EXHIBITS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+
+def exhibit(i: int) -> str:
+    """Findings are filed as exhibits: A, B, C ..."""
+    return EXHIBITS[i] if i < len(EXHIBITS) else str(i + 1)
+
+
 ICON_PLAY = '<svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 1l11 6-11 6z" fill="currentColor"/></svg>'
 
 
@@ -35,8 +43,12 @@ class App:
     def start(self) -> None:
         on(document, "click", self.on_click)
         on(document, "keydown", self.on_key)
+        from pyodide.ffi import create_proxy
+        self._back_proxy = create_proxy(self.back)
+        window.queryopsyBack = self._back_proxy          # used by the Android back button
         on(window, "hashchange", lambda e: asyncio.ensure_future(self.route()))
         theme_toggle.apply(theme_toggle.current())
+        theme_toggle.watch_system()
         document.documentElement.classList.add("ready")
         st = qs("#engine-status")
         st.classList.add("ready")
@@ -167,10 +179,13 @@ class App:
         qs("#view-case").innerHTML = f"""
 <div class="workspace" data-mtab="brief" id="workspace">
   <aside class="panel card dossier-panel" aria-label="Case dossier">
+    <span class="clip" aria-hidden="true"></span><span class="pin" aria-hidden="true"></span>
+    <span class="stamp stamp-conf" aria-hidden="true">Confidential</span>
     <div class="dossier panel-body">
       <button class="back" data-action="home" aria-label="Back to all cases">&larr; All cases <kbd>Alt</kbd><kbd>B</kbd></button>
       <div class="eyebrow">Case {c['no']:02d} &middot; {esc(c['industry'])}</div>
       <h1>{esc(c['title'])}</h1>
+      <div class="fileref">File no. QX/{c['no']:02d}/{len(c['levels'])} &middot; Source <span class="redact" aria-hidden="true">XXXXXXXX</span><span class="sr-only">redacted</span></div>
       <div class="client">Client: {esc(c['client'])}</div>
       <div class="row" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px"><span class="chip">{esc(c['difficulty'])}</span>{src_chip}</div>
       <div class="brief" id="brief">{brief}</div>
@@ -181,9 +196,12 @@ class App:
   </aside>
   <section class="bench panel" aria-label="Query workbench">
     <div class="card">
+      <span class="pin" aria-hidden="true"></span>
       <div class="toolbar">
         <button class="btn btn-primary" data-action="run" id="run-btn">{ICON_PLAY} Run <span class="label">&nbsp;<kbd>Ctrl</kbd>+<kbd>Enter</kbd></span></button>
+        <span class="term" aria-hidden="true">Interrogation terminal</span>
         <span class="spacer"></span>
+        <button class="btn btn-sm btn-secondary evidence-btn" data-action="evidence" aria-controls="evidence-room" aria-expanded="false" title="Evidence room (Alt+E)">Evidence</button>
         <button class="btn btn-sm" data-action="history" title="Query history (Alt+Y)">History</button>
         <button class="btn btn-sm" data-action="reset-editor" title="Restore the starter query">Clear</button>
         <button class="btn btn-sm" data-action="reset-data" title="Undo any changes you made to the tables">Reset data</button>
@@ -202,19 +220,21 @@ class App:
       <div class="empty"><b>Results appear here</b>Run a query to see rows and an instant verdict.</div>
     </div>
   </section>
-  <aside class="panel card schema-panel" aria-label="Database schema">
-    <div class="panel-head"><h2>Evidence room</h2><span class="chip">{len(c['tables'])} tables</span></div>
-    <div class="schema-tabs" role="tablist">
-      <button role="tab" data-action="schema-tab" data-tab="tables" aria-selected="true">Tables</button>
-      <button role="tab" data-action="schema-tab" data-tab="diagram" aria-selected="false">ER diagram</button>
+  <aside class="panel card schema-panel" id="evidence-room" aria-label="Evidence room: database schema">
+    <span class="pin" aria-hidden="true"></span>
+    <div class="panel-head"><h2>Evidence room</h2><span class="chip">{len(c['tables'])} tables</span>
+      <button class="btn btn-sm drawer-close" data-action="evidence" aria-label="Close the evidence room">Close</button></div>
+    <div class="schema-tabs" role="tablist" aria-label="Schema view">
+      <button role="tab" id="tab-tables" data-action="schema-tab" data-tab="tables" aria-selected="true" aria-controls="schema">Tables</button>
+      <button role="tab" id="tab-diagram" data-action="schema-tab" data-tab="diagram" aria-selected="false" aria-controls="schema" tabindex="-1">ER diagram</button>
     </div>
-    <div class="schema panel-body" id="schema"></div>
+    <div class="schema panel-body" id="schema" role="tabpanel" aria-labelledby="tab-tables"></div>
   </aside>
 </div>
-<nav class="mobile-tabs" role="tablist" aria-label="Case sections">
-  <button role="tab" data-action="mtab" data-tab="brief" aria-selected="true">Brief</button>
-  <button role="tab" data-action="mtab" data-tab="schema" aria-selected="false">Schema</button>
-  <button role="tab" data-action="mtab" data-tab="query" aria-selected="false">Query</button>
+<nav class="mobile-tabs" aria-label="Case sections">
+  <button data-action="mtab" data-tab="brief" aria-pressed="true">Dossier</button>
+  <button data-action="mtab" data-tab="schema" aria-pressed="false">Evidence</button>
+  <button data-action="mtab" data-tab="query" aria-pressed="false">Query</button>
 </nav>"""
         self.render_schema()
         self.editor = Editor(qs("#editor"), schema, self.run, self.on_editor_change)
@@ -225,7 +245,28 @@ class App:
             return
         ws.setAttribute("data-mtab", tab)
         for b in document.querySelectorAll(".mobile-tabs button"):
-            b.setAttribute("aria-selected", "true" if b.dataset.tab == tab else "false")
+            b.setAttribute("aria-pressed", "true" if b.dataset.tab == tab else "false")
+        window.scrollTo(0, 0)
+        if tab == "query" and self.editor is not None:
+            self.editor.refresh()
+
+    def set_evidence(self, open_: bool | None = None) -> None:
+        """Tablet layout: slide the evidence room in or out."""
+        ws = qs("#workspace")
+        if ws is None:
+            return
+        if open_ is None:
+            open_ = ws.getAttribute("data-evidence") != "open"
+        ws.setAttribute("data-evidence", "open" if open_ else "closed")
+        for b in document.querySelectorAll(".evidence-btn"):
+            b.setAttribute("aria-expanded", "true" if open_ else "false")
+        if open_:
+            later(lambda: qs("#evidence-room .schema-tabs button[aria-selected='true']") and qs("#evidence-room .schema-tabs button[aria-selected='true']").focus(), 60)
+        elif self.editor and not self.is_mobile():
+            self.editor.ta.focus()
+
+    def evidence_is_drawer(self) -> bool:
+        return bool(window.matchMedia("(max-width: 1180px) and (min-width: 861px)").matches)
 
     def is_mobile(self) -> bool:
         return bool(window.matchMedia("(max-width: 860px)").matches)
@@ -235,10 +276,13 @@ class App:
         c = self.case
         box = qs("#schema")
         for b in document.querySelectorAll(".schema-tabs button"):
-            b.setAttribute("aria-selected", "true" if b.dataset.tab == self.schema_tab else "false")
+            sel = b.dataset.tab == self.schema_tab
+            b.setAttribute("aria-selected", "true" if sel else "false")
+            b.setAttribute("tabindex", "0" if sel else "-1")
+        box.setAttribute("aria-labelledby", "tab-diagram" if self.schema_tab == "diagram" else "tab-tables")
         if self.schema_tab == "diagram":
-            box.innerHTML = (f'<div class="erd-wrap">{c["erd"]}</div><p class="legend">Click a table or column to insert it. '
-                             'Dashed lines = foreign keys (dot marks the referenced column).</p>'
+            box.innerHTML = (f'<div class="erd-wrap">{c["erd"]}</div><p class="legend">Click (or focus and press Enter on) a table or column to insert it. '
+                             'Strings connect foreign keys; the dot marks the referenced column.</p>'
                              '<button class="btn btn-sm" data-action="erd-expand">Expand diagram</button>')
             return
         out = []
@@ -283,8 +327,8 @@ class App:
             done = self.store.solved(lv["id"])
             cur = ' aria-current="step"' if i == self.level_i else ""
             out.append(f'<button data-action="level" data-n="{i}" class="{"done" if done else ""}"{cur} '
-                       f'aria-label="Finding {i + 1}: {esc(lv["title"])}{" (proven)" if done else ""}" title="{esc(lv["title"])}">'
-                       f'{"&#10003;" if done else i + 1}</button>')
+                       f'aria-label="Exhibit {exhibit(i)}, finding {i + 1}: {esc(lv["title"])}{" (proven)" if done else ""}" title="Exhibit {exhibit(i)}: {esc(lv["title"])}">'
+                       f'{"&#10003;" if done else exhibit(i)}</button>')
         qs("#stepper").innerHTML = "".join(out)
 
     def render_finding(self) -> None:
@@ -306,12 +350,13 @@ class App:
         if solved:
             nxt_btn = (f'<button class="btn btn-sm btn-primary" data-action="next">Next finding &rarr;</button>' if not last else
                        '<button class="btn btn-sm btn-primary" data-action="home">All cases</button>')
-            banner = f'<div class="solved-banner">&#10003; Proven {nxt_btn}</div>'
+            banner = f'<div class="solved-banner">&#10003; Exhibit {exhibit(self.level_i)} proven {nxt_btn}</div>'
         concepts = "".join(f'<span class="chip">{esc(x)}</span>' for x in lv["concepts"])
         story = f'<p class="story">{esc(lv["story"])}</p>' if lv.get("story") else ""
         qs("#finding").innerHTML = f"""
 <div class="finding">
-  <div class="eyebrow">Finding {self.level_i + 1} / {len(c['levels'])}</div>
+  <span class="tag">Exhibit {exhibit(self.level_i)}</span>
+  <div class="eyebrow">Finding {self.level_i + 1} of {len(c['levels'])}</div>
   <h3>{esc(lv['title'])}</h3>{story}
   <div class="task"><span class="eyebrow" style="display:block;margin-bottom:4px">Your task</span>{esc(lv['task'])}</div>
   <div class="concepts" aria-label="SQL concepts">{concepts}</div>
@@ -365,9 +410,16 @@ class App:
         self.after_run()
 
     def after_run(self) -> None:
+        res = qs("#results")
+        if res is None:
+            return
         if self.is_mobile():
-            res = qs("#results")
-            later(lambda: res.scrollIntoView({"behavior": "smooth", "block": "start"}) if res else None, 30)
+            later(lambda: res.scrollIntoView({"behavior": "smooth", "block": "start"}), 30)
+            return
+        # desktop / short windows: bring the verdict into view only when it is off-screen
+        r = res.getBoundingClientRect()
+        if r.top > window.innerHeight - 80 or r.bottom < 80:
+            later(lambda: res.scrollIntoView({"behavior": "smooth", "block": "start"}), 30)
 
     def table_html(self, columns, rows) -> str:
         head = '<th class="idx">#</th>' + "".join(f"<th>{esc(c)}</th>" for c in columns)
@@ -389,7 +441,7 @@ class App:
             last = self.level_i == len(self.case["levels"]) - 1
             nxt = ('<button class="btn btn-primary btn-sm" data-action="next">Next finding &rarr; <kbd>Alt</kbd><kbd>N</kbd></button>'
                    if not last else '<button class="btn btn-primary btn-sm" data-action="certificate">Audit certificate</button>')
-            verdict = (f'<div class="verdict ok"><h3><span class="stamp">Proven</span> Finding confirmed</h3>'
+            verdict = (f'<div class="verdict ok" role="status"><h3><span class="stamp">Solved</span> Proven: exhibit {exhibit(self.level_i)} confirmed</h3>'
                        f'<p>Your result matches the evidence exactly - {check["rows"][1]} row(s), {check["cols"][1]} column(s).'
                        f'{" Logged to your audit trail." if first else ""}</p><div>{nxt}</div></div>')
         else:
@@ -400,7 +452,7 @@ class App:
             diff = (chip("Columns", *check["cols"]) + chip("Rows", *check["rows"]) +
                     f'<span class="chip {m_cls}">Matching rows {check["matched"]} / {check["rows"][1]}</span>')
             tips = "".join(f"<li>{esc(t)}</li>" for t in check["tips"])
-            verdict = (f'<div class="verdict no"><h3>Not proven yet</h3><div class="diff" aria-label="Comparison with the expected result">{diff}</div>'
+            verdict = (f'<div class="verdict no" role="status"><h3>Not proven yet</h3><div class="diff" aria-label="Comparison with the expected result">{diff}</div>'
                        f'<ul>{tips}</ul></div>')
         more = f" &middot; showing first {DISPLAY_LIMIT}" if len(res.rows) > DISPLAY_LIMIT else ""
         meta = (f'<div class="results-meta"><span>{len(res.rows):,} row(s) &middot; {len(res.columns)} column(s){more}</span>'
@@ -426,7 +478,9 @@ class App:
                                     + self.table_html(res.columns, res.rows))
         if self.is_mobile():
             self.set_mtab("query")
-            self.after_run()
+        elif self.evidence_is_drawer():
+            self.set_evidence(False)
+        self.after_run()
 
     # ================= events =================
     def on_click(self, e) -> None:
@@ -472,6 +526,8 @@ class App:
             self.insert_name(el.dataset.insert)
         elif a == "preview":
             self.preview(el.dataset.table)
+        elif a == "evidence":
+            self.set_evidence()
         elif a == "schema-tab":
             self.schema_tab = el.dataset.tab
             self.render_schema()
@@ -546,6 +602,25 @@ class App:
         if key == "Escape":
             if qs("#overlay").innerHTML:
                 self.close_overlay()
+            elif self.case and qs("#workspace") is not None and qs("#workspace").getAttribute("data-evidence") == "open":
+                self.set_evidence(False)
+            return
+        if key == "Tab" and qs("#overlay").innerHTML:
+            self.trap_focus(e)
+            return
+        if tgt is not None and key in ("ArrowLeft", "ArrowRight", "Home", "End") and tgt.getAttribute("role") == "tab":
+            tabs = list(tgt.parentElement.querySelectorAll('[role="tab"]'))
+            i = next((k for k, t in enumerate(tabs) if t == tgt), 0)
+            j = {"ArrowLeft": i - 1, "ArrowRight": i + 1, "Home": 0, "End": len(tabs) - 1}[key] % len(tabs)
+            e.preventDefault()
+            tabs[j].click()
+            later(lambda: qs(f'.schema-tabs [data-tab="{tabs[j].dataset.tab}"]') and qs(f'.schema-tabs [data-tab="{tabs[j].dataset.tab}"]').focus(), 10)
+            return
+        if key in ("Enter", " ") and tgt is not None and tgt.getAttribute("data-insert") and getattr(tgt, "tagName", "").lower() != "button":
+            e.preventDefault()          # keyboard access to ER diagram names (SVG text)
+            self.insert_name(tgt.getAttribute("data-insert"))
+            if qs("#overlay .erd-modal") is not None:
+                self.close_overlay()
             return
         if self.case and (e.ctrlKey or e.metaKey) and key == "Enter" and not typing:
             e.preventDefault()
@@ -571,12 +646,61 @@ class App:
             elif k == "t":
                 e.preventDefault()
                 theme_toggle.toggle()
+            elif self.case and k == "e":
+                e.preventDefault()
+                if self.is_mobile():
+                    self.set_mtab("schema")
+                elif self.evidence_is_drawer():
+                    self.set_evidence()
+                else:
+                    t = qs(".schema-tabs button[aria-selected='true']")
+                    if t is not None:
+                        t.focus()
             return
         if not typing and key == "?":
             self.show_shortcuts()
         elif not typing and key == "/" and self.editor and self.case:
             e.preventDefault()
             self.editor.focus_end()
+
+    def trap_focus(self, e) -> None:
+        """Keep Tab inside the open dialog or drawer."""
+        box = qs("#overlay .modal") or qs("#overlay .drawer")
+        if box is None:
+            return
+        items = [x for x in box.querySelectorAll('button, [href], input, textarea, select, [tabindex]:not([tabindex="-1"])')
+                 if not x.hasAttribute("disabled") and x.offsetParent is not None]
+        if not items:
+            return
+        first, last = items[0], items[-1]
+        active = document.activeElement
+        if e.shiftKey and (active == first or not box.contains(active)):
+            e.preventDefault()
+            last.focus()
+        elif not e.shiftKey and (active == last or not box.contains(active)):
+            e.preventDefault()
+            first.focus()
+
+    def back(self, *_args) -> str:
+        """Android back button: close the top-most thing, then leave the case. Returns '1' if handled."""
+        if qs("#overlay").innerHTML:
+            self.close_overlay()
+            return "1"
+        ws = qs("#workspace")
+        if ws is not None and ws.getAttribute("data-evidence") == "open":
+            self.set_evidence(False)
+            return "1"
+        ac = qs("#ac-list")
+        if ac is not None and not ac.hidden:
+            ac.hidden = True
+            return "1"
+        if self.case is not None:
+            if self.is_mobile() and ws is not None and ws.getAttribute("data-mtab") != "brief":
+                self.set_mtab("brief")
+                return "1"
+            self.go("#/")
+            return "1"
+        return "0"
 
     def reveal_hint(self) -> None:
         lv = self.case["levels"][self.level_i]
@@ -629,7 +753,7 @@ class App:
                 ("Show suggestions", "<kbd>Ctrl</kbd>+<kbd>Space</kbd>"), ("Accept suggestion", "<kbd>Tab</kbd> or <kbd>Enter</kbd>"),
                 ("Next hint", "<kbd>Alt</kbd>+<kbd>H</kbd>"), ("Next / previous finding", "<kbd>Alt</kbd>+<kbd>N</kbd> / <kbd>Alt</kbd>+<kbd>P</kbd>"),
                 ("Query history", "<kbd>Alt</kbd>+<kbd>Y</kbd>"), ("Focus editor", "<kbd>/</kbd>"), ("Toggle theme", "<kbd>Alt</kbd>+<kbd>T</kbd>"),
-                ("All cases", "<kbd>Alt</kbd>+<kbd>B</kbd>"), ("Close dialog", "<kbd>Esc</kbd>"), ("This list", "<kbd>?</kbd>")]
+                ("All cases", "<kbd>Alt</kbd>+<kbd>B</kbd>"), ("Evidence room", "<kbd>Alt</kbd>+<kbd>E</kbd>"), ("Close dialog", "<kbd>Esc</kbd>"), ("This list", "<kbd>?</kbd>")]
         body = "".join(f"<tr><td>{a}</td><td style='text-align:right'>{b}</td></tr>" for a, b in rows)
         self.overlay(f"""<h2>Keyboard shortcuts</h2><table class="shortcuts">{body}</table>
 <div class="actions"><button class="btn btn-sm" data-action="reset-progress">Erase my progress</button>
@@ -651,7 +775,7 @@ class App:
     def show_case_closed(self) -> None:
         c = self.case
         hints = sum(self.store.hints(lv["id"]) for lv in c["levels"])
-        self.overlay(f"""<div style="text-align:center"><span class="stamp" style="font-size:2rem">Case closed</span></div>
+        self.overlay(f"""<div class="closed-stamp"><span class="stamp ok">Case closed</span></div>
 <h2 style="margin-top:18px">{esc(c['title'])}</h2><p>All {len(c['levels'])} findings proven with SQL{', using ' + str(hints) + ' hint(s)' if hints else ' without a single hint'}.</p>
 <div class="actions"><button class="btn" data-action="certificate">Audit certificate</button>
 <button class="btn btn-primary" data-action="next-case" autofocus>Next case &rarr;</button></div>""", "Case closed")
@@ -659,12 +783,13 @@ class App:
     def show_certificate(self) -> None:
         from reports import audit_certificate
         name = self.store.get("name", "")
-        self.overlay(f"""<div class="eyebrow">Audit certificate</div><h2>Your verified audit record</h2>
-<p class="muted">Generated on your device from your saved progress. Nothing is uploaded.</p>
-<label class="field"><span><b>Name on certificate</b></span><input id="cert-name" maxlength="40" value="{esc(name)}" placeholder="Your name" autocomplete="name"></label>
-<canvas id="cert-canvas" class="cert-preview" width="1600" height="1130" aria-label="Certificate preview"></canvas>
+        self.overlay(f"""<span class="tag">Form QX-1 &middot; Official</span><h2 style="margin-top:12px">Forensic audit report</h2>
+<p class="muted">Typed up on your device from your saved progress. Nothing is uploaded.</p>
+<label class="field"><span><b>Lead investigator (name on report)</b></span><input id="cert-name" maxlength="40" value="{esc(name)}" placeholder="Your name" autocomplete="name"></label>
+<canvas id="cert-canvas" class="cert-preview" width="1600" height="1130" role="img" aria-label="Forensic audit report preview"></canvas>
 <div class="actions"><button class="btn" data-action="close">Close</button><button class="btn btn-secondary" data-action="cert-pdf">Download PDF</button>
 <button class="btn btn-primary" data-action="cert-png">Download PNG</button></div>""", "Audit certificate")
         inp = qs("#cert-name")
         on(inp, "input", lambda e: (self.store.set("name", inp.value.strip()), audit_certificate.draw(self, qs("#cert-canvas"))))
         audit_certificate.draw(self, qs("#cert-canvas"))
+        audit_certificate.when_fonts_ready(lambda: nn(qs("#cert-canvas")) and audit_certificate.draw(self, qs("#cert-canvas")))

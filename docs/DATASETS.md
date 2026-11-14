@@ -32,4 +32,4 @@ ODbL data requires attribution and that the derived database stays under ODbL; k
 
 ## Bundled software
 
-See [`vendor/README.md`](../vendor/README.md): Pyodide (MPL-2.0), CPython (PSF-2.0), SQLite (public domain), Space Grotesk and JetBrains Mono (SIL OFL 1.1).
+See [`vendor/README.md`](../vendor/README.md): Pyodide (MPL-2.0), CPython (PSF-2.0), SQLite (public domain), Courier Prime and JetBrains Mono (SIL OFL 1.1), Special Elite (Apache-2.0).

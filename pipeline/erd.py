@@ -5,7 +5,7 @@ from html import escape
 
 from .base import Table
 
-W, ROW, HEAD, GAP_X, GAP_Y, PAD = 230, 22, 34, 70, 40, 16
+W, ROW, HEAD, GAP_X, GAP_Y, PAD = 230, 22, 34, 70, 40, 18
 
 
 def render(tables: list[Table], cols: int | None = None) -> str:
@@ -48,6 +48,7 @@ def render(tables: list[Table], cols: int | None = None) -> str:
                      f'<rect class="erd-shadow" x="{x + 5}" y="{y + 5}" width="{W}" height="{h}"/>'
                      f'<rect class="erd-box" x="{x}" y="{y}" width="{W}" height="{h}"/>'
                      f'<rect class="erd-head" x="{x}" y="{y}" width="{W}" height="{HEAD}"/>'
+                     f'<circle class="erd-pin" cx="{x + W / 2:.0f}" cy="{y + 1}" r="6"/>'
                      f'<text class="erd-title" x="{x + 12}" y="{y + 22}" data-insert="{escape(t.name)}" role="button" tabindex="0">'
                      f'{escape(t.name)}</text>')
         for i, c in enumerate(t.columns):

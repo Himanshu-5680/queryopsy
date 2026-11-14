@@ -38,6 +38,8 @@ def main() -> None:
     html = re.sub(r"<!--CASES:START-->.*?<!--CASES:END-->", f"<!--CASES:START-->{cards}<!--CASES:END-->", html, flags=re.S)
     html = re.sub(r"<!--STATS:START-->.*?<!--STATS:END-->", f"<!--STATS:START-->{stats}<!--STATS:END-->", html, flags=re.S)
     html = html.replace("REPO_SLUG", REPO_SLUG)
+    ver = json.loads((ROOT / "version.json").read_text(encoding="utf-8"))["versionName"]
+    html = re.sub(r'(<meta name="app-version" content=")[^"]*(")', lambda mm: mm.group(1) + ver + mm.group(2), html)
     m = re.search(r"<!--THEME--><script>(.*?)</script><!--/THEME-->", html, flags=re.S)
     digest = base64.b64encode(hashlib.sha256(m.group(1).encode()).digest()).decode()
     csp = ("default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'unsafe-eval' 'sha256-" + digest + "'; "

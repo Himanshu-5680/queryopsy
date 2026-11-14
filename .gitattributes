@@ -4,6 +4,7 @@
 *.wasm binary
 *.whl binary
 *.zip binary
+*.csv -text
 *.png binary
 *.woff2 binary
 *.jar binary

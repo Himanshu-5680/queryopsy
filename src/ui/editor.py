@@ -6,6 +6,7 @@ from js import document, window
 
 from .dom import closest, esc, later, on
 
+_CURRENT = None
 KIND_LABEL = {"tbl": "T", "col": "C", "fn": "F", "kw": "K"}
 
 
@@ -26,6 +27,11 @@ class Editor:
         on(self.ta, "blur", lambda e: later(self.close_ac, 150))
         on(self.ta, "click", lambda e: self.close_ac())
         on(self.ac, "mousedown", self._on_ac_click)
+        self._rw = 0
+        global _CURRENT
+        if _CURRENT is None:
+            on(window, "resize", lambda e: _CURRENT and _CURRENT._on_resize())
+        _CURRENT = self      # one window listener, always pointing at the live editor
         self.refresh()
 
     # ---------- basics ----------
@@ -56,10 +62,39 @@ class Editor:
     def refresh(self) -> None:
         text = self.ta.value
         self.pre.innerHTML = sqltools.highlight(text, self.tables, self.columns)
-        lines = text.count("\n") + 1
-        self.gutter.textContent = "\n".join(str(i) for i in range(1, lines + 1))
+        self._number_lines(text)
         self.ta.style.height = "auto"
         self.ta.style.height = f"{max(190, self.ta.scrollHeight)}px"
+
+    def _on_resize(self, event=None) -> None:
+        if not self.root.isConnected:
+            return
+        w = self.pre.clientWidth
+        if w != self._rw:
+            self._rw = w
+            self._number_lines(self.ta.value)
+
+    def _number_lines(self, text: str) -> None:
+        """Line numbers that stay aligned when long lines soft-wrap (one number per logical line)."""
+        lines = text.split("\n")
+        if not hasattr(self, "mirror"):
+            self.mirror = document.createElement("div")
+            self.mirror.className = "editor-mirror"
+            self.mirror.setAttribute("aria-hidden", "true")
+            self.root.appendChild(self.mirror)
+        width = self.pre.clientWidth
+        if width <= 0:            # hidden (other mobile tab): plain numbering, fixed on next refresh
+            self.gutter.textContent = "\n".join(str(i) for i in range(1, len(lines) + 1))
+            return
+        self.mirror.style.width = f"{width}px"
+        self.mirror.innerHTML = "".join(f"<div>{esc(ln) or '&#8203;'}</div>" for ln in lines)
+        kids = self.mirror.children
+        out = []
+        for i in range(len(lines)):
+            h = kids.item(i).getBoundingClientRect().height
+            out.append(f'<div style="height:{h:.2f}px">{i + 1}</div>')
+        self.mirror.innerHTML = ""
+        self.gutter.innerHTML = "".join(out)
 
     def insert(self, text: str) -> None:
         ta = self.ta

@@ -1,5 +1,5 @@
 // Offline cache for the website (PWA). Not used inside the Android app, which serves files from the APK.
-const CACHE = 'queryopsy-v1.0.0';
+const CACHE = 'queryopsy-v1.1.0';
 self.addEventListener('install', (e) => {
   e.waitUntil(fetch('precache.json').then((r) => r.json()).then((files) => caches.open(CACHE).then((c) => c.addAll(files))).then(() => self.skipWaiting()));
 });

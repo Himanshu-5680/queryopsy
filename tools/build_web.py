@@ -6,6 +6,7 @@ Only runtime files are shipped: no tests, pipeline, raw data or solutions.
 from __future__ import annotations
 
 import json
+import re
 import pathlib
 import shutil
 import zipfile
@@ -35,7 +36,7 @@ def build() -> pathlib.Path:
     files = sorted(p.relative_to(SITE).as_posix() for p in SITE.rglob("*") if p.is_file() and p.suffix not in SKIP_SUFFIX)
     precache = ["./"] + [f for f in files if not f.endswith((".sql", "LICENSE"))]
     (SITE / "precache.json").write_text(json.dumps(precache), encoding="utf-8")
-    sw = (SITE / "sw.js").read_text().replace("queryopsy-v1.0.0", f"queryopsy-v{version()}")
+    sw = re.sub(r"queryopsy-v[0-9][0-9.]*", f"queryopsy-v{version()}", (SITE / "sw.js").read_text(), count=1)
     (SITE / "sw.js").write_text(sw)
     (SITE / ".nojekyll").write_text("")
     return SITE

@@ -18,6 +18,7 @@ test-results/
 keystore.properties
 signing/
 # local
+.git-old-*/
 START-HERE.txt
 .DS_Store
 Thumbs.db

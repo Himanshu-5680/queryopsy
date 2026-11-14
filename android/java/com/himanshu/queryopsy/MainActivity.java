@@ -9,9 +9,12 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Base64;
+import android.view.HapticFeedbackConstants;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowInsets;
+import android.view.WindowInsetsController;
+import android.view.WindowManager;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceResponse;
@@ -46,6 +49,9 @@ public class MainActivity extends Activity {
     private WebView web;
     private Object backCallback;
     private byte[] pendingBytes;
+    /** Last system-bar insets in CSS px, re-sent to the page after every load. */
+    private String insetJs = "";
+    private boolean darkUi;
 
     private static final Map<String, String> MIME = new HashMap<>();
     static {
@@ -61,9 +67,15 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         WebView.setWebContentsDebuggingEnabled(false);
+        darkUi = (getResources().getConfiguration().uiMode & android.content.res.Configuration.UI_MODE_NIGHT_MASK)
+                == android.content.res.Configuration.UI_MODE_NIGHT_YES;
         web = new WebView(this);
         web.setBackgroundColor(getResources().getColor(R.color.bg, getTheme()));
+        web.setOverScrollMode(View.OVER_SCROLL_NEVER);
+        web.setHapticFeedbackEnabled(true);
         setContentView(web);
+        setupWindow();
+        applyBarAppearance(darkUi);
         applyInsets();
 
         WebSettings s = web.getSettings();
@@ -91,6 +103,11 @@ public class MainActivity extends Activity {
             }
 
             @Override
+            public void onPageFinished(WebView view, String url) {
+                if (!insetJs.isEmpty()) view.evaluateJavascript(insetJs, null);
+            }
+
+            @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest req) {
                 Uri u = req.getUrl();
                 if (HOST.equals(u.getHost()) && "https".equals(u.getScheme())) return false;
@@ -107,16 +124,73 @@ public class MainActivity extends Activity {
         else web.loadUrl(START);
     }
 
+    /**
+     * Edge-to-edge on Android 11+: the page draws under transparent status and navigation bars and gets the
+     * bar sizes as CSS variables (--a-top/--a-bottom/--a-left/--a-right), like iOS safe-area insets.
+     * Older versions keep solid bars that match the app background.
+     */
+    private void setupWindow() {
+        Window w = getWindow();
+        if (Build.VERSION.SDK_INT >= 28) {
+            WindowManager.LayoutParams lp = w.getAttributes();
+            lp.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES;
+            w.setAttributes(lp);
+        }
+        if (Build.VERSION.SDK_INT >= 30) {
+            w.setDecorFitsSystemWindows(false);
+            w.setStatusBarColor(Color.TRANSPARENT);
+            w.setNavigationBarColor(Color.TRANSPARENT);
+            w.setStatusBarContrastEnforced(false);
+            w.setNavigationBarContrastEnforced(false);
+        }
+    }
+
     private void applyInsets() {
         if (Build.VERSION.SDK_INT >= 30) {
             web.setOnApplyWindowInsetsListener((View v, WindowInsets in) -> {
-                Insets i = in.getInsets(WindowInsets.Type.systemBars() | WindowInsets.Type.displayCutout());
+                Insets bars = in.getInsets(WindowInsets.Type.systemBars() | WindowInsets.Type.displayCutout());
                 Insets ime = in.getInsets(WindowInsets.Type.ime());
-                v.setPadding(i.left, i.top, i.right, Math.max(i.bottom, ime.bottom));
+                boolean imeOn = in.isVisible(WindowInsets.Type.ime()) && ime.bottom > bars.bottom;
+                // only the keyboard shrinks the WebView; the bars are handled in CSS so content can scroll under them
+                v.setPadding(0, 0, 0, imeOn ? ime.bottom : 0);
+                float d = getResources().getDisplayMetrics().density;
+                insetJs = String.format(Locale.ROOT,
+                        "(function(){var s=document.documentElement.style;s.setProperty('--a-top','%.1fpx');"
+                                + "s.setProperty('--a-bottom','%.1fpx');s.setProperty('--a-left','%.1fpx');s.setProperty('--a-right','%.1fpx');"
+                                + "document.documentElement.classList.toggle('ime',%b);})()",
+                        bars.top / d, imeOn ? 0f : bars.bottom / d, bars.left / d, bars.right / d, imeOn);
+                v.post(() -> web.evaluateJavascript(insetJs, null));
                 return WindowInsets.CONSUMED;
             });
         } else {
             web.setFitsSystemWindows(true);
+        }
+    }
+
+    /** Status/navigation bar icons: dark icons on the light theme, light icons on the dark theme. */
+    @SuppressWarnings("deprecation")
+    private void applyBarAppearance(boolean dark) {
+        Window w = getWindow();
+        int bg = dark ? Color.parseColor("#0B0A09") : Color.parseColor("#F2F1EE");
+        web.setBackgroundColor(bg);
+        w.getDecorView().setBackgroundColor(bg);
+        if (Build.VERSION.SDK_INT >= 30) {
+            WindowInsetsController c = w.getInsetsController();
+            if (c != null) {
+                int mask = WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS | WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS;
+                c.setSystemBarsAppearance(dark ? 0 : mask, mask);
+            }
+        } else {
+            w.setStatusBarColor(Build.VERSION.SDK_INT >= 23 ? bg : Color.BLACK);
+            w.setNavigationBarColor(Build.VERSION.SDK_INT >= 26 ? bg : Color.BLACK);
+            int flags = w.getDecorView().getSystemUiVisibility();
+            if (Build.VERSION.SDK_INT >= 23) {
+                if (dark) flags &= ~View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR; else flags |= View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
+            }
+            if (Build.VERSION.SDK_INT >= 26) {
+                if (dark) flags &= ~View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR; else flags |= View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR;
+            }
+            w.getDecorView().setSystemUiVisibility(flags);
         }
     }
 
@@ -145,10 +219,11 @@ public class MainActivity extends Activity {
         return new WebResourceResponse("text/plain", "utf-8", code, reason, new HashMap<>(), new ByteArrayInputStream(new byte[0]));
     }
 
-    /** Back: close an open dialog, else leave a case for the case list, else exit. */
+    /** Back pops the in-app navigation stack (sheets, dialogs, keyboard, then screens - handled in Python); on the home screen the app goes to the background. */
     private void handleBack() {
         if (web == null) { finish(); return; }
-        String js = "(function(){var o=document.getElementById('overlay');if(o&&o.innerHTML){o.innerHTML='';return '1';}"
+        String js = "(function(){try{if(window.queryopsyBack){return String(window.queryopsyBack());}}catch(e){}"
+                + "var o=document.getElementById('overlay');if(o&&o.innerHTML){o.innerHTML='';return '1';}"
                 + "if((location.hash||'').indexOf('#/case/')===0){location.hash='#/';return '1';}return '0';})()";
         web.evaluateJavascript(js, v -> { if (v == null || !v.contains("1")) { if (!moveTaskToBack(true)) finish(); } });
     }
@@ -205,20 +280,21 @@ public class MainActivity extends Activity {
             });
         }
 
-        /** Match status/navigation bar colours to the in-app theme. */
+        /** Match the system bars to the in-app theme (called by the page whenever the theme changes). */
         @JavascriptInterface
         public void setDark(boolean dark) {
+            runOnUiThread(() -> { darkUi = dark; applyBarAppearance(dark); });
+        }
+
+        /** Native haptic tick for taps and verdicts; uses the view's haptic feedback, so no VIBRATE permission is needed. */
+        @JavascriptInterface
+        public void haptic(String kind) {
             runOnUiThread(() -> {
-                Window w = getWindow();
-                int c = dark ? Color.parseColor("#121212") : Color.parseColor("#F4F0EA");
-                w.setStatusBarColor(c);
-                w.setNavigationBarColor(c);
-                web.setBackgroundColor(c);
-                if (Build.VERSION.SDK_INT >= 23) {
-                    int flags = w.getDecorView().getSystemUiVisibility();
-                    flags = dark ? (flags & ~View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR) : (flags | View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-                    w.getDecorView().setSystemUiVisibility(flags);
-                }
+                int c;
+                if ("success".equals(kind)) c = Build.VERSION.SDK_INT >= 30 ? HapticFeedbackConstants.CONFIRM : HapticFeedbackConstants.VIRTUAL_KEY;
+                else if ("error".equals(kind)) c = Build.VERSION.SDK_INT >= 30 ? HapticFeedbackConstants.REJECT : HapticFeedbackConstants.LONG_PRESS;
+                else c = Build.VERSION.SDK_INT >= 27 ? HapticFeedbackConstants.KEYBOARD_TAP : HapticFeedbackConstants.VIRTUAL_KEY;
+                web.performHapticFeedback(c);
             });
         }
     }

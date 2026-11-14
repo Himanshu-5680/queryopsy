@@ -1,10 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Queryopsy logo">
-  <rect x="5" y="5" width="54" height="54" fill="#000"/>
-  <rect x="2" y="2" width="54" height="54" fill="#FF5722" stroke="#000" stroke-width="3"/>
-  <ellipse cx="25" cy="18" rx="13" ry="5" fill="#fff" stroke="#000" stroke-width="3"/>
-  <path d="M12 18v20c0 2.8 5.8 5 13 5s13-2.2 13-5V18" fill="#fff" stroke="#000" stroke-width="3"/>
-  <path d="M12 28c0 2.8 5.8 5 13 5s13-2.2 13-5" fill="none" stroke="#000" stroke-width="3"/>
-  <circle cx="38" cy="38" r="10" fill="#A855F7" stroke="#000" stroke-width="3.5"/>
-  <circle cx="38" cy="38" r="4.5" fill="#fff" stroke="#000" stroke-width="2.5"/>
-  <path d="M45 45l8 8" stroke="#000" stroke-width="6" stroke-linecap="square"/>
+  <path d="M4 14h20l5 5h31v38H4z" fill="#C9A867" stroke="#2A241D" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M4 22h56v35H4z" fill="#E8D19A" stroke="#2A241D" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="24" cy="31" rx="10" ry="4" fill="#FFFBF1" stroke="#2A241D" stroke-width="2.5"/>
+  <path d="M14 31v15c0 2.2 4.5 4 10 4s10-1.8 10-4V31" fill="#FFFBF1" stroke="#2A241D" stroke-width="2.5"/>
+  <path d="M14 38.5c0 2.2 4.5 4 10 4s10-1.8 10-4" fill="none" stroke="#2A241D" stroke-width="2.5"/>
+  <circle cx="42" cy="41" r="8.5" fill="#FFFBF1" fill-opacity=".85" stroke="#B3261E" stroke-width="3.5"/>
+  <path d="M48 47l7 7" stroke="#B3261E" stroke-width="5.5" stroke-linecap="round"/>
 </svg>

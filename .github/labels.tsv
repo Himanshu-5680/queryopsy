@@ -1,5 +1,5 @@
 bug	D73A4A	Something is not working
-triage	FBCA04	Needs a first look
+triage	E4E669	Needs a first look
 enhancement	A855F7	New feature or improvement
 new-case	FF5722	Proposal for a new investigation or level
 dataset	0E8A16	Data sources, pipeline or planted anomalies
@@ -12,3 +12,4 @@ dependencies	0366D6	Dependency updates
 good first issue	7057FF	Good for newcomers
 help wanted	008672	Extra attention is welcome
 question	D876E3	Further information is requested
+tests	FBCA04	Unit, end-to-end and APK smoke tests

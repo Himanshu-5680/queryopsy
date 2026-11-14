@@ -2,26 +2,34 @@
 <html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+<meta name="app-version" content="1.1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="format-detection" content="telephone=no">
 <title>Queryopsy - Zero-Server SQL Forensics</title>
 <meta name="description" content="Solve real-world data forensics cases with SQL. SQLite runs inside your browser through Python compiled to WebAssembly - no server, no sign-up, works offline.">
-<meta name="theme-color" content="#F4F0EA">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'unsafe-eval' 'sha256-QO4a2ud0wWpKeRHNaZs3CmS9J5hrTMiM6xhq7ui1ZFE='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="theme-color" content="#2A241D">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'unsafe-eval' 'sha256-QmSy2YAURe9mvunr4q26/i5aUYKiMCZsCLseOCYvnvg='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="preload" href="vendor/fonts/space-grotesk-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="vendor/fonts/courier-prime-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="vendor/fonts/special-elite-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="vendor/pyodide/pyodide.asm.wasm" as="fetch" type="application/wasm" crossorigin>
-<link rel="stylesheet" href="src/ui/neobrutal.css">
-<!--THEME--><script>try{var t=localStorage.getItem('queryopsy.theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script><!--/THEME-->
+<link rel="stylesheet" href="src/ui/casefile.css">
+<link rel="stylesheet" href="src/ui/ios.css">
+<!--THEME--><script>(function(){var d=document.documentElement,q=location.search,m=function(x){return matchMedia(x).matches};try{var p=localStorage.getItem('queryopsy.theme');d.setAttribute('data-theme',p==='light'||p==='dark'?p:(m('(prefers-color-scheme: dark)')?'dark':'light'))}catch(e){}var app=/[?&]app=1/.test(q)||(!/[?&]app=0/.test(q)&&(location.hostname.indexOf('appassets')===0||/; wv\)/.test(navigator.userAgent)||navigator.standalone===true||m('(display-mode: standalone)')||m('(max-width: 760px)')));if(app){d.classList.add('app-mode');var v=document.querySelector('meta[name=viewport]');if(v)v.setAttribute('content',v.getAttribute('content')+', maximum-scale=1, user-scalable=no')}})()</script><!--/THEME-->
 </head>
 <body>
+<div id="splash" class="splash" aria-hidden="true"><img src="assets/logo.svg" width="88" height="88" alt=""><b>Queryopsy</b><span class="splash-sub">Forensic SQL case files</span><span class="splash-status" id="splash-status">Starting engine</span></div>
 <a class="skip btn btn-sm" href="#main">Skip to content</a>
 <div class="bootbar" aria-hidden="true"><i></i></div>
 <header class="topbar">
   <a class="brand" href="#/" data-action="home" aria-label="Queryopsy home">
     <img class="brand-mark" src="assets/logo.svg" alt="" width="38" height="38">
-    <span><span class="brand-name">QUERYOPSY</span><span class="brand-tag">Zero-Server SQL Forensics</span></span>
+    <span><span class="brand-name">QUERYOPSY</span><span class="brand-tag">Bureau of Data Forensics</span></span>
   </a>
   <span class="engine-status" id="engine-status" role="status" aria-live="polite"><span>Starting engine...</span></span>
   <div class="progress-pill" id="progress-pill" aria-label="Findings proven"><span id="progress-count">0/0</span><span class="meter"><i id="progress-meter"></i></span></div>
@@ -37,9 +45,9 @@
     <div class="card boot-error" id="boot-error" hidden role="alert"><b>The SQL engine could not start.</b> Open this site over http(s) (not file://) in a recent browser. <code></code></div>
     <div class="hero">
       <div>
-        <div class="eyebrow">Lead Data Auditor wanted</div>
-        <h1>Data doesn't lie. <mark>Prove it</mark> with SQL.</h1>
-        <p class="lead">Real industry datasets with planted fraud. A real SQLite engine running inside this page through Python compiled to WebAssembly. No server, no sign-up, no tracking - and it keeps working offline.</p>
+        <span class="tag">Recruitment notice &middot; Forensic data auditor</span>
+        <h1 style="margin-top:14px">Data doesn't lie. <mark>Prove it</mark> with SQL.</h1>
+        <p class="lead">Open a case file, question the evidence and expose planted fraud in real industry datasets. A real SQLite engine runs inside this page through Python compiled to WebAssembly - no server, no sign-up, no tracking, and it keeps working offline.</p>
         <div class="cta">
           <button class="btn btn-primary" data-action="start-training">Start orientation</button>
           <button class="btn" data-action="continue" id="cta-continue" hidden>Continue</button>
@@ -47,27 +55,31 @@
         </div>
       </div>
       <div class="hero-file card" aria-hidden="true">
+        <span class="clip"></span><span class="pin"></span>
         <span class="tab">Case 05 &middot; Payroll Leak</span>
-        <div class="eyebrow">Finding 2 / 4 &middot; One account, two salaries</div>
+        <span class="stamp stamp-conf">Classified</span>
+        <span class="tag">Exhibit B</span>
+        <div class="eyebrow" style="margin-top:10px">One account, two salaries</div>
+        <p class="memo">Subject: <span class="redact">XXXXXXX XXXX</span> &middot; Dept. <span class="redact">XXXXX</span><br>Two employees, one bank account. Find every shared account.</p>
 <pre><span class="t-kw">SELECT</span> <span class="t-col">bank_account</span>, <span class="t-fn">COUNT</span>(*) <span class="t-kw">AS</span> employees
 <span class="t-kw">FROM</span> <span class="t-tbl">employees</span>
 <span class="t-kw">GROUP BY</span> <span class="t-col">bank_account</span>
 <span class="t-kw">HAVING</span> <span class="t-fn">COUNT</span>(*) &gt; <span class="t-number">1</span>;</pre>
-        <span class="stamp">Proven</span>
+        <span class="stamp ok">Solved</span>
       </div>
     </div>
     <!--STATS:START--><div class="stats"><div><b>5</b><span>case files + orientation</span></div><div><b>24</b><span>findings to prove</span></div><div><b>0</b><span>servers or sign-ups</span></div><div><b>100%</b><span>offline &amp; on-device</span></div></div><!--STATS:END-->
-    <div class="section-head" id="cases"><h2>Case files</h2><span class="muted mono">Progress is saved on this device</span></div>
+    <div class="section-head" id="cases"><h2>Case files</h2><span class="muted">Pull a file from the drawer. Progress stays on this device.</span></div>
     <div class="cases"><!--CASES:START--><button class="case-card card" data-action="open-case" data-case="case00_training" data-accent="lime" aria-disabled="true"><span class="no">CASE 00</span><h3>Orientation: First Day at the Desk</h3><span class="row"><span class="chip chip-accent2">Tutorial</span><span class="chip">Tutorial</span><span class="chip chip-warn">Placeholder data</span></span><p>Three warm-up queries. Learn the editor, the schema explorer and how verdicts work.</p><span class="bar"><i></i></span><span class="foot"><span class="count">0/3 findings</span><span class="go">Open case</span></span></button><button class="case-card card" data-action="open-case" data-case="case01_funding" data-accent="orange" aria-disabled="true"><span class="no">CASE 01</span><h3>Funding Forensics</h3><span class="row"><span class="chip chip-accent2">Venture Capital</span><span class="chip">Beginner</span><span class="chip chip-warn">Placeholder data</span></span><p>Reported rounds don&#x27;t add up. Audit the startup funding ledger before the annual report ships.</p><span class="bar"><i></i></span><span class="foot"><span class="count">0/5 findings</span><span class="go">Open case</span></span></button><button class="case-card card" data-action="open-case" data-case="case02_quickcommerce" data-accent="purple" aria-disabled="true"><span class="no">CASE 02</span><h3>Dark Store Delivery Audit</h3><span class="row"><span class="chip chip-accent2">Quick Commerce</span><span class="chip">Intermediate</span><span class="chip chip-warn">Placeholder data</span></span><p>10-minute delivery, 4-minute riders and double payouts. Find out what the ops dashboard hides.</p><span class="bar"><i></i></span><span class="foot"><span class="count">0/4 findings</span><span class="go">Open case</span></span></button><button class="case-card card" data-action="open-case" data-case="case03_catalog" data-accent="cyan" aria-disabled="true"><span class="no">CASE 03</span><h3>Shelf Integrity Audit</h3><span class="row"><span class="chip chip-accent2">Quick Commerce</span><span class="chip">Intermediate</span><span class="chip chip-warn">Placeholder data</span></span><p>Out-of-stock items with stock, discounts that aren&#x27;t. Clean the shelf before customers notice.</p><span class="bar"><i></i></span><span class="foot"><span class="count">0/4 findings</span><span class="go">Open case</span></span></button><button class="case-card card" data-action="open-case" data-case="case04_upi" data-accent="lime" aria-disabled="true"><span class="no">CASE 04</span><h3>UPI Fraud Desk</h3><span class="row"><span class="chip chip-accent2">FinTech / Payments</span><span class="chip">Advanced</span><span class="chip chip-warn">Placeholder data</span></span><p>The fraud model flags thousands of payments. Find where it&#x27;s blind before the RBI audit does.</p><span class="bar"><i></i></span><span class="foot"><span class="count">0/4 findings</span><span class="go">Open case</span></span></button><button class="case-card card" data-action="open-case" data-case="case05_payroll" data-accent="orange" aria-disabled="true"><span class="no">CASE 05</span><h3>Payroll Leak</h3><span class="row"><span class="chip chip-accent2">HR &amp; Payroll</span><span class="chip">Advanced</span><span class="chip chip-warn">Placeholder data</span></span><p>Salaries to people who left, two employees on one bank account. Plug the payroll leak.</p><span class="bar"><i></i></span><span class="foot"><span class="count">0/4 findings</span><span class="go">Open case</span></span></button><!--CASES:END--></div>
 
-    <div class="section-head"><h2>How it works</h2></div>
+    <div class="section-head"><h2>How an investigation works</h2></div>
     <div class="steps">
-      <div class="card step"><span class="num">1</span><h3>Read the dossier</h3><p class="muted">Each case is a client brief on a real-world dataset: startup funding, quick commerce, UPI payments, payroll.</p></div>
-      <div class="card step"><span class="num">2</span><h3>Query the evidence</h3><p class="muted">Clickable ER diagram, autocomplete for tables and columns, friendly error explanations and progressive hints.</p></div>
-      <div class="card step"><span class="num">3</span><h3>Get an instant verdict</h3><p class="muted">The validator compares fingerprints of your result with the evidence - you see how close you are, never the answer.</p></div>
+      <div class="card step"><span class="num tag">Step A</span><h3>Read the dossier</h3><p class="muted">Each case is a client brief on a real-world dataset: startup funding, quick commerce, UPI payments, payroll.</p></div>
+      <div class="card step"><span class="num tag">Step B</span><h3>Question the evidence</h3><p class="muted">Clickable ER diagram, autocomplete for tables and columns, friendly error explanations and progressive hints.</p></div>
+      <div class="card step"><span class="num tag">Step C</span><h3>Stamp the verdict</h3><p class="muted">The validator compares fingerprints of your result with the evidence - you see how close you are, never the answer.</p></div>
     </div>
 
-    <div class="section-head"><h2>Built differently</h2></div>
+    <div class="section-head"><h2>Why this bureau is different</h2></div>
     <div style="overflow:auto">
     <table class="compare">
       <thead><tr><th>What matters</th><th>Typical SQL mystery games</th><th>Queryopsy</th></tr></thead>

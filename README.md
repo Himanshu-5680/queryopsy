@@ -21,8 +21,8 @@ Audit funding rounds, delivery fleets, shelves, UPI payments and payroll, using 
 </div>
 
 <p align="center">
-  <img src="docs/screenshots/case-light.png" width="49%" alt="Case workspace, Paper Audit theme">
-  <img src="docs/screenshots/case-dark.png" width="49%" alt="Case workspace with ER diagram, Terminal Hacker theme">
+  <img src="docs/screenshots/case-light.png" width="49%" alt="Case workspace, Dossier (light) theme">
+  <img src="docs/screenshots/case-dark.png" width="49%" alt="Case workspace with the red-string ER diagram, Crime Lab (dark) theme">
 </p>
 
 ## Why Queryopsy
@@ -48,8 +48,9 @@ Queryopsy treats you like a junior analyst on an audit team:
 | Hints | Three per level, from a nudge to a full walkthrough; using them is tracked, never punished |
 | Progress | Stored only in `localStorage`; "Erase my progress" in the shortcuts panel |
 | Certificate | Canvas-drawn by Python, exported as PNG or a pure-Python PDF |
-| Themes | Neo-brutalist "Paper Audit" (light) and "Terminal Hacker" (dark), remembered per device |
-| Mobile | Brief / Schema / Query tabs, no horizontal scrolling, 44 px touch targets |
+| Themes | Detective case file: "Dossier" (light: manila folder, typewriter, stamps, evidence tags, redaction bars) and "Crime Lab" (dark: cork evidence board, pinned notes, red-string ER diagram, flashlight vignette), remembered per device |
+| App mode | On phones, in the Android app and when installed as a PWA: a native-style app with large-title screens, a bottom tab bar, bottom sheets, swipe-back and system light/dark (see below) |
+| Mobile website | `?app=0` keeps the dossier website on a phone: Brief / Schema / Query tabs, no horizontal scrolling, 44 px touch targets |
 | Accessibility | Keyboard-first, ARIA roles on the editor/listbox/dialogs, focus rings, `prefers-reduced-motion` |
 | Offline | Service worker on the web (PWA), bundled assets in the APK |
 
@@ -72,13 +73,35 @@ Queryopsy treats you like a junior analyst on an audit team:
 
 > **Data status:** until the real CSV/XLSX files are placed in `data/raw/`, every case runs on small synthetic placeholder data, clearly labelled in the app. See [Bring your own data](#bring-your-own-data).
 
+## App mode (Android app, installed PWA, phones)
+
+Below 760 px wide, inside the Android app and when Queryopsy is installed to the home screen, the site turns into an app instead of a web page. It uses the same Python engine, cases and progress, with a phone-first shell:
+
+- **Cases** home with a greeting, a progress ring, a Continue card and grouped case lists. No marketing hero.
+- Large titles that shrink into a small centred title as you scroll, on a translucent blurred bar with a back chevron.
+- A **tab bar** (Cases, Investigate, Evidence, Progress) that respects safe areas and hides while you type.
+- Push and pop slide transitions, **swipe from the left edge to go back**, and Android Back steps out one level at a time.
+- **Bottom sheets** with a grabber for the evidence tables, hints and query history.
+- A SQL key row above the keyboard (SELECT, FROM, WHERE... and Run).
+- Segmented controls, switches and toasts. System font for the interface, monospace only for SQL.
+- Appearance follows the system light/dark setting, or pick Light or Dark under Progress. Haptic ticks on Android.
+- No text selection on buttons and bars, no tap flash, no pinch zoom and no rubber-band scrolling of the whole page.
+- The Android app draws edge to edge, with status and navigation bar icons that match the theme, and a launch screen the same colour as the in-app splash.
+
+`?app=1` forces app mode on any screen and `?app=0` forces the website.
+
+| Cases | Case | Editor | Evidence sheet | Verdict | Progress | Report |
+|---|---|---|---|---|---|---|
+| <img src="docs/screenshots/app/01-cases-light.png" width="150"> | <img src="docs/screenshots/app/02-case-light.png" width="150"> | <img src="docs/screenshots/app/03-editor-light.png" width="150"> | <img src="docs/screenshots/app/04-schema-sheet-light.png" width="150"> | <img src="docs/screenshots/app/05-verdict-light.png" width="150"> | <img src="docs/screenshots/app/06-progress-light.png" width="150"> | <img src="docs/screenshots/app/07-report-light.png" width="150"> |
+| <img src="docs/screenshots/app/01-cases-dark.png" width="150"> | <img src="docs/screenshots/app/02-case-dark.png" width="150"> | <img src="docs/screenshots/app/03-editor-dark.png" width="150"> | <img src="docs/screenshots/app/04-schema-sheet-dark.png" width="150"> | <img src="docs/screenshots/app/05-verdict-dark.png" width="150"> | <img src="docs/screenshots/app/06-progress-dark.png" width="150"> | <img src="docs/screenshots/app/07-report-dark.png" width="150"> |
+
 ## Screenshots
 
 | Home (light) | Home (dark) | Certificate |
 |---|---|---|
 | ![](docs/screenshots/home-light.png) | ![](docs/screenshots/home-dark.png) | ![](docs/screenshots/certificate.png) |
 
-| Mobile: brief | Mobile: schema | Mobile: query |
+| Mobile website: brief | Mobile website: schema | Mobile website: query |
 |---|---|---|
 | <img src="docs/screenshots/mobile-brief.png" width="240"> | <img src="docs/screenshots/mobile-schema.png" width="240"> | <img src="docs/screenshots/mobile-query.png" width="240"> |
 
@@ -111,7 +134,7 @@ The same `src/engine` Python code validates answers in the browser and in `pytes
 
 ```
 src/engine/      runner.py (SQLite sandbox), validator.py (hash check + diff), errors.py, sqltools.py
-src/ui/          app.py, editor.py, store.py, theme_toggle.py, dom.py, neobrutal.css
+src/ui/          app.py, editor.py, store.py, theme_toggle.py, dom.py, casefile.css
 src/main.py      entry point        src/boot.js   tiny Pyodide bootstrap
 reports/         audit_certificate.py (canvas + pure-Python PDF)
 pipeline/        readers, cleaning, dataset adapters, ER diagram, build
@@ -162,7 +185,7 @@ The APK is a locked-down WebView that serves the bundled site from `https://appa
 export ANDROID_HOME=/path/to/android-sdk JAVA_HOME=/path/to/jdk17
 export QUERYOPSY_SIGNING=/path/to/signing     # keystore + keystore.properties, never commit these
 python tools/build_web.py && python tools/build_apk.py
-python tools/check_apk.py dist/Queryopsy-v1.0.0.apk   # boots the APK's payload in Chromium
+python tools/check_apk.py dist/Queryopsy-v1.1.0.apk   # boots the APK's payload in Chromium
 ```
 
 ## Interview pitch
@@ -179,7 +202,7 @@ Please follow the [Code of Conduct](CODE_OF_CONDUCT.md). Security issues: see [S
 ## Credits
 
 * [Pyodide](https://pyodide.org) (MPL-2.0), CPython (PSF) and [SQLite](https://sqlite.org) (public domain)
-* [Space Grotesk](https://github.com/floriankarsten/space-grotesk) and [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) (SIL OFL 1.1)
+* [Courier Prime](https://github.com/quoteunquoteapps/CourierPrime) and [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) (SIL OFL 1.1), [Special Elite](https://fonts.google.com/specimen/Special+Elite) (Apache-2.0)
 * Dataset authors listed in [docs/DATASETS.md](docs/DATASETS.md)
 
 All case stories, companies and people are fictional. Licensed under the [MIT License](LICENSE) &copy; 2026 Himanshu Pathak.

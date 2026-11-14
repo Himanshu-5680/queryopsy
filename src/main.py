@@ -10,7 +10,10 @@ async def start():
     resp = await pyfetch("data/cases.json")
     data = json.loads(await resp.string())
     data["python"] = ".".join(map(str, sys.version_info[:2]))
-    from ui.app import App
+    if document.documentElement.classList.contains("app-mode"):
+        from ui.appmode import IOSApp as App      # Android app, installed PWA, phones: native-style shell
+    else:
+        from ui.app import App                   # website: case-file dossier layout
     app = App(data)
     app.start()
     document.documentElement.setAttribute("data-engine", "ready")

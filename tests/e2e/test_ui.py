@@ -110,10 +110,11 @@ def test_onboarding_first_visit(page, base_url):
     assert "ORIENTATION" in page.inner_text(".dossier h1").upper()
 
 
-def test_mobile_layout(page, base_url):
+def test_mobile_website_layout(page, base_url):
+    """A narrow browser forced into website mode (?app=0) still gets the tabbed dossier layout."""
     page.set_viewport_size({"width": 390, "height": 844})
     page.add_init_script("if (!localStorage.getItem('queryopsy.progress.v1')) localStorage.setItem('queryopsy.progress.v1', JSON.stringify({onboarded: true}))")
-    page.goto(base_url + "#/case/case01_funding/1")
+    page.goto(base_url + "?app=0#/case/case01_funding/1")
     page.wait_for_selector(".mobile-tabs", timeout=90000)
     assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth + 1")
     assert page.is_visible(".dossier-panel") and not page.is_visible("#sql")
